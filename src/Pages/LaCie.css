@@ -194,7 +194,7 @@ body {
     width: 100%;
   }
   .text1 {
-    max-width: 95%;
+    max-width: 100%;
   }
   .personne-reverse {
     display: flex;
