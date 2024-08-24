@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+.main {
+  background: #7531a5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+.cie h1 {
+  font-family: "Bangers", system-ui;
+  font-size: 5rem;
+  font-weight: bold;
+  padding-top: 210px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.historique h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: bisque;
+  border: 1px solid bisque;
+  border-radius: 5px;
+  padding: 10px;
+}
+.cie-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cie-text p {
+  font-size: 1.4rem;
+  margin-top: 40px;
+  max-width: 800px;
+  line-height: 26px;
+  font-weight: bold;
+  color: azure;
+}
+.cie-text span {
+  color: bisque;
+}
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.bio h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: bisque;
+  border: 1px solid bisque;
+  border-radius: 5px;
+  padding: 10px;
+}
+.bio h3 {
+  font-size: 1.8rem;
+  color: white;
+  margin-top: 40px;
+  text-decoration: underline;
+}
+.artistes {
+  margin-top: 40px;
+}
+.personne-reverse {
+  display: flex;
+  flex-direction: reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+.personne {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 80px;
+}
+.pic1-reverse {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Ajustement de la largeur maximale de l'image */
+  height: 400px; /* Ajustement de la hauteur de l'image */
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.pic1 img {
+  width: 400px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  border: 1px solid white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.pic1 img:hover {
+  transform: scale(1.03);
+}
+.text1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  background: rgb(237, 235, 235);
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px; /* Ajustement de la largeur maximale du texte */
+}
+.text1 p {
+  font-size: 1.1rem;
+  padding: 20px 0;
+  line-height: 1.3;
+  word-spacing: normal;
+  max-width: 100%;
+  text-align: justify;
+}
+.text1 span {
+  color: rgb(148, 12, 194);
+  font-weight: bold;
+}
+.diviser {
+  width: 30%;
+  height: 0.1px;
+  margin-top: 80px;
+  background-color: white;
+}
+.pic10 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+}
+
+.responsive-img10 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .cie h1 {
+    font-size: 4rem;
+    margin-top: -30px;
+  }
+  .historique h2 {
+    margin-top: 50px;
+  }
+  .cie-text p {
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-top: 0;
+  }
+  .bio h2 {
+    margin-top: 0;
+  }
+  .bio h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .diviser {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .artistes {
+    margin-top: 20px;
+    gap: 40px;
+  }
+  .personne {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: -50px;
+  }
+  .pic1 {
+    height: 500px; /* Ajustement de la hauteur de l'image pour les petits écrans */
+    width: 100%; /* Utilisation maximale de la largeur pour les petits écrans */
+  }
+  .pic1 img {
+    height: 80%;
+  }
+  .text1 {
+    max-width: 90%;
+  }
+  .personne-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: -30px;
+  }
+  .text1 p {
+    font-size: 1.1rem; /* Ajustement de la taille du texte pour les petits écrans */
+    padding: 0px 0;
+  }
+  .pic10 {
+    height: 200px;
+  }
+}

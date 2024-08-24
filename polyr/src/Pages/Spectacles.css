@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+.show {
+  background: #7531a5;
+  padding: 0 20px;
+  height: 150vh;
+}
+.show-titre h1 {
+  font-family: "Bangers", system-ui;
+  font-size: 5rem;
+  font-weight: bold;
+  padding-top: 230px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}

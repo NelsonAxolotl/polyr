@@ -1,0 +1,192 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  width: 100%;
+  min-height: 75px;
+  color: rgb(148, 12, 194);
+  background: rgb(255, 255, 255);
+  /* border-bottom: 0.1px solid grey; */
+  z-index: 2;
+}
+.navbar.show-nav,
+.navbar.hide-nav {
+  opacity: 1;
+}
+.navbar-logo img {
+  height: 120px;
+  margin-top: 10px;
+}
+.navbar-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar-link {
+  color: inherit;
+  transition: all 0.67s ease-in-out;
+  display: block;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 25px;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(128, 20, 217);
+  transition: all 0.3s ease-in-out;
+}
+.navbar-link:hover {
+  color: rgb(220, 205, 0);
+  transform: scale(1.05);
+  border-bottom: 1px solid rgb(220, 205, 0);
+}
+.navbar-burger {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  color: inherit;
+  display: none;
+}
+.navbar-item {
+  position: relative;
+}
+
+.navbar-hover {
+  padding: 8px 0px;
+}
+
+.navbar-hover a {
+  text-decoration: none;
+  color: black;
+}
+.navbar-item.active .navbar-link {
+  color: rgb(
+    220,
+    205,
+    0
+  ); /* Couleur du hover ou autre style que vous souhaitez appliquer */
+}
+
+@media screen and (max-width: 1300px) and (min-width: 760px) {
+  .navbar-burger {
+    display: none;
+  }
+}
+@media screen and (max-width: 954px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 835px) {
+  .navbar-link {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding-bottom: 0px;
+  }
+  .navbar-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: -100vw;
+    bottom: 0;
+    width: 0;
+    height: 100vh;
+    padding: 2rem;
+    background: rgb(141, 32, 218);
+    visibility: hidden;
+    transition: all 0.8s ease-out;
+  }
+
+  .show-nav .navbar-links {
+    right: 0;
+    width: 100vw;
+    visibility: visible;
+  }
+
+  .navbar-item:last-child::after {
+    display: none;
+  }
+  .navbar-link {
+    display: block;
+    padding: 1.5rem;
+    font-size: 7vw;
+    margin: 0;
+    color: white;
+  }
+  .navbar-burger {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+  }
+  .navbar-burger:hover {
+    cursor: pointer;
+  }
+  .burger-bar,
+  .burger-bar::before,
+  .burger-bar::after {
+    display: block;
+    width: 40px;
+    height: 3px;
+    position: relative;
+    border-radius: 3px;
+    background: rgb(6, 6, 6);
+    transition: all 0.8s ease-in-out;
+  }
+  .burger-bar::before,
+  .burger-bar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  .burger-bar::before {
+    transform: translateY(-12px);
+  }
+
+  .burger-bar::after {
+    transform: translateY(12px);
+  }
+  .show-nav .burger-bar {
+    background: transparent;
+    width: 0;
+  }
+  .show-nav .burger-bar::before {
+    transform: rotate(45deg);
+  }
+  .show-nav .burger-bar::after {
+    transform: rotate(-45deg);
+  }
+  .navbar-item {
+    transform: translateX(200vh);
+  }
+  .show-nav .navbar-item {
+    transform: translateX(0);
+  }
+  .show-nav .slideInDown-1 {
+    transition: all 1s ease-out;
+  }
+  .show-nav .slideInDown-2 {
+    transition: all 1.2s ease-out;
+  }
+  .show-nav .slideInDown-3 {
+    transition: all 1.4s ease-out;
+  }
+  .show-nav .slideInDown-4 {
+    transition: all 1.6s ease-out;
+  }
+  .show-nav .slideInDown-5 {
+    transition: all 1.8s ease-out;
+  }
+  .navbar-link:hover {
+    color: rgb(220, 205, 0);
+    border-bottom: none;
+  }
+}
