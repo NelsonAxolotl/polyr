@@ -390,9 +390,7 @@
   .article img {
     width: 300px;
   }
-  .presse h3 {
-    font-size: 2.7rem;
-  }
+
   .pic {
     height: 200px;
   }
@@ -411,7 +409,7 @@
     font-size: 1.1rem;
     text-align: center;
   }
-  .a .presse h3 {
+  .presse h3 {
     margin-top: 40px;
     font-size: 2.3rem;
   }

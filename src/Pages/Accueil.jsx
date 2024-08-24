@@ -32,7 +32,9 @@ const Accueil = () => {
           </p>
         </div>
         <div className="suite-intro">
-          <p>Cocréée et dirigée par Hervé Le Bert et Roxane Macaudière </p>
+          <p>Cocréée et dirigée par </p>
+          <span>Hervé Le Bert </span>
+          <span>et Roxane Macaudière</span>
           <span>située à Lyon en région AURA </span>
         </div>
         <div className="poly-pic">

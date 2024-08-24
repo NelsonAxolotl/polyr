@@ -180,7 +180,7 @@ body {
     gap: 20px;
     align-items: center;
     margin-top: 0;
-    margin-bottom: -50px;
+    margin-bottom: -80px;
   }
   .pic1 {
     display: flex;
@@ -194,7 +194,7 @@ body {
     width: 100%;
   }
   .text1 {
-    max-width: 90%;
+    max-width: 95%;
   }
   .personne-reverse {
     display: flex;
@@ -204,7 +204,7 @@ body {
     gap: 20px;
     align-items: center;
     margin-top: 0;
-    margin-bottom: -30px;
+    margin-bottom: -60px;
   }
   .text1 p {
     font-size: 1.1rem; /* Ajustement de la taille du texte pour les petits écrans */
