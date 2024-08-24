@@ -88,14 +88,7 @@ body {
   gap: 40px;
   margin-top: 80px;
 }
-.pic1-reverse {
-  position: relative;
-  width: 100%;
-  max-width: 800px; /* Ajustement de la largeur maximale de l'image */
-  height: 400px; /* Ajustement de la hauteur de l'image */
-  border-radius: 10px;
-  border: 1px solid white;
-}
+
 .pic1 img {
   width: 400px;
   height: 100%;
@@ -162,7 +155,7 @@ body {
     margin-top: 50px;
   }
   .cie-text p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 10px;
     margin-top: 0;
   }
@@ -170,6 +163,7 @@ body {
     margin-top: 0;
   }
   .bio h3 {
+    font-size: 1.5rem;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -189,14 +183,18 @@ body {
     margin-bottom: -50px;
   }
   .pic1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 500px; /* Ajustement de la hauteur de l'image pour les petits écrans */
     width: 100%; /* Utilisation maximale de la largeur pour les petits écrans */
   }
   .pic1 img {
-    height: 80%;
+    height: 75%;
+    width: 100%;
   }
   .text1 {
-    max-width: 90%;
+    max-width: 75%;
   }
   .personne-reverse {
     display: flex;

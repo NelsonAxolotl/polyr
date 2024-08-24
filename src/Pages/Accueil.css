@@ -361,7 +361,7 @@
     margin-top: 20px;
   }
   .suite-intro span {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .poly-pic {
     flex-direction: column;
@@ -377,8 +377,9 @@
     align-items: center;
     gap: 20px;
   }
+
   .article img {
-    width: 350px;
+    width: 300px;
   }
   .presse h3 {
     font-size: 2.7rem;
@@ -390,15 +391,15 @@
     margin-top: 0;
   }
   .actu p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: center;
   }
   .presse h3 {
     margin-top: 40px;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   .presse p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .reseau h3 {
     font-size: 2.5rem;
