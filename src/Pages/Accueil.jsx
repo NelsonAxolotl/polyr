@@ -52,7 +52,10 @@ const Accueil = () => {
         </div>
         <div className="actu">
           <h3>Actu !</h3>
-          <p>À venir Juillet 2025 Opéra Mobile saison 2 !!!</p>
+          <div className="split">
+            <p>À venir Juillet 2025 </p>
+            <span>Opéra Mobile saison 2 !!!</span>
+          </div>
           <div className="pic-opera">
             <img
               src={operagroupe}
