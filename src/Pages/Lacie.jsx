@@ -7,10 +7,12 @@ import thomas from "../Pic/thomas.jpg";
 import melysine from "../Pic/melysine.jpg";
 import galtier from "../Pic/galtier.jpg";
 import fumi from "../Pic/fumi.jpg";
+import nathan from "../Pic/nathan.jpg";
 import draw from "../Pic/draw.jpg";
 
 const Lacie = () => {
   const [enlargedImage, setEnlargedImage] = useState(null);
+
   const handleImageClick = (image) => {
     setEnlargedImage(image);
   };
@@ -18,6 +20,7 @@ const Lacie = () => {
   const handleCloseImage = () => {
     setEnlargedImage(null);
   };
+
   return (
     <>
       <div className="main">
@@ -29,7 +32,7 @@ const Lacie = () => {
         </div>
         <div className="cie-text">
           <p>
-            La Compagnie <span>Poly R </span>est lyonnaise et a été crée en
+            La Compagnie <span>Poly R</span> est lyonnaise et a été créée en
             septembre 2023 par Roxane Macaudière et Hervé Le Bert. <br />
             Tous deux artistes en voie de professionnalisation et passionnés par
             leurs différentes pratiques, (chant lyrique, théâtre, piano,
@@ -47,11 +50,11 @@ const Lacie = () => {
           <h2>L'Équipe</h2>
           <h3>Directeur.trices artistiques</h3>
           <div className="artistes">
-            <div className="personne-reverse">
+            <div id="roxane" className="personne-reverse">
               <div className="pic1">
                 <img
                   src={roxane}
-                  alt="photo roxane "
+                  alt="photo roxane"
                   onClick={() => handleImageClick(roxane)}
                   loading="lazy"
                 />
@@ -83,11 +86,15 @@ const Lacie = () => {
                   Aujourd'hui enrichie de ces diverses expériences et âgée de 23
                   ans, Roxane vient d’être admise en bachelor de chant lyrique à
                   la Haute École de Musique de Genève dans la classe de Heidi
-                  Brünner pour la rentrée 2024-2025.🇨🇭
+                  Brünner pour la rentrée 2024-2025.
+                  <br />
+                  Depuis 2023, elle co-dirige la compagnie Poly R avec Hervé Le
+                  Bert tout en faisant partie du spectacle Bastien & Bastienne
+                  ainsi que de la troupe Opéramobil'.
                 </p>
               </div>
             </div>
-            <div className="personne">
+            <div id="herve" className="personne">
               <div className="text1">
                 <p className="main-text">
                   <span>Hervé LE BERT</span> est ténor lyrique et comédien, il
@@ -99,23 +106,24 @@ const Lacie = () => {
                   Depuis 2019 il étudie le chant lyrique avec le ténor Yannick
                   Berne en parallèle de ses études à l'ENM dans la classe de
                   chant de Virginie Pochon et au théâtre de l'Iris. <br />
-                  En 2023 il co-créé la compagnie Poly R afin de rendre plus
-                  accessible l'Opéra notamment dans les milieux ruraux.
+                  En 2023 il co-créé la compagnie Poly R qu'il dirige avec
+                  Roxane Macaudière. Il est Bastien dans le spectacle Bastien &
+                  Bastienne et intègre également la troupe Opéramobil'.
                 </p>
               </div>
               <div className="pic1">
                 <img
                   src={herve}
-                  alt="photo herve"
+                  alt="photo hervé"
                   onClick={() => handleImageClick(herve)}
                   loading="lazy"
                 />
               </div>
             </div>
-          </div>
-          <div className="diviser"></div>
-          <div className="artistes">
-            <div className="personne-reverse">
+            <div className="line">
+              <div className="diviser"></div>
+            </div>
+            <div id="thomas" className="personne-reverse">
               <div className="pic1">
                 <img
                   src={thomas}
@@ -127,7 +135,7 @@ const Lacie = () => {
               <div className="text1">
                 <p className="main-text">
                   Découvrant à 8 ans la musique par l’apprentissage du violon,
-                  <span> Thomas Avrillon</span> ne tarda pas à rentrer à la
+                  <span> Thomas Avrillon </span> ne tarda pas à rentrer à la
                   Maitrise de la Loire, où il y restera sept ans. <br />
                   Grâce à cet important apport musical, il découvrira de
                   nombreuses disciplines liées au chant, dont la direction de
@@ -141,63 +149,89 @@ const Lacie = () => {
                   participer à des projets en tant que choriste dans des
                   ensembles semi-professionnels comme Symphonietta ou Anarrès,
                   mais également en tant que soliste, dans le rôle de Pish-Tush
-                  du Mikado de Sullivan.
+                  du Mikado de Sullivan. <br />
+                  En juillet 2024, Thomas intègre la troupe Opéramobil' en tant
+                  que chanteur et violoniste.
                 </p>
               </div>
             </div>
-            <div className="personne">
+            <div id="nathan" className="personne-reverse">
               <div className="text1">
                 <p className="main-text">
-                  <span>Mélusine Escande</span> est pianiste et cheffe de chœur.{" "}
-                  <br />
-                  Née en 1996 dans les environs de Grenoble, elle découvre la
-                  musique très jeune par le piano. Après une licence de
-                  musicologie à l’Université de Grenoble, elle se forme au sein
-                  des conservatoires de Lyon et Chambéry dont elle est diplômée
-                  en piano, accompagnement au piano, écriture et direction de
-                  chœur. <br />
-                  Passionnée de musique vocale, elle intègre l’Institut Royal
-                  Supérieur de Musique et de Pédagogie à Namur (Belgique).{" "}
-                  <br />
-                  Elle y obtient avec grande distinction un master en direction
-                  chorale (2023) et un master en accompagnement au piano (2024).
-                  <br />
-                  Sa vie professionnelle gravite autour de la musique vocale :
-                  elle a travaillé pour les Chœurs d’Enfants et de Jeunes de La
-                  Monnaie, elle est à la tête de la chorale Royale Saint Rémy
-                  d’Ottignies et du chœur d’enfant les Piccolos de Nivelles.
-                  <br />
-                  Elle a accompagné de nombreux chœurs et chanteurs comme la
-                  maîtrise du collège Jean Moulin à Lyon, la chorale Mélopée
-                  pour sa tournée au Québec en 2023, les chanteurs de l’académie
-                  Opus 74 à Flaine, la troupe de comédiens du Théâtre Part Cœur
-                  en 2019 ou encore la mezzo-soprano Victoria Didenko avec qui
-                  elle a tourné en récital jusqu’à Kiev. <br />
-                  Son expérience de choriste traverse les styles et les
-                  ensembles : le festival Berlioz, La Fabrique Opéra, la schola
-                  de la basilique Saint Bonaventure à Lyon, le chœur d’Oratorio
-                  de Lyon, le chœur symphonique de Namur ou encore le chœur
-                  régional de Jeunes Inspirations qui a participé au festival
-                  d’Arezzo et de Fano.
-                  <br />
-                  Elle assure depuis la rentrée 2023 les cours de chant choral
-                  auprès de la classe à horaires aménagés du Lycée Français de
-                  Bruxelles.
+                  <span>Nathan Brunet</span> est guitariste, sound designer,
+                  compositeur et claviériste. <br />
+                  Après des études au conservatoire de Nancy, il s'installe à
+                  Lyon où il obtient un DUMI de musicien intervenant et où il
+                  perfectionne sa pratique de la guitare jazz à l'Ecole
+                  Nationale de Musique de Villeurbanne auprès de Pierre
+                  Hachache. <br />
+                  Nathan vient d'être reçu pour intégrer en septembre 2024 la
+                  nouvelle promotion du prestigieux Centre Didier Lockwood à
+                  Paris. Lors de la saison 2023/2024 Nathan est guitariste pour
+                  le spectacle Bastien & Bastienne.
                 </p>
               </div>
               <div className="pic1">
                 <img
-                  src={melysine}
-                  alt="photo Melysine"
-                  onClick={() => handleImageClick(melysine)}
+                  src={nathan}
+                  alt="photo nathan"
+                  onClick={() => handleImageClick(nathan)}
                   loading="lazy"
                 />
               </div>
             </div>
-          </div>
-
-          <div className="artistes">
-            <div className="personne-reverse">
+            <div id="melysine" className="personne">
+              <div className="pic1">
+                <img
+                  src={melysine}
+                  alt="photo mélysine"
+                  onClick={() => handleImageClick(melysine)}
+                  loading="lazy"
+                />
+              </div>
+              <div className="text1">
+                <p className="main-text">
+                  <span>Mélusine Escande</span> est pianiste et cheffe de chœur.
+                  Après une licence de musicologie à l’Université de Grenoble,
+                  elle se forme au sein des conservatoires de Lyon et Chambéry
+                  dont elle est diplômée en piano, accompagnement au piano,
+                  écriture et direction de chœur. <br />
+                  Passionnée de musique vocale, elle intègre l’Institut Royal
+                  Supérieur de Musique et de Pédagogie à Namur (Belgique).{" "}
+                  <br />
+                  Elle y obtient avec grande distinction un master en direction
+                  chorale et un master en accompagnement au piano. <br />
+                  Mélusine a travaillé pour les Chœurs d’Enfants et de Jeunes de
+                  La Monnaie, elle est à la tête de la chorale Royale Saint Rémy
+                  d’Ottignies et du chœur d’enfant les Piccolos de Nivelles.{" "}
+                  <br />
+                  Elle assure depuis la rentrée 2023 les cours de chant choral
+                  auprès de la classe à horaires aménagés du Lycée Français de
+                  Bruxelles. <br />
+                  En juillet 2024, Mélusine intègre la troupe Opéramobil' en
+                  tant que pianiste accompagnatrice.
+                </p>
+              </div>
+            </div>
+            <div id="galtier" className="personne-reverse">
+              <div className="text1">
+                <p className="main-text">
+                  <span>Galtier Le Bihan</span> est guitariste, compositeur et
+                  arrangeur. <br />
+                  Parallèlement à son cursus de guitare jazz à l'Ecole Nationale
+                  de Musique de Villeurbanne, Galtier s'illustre en tant que
+                  compositeur, interprète et improvisateur, et ce dans divers
+                  styles, aussi bien la funk que le rock. <br />
+                  Depuis deux ans, il est notamment membre du groupe lyonnais
+                  Bourricot Live Band. <br />
+                  Il enseigne également la guitare depuis plusieurs années.{" "}
+                  <br />
+                  Passionné d'art depuis son plus jeune âge, Galtier est
+                  toujours à l'affût de nouvelles expériences et est l'un des
+                  accompagnateurs de l'Opéramobil' en juillet 2024, apportant
+                  ainsi une touche instrumentale moderne à la troupe.
+                </p>
+              </div>
               <div className="pic1">
                 <img
                   src={galtier}
@@ -206,47 +240,8 @@ const Lacie = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="text1">
-                <p className="main-text">
-                  <span>Galtier Le Bihan</span> est guitariste, compositeur et
-                  arrangeur. Parallèlement à son cursus de guitare jazz à
-                  l'Ecole Nationale de Musique de Villeurbanne, Galtier
-                  s'illustre en tant que compositeur, interprète et
-                  improvisateur, et ce dans divers styles, aussi bien la funk
-                  que le rock. <br />
-                  Depuis deux ans, il est notamment membre du groupe lyonnais
-                  Bourricot Live Band. <br />
-                  Il enseigne également la guitare depuis plusieurs années.
-                  <br />
-                  Passionné d'art depuis son plus jeune âge, Galtier est
-                  toujours à l'affût de nouvelles expériences et est l'un des
-                  accompagnateurs de l'Opéramobil' en juillet 2024, apportant
-                  ainsi une touche instrumentale moderne à la troupe.
-                </p>
-              </div>
             </div>
-            <div className="personne">
-              <div className="text1">
-                <p className="main-text">
-                  Née en 1994, <span>Fumi Oka</span> est une chanteuse lyrique
-                  d’origine japonaise. <br />
-                  En 2014, elle est admise à l’Université des Arts de Kyoto dans
-                  la classe de Tadamichi Orié. <br />
-                  Après avoir passé sa licence, elle arrive en France en 2019,
-                  où elle est admise à l’ENM de Villeurbanne dans la classe de
-                  Virginie Pochon. <br />
-                  Elle y obtient son DEM en 2023. <br />
-                  Depuis l'obtention de sa licence, elle a participé à plusieurs
-                  productions d’opéra en tant que choriste ainsi qu'en tant que
-                  soliste, s'illustrant avec brio dans divers rôles : Dorabella
-                  dans Cosi Fan Tutte de Mozart, Hänsel et Knusperhexe dans
-                  Hänsel und Gretel d’Humperdinck, Ms Todd dans The Old Maid and
-                  The Thief de Menotti et Carmen dans Carmen de Bizet. <br />
-                  Elle est actuellement membre de la Compagnie Poly R, pour
-                  laquelle elle a interprété cette saison le rôle de Colas dans
-                  le spectacle lyrique Bastien et Bastienne.
-                </p>
-              </div>
+            <div id="fumi" className="personne">
               <div className="pic1">
                 <img
                   src={fumi}
@@ -255,26 +250,24 @@ const Lacie = () => {
                   loading="lazy"
                 />
               </div>
-            </div>
-            {/* <div className="personne-reverse">
-              <div className="pic1">
-                <img src="" alt="photo Nathan" loading="lazy" />
-              </div>
               <div className="text1">
                 <p className="main-text">
-                  Nathan Brunet est guitariste, sound designer, compositeur et
-                  claviériste. <br />
-                  Après des études au conservatoire de Nancy, il s'installe à
-                  Lyon où il obtient un DUMI de musicien intervenant et où il
-                  perfectionne sa pratique de la guitare jazz à l'Ecole
-                  Nationale de Musique de Villeurbanne auprès de Pierre
-                  Hachache. <br />
-                  Nathan vient d'être reçu pour intégrer en septembre 2024 la
-                  nouvelle promotion du prestigieux Centre Didier Lockwood à
-                  Paris.
+                  <span>Fumi Oka</span> est une chanteuse lyrique mezzo-soprano
+                  d’origine japonaise. Après avoir passé une licence de chant à
+                  Kyoto, elle arrive en France en 2019, où elle est admise à
+                  l’ENM de Villeurbanne dans la classe de Virginie Pochon. Elle
+                  y obtient son DEM en 2023. Depuis l'obtention de sa licence,
+                  elle a participé à plusieurs productions d’opéra en tant que
+                  choriste ainsi qu'en tant que soliste, s'illustrant avec brio
+                  dans divers rôles : Dorabella dans Cosi Fan Tutte de Mozart,
+                  Hänsel et Knusperhexe dans Hänsel und Gretel d’Humperdinck, Ms
+                  Todd dans The Old Maid and The Thief de Menotti et Carmen dans
+                  Carmen de Bizet. Lors de la saison 2023/2024, elle est soliste
+                  dans le spectacle Bastien & Bastienne et intègre la troupe
+                  Opéramobil' de la compagnie.
                 </p>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
@@ -286,7 +279,7 @@ const Lacie = () => {
           onClick={() => handleImageClick(draw)}
         />
       </div>
-      <End />
+
       {enlargedImage && (
         <div className="overlay" onClick={handleCloseImage}>
           <div className="enlarged-image-container">
@@ -297,6 +290,7 @@ const Lacie = () => {
           </div>
         </div>
       )}
+      <End />
     </>
   );
 };

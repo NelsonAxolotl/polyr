@@ -4,12 +4,11 @@ body {
 }
 .main {
   background: #7531a5;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 .cie h1 {
   font-family: "Bangers", system-ui;
@@ -128,9 +127,15 @@ body {
 }
 .diviser {
   width: 30%;
-  height: 0.1px;
+  height: 2px;
   margin-top: 80px;
+  margin-bottom: 40px;
   background-color: white;
+}
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .pic10 {
   width: 100%;

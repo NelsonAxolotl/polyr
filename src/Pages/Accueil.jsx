@@ -33,8 +33,8 @@ const Accueil = () => {
         </div>
         <div className="suite-intro">
           <p>Cocréée et dirigée par </p>
-          <span>Hervé Le Bert </span>
-          <span>et Roxane Macaudière</span>
+          <span>Hervé Le Bert et</span>
+          <span>Roxane Macaudière</span>
           <span>située à Lyon en région AURA </span>
         </div>
         <div className="poly-pic">
@@ -56,7 +56,7 @@ const Accueil = () => {
           <h3>Actu !</h3>
           <div className="split">
             <p>À venir Juillet 2025 </p>
-            <span>Opéra Mobile saison 2 !!!</span>
+            <span>Opéramobil ' saison 2 !!!</span>
           </div>
           <div className="pic-opera">
             <img
@@ -74,7 +74,7 @@ const Accueil = () => {
           </div>
         </div>
         <div className="presse">
-          <h3>Un peu de presse !</h3>
+          <h3>Un peu de presse</h3>
           <p>Spectacle "Bastien & Bastienne"</p>
           <button
             onClick={() =>
