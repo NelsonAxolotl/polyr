@@ -142,8 +142,9 @@ const Spectacles = () => {
         <div className="gall">
           <h2>Galerie</h2>
         </div>
+        <Gallery />
       </div>
-      <Gallery />
+
       <End />
       {enlargedImage && (
         <div className="overlay" onClick={handleCloseImage}>

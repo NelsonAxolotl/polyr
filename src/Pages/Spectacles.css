@@ -70,6 +70,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 .gall h2 {
   text-align: center;
@@ -80,4 +81,22 @@ body {
   border: 1px solid bisque;
   padding: 10px;
   border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .show-titre h1 {
+    font-size: 3.8rem;
+    margin-bottom: 20px;
+  }
+
+  .showplus h2 {
+    font-size: 2.2rem;
+    margin-top: 30px;
+  }
+  .showplus p {
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+  .gall h2 {
+    margin-top: 20px;
+  }
 }

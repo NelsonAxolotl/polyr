@@ -64,3 +64,14 @@ body {
   top: 10px;
   right: 10px;
 }
+@media (max-width: 768px) {
+  .gallery-container {
+    width: 90%; /* Agrandir la galerie pour occuper plus d'espace */
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+
+  .gallery-image {
+    height: 300px; /* Réduire la hauteur des images pour les petits écrans */
+  }
+}

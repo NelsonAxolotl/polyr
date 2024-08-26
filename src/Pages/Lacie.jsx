@@ -155,7 +155,7 @@ const Lacie = () => {
                 </p>
               </div>
             </div>
-            <div id="nathan" className="personne-reverse">
+            <div id="nathan" className="personne">
               <div className="text1">
                 <p className="main-text">
                   <span>Nathan Brunet</span> est guitariste, sound designer,
@@ -180,7 +180,7 @@ const Lacie = () => {
                 />
               </div>
             </div>
-            <div id="melysine" className="personne">
+            <div id="melysine" className="personne-reverse">
               <div className="pic1">
                 <img
                   src={melysine}
@@ -213,7 +213,7 @@ const Lacie = () => {
                 </p>
               </div>
             </div>
-            <div id="galtier" className="personne-reverse">
+            <div id="galtier" className="personne">
               <div className="text1">
                 <p className="main-text">
                   <span>Galtier Le Bihan</span> est guitariste, compositeur et
@@ -241,7 +241,7 @@ const Lacie = () => {
                 />
               </div>
             </div>
-            <div id="fumi" className="personne">
+            <div id="fumi" className="personne-reverse">
               <div className="pic1">
                 <img
                   src={fumi}
