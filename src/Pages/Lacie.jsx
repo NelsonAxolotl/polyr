@@ -153,7 +153,7 @@ const Lacie = () => {
             </div>
 
             <div className="bio-acteurs">
-              <h3>Les acteurs de la compagnie</h3>
+              <h3>Les artistes</h3>
             </div>
             <div id="thomas" className="personne-reverse">
               <div className="pic1">
