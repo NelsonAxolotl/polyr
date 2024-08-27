@@ -7,6 +7,8 @@ import opera4 from "../Pic/opera4.jpg";
 import opera5 from "../Pic/opera5.jpg";
 import opera6 from "../Pic/opera6.jpg";
 import opera7 from "../Pic/opera7.jpg";
+import opera9 from "../Pic/opera9.jpg";
+import opera20 from "../Pic/opera20.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -17,6 +19,8 @@ const images = [
   { src: opera5, alt: "Image 5" },
   { src: opera6, alt: "Image 6" },
   { src: opera7, alt: "Image 7" },
+  { src: opera9, alt: "Image 9" },
+  { src: opera20, alt: "Image 20" },
 ];
 
 const Gallery2 = () => {

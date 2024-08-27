@@ -9,7 +9,10 @@ import bastien3 from "../Pic/bastien3.jpg";
 import bastien4 from "../Pic/bastien4.jpg";
 import bastien5 from "../Pic/bastien5.jpg";
 import bastien6 from "../Pic/bastien6.jpg";
-
+import bastien20 from "../Pic/bastien20.jpg";
+import bastien21 from "../Pic/bastien21.jpg";
+import bastien22 from "../Pic/bastien22.jpg";
+import bastien23 from "../Pic/bastien23.jpg";
 const images = [
   { src: bastien1, alt: "Image 1" },
   { src: bastien2, alt: "Image 2" },
@@ -17,6 +20,10 @@ const images = [
   { src: bastien4, alt: "Image 4" },
   { src: bastien5, alt: "Image 5" },
   { src: bastien6, alt: "Image 6" },
+  { src: bastien20, alt: "Image 20" },
+  { src: bastien21, alt: "Image 21" },
+  { src: bastien22, alt: "Image 22" },
+  { src: bastien23, alt: "Image 23" },
 ];
 
 const Gallery = () => {
