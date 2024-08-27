@@ -49,7 +49,7 @@ body {
 }
 .showplus p {
   font-size: 1.2rem;
-  font-weight: bold;
+
   color: rgb(8, 7, 7);
   text-align: justify;
   max-width: 800px;
@@ -62,7 +62,7 @@ body {
 }
 .showplus1 p {
   font-size: 1.2rem;
-  font-weight: bold;
+
   color: rgb(8, 7, 7);
   text-align: justify;
   max-width: 800px;
@@ -208,5 +208,8 @@ body {
   }
   .gall h2 {
     margin-top: 0;
+  }
+  #roxane {
+    scroll-margin-top: 140px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
   }
 }

@@ -221,7 +221,7 @@ const Lacie = () => {
               </div>
               <div className="text1">
                 <p className="main-text">
-                  <span>Mélusine Escande</span> est <span>pianiste</span> et{" "}
+                  <span>Mélysine Escande</span> est <span>pianiste</span> et{" "}
                   <span>cheffe de chœur</span>. Après une licence de musicologie
                   à l’Université de Grenoble, elle se forme au sein des
                   conservatoires de Lyon et Chambéry dont elle est diplômée en
