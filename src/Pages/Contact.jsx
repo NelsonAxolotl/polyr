@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { Helmet } from "react-helmet"; // Import Helmet
 import "./Contact.css";
 import opera1 from "../Pic/opera1.jpg";
 import End from "../Component/End";
+
 const Contact = () => {
   const [enlargedImage, setEnlargedImage] = useState(null);
 
@@ -17,6 +19,14 @@ const Contact = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Compagnie Poly R - Contact</title>
+        <meta
+          name="description"
+          content="Contactez la Compagnie Poly R pour toute demande d'information ou de réservation. Retrouvez nos coordonnées et nos réseaux sociaux."
+        />
+      </Helmet>
+
       <div className="contact">
         <div className="show-titre2">
           <h1>Contact</h1>
@@ -29,11 +39,12 @@ const Contact = () => {
             <div className="resa">
               <div className="mail">
                 <span>
-                  <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
+                  <FontAwesomeIcon icon={faEnvelope} />
                 </span>
                 <span>
                   <a
                     target="_blank"
+                    rel="noopener noreferrer"
                     href="mailto:compagniepolyr@protonmail.com"
                   >
                     compagniepolyr@protonmail.com
@@ -42,7 +53,7 @@ const Contact = () => {
               </div>
               <div className="phone">
                 <span>
-                  <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>
+                  <FontAwesomeIcon icon={faPhone} />
                 </span>
                 <span>Hervé : 06 24 84 54 71</span>
               </div>
@@ -59,7 +70,7 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fa-brands fa-facebook"></i>
+              <i className="fa-brands fa-facebook"></i>
             </a>
           </div>
           <div className="insta">
@@ -68,7 +79,7 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-instagram"></i>
             </a>
           </div>
         </div>
@@ -77,7 +88,7 @@ const Contact = () => {
         <img
           src={opera1}
           alt="cie poly r"
-          class="responsive-img"
+          className="responsive-img"
           onClick={() => handleImageClick(opera1)}
         />
       </div>
@@ -95,4 +106,5 @@ const Contact = () => {
     </>
   );
 };
+
 export default Contact;

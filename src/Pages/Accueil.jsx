@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import End from "../Component/End";
+import Helmet from "react-helmet";
 import "./Accueil.css";
 import poly from "../Pic/polyrgroupe.jpg";
 import polyr from "../Pic/polyrfiche.jpg";
@@ -7,8 +8,10 @@ import opera from "../Pic/opera.jpg";
 import operagroupe from "../Pic/operagroupe.jpg";
 import presse from "../Pic/presse.jpg";
 import allgroupe from "../Pic/allgroupe.jpg";
+
 const Accueil = () => {
   const [enlargedImage, setEnlargedImage] = useState(null);
+
   const handleImageClick = (image) => {
     setEnlargedImage(image);
   };
@@ -16,8 +19,30 @@ const Accueil = () => {
   const handleCloseImage = () => {
     setEnlargedImage(null);
   };
+
   return (
     <>
+      <Helmet>
+        <title>Compagnie Poly R - Accueil</title>
+        <meta
+          name="description"
+          content="Découvrez la Compagnie Poly R, une compagnie pluridisciplinaire située à Lyon. Explorez nos spectacles mêlant chant, danse, théâtre, et marionnettes."
+        />
+        <meta
+          name="keywords"
+          content="Compagnie Poly R, Lyon, théâtre, opéra, marionnettes, danse"
+        />
+        <meta name="author" content="Compagnie Poly R" />
+        <meta property="og:title" content="Compagnie Poly R - Accueil" />
+        <meta
+          property="og:description"
+          content="Découvrez la Compagnie Poly R et ses spectacles pluridisciplinaires à Lyon."
+        />
+        <meta property="og:image" content={poly} />
+        <meta property="og:url" content="https://www.votre-site.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
       <div className="main-accueil">
         <div className="tittle-poly">
           <h1>Compagnie</h1>
@@ -26,7 +51,7 @@ const Accueil = () => {
         <div className="poly-intro">
           <p>
             La compagnie <span>Poly R </span>est une compagnie
-            pluridisciplinaire qui mêlent les arts de la scènes avec comme
+            pluridisciplinaire qui mêle les arts de la scène avec comme
             principales disciplines le chant opératique, la danse, le théâtre et
             également les marionnettes.
           </p>
@@ -79,7 +104,7 @@ const Accueil = () => {
           <button
             onClick={() =>
               (window.location.href =
-                "https://www.le-pays.fr/ montbrison-42600/actualites/ des-collegiens-sensibilises-a- lopera_14512862/")
+                "https://www.le-pays.fr/montbrison-42600/actualites/des-collegiens-sensibilises-a-lopera_14512862/")
             }
           >
             Article
@@ -88,14 +113,14 @@ const Accueil = () => {
         <div className="article">
           <img
             src={presse}
-            alt="phot article de presse"
+            alt="photo article de presse"
             onClick={() => handleImageClick(presse)}
             loading="lazy"
           />
         </div>
         <div className="reseau">
           <h3>
-            Nous Suivre<span class="dots">.</span>
+            Nous Suivre<span className="dots">.</span>
           </h3>
         </div>
         <div className="icon">
@@ -105,7 +130,7 @@ const Accueil = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fa-brands fa-facebook"></i>
+              <i className="fa-brands fa-facebook"></i>
             </a>
           </div>
           <div className="insta">
@@ -114,7 +139,7 @@ const Accueil = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-instagram"></i>
             </a>
           </div>
         </div>
@@ -122,7 +147,7 @@ const Accueil = () => {
           <img
             src={allgroupe}
             alt="cie poly r"
-            class="responsive-img"
+            className="responsive-img"
             onClick={() => handleImageClick(allgroupe)}
           />
         </div>
@@ -141,4 +166,5 @@ const Accueil = () => {
     </>
   );
 };
+
 export default Accueil;

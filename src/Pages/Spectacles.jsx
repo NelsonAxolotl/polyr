@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet"; // Import Helmet
 import End from "../Component/End";
 import Gallery from "../Component/Gallery";
 import Gallery2 from "../Component/Gallery2";
@@ -43,6 +44,14 @@ const Spectacles = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Compagnie Poly R - Spectacles</title>
+        <meta
+          name="description"
+          content="Découvrez les spectacles de la Compagnie Poly R, dont L'Opéramobil' et Bastien & Bastienne. Des performances uniques avec des artistes talentueux."
+        />
+      </Helmet>
+
       <div className="show">
         <div className="show-titre">
           <h1>Spectacles</h1>
@@ -186,4 +195,5 @@ const Spectacles = () => {
     </>
   );
 };
+
 export default Spectacles;

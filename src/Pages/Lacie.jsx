@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet"; // Importer Helmet
 import { Link } from "react-router-dom";
 import End from "../Component/End";
 import "./LaCie.css";
@@ -24,6 +25,14 @@ const Lacie = () => {
 
   return (
     <>
+      <Helmet>
+        <title>La Compagnie Poly R - Historique et Équipe</title>
+        <meta
+          name="description"
+          content="Découvrez l'historique et l'équipe artistique de la Compagnie Poly R, une compagnie lyonnaise créée par Roxane Macaudière et Hervé Le Bert."
+        />
+      </Helmet>
+
       <div className="main">
         <div className="cie">
           <h1>La Compagnie</h1>
@@ -142,8 +151,9 @@ const Lacie = () => {
                 />
               </div>
             </div>
-            <div className="line">
-              <div className="diviser"></div>
+
+            <div className="bio-acteurs">
+              <h3>Les acteurs de la compagnie</h3>
             </div>
             <div id="thomas" className="personne-reverse">
               <div className="pic1">
@@ -184,21 +194,17 @@ const Lacie = () => {
             <div id="nathan" className="personne">
               <div className="text1">
                 <p className="main-text">
-                  <span>Nathan Brunet</span> est <span>guitariste</span>,{" "}
-                  <span>sound designer</span>, <span>compositeur</span> et{" "}
-                  <span>claviériste</span>. <br />
-                  Après des études au conservatoire de Nancy, il s'installe à
-                  Lyon où il obtient un DUMI de musicien intervenant et où il
-                  perfectionne sa pratique de la guitare jazz à l'Ecole
-                  Nationale de Musique de Villeurbanne auprès de Pierre
-                  Hachache. <br />
-                  Nathan vient d'être reçu pour intégrer en septembre 2024 la
-                  nouvelle promotion du prestigieux Centre Didier Lockwood à
-                  Paris. Lors de la saison 2023/2024 Nathan est guitariste pour{" "}
-                  <Link to="/spectacles#bastien">
-                    <span>Bastien & Bastienne</span>
-                  </Link>
-                  .
+                  <span>Nathan Lapierre</span> est un jeune baryton, également
+                  comédien. <br />
+                  C'est au sein de la Maîtrise de la Loire qu'il s'initie à la
+                  musique et aux arts de la scène. <br />
+                  Sa curiosité pour ces différents arts scéniques se traduit par
+                  sa pratique du chant, mais aussi par celle de la flûte
+                  traversière qu'il développe au sein du CRD de Montbrison, puis
+                  du CRR de Saint-Etienne. <br />
+                  Actuellement en bachelor de physique-chimie à l'Université
+                  Lyon 1, Nathan poursuit son cursus en EPI à l'ENM de
+                  Villeurbanne.
                 </p>
               </div>
               <div className="pic1">
@@ -221,53 +227,45 @@ const Lacie = () => {
               </div>
               <div className="text1">
                 <p className="main-text">
-                  <span>Mélysine Escande</span> est <span>pianiste</span> et{" "}
-                  <span>cheffe de chœur</span>. Après une licence de musicologie
-                  à l’Université de Grenoble, elle se forme au sein des
-                  conservatoires de Lyon et Chambéry dont elle est diplômée en
-                  piano, accompagnement au piano, écriture et direction de
-                  chœur. <br />
-                  Passionnée de musique vocale, elle intègre l’Institut Royal
-                  Supérieur de Musique et de Pédagogie à Namur (Belgique).{" "}
-                  <br />
-                  Elle y obtient avec grande distinction un master en direction
-                  chorale et un master en accompagnement au piano. <br />
-                  Mélusine a travaillé pour les Chœurs d’Enfants et de Jeunes de
-                  La Monnaie, elle est à la tête de la chorale Royale Saint Rémy
-                  d’Ottignies et du chœur d’enfant les Piccolos de Nivelles.{" "}
-                  <br />
-                  Elle assure depuis la rentrée 2023 les cours de chant choral
-                  auprès de la classe à horaires aménagés du Lycée Français de
-                  Bruxelles. <br />
-                  En juillet 2024, Mélusine intègre{" "}
+                  <span>Mélysine de Coster</span> commence l'étude du violon à 6
+                  ans et intègre la même année la Maîtrise de la Loire. <br />
+                  Quelques années plus tard, elle se tourne vers{" "}
+                  <span>le chant lyrique</span> en 2020 et commence un cursus
+                  EPI à l’ENM de Villeurbanne. <br />
+                  Elle intègre, après l'obtention de son baccalauréat littéraire
+                  en 2021, la classe d'art dramatique de l'ENM Villeurbanne sous
+                  la direction de Nâzim Boudjenah, pensionnaire de la Comédie
+                  Française. <br />
+                  Passionnée par la danse, elle obtient en 2022 l’EAT (Examen
+                  d’Aptitudes Techniques) et est admissible au diplôme d’État de
+                  professeur de danse classique. <br />
+                  En 2023, elle obtient un rôle de soprano solo pour la{" "}
+                  <span>Petite Messe Solennelle</span> de Rossini, dans le cadre
+                  de la saison du conservatoire. <br />
+                  Cette saison Mélysine intègre la{" "}
                   <Link to="/spectacles#opera">
-                    <span>la troupe Opéramobil'</span>.
-                  </Link>{" "}
-                  en tant que pianiste accompagnatrice.
+                    <span>troupe Opéramobil'</span>.
+                  </Link>
                 </p>
               </div>
             </div>
             <div id="galtier" className="personne">
               <div className="text1">
                 <p className="main-text">
-                  <span>Galtier Le Bihan</span> est <span>guitariste</span>,{" "}
-                  <span>compositeur</span> et <span>arrangeur</span>. <br />
-                  Parallèlement à son cursus de guitare jazz à l'Ecole Nationale
-                  de Musique de Villeurbanne, Galtier s'illustre en tant que
-                  compositeur, interprète et improvisateur, et ce dans divers
-                  styles, aussi bien la funk que le rock. <br />
-                  Depuis deux ans, il est notamment membre du groupe lyonnais
-                  Bourricot Live Band. <br />
-                  Il enseigne également la guitare depuis plusieurs années.{" "}
-                  <br />
-                  Passionné d'art depuis son plus jeune âge, Galtier est
-                  toujours à l'affût de nouvelles expériences et est l'un des
-                  accompagnateurs de{" "}
-                  <Link to="/spectacles#opera">
-                    <span>la troupe Opéramobil'</span>.
+                  Passionné dès son plus jeune âge par l’Histoire,
+                  <span>Galtier Dupré</span> trouve son épanouissement dans le
+                  théâtre qu’il commence à pratiquer en 2018 à l’école de la
+                  Comédie de Saint-Étienne sous la direction de David
+                  Jauzion-Graverolles. <br />
+                  Actuellement étudiant en bachelor d’Histoire à Lyon, il
+                  continue à se former en art dramatique à l’ENM de Villeurbanne
+                  sous la direction de Nâzim Boudjenah, pensionnaire de la
+                  Comédie Française. <br />
+                  Cette saison, Galtier joue{" "}
+                  <Link to="/spectacles#bastien">
+                    <span>le rôle du récitant</span>
                   </Link>{" "}
-                  en juillet 2024, apportant ainsi une touche instrumentale
-                  moderne à la troupe.
+                  dans Bastien & Bastienne.
                 </p>
               </div>
               <div className="pic1">
@@ -290,54 +288,63 @@ const Lacie = () => {
               </div>
               <div className="text1">
                 <p className="main-text">
-                  <span>Fumi Oka</span> est une <span>chanteuse lyrique</span>{" "}
-                  mezzo-soprano d’origine japonaise. <br />
-                  Après avoir passé une licence de chant à Kyoto, elle arrive en
-                  France en 2019, où elle est admise à l’ENM de Villeurbanne
-                  dans la classe de Virginie Pochon. <br />
-                  Elle y obtient son DEM en 2023. <br />
-                  Depuis l'obtention de sa licence, elle a participé à plusieurs
-                  productions d’opéra en tant que choriste ainsi qu'en tant que
-                  soliste, s'illustrant avec brio dans divers rôles : Dorabella
-                  dans Cosi Fan Tutte de Mozart, Hänsel et Knusperhexe dans
-                  Hänsel und Gretel d’Humperdinck, Ms Todd dans The Old Maid and
-                  The Thief de Menotti et Carmen dans Carmen de Bizet. <br />
-                  Lors de la saison 2023/2024, elle est soliste dans{" "}
+                  Diplômée de l’Université des Arts d’Osaka au Japon,{" "}
+                  <span>Fumi Masuda</span> travaille comme graphiste et
+                  illustratrice depuis 2017. <br />
+                  Elle collabore notamment avec le célèbre studio d’animation
+                  Kyoto Animation, où elle développe ses compétences en design
+                  graphique et participe à plusieurs projets d’animation. <br />
+                  En 2023, elle réalise le design et les illustrations des
+                  décors du spectacle{" "}
                   <Link to="/spectacles#bastien">
-                    <span>Bastien & Bastienne</span>
+                    <span>Bastien & Bastienne</span>.
                   </Link>{" "}
-                  et intègre{" "}
-                  <Link to="/spectacles#opera">
-                    <span>la troupe Opéramobil'</span>
-                  </Link>{" "}
-                  de la compagnie.
+                  Fumi crée également l’identité graphique et les illustrations
+                  de{" "}
+                  <Link to="/">
+                    <span>la compagnie Poly R.</span>
+                  </Link>
                 </p>
+              </div>
+            </div>
+            <div id="draw" className="personne">
+              <div className="text1">
+                <p className="main-text">
+                  Diplômé de l’École Supérieure des Arts Saint-Luc de Liège,
+                  <span>Alexandre Capelli</span> travaille depuis plus de 10 ans
+                  comme graphiste freelance et illustrateur. <br />
+                  Il développe un style unique mêlant peinture digitale et
+                  techniques traditionnelles pour créer des œuvres expressives
+                  et colorées. <br />
+                  En 2023, Alexandre crée{" "}
+                  <Link to="/spectacles#opera">
+                    <span>les illustrations</span>
+                  </Link>{" "}
+                  du spectacle Bastien & Bastienne et collabore à l’élaboration
+                  des décors avec Fumi Masuda.
+                </p>
+              </div>
+              <div className="pic1">
+                <img
+                  src={draw}
+                  alt="photo alexandre"
+                  onClick={() => handleImageClick(draw)}
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="pic10">
-        <img
-          src={draw}
-          alt="dessin poly r"
-          class="responsive-img10"
-          onClick={() => handleImageClick(draw)}
-        />
+        {enlargedImage && (
+          <div className="enlarged-image" onClick={handleCloseImage}>
+            <img src={enlargedImage} alt="Enlarged" />
+          </div>
+        )}
       </div>
 
-      {enlargedImage && (
-        <div className="overlay" onClick={handleCloseImage}>
-          <div className="enlarged-image-container">
-            <img src={enlargedImage} alt="Enlarged" />
-            <button className="close-button" onClick={handleCloseImage}>
-              ×
-            </button>
-          </div>
-        </div>
-      )}
       <End />
     </>
   );
 };
+
 export default Lacie;
