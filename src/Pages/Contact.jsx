@@ -1,8 +1,20 @@
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./Contact.css";
+import opera1 from "../Pic/opera1.jpg";
 import End from "../Component/End";
 const Contact = () => {
+  const [enlargedImage, setEnlargedImage] = useState(null);
+
+  const handleImageClick = (image) => {
+    setEnlargedImage(image);
+  };
+
+  const handleCloseImage = () => {
+    setEnlargedImage(null);
+  };
+
   return (
     <>
       <div className="contact">
@@ -61,6 +73,24 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <div className="pic">
+        <img
+          src={opera1}
+          alt="cie poly r"
+          class="responsive-img"
+          onClick={() => handleImageClick(opera1)}
+        />
+      </div>
+      {enlargedImage && (
+        <div className="overlay" onClick={handleCloseImage}>
+          <div className="enlarged-image-container">
+            <img src={enlargedImage} alt="Enlarged" />
+            <button className="close-button" onClick={handleCloseImage}>
+              ×
+            </button>
+          </div>
+        </div>
+      )}
       <End />
     </>
   );

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import End from "../Component/End";
 import "./LaCie.css";
 import roxane from "../Pic/roxane.jpg";
@@ -69,8 +70,8 @@ const Lacie = () => {
                   où elle obtient son diplôme de fin d'études 4 ans plus tard.{" "}
                   <br />
                   Après ce début de chemin artistique, c'est à Lyon qu'elle
-                  s'envole pour étudier le chant lyrique aux côtés de Cécile de
-                  Boever. <br />
+                  s'envole pour étudier <span>le chant lyrique</span> aux côtés
+                  de Cécile de Boever. <br />
                   Elle intègre parallèlement l'ENM de Villeurbanne, dans la
                   classe de Virginie Pochon et y suit un cursus de EPI. <br />
                   Sa passion pour la pluralité des arts la pousse à intégrer
@@ -88,27 +89,48 @@ const Lacie = () => {
                   la Haute École de Musique de Genève dans la classe de Heidi
                   Brünner pour la rentrée 2024-2025.
                   <br />
-                  Depuis 2023, elle co-dirige la compagnie Poly R avec Hervé Le
-                  Bert tout en faisant partie du spectacle Bastien & Bastienne
-                  ainsi que de la troupe Opéramobil'.
+                  Depuis 2023, elle co-dirige{" "}
+                  <Link to="/">
+                    <span>la compagnie Poly R</span>{" "}
+                  </Link>
+                  avec Hervé Le Bert tout en faisant partie du spectacle{" "}
+                  <Link to="/spectacles#bastien">
+                    <span>Bastien & Bastienne</span>
+                  </Link>{" "}
+                  ainsi que de{" "}
+                  <Link to="/spectacles#opera">
+                    <span>la troupe Opéramobil'</span>
+                  </Link>
+                  .
                 </p>
               </div>
             </div>
             <div id="herve" className="personne">
               <div className="text1">
                 <p className="main-text">
-                  <span>Hervé LE BERT</span> est ténor lyrique et comédien, il
-                  se passionne dès sa petite enfance pour la musique. Son
-                  parcours à la maîtrise de la Loire lui permettra de trouver sa
-                  "voix". <br />
+                  <span>Hervé LE BERT</span> est{" "}
+                  <span>ténor lyrique et comédien</span>, il se passionne dès sa
+                  petite enfance pour la musique. Son parcours à la maîtrise de
+                  la Loire lui permettra de trouver sa "voix". <br />
                   Il y découvre l'Opéra, une expérience qui est une révélation.{" "}
                   <br />
-                  Depuis 2019 il étudie le chant lyrique avec le ténor Yannick
-                  Berne en parallèle de ses études à l'ENM dans la classe de
-                  chant de Virginie Pochon et au théâtre de l'Iris. <br />
-                  En 2023 il co-créé la compagnie Poly R qu'il dirige avec
-                  Roxane Macaudière. Il est Bastien dans le spectacle Bastien &
-                  Bastienne et intègre également la troupe Opéramobil'.
+                  Depuis 2019 il étudie <span>le chant lyrique</span> avec le
+                  ténor Yannick Berne en parallèle de ses études à l'ENM dans la
+                  classe de chant de Virginie Pochon et au théâtre de l'Iris.{" "}
+                  <br />
+                  En 2023 il co-créé{" "}
+                  <Link to="/">
+                    <span>la compagnie Poly R</span>{" "}
+                  </Link>{" "}
+                  qu'il dirige avec Roxane Macaudière. Il est Bastien dans le
+                  spectacle{" "}
+                  <Link to="/spectacles#bastien">
+                    <span>Bastien & Bastienne</span>
+                  </Link>{" "}
+                  et intègre également
+                  <Link to="/spectacles#opera">
+                    <span> la troupe Opéramobil'</span>.
+                  </Link>
                 </p>
               </div>
               <div className="pic1">
@@ -143,23 +165,28 @@ const Lacie = () => {
                   au conservatoire Massenet, puis à l’ENM de Villeurbanne.{" "}
                   <br />
                   Ayant obtenu, en parallèle d’une licence de musicologie, son
-                  Certificat d’Études Musicales de direction, de violon et de
-                  formation musicale, il continu de développer sa pratique du
-                  chant lyrique auprès de Nicolas Domingues, ce qui l’a amené à
-                  participer à des projets en tant que choriste dans des
-                  ensembles semi-professionnels comme Symphonietta ou Anarrès,
-                  mais également en tant que soliste, dans le rôle de Pish-Tush
-                  du Mikado de Sullivan. <br />
-                  En juillet 2024, Thomas intègre la troupe Opéramobil' en tant
-                  que chanteur et violoniste.
+                  Certificat d’Études Musicales de direction, de{" "}
+                  <span>violon</span> et de formation musicale, il continu de
+                  développer sa pratique du <span>chant lyrique</span> auprès de
+                  Nicolas Domingues, ce qui l’a amené à participer à des projets
+                  en tant que choriste dans des ensembles semi-professionnels
+                  comme Symphonietta ou Anarrès, mais également en tant que
+                  soliste, dans le rôle de Pish-Tush du Mikado de Sullivan.{" "}
+                  <br />
+                  En juillet 2024, Thomas intègre{" "}
+                  <Link to="/spectacles#opera">
+                    <span>la troupe Opéramobil'</span>.
+                  </Link>
+                  en tant que chanteur et violoniste.
                 </p>
               </div>
             </div>
             <div id="nathan" className="personne">
               <div className="text1">
                 <p className="main-text">
-                  <span>Nathan Brunet</span> est guitariste, sound designer,
-                  compositeur et claviériste. <br />
+                  <span>Nathan Brunet</span> est <span>guitariste</span>,{" "}
+                  <span>sound designer</span>, <span>compositeur</span> et{" "}
+                  <span>claviériste</span>. <br />
                   Après des études au conservatoire de Nancy, il s'installe à
                   Lyon où il obtient un DUMI de musicien intervenant et où il
                   perfectionne sa pratique de la guitare jazz à l'Ecole
@@ -167,8 +194,11 @@ const Lacie = () => {
                   Hachache. <br />
                   Nathan vient d'être reçu pour intégrer en septembre 2024 la
                   nouvelle promotion du prestigieux Centre Didier Lockwood à
-                  Paris. Lors de la saison 2023/2024 Nathan est guitariste pour
-                  le spectacle Bastien & Bastienne.
+                  Paris. Lors de la saison 2023/2024 Nathan est guitariste pour{" "}
+                  <Link to="/spectacles#bastien">
+                    <span>Bastien & Bastienne</span>
+                  </Link>
+                  .
                 </p>
               </div>
               <div className="pic1">
@@ -191,11 +221,12 @@ const Lacie = () => {
               </div>
               <div className="text1">
                 <p className="main-text">
-                  <span>Mélusine Escande</span> est pianiste et cheffe de chœur.
-                  Après une licence de musicologie à l’Université de Grenoble,
-                  elle se forme au sein des conservatoires de Lyon et Chambéry
-                  dont elle est diplômée en piano, accompagnement au piano,
-                  écriture et direction de chœur. <br />
+                  <span>Mélusine Escande</span> est <span>pianiste</span> et{" "}
+                  <span>cheffe de chœur</span>. Après une licence de musicologie
+                  à l’Université de Grenoble, elle se forme au sein des
+                  conservatoires de Lyon et Chambéry dont elle est diplômée en
+                  piano, accompagnement au piano, écriture et direction de
+                  chœur. <br />
                   Passionnée de musique vocale, elle intègre l’Institut Royal
                   Supérieur de Musique et de Pédagogie à Namur (Belgique).{" "}
                   <br />
@@ -208,16 +239,19 @@ const Lacie = () => {
                   Elle assure depuis la rentrée 2023 les cours de chant choral
                   auprès de la classe à horaires aménagés du Lycée Français de
                   Bruxelles. <br />
-                  En juillet 2024, Mélusine intègre la troupe Opéramobil' en
-                  tant que pianiste accompagnatrice.
+                  En juillet 2024, Mélusine intègre{" "}
+                  <Link to="/spectacles#opera">
+                    <span>la troupe Opéramobil'</span>.
+                  </Link>{" "}
+                  en tant que pianiste accompagnatrice.
                 </p>
               </div>
             </div>
             <div id="galtier" className="personne">
               <div className="text1">
                 <p className="main-text">
-                  <span>Galtier Le Bihan</span> est guitariste, compositeur et
-                  arrangeur. <br />
+                  <span>Galtier Le Bihan</span> est <span>guitariste</span>,{" "}
+                  <span>compositeur</span> et <span>arrangeur</span>. <br />
                   Parallèlement à son cursus de guitare jazz à l'Ecole Nationale
                   de Musique de Villeurbanne, Galtier s'illustre en tant que
                   compositeur, interprète et improvisateur, et ce dans divers
@@ -228,8 +262,12 @@ const Lacie = () => {
                   <br />
                   Passionné d'art depuis son plus jeune âge, Galtier est
                   toujours à l'affût de nouvelles expériences et est l'un des
-                  accompagnateurs de l'Opéramobil' en juillet 2024, apportant
-                  ainsi une touche instrumentale moderne à la troupe.
+                  accompagnateurs de{" "}
+                  <Link to="/spectacles#opera">
+                    <span>la troupe Opéramobil'</span>.
+                  </Link>{" "}
+                  en juillet 2024, apportant ainsi une touche instrumentale
+                  moderne à la troupe.
                 </p>
               </div>
               <div className="pic1">
@@ -252,19 +290,27 @@ const Lacie = () => {
               </div>
               <div className="text1">
                 <p className="main-text">
-                  <span>Fumi Oka</span> est une chanteuse lyrique mezzo-soprano
-                  d’origine japonaise. Après avoir passé une licence de chant à
-                  Kyoto, elle arrive en France en 2019, où elle est admise à
-                  l’ENM de Villeurbanne dans la classe de Virginie Pochon. Elle
-                  y obtient son DEM en 2023. Depuis l'obtention de sa licence,
-                  elle a participé à plusieurs productions d’opéra en tant que
-                  choriste ainsi qu'en tant que soliste, s'illustrant avec brio
-                  dans divers rôles : Dorabella dans Cosi Fan Tutte de Mozart,
-                  Hänsel et Knusperhexe dans Hänsel und Gretel d’Humperdinck, Ms
-                  Todd dans The Old Maid and The Thief de Menotti et Carmen dans
-                  Carmen de Bizet. Lors de la saison 2023/2024, elle est soliste
-                  dans le spectacle Bastien & Bastienne et intègre la troupe
-                  Opéramobil' de la compagnie.
+                  <span>Fumi Oka</span> est une <span>chanteuse lyrique</span>{" "}
+                  mezzo-soprano d’origine japonaise. <br />
+                  Après avoir passé une licence de chant à Kyoto, elle arrive en
+                  France en 2019, où elle est admise à l’ENM de Villeurbanne
+                  dans la classe de Virginie Pochon. <br />
+                  Elle y obtient son DEM en 2023. <br />
+                  Depuis l'obtention de sa licence, elle a participé à plusieurs
+                  productions d’opéra en tant que choriste ainsi qu'en tant que
+                  soliste, s'illustrant avec brio dans divers rôles : Dorabella
+                  dans Cosi Fan Tutte de Mozart, Hänsel et Knusperhexe dans
+                  Hänsel und Gretel d’Humperdinck, Ms Todd dans The Old Maid and
+                  The Thief de Menotti et Carmen dans Carmen de Bizet. <br />
+                  Lors de la saison 2023/2024, elle est soliste dans{" "}
+                  <Link to="/spectacles#bastien">
+                    <span>Bastien & Bastienne</span>
+                  </Link>{" "}
+                  et intègre{" "}
+                  <Link to="/spectacles#opera">
+                    <span>la troupe Opéramobil'</span>
+                  </Link>{" "}
+                  de la compagnie.
                 </p>
               </div>
             </div>

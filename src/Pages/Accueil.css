@@ -96,7 +96,7 @@
   /* border: 1px solid bisque; */
   padding: 10px;
   border-radius: 5px;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .split p {
   margin: 30px 10px;
@@ -166,8 +166,8 @@
 }
 
 .presse button:hover {
-  color: rgb(0, 0, 0);
-  background-color: yellow; /* Couleur de fond du bouton au survol */
+  color: white;
+  background-color: bisque; /* Couleur de fond du bouton au survol */
   border: 1px solid white;
   transform: scale(1.03);
 }
@@ -270,7 +270,8 @@
 }
 
 .icon i:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
+  color: bisque;
 }
 
 .overlay {

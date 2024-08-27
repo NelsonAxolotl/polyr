@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Gallery2.css";
 import Slider from "react-slick";
-import opera1 from "../Pic/opera1.jpg";
 import opera2 from "../Pic/opera2.jpg";
 import opera3 from "../Pic/opera3.jpg";
 import opera4 from "../Pic/opera4.jpg";
@@ -12,7 +11,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const images = [
-  { src: opera1, alt: "Image 1" },
   { src: opera2, alt: "Image 2" },
   { src: opera3, alt: "Image 3" },
   { src: opera4, alt: "Image 4" },

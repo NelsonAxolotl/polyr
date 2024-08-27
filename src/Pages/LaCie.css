@@ -152,6 +152,9 @@ body {
   cursor: pointer;
 }
 @media (max-width: 768px) {
+  .main {
+    padding-bottom: 50px;
+  }
   .cie h1 {
     font-size: 3.8rem;
     margin-top: -30px;
@@ -173,7 +176,7 @@ body {
     margin-bottom: 20px;
   }
   .diviser {
-    margin-top: 10px;
+    margin-top: -15px;
     margin-bottom: 40px;
   }
   .artistes {
@@ -185,7 +188,7 @@ body {
     gap: 20px;
     align-items: center;
     margin-top: 0;
-    margin-bottom: -80px;
+    margin-bottom: -70px;
   }
   .pic1 {
     display: flex;
@@ -196,7 +199,7 @@ body {
   }
   .pic1 img {
     height: 360px;
-    width: 100%;
+    width: 50%;
   }
   .text1 {
     max-width: 100%;
@@ -209,7 +212,7 @@ body {
     gap: 20px;
     align-items: center;
     margin-top: 0;
-    margin-bottom: -60px;
+    margin-bottom: -70px;
   }
   .text1 p {
     font-size: 1.1rem; /* Ajustement de la taille du texte pour les petits écrans */
@@ -217,5 +220,33 @@ body {
   }
   .pic10 {
     height: 200px;
+  }
+}
+@media (max-width: 700px) {
+  .pic1 img {
+    height: 450px;
+    width: 70%;
+    margin-top: -70px;
+  }
+  .text1 {
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 650px) {
+  .pic1 img {
+    height: 460px;
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .pic1 img {
+    height: 360px;
+    width: 100%;
+    margin-top: 0;
+  }
+  .text1 {
+    max-width: 100%;
+    margin-bottom: 0;
   }
 }

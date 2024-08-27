@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import End from "../Component/End";
 import Gallery from "../Component/Gallery";
 import Gallery2 from "../Component/Gallery2";
@@ -10,47 +11,72 @@ import bastien from "../Pic/bastien.jpg";
 import bastienne from "../Pic/bastienne.jpg";
 
 const Spectacles = () => {
-  const [enlargedImage, setEnlargedImage] = useState(null);
+  const [imageAgrandie, setImageAgrandie] = useState(null);
+
+  const operaRef = useRef(null);
+  const bastienRef = useRef(null);
+
   const handleImageClick = (image) => {
-    setEnlargedImage(image);
+    setImageAgrandie(image);
   };
 
   const handleCloseImage = () => {
-    setEnlargedImage(null);
+    setImageAgrandie(null);
   };
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      let element = null;
+      if (location.hash === "#opera") {
+        element = operaRef.current;
+      } else if (location.hash === "#bastien") {
+        element = bastienRef.current;
+      }
+
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  }, [location]);
+
   return (
     <>
       <div className="show">
         <div className="show-titre">
           <h1>Spectacles</h1>
         </div>
-        <div className="showplus">
+        <div id="opera" className="showplus" ref={operaRef}>
           <h2>L'opéramobil'</h2>
           <p>
-            <span>L’Opéramobil’</span> est une troupe itinérante portée par la
-            Compagnie <span>Poly R</span> ayant pour objectif de remettre au
-            goût du jour l’art de l’Opéra.
+            <span>L’Opéramobil’</span> est une troupe itinérante portée par{" "}
+            <Link to="/lacie">
+              <span>la Compagnie Poly R</span>
+            </Link>{" "}
+            ayant pour objectif de remettre au goût du jour l’art de l’Opéra.
             <br />
             Elle rassemble six artistes pluridisciplinaires professionnels ou en
             cours de professionnalisation. <br />
-            En juillet 2024 la troupe s’est produit pour la première fois
+            En juillet 2024, la troupe s’est produite pour la première fois
             pendant 5 jours dans le département de la Loire en Région
             Rhône-Alpes. <br />
             Accompagnés par leur piano droit transporté sur une remorque, les
             talentueux artistes chanteurs lyriques, pianistes, et guitariste ont
-            fait découvrir ou redécouvrir airs d’opéra, de comédie musicale et
-            standards de jazz à un public curieux et attentif. <br />
+            fait découvrir ou redécouvrir des airs d’opéra, de comédie musicale
+            et des standards de jazz à un public curieux et attentif. <br />
             Ils ont chanté à pleine voix chaque matin lors des marchés de
-            Roanne, Le Coteau, Feurs, Montrond-les- Bains et Civens, et chaque
+            Roanne, Le Coteau, Feurs, Montrond-les-Bains et Civens, et chaque
             soir dans des lieux insolites tels que la P’tite ferme biologique de
-            Rozier-en- Donzy, aux Ruines de Donzy de Salt-en-Donzy dans un cadre
+            Rozier-en-Donzy, aux Ruines de Donzy de Salt-en-Donzy dans un cadre
             paradisiaque au bord de la rivière, pendant la guinguette estivale
             annuelle de Le Coteau, ou encore à côté du Château de Cleppé dans
             une immense grange aménagée. <br />
-            Le public visiblement ravi a ainsi pu se laisser porter par des
+            Le public, visiblement ravi, a ainsi pu se laisser porter par des
             programmes musicaux éclectiques et forts en émotions et en a
-            redemandé, c’est pourquoi L’Opéramobil’sera de retour en juillet
-            2025 pour une saison 2 qui s’annonce opératiquement explosive !
+            redemandé, c’est pourquoi <span>L’Opéramobil’</span> sera de retour
+            en juillet 2025 pour une saison 2 qui s’annonce opératiquement
+            explosive !
           </p>
           <div className="pic-opera">
             <img
@@ -90,7 +116,8 @@ const Spectacles = () => {
           <h2>Galerie</h2>
         </div>
         <Gallery2 />
-        <div className="showplus">
+
+        <div id="bastien" className="showplus1" ref={bastienRef}>
           <h2>Bastien & Bastienne</h2>
           <p>
             <span>Bastien & Bastienne</span> est un spectacle pour enfants créé
@@ -102,24 +129,24 @@ const Spectacles = () => {
             Pour l’occasion, une troupe d’artistes professionnels ou en voie de
             professionnalisation a été créée. Elle est composée de Roxane
             Macaudière, Hervé Le Bert, Fumi Oka et Nathan Brunet. <br />
-            La troupe a eu le bonheur de donner en représentation ce spectacle
+            La troupe a eu le bonheur de donner ce spectacle en représentation
             dans six établissements scolaires de la Loire en Région Rhône-Alpes
             durant l’année 2023/2024, proposant à chaque fois aux enfants âgés
             de 4 à 12 ans des ateliers interactifs autour de l’Opéra, de la
-            danse et du théâtre suivis d’une représentation du spectacle dans
+            danse et du théâtre, suivis d’une représentation du spectacle dans
             laquelle les enfants participaient et interagissaient avec les
             artistes.
           </p>
           <div className="pic-opera">
             <img
               src={bastien}
-              alt="Opéra Mobile groupe"
+              alt="Bastien"
               onClick={() => handleImageClick(bastien)}
               loading="lazy"
             />
             <img
               src={bastienne}
-              alt="logo Opéra Mobile"
+              alt="Bastienne"
               onClick={() => handleImageClick(bastienne)}
               loading="lazy"
             />
@@ -146,10 +173,10 @@ const Spectacles = () => {
       </div>
 
       <End />
-      {enlargedImage && (
+      {imageAgrandie && (
         <div className="overlay" onClick={handleCloseImage}>
           <div className="enlarged-image-container">
-            <img src={enlargedImage} alt="Enlarged" />
+            <img src={imageAgrandie} alt="Agrandie" />
             <button className="close-button" onClick={handleCloseImage}>
               ×
             </button>

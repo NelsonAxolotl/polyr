@@ -53,7 +53,7 @@ const Accueil = () => {
           />
         </div>
         <div className="actu">
-          <h3>Actu !</h3>
+          <h3>Actu</h3>
           <div className="split">
             <p>À venir Juillet 2025 </p>
             <span>Opéramobil ' saison 2 !!!</span>
