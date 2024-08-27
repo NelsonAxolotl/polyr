@@ -161,6 +161,7 @@ body {
   }
   .historique h2 {
     margin-top: 50px;
+    font-size: 2.2rem;
   }
   .cie-text p {
     font-size: 1rem;
@@ -215,7 +216,7 @@ body {
     margin-bottom: -70px;
   }
   .text1 p {
-    font-size: 1.1rem; /* Ajustement de la taille du texte pour les petits écrans */
+    font-size: 1rem; /* Ajustement de la taille du texte pour les petits écrans */
     padding: 0px 0;
   }
   .pic10 {

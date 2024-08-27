@@ -97,6 +97,7 @@
   padding: 10px;
   border-radius: 5px;
   margin-top: 60px;
+  font-weight: bold;
 }
 .split p {
   margin: 30px 10px;
@@ -137,6 +138,7 @@
   margin-top: 100px;
   font-size: 3rem;
   color: bisque;
+  font-weight: bold;
 }
 .presse p {
   font-size: 1.4rem;
@@ -370,7 +372,7 @@
     margin-top: 20px;
   }
   .suite-intro span {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .poly-pic {
     flex-direction: column;
@@ -399,6 +401,10 @@
   }
   .actu h3 {
     margin-top: 0;
+    font-size: 3rem;
+  }
+  .split {
+    margin-bottom: 20px;
   }
   .split p {
     font-size: 1.1rem;
@@ -417,7 +423,7 @@
     font-size: 1.2rem;
   }
   .reseau h3 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin-top: 0;
   }
 }
