@@ -210,6 +210,6 @@ body {
     margin-top: 0;
   }
   #roxane {
-    scroll-margin-top: 140px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
+    scroll-margin-top: 160px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
   }
 }
