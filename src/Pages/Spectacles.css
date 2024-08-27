@@ -148,7 +148,7 @@ body {
   scroll-margin-top: 100px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
 }
 #roxane {
-  scroll-margin-top: 100px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
+  scroll-margin-top: 130px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
 }
 #herve {
   scroll-margin-top: 160px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
@@ -211,5 +211,11 @@ body {
   }
   #roxane {
     scroll-margin-top: 160px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
+  }
+  #bastien {
+    scroll-margin-top: 120px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
+  }
+  #opera {
+    scroll-margin-top: 120px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
   }
 }
