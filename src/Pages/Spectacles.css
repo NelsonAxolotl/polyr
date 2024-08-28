@@ -147,22 +147,22 @@ body {
   scroll-margin-top: 130px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
 }
 #herve {
-  scroll-margin-top: 160px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
+  scroll-margin-top: 200px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
 }
 #thomas {
-  scroll-margin-top: 160px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
+  scroll-margin-top: 170px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
 }
 #melysine {
   scroll-margin-top: 160px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
 }
 #galtier {
-  scroll-margin-top: 160px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
+  scroll-margin-top: 180px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
 }
 #fumi {
   scroll-margin-top: 160px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
 }
 #nathan {
-  scroll-margin-top: 160px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
+  scroll-margin-top: 200px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
 }
 
 @media (max-width: 768px) {
