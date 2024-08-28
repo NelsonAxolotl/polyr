@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { Helmet } from "react-helmet"; // Import Helmet
 import "./Contact.css";
-import opera1 from "../Pic/opera1.jpg";
+import poly25 from "../Pic/poly25.jpg";
 import End from "../Component/End";
 
 const Contact = () => {
@@ -84,12 +84,12 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="pic">
+      <div className="pic2">
         <img
-          src={opera1}
+          src={poly25}
           alt="cie poly r"
-          className="responsive-img"
-          onClick={() => handleImageClick(opera1)}
+          className="responsive-img2"
+          onClick={() => handleImageClick(poly25)}
         />
       </div>
       {enlargedImage && (

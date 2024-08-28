@@ -98,7 +98,7 @@ const Lacie = () => {
                   Brünner pour la rentrée 2024-2025.
                   <br />
                   Depuis 2023, elle co-dirige{" "}
-                  <Link to="/">
+                  <Link to="/accueil">
                     <span>la compagnie Poly R</span>{" "}
                   </Link>
                   avec Hervé Le Bert tout en faisant partie du spectacle{" "}
@@ -151,7 +151,7 @@ const Lacie = () => {
               </div>
             </div>
 
-            <div className="bio-acteurs">
+            <div className="bio">
               <h3>Les artistes</h3>
             </div>
             <div id="thomas" className="personne-reverse">

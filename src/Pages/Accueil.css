@@ -152,7 +152,9 @@
   gap: 15px; /* Espace entre le bouton et l'image */
   margin: 20px 0;
 }
-
+.presse {
+  margin-bottom: 20px;
+}
 .presse button {
   margin-top: 20px;
   padding: 10px 20px;

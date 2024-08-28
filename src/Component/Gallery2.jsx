@@ -1,26 +1,38 @@
 import React, { useState } from "react";
 import "./Gallery2.css";
 import Slider from "react-slick";
+import opera1 from "../Pic/opera1.jpg";
+import opera5 from "../Pic/opera5.jpg";
 import opera2 from "../Pic/opera2.jpg";
 import opera3 from "../Pic/opera3.jpg";
-import opera4 from "../Pic/opera4.jpg";
-import opera5 from "../Pic/opera5.jpg";
 import opera6 from "../Pic/opera6.jpg";
 import opera7 from "../Pic/opera7.jpg";
-import opera9 from "../Pic/opera9.jpg";
 import opera20 from "../Pic/opera20.jpg";
+import poly10 from "../Pic/poly10.jpg";
+import poly11 from "../Pic/poly11.jpg";
+import poly13 from "../Pic/poly13.jpg";
+import poly14 from "../Pic/poly14.jpg";
+import poly15 from "../Pic/poly15.jpg";
+import poly22 from "../Pic/poly22.jpg";
+import poly23 from "../Pic/poly23.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const images = [
-  { src: opera2, alt: "Image 2" },
-  { src: opera3, alt: "Image 3" },
-  { src: opera4, alt: "Image 4" },
-  { src: opera5, alt: "Image 5" },
+  { src: opera1, alt: "Image 1" },
+  { src: opera5, alt: "Image 5", className: "center-image2" },
+  { src: opera2, alt: "Image 2", className: "center-image2" },
+  { src: opera3, alt: "Image 3", className: "center-image2" },
+  { src: poly22, alt: "Image poly22" },
+  { src: poly23, alt: "Image poly23" },
   { src: opera6, alt: "Image 6" },
   { src: opera7, alt: "Image 7" },
-  { src: opera9, alt: "Image 9" },
   { src: opera20, alt: "Image 20" },
+  { src: poly11, alt: "Image 11", className: "center-image1" },
+  { src: poly13, alt: "Image 13", className: "center-image1" },
+  { src: poly14, alt: "Image 14", className: "center-image1" },
+  { src: poly15, alt: "Image 15", className: "center-image1" },
+  { src: poly10, alt: "Image 10" },
 ];
 
 const Gallery2 = () => {
@@ -35,26 +47,26 @@ const Gallery2 = () => {
   };
 
   const settings = {
-    dots: true, // Afficher les points de navigation
-    infinite: true, // Boucler les images
-    speed: 500, // Vitesse de transition (en ms)
-    slidesToShow: 1, // Nombre d'images à afficher en même temps
-    slidesToScroll: 1, // Nombre d'images à défiler à la fois
-    autoplay: true, // Activer le défilement automatique
-    autoplaySpeed: 3000, // Temps d'affichage de chaque image (en ms)
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
   };
 
   return (
-    <div className="gallery-container">
+    <div className="gallery-container1">
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index}>
             <img
               src={image.src}
               alt={image.alt}
-              className="gallery-image"
+              className={`gallery-image1 ${image.className || ""}`}
               loading="lazy"
-              onClick={() => handleImageClick(image.src)} // Ajouter onClick pour agrandir l'image
+              onClick={() => handleImageClick(image.src)}
             />
           </div>
         ))}

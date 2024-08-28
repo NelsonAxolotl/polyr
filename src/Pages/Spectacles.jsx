@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
-import { Helmet } from "react-helmet"; // Import Helmet
+import { Helmet } from "react-helmet";
 import End from "../Component/End";
 import Gallery from "../Component/Gallery";
 import Gallery2 from "../Component/Gallery2";
@@ -29,15 +29,13 @@ const Spectacles = () => {
 
   useEffect(() => {
     if (location.hash) {
-      let element = null;
-      if (location.hash === "#opera") {
-        element = operaRef.current;
-      } else if (location.hash === "#bastien") {
-        element = bastienRef.current;
-      }
-
+      const element = document.querySelector(location.hash);
       if (element) {
-        element.scrollIntoView({ behavior: "smooth", block: "start" });
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
       }
     }
   }, [location]);
@@ -161,7 +159,6 @@ const Spectacles = () => {
             />
           </div>
           <h3>Les artistes de la troupe</h3>
-
           <h4>
             <Link to="/lacie#fumi">Fumi Oka</Link>
           </h4>

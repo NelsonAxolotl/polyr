@@ -8,22 +8,30 @@ import bastien2 from "../Pic/bastien2.jpg";
 import bastien3 from "../Pic/bastien3.jpg";
 import bastien4 from "../Pic/bastien4.jpg";
 import bastien5 from "../Pic/bastien5.jpg";
-import bastien6 from "../Pic/bastien6.jpg";
 import bastien20 from "../Pic/bastien20.jpg";
 import bastien21 from "../Pic/bastien21.jpg";
 import bastien22 from "../Pic/bastien22.jpg";
 import bastien23 from "../Pic/bastien23.jpg";
+import poly24 from "../Pic/poly24.jpg";
+import poly1 from "../Pic/poly1.jpg";
+import poly16 from "../Pic/poly16.jpg";
+import poly17 from "../Pic/poly17.jpg";
+import poly18 from "../Pic/poly18.jpg";
 const images = [
   { src: bastien1, alt: "Image 1" },
-  { src: bastien2, alt: "Image 2" },
-  { src: bastien3, alt: "Image 3" },
-  { src: bastien4, alt: "Image 4" },
-  { src: bastien5, alt: "Image 5" },
-  { src: bastien6, alt: "Image 6" },
-  { src: bastien20, alt: "Image 20" },
   { src: bastien21, alt: "Image 21" },
   { src: bastien22, alt: "Image 22" },
   { src: bastien23, alt: "Image 23" },
+  { src: bastien2, alt: "Image 2" },
+  { src: poly24, alt: "Image poly24" },
+  { src: bastien3, alt: "Image 3" },
+  { src: bastien4, alt: "Image 4" },
+  { src: bastien5, alt: "Image 5" },
+  { src: poly1, alt: "Image ploy1" },
+  { src: poly16, alt: "Image ploy16" },
+  { src: poly17, alt: "Image ploy17" },
+  { src: poly18, alt: "Image ploy18" },
+  { src: bastien20, alt: "Image 20" },
 ];
 
 const Gallery = () => {

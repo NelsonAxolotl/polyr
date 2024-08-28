@@ -103,8 +103,10 @@ const Accueil = () => {
           <p>Spectacle "Bastien & Bastienne"</p>
           <button
             onClick={() =>
-              (window.location.href =
-                "https://www.le-pays.fr/montbrison-42600/actualites/des-collegiens-sensibilises-a-lopera_14512862/")
+              window.open(
+                "https://www.le-pays.fr/montbrison-42600/actualites/des-collegiens-sensibilises-a-lopera_14512862/",
+                "_blank"
+              )
             }
           >
             Article
