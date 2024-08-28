@@ -46,13 +46,13 @@ const Nav = () => {
         <meta name="description" content={`Page ${pageTitle()}`} />
       </Helmet>
       <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
-        <div className="navbar-logo" onClick={() => handleNavClick("/accueil")}>
+        <div className="navbar-logo" onClick={() => handleNavClick("/")}>
           <Link to="/">
             <img src={logo} alt="logo PolyR" />
           </Link>
         </div>
         <ul className="navbar-links">
-          <Link to="/accueil">
+          <Link to="/">
             <li
               className={`navbar-item slideInDown-1 ${
                 activeLink === "/" ? "active" : ""
