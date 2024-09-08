@@ -21,6 +21,7 @@ import bastien54 from "../Pic/bastien54.jpg";
 import bastien52 from "../Pic/bastien52.jpg";
 import bastien51 from "../Pic/bastien51.jpg";
 import bastien50 from "../Pic/bastien50.jpg";
+
 const images = [
   { src: bastien1, alt: "Image 1" },
   { src: bastien21, alt: "Image 21" },

@@ -24,19 +24,17 @@
   border-radius: 5px;
   width: 100%;
   padding: 25px;
-  width: 40%; /* Largeur de chaque section */
+  width: 40%;
   max-width: 500px;
   text-align: center;
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
 }
-
 .contact-section:hover {
   border: 1px solid bisque;
   background: rgb(34, 28, 36);
   color: bisque;
 }
-
 .resa-h2 h2 {
   padding-bottom: 30px;
   font-size: 2.7rem;
@@ -64,7 +62,6 @@
   color: rgb(148, 12, 194);
   font-weight: bold;
 }
-
 .reseaux h2 {
   font-size: 2.7rem;
   font-weight: bold;
@@ -105,7 +102,6 @@
   height: 400px;
   margin-top: 80px;
 }
-
 .responsive-img2 {
   width: 100%;
   height: 100%;
@@ -113,10 +109,11 @@
   object-position: center;
   cursor: pointer;
 }
+/*RESPONSIVE*/
 @media screen and (max-width: 1200px) {
   .contact-section {
     padding-bottom: 0;
-    width: 100%; /* Ajuste la largeur des sections pour les petits écrans */
+    width: 100%;
   }
 }
 @media screen and (max-width: 760px) {
@@ -128,8 +125,8 @@
   }
   .contact-section {
     padding-bottom: 0;
-    width: 100%; /* Ajuste la largeur des sections pour les petits écrans */
-    max-width: none; /* Supprime la largeur maximale */
+    width: 100%;
+    max-width: none;
   }
   .show-titre2 h1 {
     font-size: 3.8rem;

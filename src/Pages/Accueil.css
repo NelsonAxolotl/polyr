@@ -376,11 +376,9 @@
     align-items: center;
     gap: 20px;
   }
-
   .article img {
     width: 300px;
   }
-
   .pic {
     height: 200px;
   }
