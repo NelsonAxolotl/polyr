@@ -98,7 +98,7 @@ const Lacie = () => {
                   Brünner pour la rentrée 2024-2025.
                   <br />
                   Depuis 2023, elle co-dirige{" "}
-                  <Link to="/accueil">
+                  <Link to="/">
                     <span>la compagnie Poly R</span>{" "}
                   </Link>
                   avec Hervé Le Bert tout en faisant partie du spectacle{" "}
@@ -203,7 +203,8 @@ const Lacie = () => {
                   Hachache. <br />
                   Nathan vient d'être reçu pour intégrer en septembre 2024 la
                   nouvelle promotion du prestigieux Centre Didier Lockwood à
-                  Paris. Lors de la saison 2023/2024 Nathan est guitariste pour{" "}
+                  Paris. <br />
+                  Lors de la saison 2023/2024 Nathan est guitariste pour{" "}
                   <Link to="/spectacles#bastien">
                     <span>Bastien & Bastienne</span>
                   </Link>
@@ -273,7 +274,7 @@ const Lacie = () => {
                   toujours à l'affût de nouvelles expériences et est l'un des
                   accompagnateurs de{" "}
                   <Link to="/spectacles#opera">
-                    <span>la troupe Opéramobil'</span>.
+                    <span>la troupe Opéramobil'</span>
                   </Link>{" "}
                   en juillet 2024, apportant ainsi une touche instrumentale
                   moderne à la troupe.

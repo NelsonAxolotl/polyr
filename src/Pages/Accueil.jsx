@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 import End from "../Component/End";
 import Helmet from "react-helmet";
 import "./Accueil.css";
@@ -9,16 +10,28 @@ import operagroupe from "../Pic/operagroupe.jpg";
 import presse from "../Pic/presse.jpg";
 import allgroupe from "../Pic/allgroupe.jpg";
 
+const ImageOverlay = ({ image, onClose }) => (
+  <div className="overlay" onClick={onClose}>
+    <div className="enlarged-image-container">
+      <img src={image} alt="Enlarged" />
+      <button className="close-button" onClick={onClose}>
+        ×
+      </button>
+    </div>
+  </div>
+);
+
+const SocialLink = ({ href, iconClass }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer">
+    <i className={iconClass}></i>
+  </a>
+);
+
 const Accueil = () => {
   const [enlargedImage, setEnlargedImage] = useState(null);
 
-  const handleImageClick = (image) => {
-    setEnlargedImage(image);
-  };
-
-  const handleCloseImage = () => {
-    setEnlargedImage(null);
-  };
+  const handleImageClick = (image) => setEnlargedImage(image);
+  const handleCloseImage = () => setEnlargedImage(null);
 
   return (
     <>
@@ -44,61 +57,59 @@ const Accueil = () => {
       </Helmet>
 
       <div className="main-accueil">
-        <div className="tittle-poly">
+        <header className="tittle-poly">
           <h1>Compagnie</h1>
           <h2>Poly R</h2>
-        </div>
-        <div className="poly-intro">
+        </header>
+        <section className="poly-intro">
           <p>
-            La compagnie <span>Poly R </span>est une compagnie
+            La compagnie <span>Poly R</span> est une compagnie
             pluridisciplinaire qui mêle les arts de la scène avec comme
             principales disciplines le chant opératique, la danse, le théâtre et
             également les marionnettes.
           </p>
-        </div>
-        <div className="suite-intro">
-          <p>Cocréée et dirigée par </p>
-          <span>Hervé Le Bert et</span>
-          <span>Roxane Macaudière</span>
-          <span>située à Lyon en région AURA </span>
-        </div>
-        <div className="poly-pic">
-          <img
-            src={poly}
-            alt="photo cie Poly R"
-            onClick={() => handleImageClick(poly)}
-            loading="lazy"
-          />
-          <img
-            src={polyr}
-            alt="photo cie Poly R"
-            className="right-image"
-            onClick={() => handleImageClick(polyr)}
-            loading="lazy"
-          />
-        </div>
-        <div className="actu">
+        </section>
+        <section className="suite-intro">
+          <p>Cocréée et dirigée par</p>
+          <span>
+            {" "}
+            <Link to="/lacie#herve">Hervé Le Bert</Link> et
+          </span>
+          <span>
+            <Link to="/lacie#roxane">Roxane Macaudière</Link>
+          </span>
+          <span>située à Lyon en région AURA</span>
+        </section>
+        <section className="poly-pic">
+          {[poly, polyr].map((src, index) => (
+            <img
+              key={index}
+              src={src}
+              alt={`photo cie Poly R ${index + 1}`}
+              onClick={() => handleImageClick(src)}
+              loading="lazy"
+            />
+          ))}
+        </section>
+        <section className="actu">
           <h3>Actu</h3>
           <div className="split">
-            <p>À venir Juillet 2025 </p>
+            <p>À venir Juillet 2025</p>
             <span>Opéramobil ' saison 2 !!!</span>
           </div>
           <div className="pic-opera">
-            <img
-              src={operagroupe}
-              alt="Opéra Mobile groupe"
-              onClick={() => handleImageClick(operagroupe)}
-              loading="lazy"
-            />
-            <img
-              src={opera}
-              alt="logo Opéra Mobile"
-              onClick={() => handleImageClick(opera)}
-              loading="lazy"
-            />
+            {[operagroupe, opera].map((src, index) => (
+              <img
+                key={index}
+                src={src}
+                alt={`Opéra Mobile ${index + 1}`}
+                onClick={() => handleImageClick(src)}
+                loading="lazy"
+              />
+            ))}
           </div>
-        </div>
-        <div className="presse">
+        </section>
+        <section className="presse">
           <h3>Un peu de presse</h3>
           <p>Spectacle "Bastien & Bastienne"</p>
           <button
@@ -111,39 +122,29 @@ const Accueil = () => {
           >
             Article
           </button>
-        </div>
-        <div className="article">
+        </section>
+        <section className="article">
           <img
             src={presse}
             alt="photo article de presse"
             onClick={() => handleImageClick(presse)}
             loading="lazy"
           />
-        </div>
-        <div className="reseau">
+        </section>
+        <section className="reseau">
           <h3>
             Nous Suivre<span className="dots">.</span>
           </h3>
-        </div>
+        </section>
         <div className="icon">
-          <div className="facebook">
-            <a
-              href="https://www.facebook.com/p/Compagnie-Poly-R-61551483792933/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa-brands fa-facebook"></i>
-            </a>
-          </div>
-          <div className="insta">
-            <a
-              href="https://www.instagram.com/stories/polyrcompagnie/3197516424053526261/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-          </div>
+          <SocialLink
+            href="https://www.facebook.com/p/Compagnie-Poly-R-61551483792933/"
+            iconClass="fa-brands fa-facebook"
+          />
+          <SocialLink
+            href="https://www.instagram.com/stories/polyrcompagnie/3197516424053526261/"
+            iconClass="fa-brands fa-instagram"
+          />
         </div>
         <div className="pic">
           <img
@@ -151,19 +152,13 @@ const Accueil = () => {
             alt="cie poly r"
             className="responsive-img"
             onClick={() => handleImageClick(allgroupe)}
+            loading="lazy"
           />
         </div>
       </div>
       <End />
       {enlargedImage && (
-        <div className="overlay" onClick={handleCloseImage}>
-          <div className="enlarged-image-container">
-            <img src={enlargedImage} alt="Enlarged" />
-            <button className="close-button" onClick={handleCloseImage}>
-              ×
-            </button>
-          </div>
-        </div>
+        <ImageOverlay image={enlargedImage} onClose={handleCloseImage} />
       )}
     </>
   );

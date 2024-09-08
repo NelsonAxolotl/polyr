@@ -66,7 +66,7 @@ const Contact = () => {
         <div className="icons">
           <div className="facebook">
             <a
-              href="https://www.facebook.com/cabaretwanubida"
+              href="https://www.facebook.com/p/Compagnie-Poly-R-61551483792933/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -75,7 +75,7 @@ const Contact = () => {
           </div>
           <div className="insta">
             <a
-              href="https://www.instagram.com/cabaret_wanubida/"
+              href="https://www.instagram.com/stories/polyrcompagnie/3197516424053526261/"
               target="_blank"
               rel="noopener noreferrer"
             >

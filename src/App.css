@@ -1,19 +1,28 @@
+/* App.css */
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Rye&display=swap");
+
+/* Réinitialisation et styles globaux */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   outline: none;
 }
+
 body {
   margin: 0;
+  font-family: Arial, sans-serif; /* Choisir une police par défaut */
 }
 
+/* Listes */
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
+/* Liens */
 a {
   text-decoration: none;
+  color: inherit; /* Assure que les liens héritent de la couleur du texte parent */
 }

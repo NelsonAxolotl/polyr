@@ -18,7 +18,8 @@ body {
   text-align: center;
   color: rgb(255, 255, 255);
 }
-.historique h2 {
+.historique h2,
+.bio h2 {
   font-size: 3rem;
   text-align: center;
   margin-top: 80px;
@@ -51,17 +52,7 @@ body {
   align-items: center;
   margin-top: 50px;
 }
-.bio h2 {
-  font-size: 3rem;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  font-weight: bold;
-  color: bisque;
-  border: 1px solid bisque;
-  border-radius: 5px;
-  padding: 10px;
-}
+
 .bio h3 {
   font-size: 1.8rem;
   color: white;

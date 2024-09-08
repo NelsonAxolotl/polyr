@@ -15,16 +15,7 @@ body {
   text-align: center;
   color: rgb(255, 255, 255);
 }
-.showplus h2 {
-  font-size: 3rem;
-  text-align: center;
-  color: bisque;
-  margin-top: 80px;
-  border: 1px solid bisque;
-  padding: 10px;
-  border-radius: 5px;
-  font-weight: bold;
-}
+.showplus h2,
 .showplus1 h2 {
   font-size: 3rem;
   text-align: center;
@@ -35,29 +26,14 @@ body {
   border-radius: 5px;
   font-weight: bold;
 }
-.showplus {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 50px;
-}
+.showplus,
 .showplus1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
 }
-.showplus p {
-  font-size: 1.1rem;
-  text-align: justify;
-  max-width: 800px;
-  margin-top: 50px;
-  line-height: 24px;
-  margin-bottom: 40px;
-  background: rgb(237, 235, 235);
-  border-radius: 10px;
-  padding: 20px;
-}
+.showplus p,
 .showplus1 p {
   font-size: 1.1rem;
   text-align: justify;
@@ -69,23 +45,12 @@ body {
   border-radius: 10px;
   padding: 20px;
 }
-.showplus span {
-  color: rgb(250, 164, 59);
-  font-weight: bold;
-}
+.showplus span,
 .showplus1 span {
   color: rgb(250, 164, 59);
   font-weight: bold;
 }
-.showplus h3 {
-  font-size: 1.5rem;
-  color: white;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  border: 1px solid white;
-  padding: 10px;
-  border-radius: 5px;
-}
+.showplus h3,
 .showplus1 h3 {
   font-size: 1.5rem;
   color: white;
@@ -95,13 +60,7 @@ body {
   padding: 10px;
   border-radius: 5px;
 }
-.showplus h4 {
-  color: bisque;
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin-top: 20px;
-  transition: all 0.3s ease-in-out;
-}
+.showplus h4,
 .showplus1 h4 {
   color: bisque;
   font-size: 1.4rem;
@@ -109,15 +68,11 @@ body {
   margin-top: 20px;
   transition: all 0.3s ease-in-out;
 }
-.showplus a {
-  color: bisque;
-}
+.showplus a,
 .showplus1 a {
   color: bisque;
 }
-.showplus h4:hover {
-  transform: scale(1.03);
-}
+.showplus h4:hover,
 .showplus1 h4:hover {
   transform: scale(1.03);
 }
@@ -147,22 +102,22 @@ body {
   scroll-margin-top: 130px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
 }
 #herve {
-  scroll-margin-top: 180px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
+  scroll-margin-top: 200px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
 }
 #thomas {
-  scroll-margin-top: 170px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
+  scroll-margin-top: 200px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
 }
 #melysine {
-  scroll-margin-top: 160px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
+  scroll-margin-top: 170px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
 }
 #galtier {
-  scroll-margin-top: 180px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
+  scroll-margin-top: 190px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
 }
 #fumi {
-  scroll-margin-top: 160px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
+  scroll-margin-top: 150px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
 }
 #nathan {
-  scroll-margin-top: 200px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
+  scroll-margin-top: 180px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
 }
 
 @media (max-width: 768px) {
@@ -171,25 +126,16 @@ body {
     margin-bottom: 30px;
     padding-top: 200px;
   }
-
-  .showplus h2 {
+  .showplus h2,
+  .showplus1 h2 {
     font-size: 2rem;
     margin-top: 30px;
   }
-  .showplus1 h2 {
-    font-size: 2rem;
-    margin-top: 40px;
-  }
-  .showplus h3 {
-    margin-top: 20px;
-  }
+  .showplus h3,
   .showplus1 h3 {
     margin-top: 20px;
   }
-  .showplus p {
-    font-size: 0.9rem;
-    margin-top: 30px;
-  }
+  .showplus p,
   .showplus1 p {
     font-size: 0.9rem;
     margin-top: 30px;
@@ -197,14 +143,13 @@ body {
   .gall h2 {
     margin-top: 20px;
     font-size: 2.3rem;
+    margin-top: 0;
   }
   .pic-opera {
     margin-top: 0;
     margin-bottom: 0Ò;
   }
-  .gall h2 {
-    margin-top: 0;
-  }
+
   #roxane {
     scroll-margin-top: 160px; /* Ajustez cette valeur selon la hauteur de votre barre de navigation */
   }

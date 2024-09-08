@@ -7,21 +7,20 @@ import Lacie from "./Pages/Lacie";
 import Spectacles from "./Pages/Spectacles";
 import Contact from "./Pages/Contact";
 import NotFound from "./Pages/NotFound";
+
 function App() {
   return (
-    <>
-      <Router>
-        <ScrollToTop />
-        <Nav />
-        <Routes>
-          <Route path="/" element={<Accueil />} />
-          <Route path="/lacie" element={<Lacie />} />
-          <Route path="/spectacles" element={<Spectacles />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Router>
-    </>
+    <Router>
+      <ScrollToTop />
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Accueil />} />
+        <Route path="/lacie" element={<Lacie />} />
+        <Route path="/spectacles" element={<Spectacles />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
   );
 }
 

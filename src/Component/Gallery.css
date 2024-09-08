@@ -11,6 +11,7 @@ body {
   padding: 20px;
   background: #7531a5;
   margin-bottom: 40px;
+  position: relative;
 }
 
 /* Styles pour les images de la galerie */
@@ -23,9 +24,13 @@ body {
   margin: 0 auto;
 }
 
-/* Styles pour les trois dernières images */
-.gallery-container div:nth-last-child(-n + 4) .gallery-image {
+.object-top {
   object-position: top;
+}
+
+/* Aligne les deux dernières images à droite */
+.object-right {
+  object-position: right;
 }
 
 .overlay {
@@ -85,5 +90,12 @@ body {
 
   .gallery-image {
     height: 300px;
+  }
+  .object-top {
+    object-position: center; /* Maintient le positionnement en haut en mode responsive */
+  }
+
+  .object-right {
+    object-position: right; /* Maintient le positionnement à droite en mode responsive */
   }
 }

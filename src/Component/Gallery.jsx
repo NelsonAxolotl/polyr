@@ -17,21 +17,29 @@ import poly1 from "../Pic/poly1.jpg";
 import poly16 from "../Pic/poly16.jpg";
 import poly17 from "../Pic/poly17.jpg";
 import poly18 from "../Pic/poly18.jpg";
+import bastien54 from "../Pic/bastien54.jpg";
+import bastien52 from "../Pic/bastien52.jpg";
+import bastien51 from "../Pic/bastien51.jpg";
+import bastien50 from "../Pic/bastien50.jpg";
 const images = [
   { src: bastien1, alt: "Image 1" },
   { src: bastien21, alt: "Image 21" },
   { src: bastien22, alt: "Image 22" },
   { src: bastien23, alt: "Image 23" },
+  { src: bastien54, alt: "Image 54" },
   { src: bastien2, alt: "Image 2" },
   { src: poly24, alt: "Image poly24" },
-  { src: bastien3, alt: "Image 3" },
+  { src: bastien52, alt: "Image bastien52" },
+  { src: bastien51, alt: "Image bastien51" },
+  { src: bastien50, alt: "Image bastien50" },
   { src: bastien4, alt: "Image 4" },
   { src: bastien5, alt: "Image 5" },
-  { src: poly1, alt: "Image ploy1" },
   { src: poly16, alt: "Image ploy16" },
   { src: poly17, alt: "Image ploy17" },
   { src: poly18, alt: "Image ploy18" },
   { src: bastien20, alt: "Image 20" },
+  { src: bastien3, alt: "Image 3" },
+  { src: poly1, alt: "Image ploy1" },
 ];
 
 const Gallery = () => {
@@ -59,13 +67,19 @@ const Gallery = () => {
     <div className="gallery-container">
       <Slider {...settings}>
         {images.map((image, index) => (
-          <div key={index}>
+          <div key={index} className="slider-item">
             <img
               src={image.src}
               alt={image.alt}
-              className="gallery-image"
+              className={`gallery-image ${
+                index < 5
+                  ? "object-top" // Apply object-top to the first 5 images
+                  : index >= images.length - 2
+                  ? "object-right" // Apply object-right to the last 2 images
+                  : ""
+              }`}
               loading="lazy"
-              onClick={() => handleImageClick(image.src)} // Enlarging the image on click
+              onClick={() => handleImageClick(image.src)}
             />
           </div>
         ))}

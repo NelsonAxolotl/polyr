@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: row;
   gap: 40px;
+  text-align: center;
 }
 .tittle-poly h1,
 .tittle-poly h2 {
@@ -67,15 +68,14 @@
   justify-content: center;
   align-items: center;
   padding-top: 40px;
-  gap: 20px; /* Espace entre les images */
-  margin: 40px 0; /* Espace autour du bloc contenant les images */
+  gap: 20px;
+  margin: 40px 0;
 }
-
 .poly-pic img {
   max-width: 100%;
   height: 400px;
-  object-fit: cover; /* Assure que l'image reste bien proportionnée */
-  flex: 1; /* Les images prendront une largeur égale */
+  object-fit: cover;
+  flex: 1;
   cursor: pointer;
   border: 1px solid white;
   border-radius: 5px;
@@ -93,7 +93,6 @@
   font-size: 3.5rem;
   text-align: center;
   color: bisque;
-  /* border: 1px solid bisque; */
   padding: 10px;
   border-radius: 5px;
   margin-top: 60px;
@@ -111,12 +110,11 @@
   font-weight: bold;
 }
 .pic-opera {
-  display: flex; /* Utiliser Flexbox pour aligner les images horizontalement */
-  align-items: center; /* Aligner les images verticalement au centre */
-  gap: 20px; /* Espace entre les images */
+  display: flex;
+  align-items: center;
+  gap: 20px;
   margin: 20px 0;
 }
-
 .pic-opera img {
   width: 330px;
   height: 300px;
@@ -147,9 +145,9 @@
   color: white;
 }
 .article {
-  display: flex; /* Utiliser Flexbox pour aligner les éléments horizontalement */
-  align-items: center; /* Aligner les éléments verticalement au centre */
-  gap: 15px; /* Espace entre le bouton et l'image */
+  display: flex;
+  align-items: center;
+  gap: 15px;
   margin: 20px 0;
 }
 .presse {
@@ -161,26 +159,24 @@
   font-size: 1.4rem;
   cursor: pointer;
   border: none;
-  background-color: #ffffff; /* Couleur de fond du bouton */
-  color: rgb(148, 12, 194); /* Couleur du texte du bouton */
-  border-radius: 5px; /* Coins arrondis du bouton */
+  background-color: #ffffff;
+  color: rgb(148, 12, 194);
+  border-radius: 5px;
   border: 1px solid white;
   transition: background-color 0.3s ease;
   transition: all 0.3s ease-in-out;
 }
-
 .presse button:hover {
   color: white;
-  background-color: bisque; /* Couleur de fond du bouton au survol */
+  background-color: bisque;
   border: 1px solid white;
   transform: scale(1.03);
 }
-
 .article img {
-  width: 500px; /* Augmenter la largeur de l'image */
-  height: auto; /* Ajuste la hauteur proportionnellement */
-  object-fit: cover; /* Ajuste l'image pour qu'elle remplisse le cadre sans déformation */
-  border-radius: 5px; /* Coins arrondis de l'image */
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   border: 1px solid white;
@@ -197,7 +193,6 @@
   font-family: "Quicksand", sans-serif;
   color: var(--secondary-color);
 }
-
 .reseau h3 {
   font-size: 3rem;
   padding: 30px 0 20px;
@@ -206,7 +201,6 @@
   font-weight: bold;
   text-align: center;
 }
-
 .dots {
   display: inline-block;
   position: relative;
@@ -214,7 +208,6 @@
   height: 1em;
   font-size: 1em;
 }
-
 .dots::after {
   content: "...";
   position: absolute;
@@ -226,7 +219,6 @@
   position: relative;
   height: 400px;
 }
-
 .responsive-img {
   width: 100%;
   height: 100%;
@@ -260,24 +252,20 @@
   transition: 0.3s ease-in-out;
   margin-bottom: 50px;
 }
-
 .icon a {
   color: inherit;
   text-decoration: none;
 }
-
 .icon i {
   color: white;
   font-weight: bold;
   font-size: 2.7rem;
   transition: transform 0.3s ease-in-out;
 }
-
 .icon i:hover {
   transform: scale(1.3);
   color: bisque;
 }
-
 .overlay {
   position: fixed;
   top: 0;
@@ -291,7 +279,6 @@
   z-index: 1000;
   object-fit: cover;
 }
-
 .enlarged-image-container {
   position: relative;
   display: flex;
@@ -300,13 +287,11 @@
   width: 90%;
   height: 90%;
 }
-
 .enlarged-image-container img {
   max-width: 100%;
   max-height: 100%;
   margin: auto;
 }
-
 .close-button {
   position: absolute;
   background: none;
@@ -318,6 +303,7 @@
   right: 10px;
 }
 
+/* RESPONSIVE*/
 @media (max-width: 954px) {
   .tittle-poly h1 {
     margin-top: 20px;
