@@ -22,15 +22,16 @@ body {
   border-radius: 10px;
   display: block;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .object-top {
-  object-position: top;
+  object-position: center top;
 }
 
 /* Aligne les deux dernières images à droite */
 .object-right {
-  object-position: right;
+  object-position: center right;
 }
 
 .overlay {
@@ -70,6 +71,8 @@ body {
   cursor: pointer;
   top: 10px;
   right: 10px;
+  padding: 5px;
+  border-radius: 50%; /* Bord arrondi pour le bouton */
 }
 
 .slick-dots li button:before {

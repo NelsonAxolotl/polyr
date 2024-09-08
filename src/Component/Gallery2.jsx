@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Gallery2.css";
 import Slider from "react-slick";
 import opera1 from "../Pic/opera1.jpg";
@@ -53,6 +53,20 @@ const Gallery2 = () => {
   const handleCloseImage = () => {
     setEnlargedImage(null);
   };
+  const handleKeyDown = (event) => {
+    if (event.key === "Escape") {
+      handleCloseImage();
+    }
+  };
+
+  useEffect(() => {
+    if (enlargedImage) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [enlargedImage]);
 
   const settings = {
     dots: true,
@@ -75,6 +89,8 @@ const Gallery2 = () => {
               className={`gallery-image1 ${image.className || ""}`}
               loading="lazy"
               onClick={() => handleImageClick(image.src)}
+              role="button"
+              aria-label={`View ${image.alt}`}
             />
           </div>
         ))}
@@ -84,7 +100,11 @@ const Gallery2 = () => {
         <div className="overlay" onClick={handleCloseImage}>
           <div className="enlarged-image-container">
             <img src={enlargedImage} alt="Enlarged" />
-            <button className="close-button" onClick={handleCloseImage}>
+            <button
+              className="close-button"
+              onClick={handleCloseImage}
+              aria-label="Close image"
+            >
               ×
             </button>
           </div>

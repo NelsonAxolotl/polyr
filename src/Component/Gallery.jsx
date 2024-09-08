@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Gallery.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -53,6 +53,21 @@ const Gallery = () => {
     setEnlargedImage(null);
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === "Escape") {
+      handleCloseImage();
+    }
+  };
+
+  useEffect(() => {
+    if (enlargedImage) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [enlargedImage]);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -73,13 +88,15 @@ const Gallery = () => {
               alt={image.alt}
               className={`gallery-image ${
                 index < 5
-                  ? "object-top" // Apply object-top to the first 5 images
+                  ? "object-top"
                   : index >= images.length - 2
-                  ? "object-right" // Apply object-right to the last 2 images
+                  ? "object-right"
                   : ""
               }`}
               loading="lazy"
               onClick={() => handleImageClick(image.src)}
+              role="button"
+              aria-label={`View ${image.alt}`}
             />
           </div>
         ))}
@@ -89,7 +106,11 @@ const Gallery = () => {
         <div className="overlay" onClick={handleCloseImage}>
           <div className="enlarged-image-container">
             <img src={enlargedImage} alt="Enlarged" />
-            <button className="close-button" onClick={handleCloseImage}>
+            <button
+              className="close-button"
+              onClick={handleCloseImage}
+              aria-label="Close image"
+            >
               ×
             </button>
           </div>
