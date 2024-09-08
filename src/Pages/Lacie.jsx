@@ -251,7 +251,7 @@ const Lacie = () => {
                   Bruxelles. <br />
                   En juillet 2024, Mélusine intègre{" "}
                   <Link to="/spectacles#opera">
-                    <span>la troupe Opéramobil'</span>.
+                    <span>la troupe Opéramobil'</span>
                   </Link>{" "}
                   en tant que pianiste accompagnatrice.
                 </p>
