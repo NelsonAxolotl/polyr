@@ -119,6 +119,19 @@ body {
 #nathan {
   scroll-margin-top: 180px;
 }
+.pic20 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+}
+.responsive-img20 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
 /*RESPONSIVE*/
 @media (max-width: 768px) {
   .show-titre h1 {

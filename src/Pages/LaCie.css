@@ -8,7 +8,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
 }
 .cie h1 {
   font-family: "Bangers", system-ui;
@@ -230,7 +230,7 @@ body {
   }
   .pic10 {
     height: 200px;
-    margin-top: -40px;
+    margin-top: -50px;
   }
 }
 @media (max-width: 700px) {

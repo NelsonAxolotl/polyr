@@ -10,7 +10,7 @@ import mobil from "../Pic/mobil.jpg";
 import opera from "../Pic/opera.jpg";
 import bastien from "../Pic/bastien.jpg";
 import bastienne from "../Pic/bastienne.jpg";
-
+import dolls2 from "../Pic/dolls2.jpg";
 const Spectacles = () => {
   const [imageAgrandie, setImageAgrandie] = useState(null);
 
@@ -177,8 +177,15 @@ const Spectacles = () => {
         </div>
         <Gallery />
       </div>
+      <div className="pic10">
+        <img
+          src={dolls2}
+          alt="dessin poly r"
+          class="responsive-img10"
+          onClick={() => handleImageClick(dolls2)}
+        />
+      </div>
 
-      <End />
       {imageAgrandie && (
         <div className="overlay" onClick={handleCloseImage}>
           <div className="enlarged-image-container">
@@ -189,6 +196,7 @@ const Spectacles = () => {
           </div>
         </div>
       )}
+      <End />
     </>
   );
 };

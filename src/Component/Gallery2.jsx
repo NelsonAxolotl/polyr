@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Gallery2.css";
 import Slider from "react-slick";
-import opera1 from "../Pic/opera1.jpg";
 import opera5 from "../Pic/opera5.jpg";
 import opera2 from "../Pic/opera2.jpg";
 import opera3 from "../Pic/opera3.jpg";
@@ -17,13 +16,12 @@ import poly22 from "../Pic/poly22.jpg";
 import poly23 from "../Pic/poly23.jpg";
 import poly55 from "../Pic/poly55.jpg";
 import poly53 from "../Pic/poly53.jpg";
-import poly52 from "../Pic/poly52.jpg";
+import poly from "../Pic/polyrgroupe.jpg";
 import poly51 from "../Pic/poly51.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const images = [
-  { src: opera1, alt: "Image 1" },
   { src: opera5, alt: "Image 5", className: "center-image2" },
   { src: opera2, alt: "Image 2", className: "center-image2" },
   { src: opera3, alt: "Image 3", className: "center-image2" },
@@ -34,7 +32,7 @@ const images = [
   { src: opera20, alt: "Image 20" },
   { src: poly55, alt: "Image 55" },
   { src: poly53, alt: "Image 53" },
-  { src: poly52, alt: "Image 52" },
+  { src: poly, alt: "Image poly groupe" },
   { src: poly51, alt: "Image 51" },
   { src: poly11, alt: "Image 11", className: "center-image1" },
   { src: poly13, alt: "Image 13", className: "center-image1" },

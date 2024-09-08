@@ -3,13 +3,13 @@ import { HashLink as Link } from "react-router-hash-link";
 import End from "../Component/End";
 import Helmet from "react-helmet";
 import "./Accueil.css";
-import poly from "../Pic/polyrgroupe.jpg";
+import opera1 from "../Pic/opera1.jpg";
 import polyr from "../Pic/polyrfiche.jpg";
 import opera from "../Pic/opera.jpg";
 import operagroupe from "../Pic/operagroupe.jpg";
 import presse from "../Pic/presse.jpg";
 import allgroupe from "../Pic/allgroupe.jpg";
-
+import bastien50 from "../Pic/bastien50.jpg";
 const ImageOverlay = ({ image, onClose }) => (
   <div className="overlay" onClick={onClose}>
     <div className="enlarged-image-container">
@@ -51,7 +51,7 @@ const Accueil = () => {
           property="og:description"
           content="Découvrez la Compagnie Poly R et ses spectacles pluridisciplinaires à Lyon."
         />
-        <meta property="og:image" content={poly} />
+        <meta property="og:image" content={opera1} />
         <meta property="og:url" content="https://www.votre-site.com" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
@@ -81,7 +81,7 @@ const Accueil = () => {
           <span>située à Lyon en région AURA</span>
         </section>
         <section className="poly-pic">
-          {[poly, polyr].map((src, index) => (
+          {[opera1, bastien50].map((src, index) => (
             <img
               key={index}
               src={src}
@@ -95,7 +95,7 @@ const Accueil = () => {
           <h3>Actu</h3>
           <div className="split">
             <p>À venir Juillet 2025</p>
-            <span>Opéramobil ' saison 2 !!!</span>
+            <span>Opéramobil ' saison 2</span>
           </div>
           <div className="pic-opera">
             {[operagroupe, opera].map((src, index) => (
