@@ -1,16 +1,17 @@
 import { HashLink as Link } from "react-router-hash-link";
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
-import { Helmet } from "react-helmet";
-import End from "../Component/End";
+import End from "../Component/End"; // Vérifiez le chemin et l'existence du composant
 import Gallery from "../Component/Gallery";
 import Gallery2 from "../Component/Gallery2";
 import "./Spectacles.css";
-import mobil from "../Pic/mobil.jpg";
+import mobil from "../Pic/mobil.jpg"; // Vérifiez si les chemins d'images sont corrects
 import opera from "../Pic/opera.jpg";
 import bastien from "../Pic/bastien.jpg";
 import bastienne from "../Pic/bastienne.jpg";
 import dolls2 from "../Pic/dolls2.jpg";
+import dates from "../Pic/dates3.jpg";
+
 const Spectacles = () => {
   const [imageAgrandie, setImageAgrandie] = useState(null);
 
@@ -42,20 +43,12 @@ const Spectacles = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Compagnie Poly R - Spectacles</title>
-        <meta
-          name="description"
-          content="Découvrez les spectacles de la Compagnie Poly R, dont L'Opéramobil' et Bastien & Bastienne. Des performances uniques avec des artistes talentueux."
-        />
-      </Helmet>
-
       <div className="show">
         <div className="show-titre">
           <h1>Spectacles</h1>
         </div>
         <div id="opera" className="showplus" ref={operaRef}>
-          <h2>L'opéramobil'</h2>
+          <h2>L'Opéramobil'</h2>
           <p>
             <span>L’Opéramobil’</span> est une troupe itinérante portée par{" "}
             <Link to="/lacie">
@@ -110,7 +103,7 @@ const Spectacles = () => {
             <Link to="/lacie#thomas">Thomas Avrillon</Link>
           </h4>
           <h4>
-            <Link to="/lacie#melysine">Mélysine Escande</Link>
+            <Link to="/lacie#melusine">Mélusine Escande</Link>
           </h4>
           <h4>
             <Link to="/lacie#galtier">Galtier Le Bilhan</Link>
@@ -123,7 +116,15 @@ const Spectacles = () => {
           <h2>Galerie</h2>
         </div>
         <Gallery2 />
-
+        <div className="dates">
+          <h3>Dates passées été 2024</h3>
+          <img
+            src={dates}
+            alt="dates passées"
+            onClick={() => handleImageClick(dates)}
+            loading="lazy"
+          />
+        </div>
         <div id="bastien" className="showplus1" ref={bastienRef}>
           <h2>Bastien & Bastienne</h2>
           <p>
@@ -181,8 +182,9 @@ const Spectacles = () => {
         <img
           src={dolls2}
           alt="dessin poly r"
-          class="responsive-img10"
+          className="responsive-img10"
           onClick={() => handleImageClick(dolls2)}
+          loading="lazy"
         />
       </div>
 

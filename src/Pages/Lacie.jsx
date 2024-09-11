@@ -1,37 +1,35 @@
 import React, { useState } from "react";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import End from "../Component/End";
 import "./LaCie.css";
 import roxane from "../Pic/roxane.jpg";
 import herve from "../Pic/herve.jpg";
 import thomas from "../Pic/thomas.jpg";
-import melysine from "../Pic/melysine.jpg";
+import melusine from "../Pic/melysine.jpg";
 import galtier from "../Pic/galtier.jpg";
 import fumi from "../Pic/fumi.jpg";
 import nathan from "../Pic/nathan.jpg";
 import draw from "../Pic/draw.jpg";
 
+const ImageOverlay = ({ image, onClose }) => (
+  <div className="overlay" onClick={onClose}>
+    <div className="enlarged-image-container">
+      <img src={image} alt="Enlarged" />
+      <button className="close-button" onClick={onClose}>
+        ×
+      </button>
+    </div>
+  </div>
+);
+
 const Lacie = () => {
   const [enlargedImage, setEnlargedImage] = useState(null);
 
-  const handleImageClick = (image) => {
-    setEnlargedImage(image);
-  };
-
-  const handleCloseImage = () => {
-    setEnlargedImage(null);
-  };
+  const handleImageClick = (image) => setEnlargedImage(image);
+  const handleCloseImage = () => setEnlargedImage(null);
 
   return (
     <>
-      <Helmet>
-        <title>La Compagnie Poly R - Historique et Équipe</title>
-        <meta
-          name="description"
-          content="Découvrez l'historique et l'équipe artistique de la Compagnie Poly R, une compagnie lyonnaise créée par Roxane Macaudière et Hervé Le Bert."
-        />
-      </Helmet>
       <div className="main">
         <div className="cie">
           <h1>La Compagnie</h1>
@@ -44,10 +42,9 @@ const Lacie = () => {
             La Compagnie <span>Poly R</span> est lyonnaise et a été créée en
             septembre 2023 par Roxane Macaudière et Hervé Le Bert. <br />
             Tous deux artistes en voie de professionnalisation et passionnés par
-            leurs différentes pratiques, (chant lyrique, théâtre, piano,
-            guitare, danse) ils ont eu à cœur de créer une structure leur
-            permettant de donner vie à des créations scéniques
-            pluridisciplinaires. <br />
+            leurs différentes pratiques (chant lyrique, théâtre, piano, guitare,
+            danse), ils ont eu à cœur de créer une structure leur permettant de
+            donner vie à des créations scéniques pluridisciplinaires. <br />
             Étudiants en classe de chant lyrique aux conservatoires de Genève et
             de Villeurbanne, Hervé et Roxane sont très sensibles à l’art de
             l’Opéra et se sont donnés pour principale mission d’amener cette
@@ -63,7 +60,7 @@ const Lacie = () => {
               <div className="pic1">
                 <img
                   src={roxane}
-                  alt="photo roxane"
+                  alt="photo Roxane"
                   onClick={() => handleImageClick(roxane)}
                   loading="lazy"
                 />
@@ -81,25 +78,20 @@ const Lacie = () => {
                   s'envole pour étudier <span>le chant lyrique</span> aux côtés
                   de Cécile de Boever. <br />
                   Elle intègre parallèlement l'ENM de Villeurbanne, dans la
-                  classe de Virginie Pochon et y suit un cursus de EPI. <br />
+                  classe de Virginie Pochon. <br />
                   Sa passion pour la pluralité des arts la pousse à intégrer
                   dans la même école la classe de Vincent Martin en piano jazz,
                   et à se présenter au Cycle Centre Chorégraphique de Lyon en
                   danse contemporaine. <br />
                   Elle obtient après deux ans d'études de danse son Examen
                   d'Aptitudes Techniques. <br />
-                  En juin 2022, Roxane enregistre en studio un album de six
-                  pièces pour piano solo, Arborescence qu’elle a la chance
-                  d’interpréter lors de six concerts à Lyon, dans le cadre de
-                  l’exposition Pleine mer du peintre Adrien A. Ribet. <br />
                   Aujourd'hui enrichie de ces diverses expériences et âgée de 23
                   ans, Roxane vient d’être admise en bachelor de chant lyrique à
                   la Haute École de Musique de Genève dans la classe de Heidi
-                  Brünner pour la rentrée 2024-2025.
-                  <br />
+                  Brünner pour la rentrée 2024-2025. <br />
                   Depuis 2023, elle co-dirige{" "}
                   <Link to="/">
-                    <span>la compagnie Poly R</span>{" "}
+                    <span>la compagnie Poly R</span>
                   </Link>
                   avec Hervé Le Bert tout en faisant partie du spectacle{" "}
                   <Link to="/spectacles#bastien">
@@ -107,26 +99,25 @@ const Lacie = () => {
                   </Link>{" "}
                   ainsi que de{" "}
                   <Link to="/spectacles#opera">
-                    <span>la troupe Opéramobil'</span>
+                    <span>la troupe Opéramobil'</span>.
                   </Link>
-                  .
                 </p>
               </div>
             </div>
             <div id="herve" className="personne">
               <div className="text1">
                 <p className="main-text">
-                  <span>Hervé LE BERT</span> est{" "}
+                  <span>Hervé Le Bert</span> est{" "}
                   <span>ténor lyrique et comédien</span>, il se passionne dès sa
                   petite enfance pour la musique. Son parcours à la maîtrise de
                   la Loire lui permettra de trouver sa "voix". <br />
                   Il y découvre l'Opéra, une expérience qui est une révélation.{" "}
                   <br />
-                  Depuis 2019 il étudie <span>le chant lyrique</span> avec le
+                  Depuis 2019, il étudie <span>le chant lyrique</span> avec le
                   ténor Yannick Berne en parallèle de ses études à l'ENM dans la
                   classe de chant de Virginie Pochon et au théâtre de l'Iris.{" "}
                   <br />
-                  En 2023 il co-créé{" "}
+                  En 2023, il co-crée{" "}
                   <Link to="/">
                     <span>la compagnie Poly R</span>{" "}
                   </Link>{" "}
@@ -144,7 +135,7 @@ const Lacie = () => {
               <div className="pic1">
                 <img
                   src={herve}
-                  alt="photo hervé"
+                  alt="photo Hervé"
                   onClick={() => handleImageClick(herve)}
                   loading="lazy"
                 />
@@ -158,7 +149,7 @@ const Lacie = () => {
               <div className="pic1">
                 <img
                   src={thomas}
-                  alt="photo thomas"
+                  alt="photo Thomas"
                   onClick={() => handleImageClick(thomas)}
                   loading="lazy"
                 />
@@ -167,7 +158,7 @@ const Lacie = () => {
                 <p className="main-text">
                   Découvrant à 8 ans la musique par l’apprentissage du violon,
                   <span> Thomas Avrillon </span> ne tarda pas à rentrer à la
-                  Maitrise de la Loire, où il y restera sept ans. <br />
+                  Maîtrise de la Loire, où il y restera sept ans. <br />
                   Grâce à cet important apport musical, il découvrira de
                   nombreuses disciplines liées au chant, dont la direction de
                   chœur puis d’orchestre, qu’il développera encore en arrivant
@@ -175,7 +166,7 @@ const Lacie = () => {
                   <br />
                   Ayant obtenu, en parallèle d’une licence de musicologie, son
                   Certificat d’Études Musicales de direction, de{" "}
-                  <span>violon</span> et de formation musicale, il continu de
+                  <span>violon</span> et de formation musicale, il continue de
                   développer sa pratique du <span>chant lyrique</span> auprès de
                   Nicolas Domingues, ce qui l’a amené à participer à des projets
                   en tant que choriste dans des ensembles semi-professionnels
@@ -184,8 +175,8 @@ const Lacie = () => {
                   <br />
                   En juillet 2024, Thomas intègre{" "}
                   <Link to="/spectacles#opera">
-                    <span>la troupe Opéramobil'</span>.
-                  </Link>
+                    <span>la troupe Opéramobil'</span>
+                  </Link>{" "}
                   en tant que chanteur et violoniste.
                 </p>
               </div>
@@ -204,7 +195,8 @@ const Lacie = () => {
                   Nathan vient d'être reçu pour intégrer en septembre 2024 la
                   nouvelle promotion du prestigieux Centre Didier Lockwood à
                   Paris. <br />
-                  Lors de la saison 2023/2024 Nathan est guitariste pour{" "}
+                  Lors de la saison 2023/2024, Nathan est guitariste pour le
+                  spectacle{" "}
                   <Link to="/spectacles#bastien">
                     <span>Bastien & Bastienne</span>
                   </Link>
@@ -214,18 +206,18 @@ const Lacie = () => {
               <div className="pic1">
                 <img
                   src={nathan}
-                  alt="photo nathan"
+                  alt="photo Nathan"
                   onClick={() => handleImageClick(nathan)}
                   loading="lazy"
                 />
               </div>
             </div>
-            <div id="melysine" className="personne-reverse">
+            <div id="melusine" className="personne-reverse">
               <div className="pic1">
                 <img
-                  src={melysine}
-                  alt="photo mélysine"
-                  onClick={() => handleImageClick(melysine)}
+                  src={melusine}
+                  alt="photo Mélusine"
+                  onClick={() => handleImageClick(melusine)}
                   loading="lazy"
                 />
               </div>
@@ -274,7 +266,7 @@ const Lacie = () => {
                   toujours à l'affût de nouvelles expériences et est l'un des
                   accompagnateurs de{" "}
                   <Link to="/spectacles#opera">
-                    <span>la troupe Opéramobil'</span>
+                    <span>l'Opéramobil'</span>
                   </Link>{" "}
                   en juillet 2024, apportant ainsi une touche instrumentale
                   moderne à la troupe.
@@ -283,7 +275,7 @@ const Lacie = () => {
               <div className="pic1">
                 <img
                   src={galtier}
-                  alt="photo galtier"
+                  alt="photo Galtier"
                   onClick={() => handleImageClick(galtier)}
                   loading="lazy"
                 />
@@ -293,7 +285,7 @@ const Lacie = () => {
               <div className="pic1">
                 <img
                   src={fumi}
-                  alt="photo fumi"
+                  alt="photo Fumi"
                   onClick={() => handleImageClick(fumi)}
                   loading="lazy"
                 />
@@ -330,24 +322,18 @@ const Lacie = () => {
       <div className="pic10">
         <img
           src={draw}
-          alt="dessin poly r"
-          class="responsive-img10"
+          alt="dessin Poly R"
+          className="responsive-img10"
           onClick={() => handleImageClick(draw)}
         />
       </div>
 
       {enlargedImage && (
-        <div className="overlay" onClick={handleCloseImage}>
-          <div className="enlarged-image-container">
-            <img src={enlargedImage} alt="Enlarged" />
-            <button className="close-button" onClick={handleCloseImage}>
-              ×
-            </button>
-          </div>
-        </div>
+        <ImageOverlay image={enlargedImage} onClose={handleCloseImage} />
       )}
       <End />
     </>
   );
 };
+
 export default Lacie;

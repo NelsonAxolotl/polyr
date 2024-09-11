@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Gallery2.css";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import opera5 from "../Pic/opera5.jpg";
 import opera2 from "../Pic/opera2.jpg";
 import opera3 from "../Pic/opera3.jpg";
@@ -18,8 +20,6 @@ import poly55 from "../Pic/poly55.jpg";
 import poly53 from "../Pic/poly53.jpg";
 import poly from "../Pic/polyrgroupe.jpg";
 import poly51 from "../Pic/poly51.jpg";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 const images = [
   { src: opera5, alt: "Image 5", className: "center-image2" },

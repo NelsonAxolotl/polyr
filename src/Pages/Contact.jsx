@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { Helmet } from "react-helmet"; // Import Helmet
 import "./Contact.css";
 import poly25 from "../Pic/poly25.jpg";
 import End from "../Component/End";
@@ -19,14 +18,6 @@ const Contact = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Compagnie Poly R - Contact</title>
-        <meta
-          name="description"
-          content="Contactez la Compagnie Poly R pour toute demande d'information ou de réservation. Retrouvez nos coordonnées et nos réseaux sociaux."
-        />
-      </Helmet>
-
       <div className="contact">
         <div className="show-titre2">
           <h1>Contact</h1>

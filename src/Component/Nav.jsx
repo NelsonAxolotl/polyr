@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import { Helmet } from "react-helmet";
 import logo from "../Pic/logo.jpg";
 import "./Nav.css";
 
@@ -41,10 +40,6 @@ const Nav = () => {
 
   return (
     <>
-      <Helmet>
-        <title>{pageTitle()}</title>
-        <meta name="description" content={`Page ${pageTitle()}`} />
-      </Helmet>
       <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
         <div className="navbar-logo" onClick={() => handleNavClick("/")}>
           <Link to="/">
