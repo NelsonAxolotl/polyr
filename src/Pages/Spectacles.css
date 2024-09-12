@@ -166,7 +166,7 @@ body {
 }
 @media (max-width: 768px) {
   .show-titre h1 {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     margin-bottom: 30px;
     padding-top: 200px;
   }
