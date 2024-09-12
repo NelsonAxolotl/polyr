@@ -5,7 +5,7 @@ import End from "../Component/End"; // Vérifiez le chemin et l'existence du com
 import Gallery from "../Component/Gallery";
 import Gallery2 from "../Component/Gallery2";
 import "./Spectacles.css";
-import mobil from "../Pic/mobil.jpg"; // Vérifiez si les chemins d'images sont corrects
+import polyrgroupe from "../Pic/polyrgroupe.jpg";
 import opera from "../Pic/opera.jpg";
 import bastien from "../Pic/bastien.jpg";
 import bastienne from "../Pic/bastienne.jpg";
@@ -73,16 +73,15 @@ const Spectacles = () => {
             annuelle de Le Coteau, ou encore à côté du Château de Cleppé dans
             une immense grange aménagée. <br />
             Le public, visiblement ravi, a ainsi pu se laisser porter par des
-            programmes musicaux éclectiques et forts en émotions et en a
-            redemandé, c’est pourquoi <span>L’Opéramobil’</span> sera de retour
-            en juillet 2025 pour une saison 2 qui s’annonce opératiquement
-            explosive !
+            programmes musicaux éclectiques et forts en émotions , c’est
+            pourquoi <span>L’Opéramobil’</span> sera de retour en juillet 2025
+            pour une saison 2 qui s’annonce opératiquement explosive !
           </p>
           <div className="pic-opera">
             <img
-              src={mobil}
+              src={polyrgroupe}
               alt="Opéra Mobile groupe"
-              onClick={() => handleImageClick(mobil)}
+              onClick={() => handleImageClick(polyrgroupe)}
               loading="lazy"
             />
             <img

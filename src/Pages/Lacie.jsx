@@ -9,6 +9,8 @@ import melusine from "../Pic/melysine.jpg";
 import galtier from "../Pic/galtier.jpg";
 import fumi from "../Pic/fumi.jpg";
 import nathan from "../Pic/nathan.jpg";
+import antoine from "../Pic/antoine.jpg";
+import laetitia from "../Pic/laetitia.jpg";
 import draw from "../Pic/draw.jpg";
 
 const ImageOverlay = ({ image, onClose }) => (
@@ -54,7 +56,7 @@ const Lacie = () => {
         </div>
         <div className="bio">
           <h2>L'Équipe</h2>
-          <h3>Directeur.trices artistiques</h3>
+          <h3>Direction artistique</h3>
           <div className="artistes">
             <div id="roxane" className="personne-reverse">
               <div className="pic1">
@@ -92,7 +94,7 @@ const Lacie = () => {
                   Depuis 2023, elle co-dirige{" "}
                   <Link to="/">
                     <span>la compagnie Poly R</span>
-                  </Link>
+                  </Link>{" "}
                   avec Hervé Le Bert tout en faisant partie du spectacle{" "}
                   <Link to="/spectacles#bastien">
                     <span>Bastien & Bastienne</span>
@@ -145,19 +147,46 @@ const Lacie = () => {
             <div className="bio3">
               <h3>Les artistes</h3>
             </div>
-            <div id="thomas" className="personne-reverse">
+            <div id="fumi" className="personne-reverse">
               <div className="pic1">
                 <img
-                  src={thomas}
-                  alt="photo Thomas"
-                  onClick={() => handleImageClick(thomas)}
+                  src={fumi}
+                  alt="photo Fumi"
+                  onClick={() => handleImageClick(fumi)}
                   loading="lazy"
                 />
               </div>
               <div className="text1">
                 <p className="main-text">
+                  <span>Fumi Oka</span> est une <span>chanteuse lyrique</span>{" "}
+                  mezzo-soprano d’origine japonaise. <br />
+                  Après avoir passé une licence de chant à Kyoto, elle arrive en
+                  France en 2019, où elle est admise à l’ENM de Villeurbanne
+                  dans la classe de Virginie Pochon. <br />
+                  Elle y obtient son DEM en 2023. <br />
+                  Depuis l'obtention de sa licence, elle a participé à plusieurs
+                  productions d’opéra en tant que choriste ainsi qu'en tant que
+                  soliste, s'illustrant avec brio dans divers rôles : Dorabella
+                  dans Cosi Fan Tutte de Mozart, Hänsel et Knusperhexe dans
+                  Hänsel und Gretel d’Humperdinck, Ms Todd dans The Old Maid and
+                  The Thief de Menotti et Carmen dans Carmen de Bizet. <br />
+                  Lors de la saison 2023/2024, elle est soliste dans{" "}
+                  <Link to="/spectacles#bastien">
+                    <span>Bastien & Bastienne</span>
+                  </Link>{" "}
+                  et intègre{" "}
+                  <Link to="/spectacles#opera">
+                    <span>la troupe Opéramobil'</span>
+                  </Link>{" "}
+                  de la compagnie.
+                </p>
+              </div>
+            </div>
+            <div id="thomas" className="personne">
+              <div className="text1">
+                <p className="main-text">
                   Découvrant à 8 ans la musique par l’apprentissage du violon,
-                  <span> Thomas Avrillon </span> ne tarda pas à rentrer à la
+                  <span> Thomas Avrillon </span> ne tardera pas à rentrer à la
                   Maîtrise de la Loire, où il y restera sept ans. <br />
                   Grâce à cet important apport musical, il découvrira de
                   nombreuses disciplines liées au chant, dont la direction de
@@ -180,38 +209,16 @@ const Lacie = () => {
                   en tant que chanteur et violoniste.
                 </p>
               </div>
-            </div>
-            <div id="nathan" className="personne">
-              <div className="text1">
-                <p className="main-text">
-                  <span>Nathan Brunet</span> est <span>guitariste</span>,{" "}
-                  <span>sound designer</span>, <span>compositeur</span> et{" "}
-                  <span>claviériste</span>. <br />
-                  Après des études au conservatoire de Nancy, il s'installe à
-                  Lyon où il obtient un DUMI de musicien intervenant et où il
-                  perfectionne sa pratique de la guitare jazz à l'Ecole
-                  Nationale de Musique de Villeurbanne auprès de Pierre
-                  Hachache. <br />
-                  Nathan vient d'être reçu pour intégrer en septembre 2024 la
-                  nouvelle promotion du prestigieux Centre Didier Lockwood à
-                  Paris. <br />
-                  Lors de la saison 2023/2024, Nathan est guitariste pour le
-                  spectacle{" "}
-                  <Link to="/spectacles#bastien">
-                    <span>Bastien & Bastienne</span>
-                  </Link>
-                  .
-                </p>
-              </div>
               <div className="pic1">
                 <img
-                  src={nathan}
-                  alt="photo Nathan"
-                  onClick={() => handleImageClick(nathan)}
+                  src={thomas}
+                  alt="photo Thomas"
+                  onClick={() => handleImageClick(thomas)}
                   loading="lazy"
                 />
               </div>
             </div>
+
             <div id="melusine" className="personne-reverse">
               <div className="pic1">
                 <img
@@ -281,38 +288,97 @@ const Lacie = () => {
                 />
               </div>
             </div>
-            <div id="fumi" className="personne-reverse">
+            <div id="nathan" className="personne-reverse">
               <div className="pic1">
                 <img
-                  src={fumi}
-                  alt="photo Fumi"
-                  onClick={() => handleImageClick(fumi)}
+                  src={nathan}
+                  alt="photo Nathan"
+                  onClick={() => handleImageClick(nathan)}
                   loading="lazy"
                 />
               </div>
               <div className="text1">
                 <p className="main-text">
-                  <span>Fumi Oka</span> est une <span>chanteuse lyrique</span>{" "}
-                  mezzo-soprano d’origine japonaise. <br />
-                  Après avoir passé une licence de chant à Kyoto, elle arrive en
-                  France en 2019, où elle est admise à l’ENM de Villeurbanne
-                  dans la classe de Virginie Pochon. <br />
-                  Elle y obtient son DEM en 2023. <br />
-                  Depuis l'obtention de sa licence, elle a participé à plusieurs
-                  productions d’opéra en tant que choriste ainsi qu'en tant que
-                  soliste, s'illustrant avec brio dans divers rôles : Dorabella
-                  dans Cosi Fan Tutte de Mozart, Hänsel et Knusperhexe dans
-                  Hänsel und Gretel d’Humperdinck, Ms Todd dans The Old Maid and
-                  The Thief de Menotti et Carmen dans Carmen de Bizet. <br />
-                  Lors de la saison 2023/2024, elle est soliste dans{" "}
+                  <span>Nathan Brunet</span> est <span>guitariste</span>,{" "}
+                  <span>sound designer</span>, <span>compositeur</span> et{" "}
+                  <span>claviériste</span>. <br />
+                  Après des études au conservatoire de Nancy, il s'installe à
+                  Lyon où il obtient un DUMI de musicien intervenant et où il
+                  perfectionne sa pratique de la guitare jazz à l'Ecole
+                  Nationale de Musique de Villeurbanne auprès de Pierre
+                  Hachache. <br />
+                  Nathan vient d'être reçu pour intégrer en septembre 2024 la
+                  nouvelle promotion du prestigieux Centre Didier Lockwood à
+                  Paris. <br />
+                  Lors de la saison 2023/2024, Nathan est guitariste pour le
+                  spectacle{" "}
                   <Link to="/spectacles#bastien">
                     <span>Bastien & Bastienne</span>
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+            <div className="bio4">
+              <h3>Président</h3>
+            </div>
+            <div id="antoine " className="personne">
+              <div className="text1">
+                <p className="main-text">
+                  Si il y en a bien un qui fait feu de tout bois, c’est{" "}
+                  <span>Antoine Catinaud</span>. Si un coup se prépare, il en
+                  est. Tout l’intéresse, du chant lyrique au rugby, en passant
+                  par Stanislavski. <br />
+                  Charmé par travail, il a à cœur de comprendre. <br />
+                  De comprendre comment la grande machine humaine qu’il est
+                  fonctionne et comment il raconte des histoires avec ça. <br />
+                  En 2023, Antoine Catinaud devient le président de{" "}
+                  <Link to="/">
+                    <span>la compagnie Poly R</span>
+                  </Link>
+                  .
+                </p>
+              </div>
+
+              <div className="pic1">
+                <img
+                  src={antoine}
+                  alt="photo Galtier"
+                  onClick={() => handleImageClick(antoine)}
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div className="bio5">
+              <h3>Trésorière</h3>
+            </div>
+            <div id="laetitia" className="personne-reverse">
+              <div className="pic1">
+                <img
+                  src={laetitia}
+                  alt="photo Laetitia"
+                  onClick={() => handleImageClick(laetitia)}
+                  loading="lazy"
+                />
+              </div>
+              <div className="text1">
+                <p className="main-text">
+                  <span>Laëtitia Chanoz</span> s'investit dans{" "}
+                  <Link to="/">
+                    <span>la compagnie Poly R</span>
                   </Link>{" "}
-                  et intègre{" "}
-                  <Link to="/spectacles#opera">
-                    <span>la troupe Opéramobil'</span>
-                  </Link>{" "}
-                  de la compagnie.
+                  dès sa création en 2023 en tant que trésorière. <br />
+                  Passionnée de littérature, ancienne élève du Lycée du Parc et
+                  aujourd'hui élève de l'Ecole Normale Supérieure de Lyon et
+                  agrégée de Lettres modernes, Laëtitia a aussi joué de la harpe
+                  pendant de nombreuses années et est désormais une fidèle des
+                  salles de spectacles et de concerts lyonnaises ! <br />
+                  Son travail de recherche porte notamment sur l'œuvre
+                  autobiographique de Violette Leduc, une autrice du XXe siècle
+                  qu'elle espère faire découvrir à ses futurs élèves et au grand
+                  public. <br />
+                  Enfin, à ses heures perdues, elle écrit, une artiste à suivre
+                  donc !
                 </p>
               </div>
             </div>

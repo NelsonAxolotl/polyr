@@ -11,7 +11,7 @@ body {
   padding-bottom: 100px;
 }
 .cie h1 {
-  font-family: "Bangers", system-ui;
+  font-family: "Matemasie", sans-serif;
   font-size: 5rem;
   font-weight: bold;
   padding-top: 210px;
@@ -22,7 +22,7 @@ body {
 .bio h2 {
   font-size: 3rem;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 70px;
   margin-bottom: 30px;
   font-weight: bold;
   color: bisque;
@@ -52,10 +52,15 @@ body {
   align-items: center;
   margin-top: 50px;
 }
+.bio3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .bio h3 {
   font-size: 1.8rem;
   color: white;
-  margin-top: 30px;
+  margin-top: 40px;
   border: 1px solid white;
   padding: 10px;
   border-radius: 5px;
@@ -64,14 +69,34 @@ body {
   font-size: 1.8rem;
   color: white;
   margin-top: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: center;
 }
-.bio3 {
+.bio4 h3 {
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+  margin-bottom: -30px;
+  margin-top: 0px;
+}
+.bio4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
+.bio5 h3 {
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+}
+.bio5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
 .artistes {
   margin-top: 40px;
 }
@@ -81,7 +106,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .personne {
   display: flex;
@@ -89,7 +114,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 .pic1 img {
   width: 400px;
@@ -154,9 +179,28 @@ body {
   cursor: pointer;
 }
 /*RESPONSIVE*/
+@media (max-width: 900px) {
+  .personne {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .personne-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-top: 80px;
+  }
+  .bio5 h3 {
+    margin-bottom: -30px;
+  }
+}
 @media (max-width: 768px) {
   .main {
-    padding-bottom: 50px;
+    padding-bottom: 80px;
   }
   .cie h1 {
     font-size: 3.8rem;
@@ -182,9 +226,19 @@ body {
   }
   .bio3 h3 {
     font-size: 1.5rem;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 40px;
   }
+  .bio4 {
+    margin-top: 60px;
+  }
+  .bio5 {
+    margin-top: 60px;
+  }
+  .bio4 h3 {
+    font-size: 1.5rem;
+  }
+
   .diviser {
     margin-top: -20px;
     margin-bottom: 50px;
@@ -195,10 +249,10 @@ body {
   }
   .personne {
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
     margin-top: 0;
-    margin-bottom: -70px;
+    margin-bottom: -60px;
   }
   .pic1 {
     display: flex;
@@ -219,10 +273,10 @@ body {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
     margin-top: 0;
-    margin-bottom: -70px;
+    margin-bottom: -60px;
   }
   .text1 p {
     font-size: 0.9rem;

@@ -55,7 +55,7 @@ const Accueil = () => {
           <span>
             <Link to="/lacie#roxane">Roxane Macaudière</Link>
           </span>
-          <span>située à Lyon en région AURA</span>
+          <span>située dans la Loire (42)</span>
         </section>
         <section className="poly-pic">
           {[opera1, bastien50].map((src, index) => (

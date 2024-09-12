@@ -46,7 +46,7 @@ const Contact = () => {
                 <span>
                   <FontAwesomeIcon icon={faPhone} />
                 </span>
-                <span>Hervé : 06 24 84 54 71</span>
+                <span>Hervé Le Bert : 06 24 84 54 71</span>
               </div>
             </div>
           </div>
