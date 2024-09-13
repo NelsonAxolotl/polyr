@@ -60,7 +60,7 @@ const Accueil = () => {
         <section className="poly-pic">
           {[opera1, bastien50].map((src, index) => (
             <img
-              key={src} // Utilisation de src comme clé unique
+              key={src}
               src={src}
               alt={`photo cie Poly R ${index + 1}`}
               onClick={() => handleImageClick(src)}
@@ -77,7 +77,7 @@ const Accueil = () => {
           <div className="pic-opera">
             {[operagroupe, opera].map((src, index) => (
               <img
-                key={src} // Utilisation de src comme clé unique
+                key={src}
                 src={src}
                 alt={`Opéra Mobile ${index + 1}`}
                 onClick={() => handleImageClick(src)}

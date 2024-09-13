@@ -1,89 +1,116 @@
+/* General body styles */
 body {
   margin: 0;
   padding: 0;
-  background: #7531a5;
-  font-family: Arial, sans-serif;
+  background: #7531a5; /* Background color */
+  font-family: Arial, sans-serif; /* Font for the entire page */
 }
+
+/* Container for the gallery */
 .gallery-container1 {
-  width: 50%;
-  margin: 0 auto;
-  padding: 20px;
-  background: #7531a5;
-  margin-bottom: 40px;
+  width: 50%; /* Container width */
+  margin: 0 auto; /* Centering container horizontally */
+  padding: 20px; /* Padding inside the container */
+  background: #7531a5; /* Background color matching body */
+  margin-bottom: 40px; /* Space below the container */
 }
+
+/* Style for gallery images */
 .gallery-image1 {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
-  margin: 0 auto;
-  cursor: pointer;
+  width: 100%; /* Full width of the container */
+  height: 400px; /* Fixed height for images */
+  object-fit: cover; /* Cover the area while preserving aspect ratio */
+  border-radius: 10px; /* Rounded corners for images */
+  display: block; /* Block-level display */
+  margin: 0 auto; /* Center images horizontally */
+  cursor: pointer; /* Pointer cursor on hover */
 }
+
+/* Object position for centered images */
 .center-image1 {
-  object-position: center;
+  object-position: center; /* Center object both horizontally and vertically */
 }
+
+/* Object position for top-aligned images */
 .center-image2 {
-  object-position: top;
+  object-position: top; /* Align object to the top */
 }
+
+/* Overlay for enlarged images */
 .overlay {
-  position: fixed;
+  position: fixed; /* Fixed positioning to cover the entire viewport */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(0, 0, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  display: flex; /* Flexbox for centering content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 1000; /* Ensures overlay is on top of other content */
 }
+
+/* Container for the enlarged image */
 .enlarged-image-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  height: 90%;
+  position: relative; /* Positioning context for the close button */
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 90%; /* Width of the container relative to overlay */
+  height: 90%; /* Height of the container relative to overlay */
 }
+
+/* Style for images inside the enlarged image container */
 .enlarged-image-container img {
-  max-width: 100%;
-  max-height: 100%;
-  margin: auto;
+  max-width: 100%; /* Ensure image does not exceed container width */
+  max-height: 100%; /* Ensure image does not exceed container height */
+  margin: auto; /* Center image */
+  border-radius: 2px;
 }
+
+/* Close button styling */
 .close-button {
-  position: absolute;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-  top: 10px;
-  right: 10px;
-  padding: 5px;
-  border-radius: 50%;
+  position: absolute; /* Absolute positioning within the container */
+  background: transparent; /* No background for the button */
+  border: none; /* No border */
+  color: white; /* White text color */
+  font-size: 2rem; /* Font size of the button text */
+  cursor: pointer; /* Pointer cursor on hover */
+  top: 10px; /* Position from the top */
+  right: 10px; /* Position from the right */
+  padding: 5px; /* Padding around the button text */
+  border-radius: 50%; /* Round button */
 }
+
+/* Slick slider dot styling */
 .slick-dots li button:before {
-  color: white;
-  opacity: 1;
+  color: white; /* White color for dots */
+  opacity: 1; /* Fully opaque */
 }
+
+/* Active dot styling */
 .slick-dots li.slick-active button:before {
-  color: white;
-  opacity: 1;
+  color: white; /* White color for active dot */
+  opacity: 1; /* Fully opaque */
 }
-/*RESPONSIVE*/
+
+/* Responsive styles for smaller screens */
 @media (max-width: 1140px) {
+  /* Hide slick slider dots on screens narrower than 1140px */
   .slick-dots li button {
-    display: none;
+    display: none; /* Do not display dots */
   }
 }
 
 @media (max-width: 768px) {
+  /* Adjustments for gallery container on small screens */
   .gallery-container1 {
-    width: 100%;
-    padding: 10px;
+    width: 100%; /* Full width */
+    padding: 10px; /* Reduced padding */
   }
+
+  /* Adjustments for gallery image on small screens */
   .gallery-image1 {
-    height: 300px;
+    height: 300px; /* Reduced height */
   }
 }

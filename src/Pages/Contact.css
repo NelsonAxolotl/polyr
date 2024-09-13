@@ -1,156 +1,189 @@
+/* Style principal pour la section de contact */
 .contact {
-  background: #7531a5;
-  padding: 0 20px;
-  height: 150vh;
-}
-.show-titre2 h1 {
-  font-family: "Matemasie", sans-serif;
-  font-size: 5rem;
-  font-weight: bold;
-  padding-top: 210px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-}
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-}
-.contact-section {
-  background: rgb(255, 255, 255);
-  color: rgb(148, 12, 194);
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 5px;
-  width: 100%;
-  padding: 25px;
-  width: 40%;
-  max-width: 500px;
-  text-align: center;
-  box-sizing: border-box;
-  transition: all 0.3s ease-in-out;
-}
-.contact-section:hover {
-  border: 1px solid bisque;
-  background: rgb(34, 28, 36);
-  color: bisque;
-}
-.resa-h2 h2 {
-  padding-bottom: 30px;
-  font-size: 2.7rem;
-  font-weight: bold;
-}
-.mail,
-.phone {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 15px;
-}
-.mail {
-  margin-bottom: 30px;
-}
-.resa .phone span {
-  font-size: 1.4rem;
-  padding-bottom: 15px;
-  font-weight: bold;
-}
-.mail a {
-  font-size: 1.6rem;
-  text-decoration: none;
-  color: rgb(148, 12, 194);
-  font-weight: bold;
-}
-.reseaux h2 {
-  font-size: 2.7rem;
-  font-weight: bold;
-  margin-top: 100px;
-  color: bisque;
-  text-decoration: underline;
-  text-align: center;
-}
-.icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  margin-top: 50px;
-  padding-bottom: 30px;
-  cursor: pointer;
-  transition: 0.4s ease-in-out;
-}
-.icons a {
-  color: inherit;
-  text-decoration: none;
+  background: #7531a5; /* Couleur de fond de la section de contact */
+  padding: 0 20px; /* Espacement intérieur horizontal */
+  height: 150vh; /* Hauteur de la section (150% de la hauteur de la fenêtre) */
 }
 
+/* Style pour le titre dans la section de contact */
+.show-titre2 h1 {
+  font-family: "Matemasie", sans-serif; /* Police du titre */
+  font-size: 5rem; /* Taille de la police */
+  font-weight: bold; /* Poids de la police */
+  padding-top: 210px; /* Espacement au-dessus du titre */
+  text-align: center; /* Alignement du texte au centre */
+  color: rgb(255, 255, 255); /* Couleur du texte */
+}
+
+/* Style pour le conteneur de la section de contact */
+.container {
+  display: flex; /* Flexbox pour aligner les éléments */
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  margin-top: 100px; /* Marge supérieure */
+}
+
+/* Style pour les sections de contact individuelles */
+.contact-section {
+  background: rgb(255, 255, 255); /* Couleur de fond */
+  color: rgb(148, 12, 194); /* Couleur du texte */
+  border: 1px solid rgb(255, 255, 255); /* Bordure blanche */
+  border-radius: 5px; /* Bordure arrondie */
+  width: 100%; /* Largeur de la section */
+  padding: 25px; /* Espacement intérieur */
+  max-width: 500px; /* Largeur maximale */
+  text-align: center; /* Alignement du texte */
+  box-sizing: border-box; /* Inclut la bordure et le padding dans la largeur totale */
+  transition: all 0.3s ease-in-out; /* Effet de transition pour les changements */
+}
+
+/* Style pour la section de contact au survol */
+.contact-section:hover {
+  border: 1px solid bisque; /* Bordure au survol */
+  background: rgb(34, 28, 36); /* Couleur de fond au survol */
+  color: bisque; /* Couleur du texte au survol */
+}
+
+/* Style pour les sous-titres dans les sections de contact */
+.resa-h2 h2 {
+  padding-bottom: 30px; /* Espacement inférieur */
+  font-size: 2.7rem; /* Taille de la police */
+  font-weight: bold; /* Poids de la police */
+}
+
+/* Style pour les éléments de contact (email et téléphone) */
+.mail,
+.phone {
+  display: flex; /* Flexbox pour aligner les éléments */
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  gap: 15px; /* Espace entre les éléments */
+  margin-bottom: 15px; /* Marge inférieure */
+}
+
+.mail {
+  margin-bottom: 30px; /* Marge inférieure spécifique pour les emails */
+}
+
+/* Style pour le texte du téléphone */
+.resa .phone span {
+  font-size: 1.4rem; /* Taille de la police */
+  padding-bottom: 15px; /* Espacement inférieur */
+  font-weight: bold; /* Poids de la police */
+}
+
+/* Style pour les liens d'email */
+.mail a {
+  font-size: 1.6rem; /* Taille de la police */
+  text-decoration: none; /* Pas de soulignement */
+  color: rgb(148, 12, 194); /* Couleur du texte */
+  font-weight: bold; /* Poids de la police */
+}
+
+/* Style pour les titres de réseaux sociaux */
+.reseaux h2 {
+  font-size: 2.7rem; /* Taille de la police */
+  font-weight: bold; /* Poids de la police */
+  margin-top: 100px; /* Marge supérieure */
+  color: bisque; /* Couleur du texte */
+  text-decoration: underline; /* Soulignement */
+  text-align: center; /* Alignement du texte au centre */
+}
+
+/* Style pour les icônes de réseaux sociaux */
+.icons {
+  display: flex; /* Flexbox pour aligner les icônes */
+  justify-content: center; /* Centre les icônes horizontalement */
+  align-items: center; /* Centre les icônes verticalement */
+  gap: 40px; /* Espace entre les icônes */
+  margin-top: 50px; /* Marge supérieure */
+  padding-bottom: 30px; /* Espacement inférieur */
+  cursor: pointer; /* Curseur au survol */
+  transition: 0.4s ease-in-out; /* Effet de transition pour les changements */
+}
+
+/* Style pour les liens dans les icônes */
+.icons a {
+  color: inherit; /* Hérite de la couleur du parent */
+  text-decoration: none; /* Pas de soulignement */
+}
+
+/* Style pour les icônes au survol */
 .icons i:hover {
-  transform: scale(1.4);
-  color: bisque;
+  transform: scale(1.4); /* Zoom au survol */
+  color: bisque; /* Couleur au survol */
 }
+
+/* Style pour les icônes */
 .icons i {
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 2.7rem;
-  transition: transform 0.3s ease-in-out;
+  color: #ffffff; /* Couleur de l'icône */
+  font-weight: bold; /* Poids de la police */
+  font-size: 2.7rem; /* Taille de la police */
+  transition: transform 0.3s ease-in-out; /* Effet de transition pour le zoom */
 }
+
+/* Style pour les images de la section de contact */
 .pic2 {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  height: 400px;
-  margin-top: 80px;
+  width: 100%; /* Largeur de l'image */
+  overflow: hidden; /* Masquage du débordement */
+  position: relative; /* Position relative pour l'image */
+  height: 400px; /* Hauteur de l'image */
+  margin-top: 80px; /* Marge supérieure */
 }
+
+/* Style pour les images responsives */
 .responsive-img2 {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  cursor: pointer;
+  width: 100%; /* Largeur de l'image */
+  height: 100%; /* Hauteur de l'image */
+  object-fit: cover; /* Ajustement de l'image */
+  object-position: center; /* Position de l'image */
+  cursor: pointer; /* Curseur au survol */
 }
-/*RESPONSIVE*/
+
+/* Styles responsive pour les écrans plus petits */
 @media screen and (max-width: 1200px) {
   .contact-section {
-    padding-bottom: 0;
-    width: 100%;
+    padding-bottom: 0; /* Suppression du padding inférieur */
+    width: 100%; /* Largeur à 100% */
   }
 }
+
 @media screen and (max-width: 760px) {
   .container {
-    margin-top: 50px;
+    margin-top: 50px; /* Marge supérieure réduite */
   }
   .contact {
-    height: 130vh;
+    height: 130vh; /* Hauteur réduite */
   }
   .contact-section {
-    padding-bottom: 0;
-    width: 100%;
-    max-width: none;
+    padding-bottom: 0; /* Suppression du padding inférieur */
+    width: 100%; /* Largeur à 100% */
+    max-width: none; /* Pas de largeur maximale */
   }
   .show-titre2 h1 {
-    font-size: 3.5rem;
+    font-size: 3.4rem; /* Taille de la police réduite */
   }
   .resa-h2 h2 {
-    font-size: 2.2rem;
+    font-size: 2.2rem; /* Taille de la police réduite */
   }
   .mail span a {
-    font-size: 1rem;
+    font-size: 1rem; /* Taille du texte réduite */
   }
   .resa .phone span {
-    font-size: 1rem;
+    font-size: 1rem; /* Taille du texte réduite */
   }
   .reseaux h2 {
-    font-size: 2.5rem;
-    margin-top: 50px;
+    font-size: 2.5rem; /* Taille de la police réduite */
+    margin-top: 50px; /* Marge supérieure réduite */
   }
   .pic2 {
-    height: 200px;
-    margin-top: -20px;
+    height: 200px; /* Hauteur réduite */
+    margin-top: -20px; /* Marge supérieure réduite */
   }
 }
+
 @media screen and (max-width: 500px) {
   .contact {
-    height: 110vh;
+    height: 110vh; /* Hauteur encore réduite */
   }
 }

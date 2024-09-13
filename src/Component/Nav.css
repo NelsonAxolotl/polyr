@@ -1,192 +1,212 @@
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  position: fixed;
-  width: 100%;
-  min-height: 75px;
-  color: rgb(148, 12, 194);
-  background: rgb(255, 255, 255);
-  /* border-bottom: 0.1px solid grey; */
-  z-index: 2;
-}
-.navbar.show-nav,
-.navbar.hide-nav {
-  opacity: 1;
-}
-.navbar-logo img {
-  height: 120px;
-  margin-top: 10px;
-}
-.navbar-links {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.navbar-link {
-  color: inherit;
-  transition: all 0.67s ease-in-out;
-  display: block;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-left: 25px;
-  font-size: 24px;
-  font-weight: 700;
-  text-decoration: none;
-  color: rgb(128, 20, 217);
-  transition: all 0.3s ease-in-out;
-}
-.navbar-link:hover {
-  color: rgb(220, 205, 0);
-  transform: scale(1.05);
-  border-bottom: 1px solid rgb(220, 205, 0);
-}
-.navbar-burger {
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border: none;
-  color: inherit;
-  display: none;
-}
-.navbar-item {
-  position: relative;
+  display: flex; /* Utilisation de flexbox */
+  align-items: center; /* Alignement vertical */
+  justify-content: space-evenly; /* Espacement égal entre les éléments */
+  position: fixed; /* Position fixe */
+  width: 100%; /* Largeur totale */
+  min-height: 75px; /* Hauteur minimale */
+  color: rgb(148, 12, 194); /* Couleur du texte */
+  background: rgb(255, 255, 255); /* Couleur de fond */
+  z-index: 2; /* Niveau de superposition */
 }
 
+/* Styles pour les états visibles de la barre de navigation */
+.navbar.show-nav,
+.navbar.hide-nav {
+  opacity: 1; /* Opacité maximale */
+}
+
+/* Style pour le logo de la barre de navigation */
+.navbar-logo img {
+  height: 120px; /* Hauteur du logo */
+  margin-top: 10px; /* Marge supérieure */
+}
+
+/* Style pour les liens de navigation */
+.navbar-links {
+  display: flex; /* Utilisation de flexbox */
+  list-style: none; /* Suppression des puces des listes */
+  padding: 0; /* Suppression du padding */
+  margin: 0; /* Suppression de la marge */
+}
+
+/* Style pour chaque lien de navigation */
+.navbar-link {
+  color: inherit; /* Couleur héritée */
+  transition: all 0.67s ease-in-out; /* Transition douce */
+  display: block; /* Affichage en bloc */
+  padding: 10px 20px; /* Espacement intérieur */
+  cursor: pointer; /* Curseur pointeur */
+  margin-left: 25px; /* Marge gauche */
+  font-size: 24px; /* Taille de la police */
+  font-weight: 700; /* Poids de la police */
+  text-decoration: none; /* Suppression de la décoration du texte */
+  color: rgb(128, 20, 217); /* Couleur du texte */
+  transition: all 0.3s ease-in-out; /* Transition douce */
+}
+
+/* Effet de survol pour les liens de navigation */
+.navbar-link:hover {
+  color: rgb(220, 205, 0); /* Couleur au survol */
+  transform: scale(1.05); /* Zoom au survol */
+  border-bottom: 1px solid rgb(220, 205, 0); /* Bordure inférieure au survol */
+}
+
+/* Style pour le bouton de menu burger (menu mobile) */
+.navbar-burger {
+  width: 40px; /* Largeur du bouton */
+  height: 40px; /* Hauteur du bouton */
+  background: transparent; /* Fond transparent */
+  border: none; /* Pas de bordure */
+  color: inherit; /* Couleur héritée */
+  display: none; /* Caché par défaut */
+}
+
+/* Style pour les éléments de navigation */
+.navbar-item {
+  position: relative; /* Position relative pour les éléments enfants */
+}
+
+/* Style pour les éléments de navigation avec effet de survol */
 .navbar-hover {
-  padding: 8px 0px;
+  padding: 8px 0; /* Espacement intérieur */
 }
 
 .navbar-hover a {
-  text-decoration: none;
-  color: black;
-}
-.navbar-item.active .navbar-link {
-  color: rgb(
-    220,
-    205,
-    0
-  ); /* Couleur du hover ou autre style que vous souhaitez appliquer */
+  text-decoration: none; /* Suppression de la décoration du texte */
+  color: black; /* Couleur du texte */
 }
 
+/* Style pour les éléments actifs dans la barre de navigation */
+.navbar-item.active .navbar-link {
+  color: rgb(220, 205, 0); /* Couleur pour les éléments actifs */
+}
+
+/* Styles pour les écrans de largeur intermédiaire (760px - 1300px) */
 @media screen and (max-width: 1300px) and (min-width: 760px) {
   .navbar-burger {
-    display: none;
+    display: none; /* Le bouton burger est caché dans cette plage de largeur */
   }
 }
+
+/* Styles pour les écrans jusqu'à 954px */
 @media screen and (max-width: 954px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: column; /* Disposition en colonne */
   }
 }
+
+/* Styles pour les écrans jusqu'à 835px */
 @media screen and (max-width: 835px) {
   .navbar-link {
-    font-size: 20px;
+    font-size: 20px; /* Réduction de la taille de la police */
   }
 }
 
+/* Styles pour les écrans jusqu'à 768px */
 @media screen and (max-width: 768px) {
   nav {
-    padding-bottom: 0px;
+    padding-bottom: 0; /* Suppression de l'espacement inférieur */
   }
   .navbar-links {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    right: -100vw;
-    bottom: 0;
-    width: 0;
-    height: 100vh;
-    padding: 2rem;
-    background: rgb(141, 32, 218);
-    visibility: hidden;
-    transition: all 0.8s ease-out;
+    flex-direction: column; /* Disposition en colonne */
+    justify-content: center; /* Alignement au centre */
+    align-items: center; /* Alignement au centre */
+    position: fixed; /* Position fixe */
+    right: -100vw; /* Position hors écran à droite */
+    bottom: 0; /* Aligner en bas */
+    width: 0; /* Largeur initiale */
+    height: 100vh; /* Hauteur totale de la vue */
+    padding: 2rem; /* Espacement intérieur */
+    background: rgb(141, 32, 218); /* Couleur de fond */
+    visibility: hidden; /* Caché par défaut */
+    transition: all 0.8s ease-out; /* Transition douce */
   }
 
+  /* Affichage des liens lorsque la classe show-nav est appliquée */
   .show-nav .navbar-links {
-    right: 0;
-    width: 100vw;
-    visibility: visible;
+    right: 0; /* Alignement à droite */
+    width: 100vw; /* Largeur totale de la vue */
+    visibility: visible; /* Visible */
   }
 
   .navbar-item:last-child::after {
-    display: none;
+    display: none; /* Suppression de l'élément ::after pour le dernier élément */
   }
   .navbar-link {
-    display: block;
-    padding: 1.5rem;
-    font-size: 7vw;
-    margin: 0;
-    color: white;
+    display: block; /* Affichage en bloc */
+    padding: 1.5rem; /* Espacement intérieur */
+    font-size: 7vw; /* Taille de la police relative à la largeur de la vue */
+    margin: 0; /* Suppression de la marge */
+    color: white; /* Couleur du texte */
   }
   .navbar-burger {
-    display: block;
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
+    display: block; /* Affichage du bouton burger */
+    position: fixed; /* Position fixe */
+    top: 1rem; /* Marge supérieure */
+    right: 1rem; /* Marge droite */
   }
   .navbar-burger:hover {
-    cursor: pointer;
+    cursor: pointer; /* Curseur pointeur au survol */
   }
   .burger-bar,
   .burger-bar::before,
   .burger-bar::after {
-    display: block;
-    width: 40px;
-    height: 3px;
-    position: relative;
-    border-radius: 3px;
-    background: rgb(6, 6, 6);
-    transition: all 0.8s ease-in-out;
+    display: block; /* Affichage en bloc */
+    width: 40px; /* Largeur des barres du burger */
+    height: 3px; /* Hauteur des barres du burger */
+    position: relative; /* Position relative */
+    border-radius: 3px; /* Bordures arrondies */
+    background: rgb(6, 6, 6); /* Couleur de fond */
+    transition: all 0.8s ease-in-out; /* Transition douce */
   }
   .burger-bar::before,
   .burger-bar::after {
-    content: "";
-    position: absolute;
-    left: 0;
+    content: ""; /* Contenu vide */
+    position: absolute; /* Position absolue */
+    left: 0; /* Aligner à gauche */
   }
   .burger-bar::before {
-    transform: translateY(-12px);
+    transform: translateY(-12px); /* Déplacement vers le haut */
   }
-
   .burger-bar::after {
-    transform: translateY(12px);
+    transform: translateY(12px); /* Déplacement vers le bas */
   }
+  /* Styles pour le bouton burger lorsque la classe show-nav est appliquée */
   .show-nav .burger-bar {
-    background: transparent;
-    width: 0;
+    background: transparent; /* Fond transparent */
+    width: 0; /* Largeur nulle */
   }
   .show-nav .burger-bar::before {
-    transform: rotate(45deg);
+    transform: rotate(45deg); /* Rotation à 45 degrés */
   }
   .show-nav .burger-bar::after {
-    transform: rotate(-45deg);
+    transform: rotate(-45deg); /* Rotation à -45 degrés */
   }
   .navbar-item {
-    transform: translateX(200vh);
+    transform: translateX(200vh); /* Déplacement hors de la vue à droite */
   }
   .show-nav .navbar-item {
-    transform: translateX(0);
+    transform: translateX(0); /* Alignement dans la vue */
   }
+  /* Styles pour les animations des éléments de navigation */
   .show-nav .slideInDown-1 {
-    transition: all 1s ease-out;
+    transition: all 1s ease-out; /* Transition pour le premier élément */
   }
   .show-nav .slideInDown-2 {
-    transition: all 1.2s ease-out;
+    transition: all 1.2s ease-out; /* Transition pour le deuxième élément */
   }
   .show-nav .slideInDown-3 {
-    transition: all 1.4s ease-out;
+    transition: all 1.4s ease-out; /* Transition pour le troisième élément */
   }
   .show-nav .slideInDown-4 {
-    transition: all 1.6s ease-out;
+    transition: all 1.6s ease-out; /* Transition pour le quatrième élément */
   }
   .show-nav .slideInDown-5 {
-    transition: all 1.8s ease-out;
+    transition: all 1.8s ease-out; /* Transition pour le cinquième élément */
   }
   .navbar-link:hover {
-    color: rgb(220, 205, 0);
-    border-bottom: none;
+    color: rgb(220, 205, 0); /* Couleur au survol */
+    border-bottom: none; /* Suppression de la bordure inférieure au survol */
   }
 }

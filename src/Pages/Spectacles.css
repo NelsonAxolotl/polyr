@@ -1,103 +1,136 @@
+/* Style global pour le corps de la page */
 body {
-  margin: 0;
-  font-family: "Quicksand", sans-serif;
+  margin: 0; /* Suppression des marges par défaut */
+  font-family: "Quicksand", sans-serif; /* Police principale */
 }
+
+/* Style principal pour la section 'show' */
 .show {
-  background: #7531a5;
-  padding: 0 20px;
-  padding-bottom: 40px;
+  background: #7531a5; /* Couleur de fond */
+  padding: 0 20px; /* Espacement horizontal */
+  padding-bottom: 40px; /* Espacement inférieur spécifique */
 }
+
+/* Style pour le titre de la section 'show-titre' */
 .show-titre h1 {
-  font-family: "Matemasie", sans-serif;
-  font-size: 5rem;
-  font-weight: bold;
-  padding-top: 230px;
-  text-align: center;
-  color: rgb(255, 255, 255);
+  font-family: "Matemasie", sans-serif; /* Police du titre */
+  font-size: 5rem; /* Taille de la police */
+  font-weight: bold; /* Poids de la police */
+  padding-top: 230px; /* Espacement supérieur */
+  text-align: center; /* Alignement du texte au centre */
+  color: rgb(255, 255, 255); /* Couleur du texte */
 }
+
+/* Style pour les sous-titres dans les sections 'showplus' et 'showplus1' */
 .showplus h2,
 .showplus1 h2 {
-  font-size: 3rem;
-  text-align: center;
-  color: bisque;
-  margin-top: 80px;
-  border: 1px solid bisque;
-  padding: 10px;
-  border-radius: 5px;
-  font-weight: bold;
+  font-size: 3rem; /* Taille de la police */
+  text-align: center; /* Alignement du texte au centre */
+  color: bisque; /* Couleur du texte */
+  margin-top: 80px; /* Marge supérieure */
+  border: 1px solid bisque; /* Bordure de couleur bisque */
+  padding: 10px; /* Espacement intérieur */
+  border-radius: 5px; /* Bordure arrondie */
+  font-weight: bold; /* Poids de la police */
 }
+
+/* Style pour les sections 'showplus' et 'showplus1' */
 .showplus,
 .showplus1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 50px;
+  display: flex; /* Utilisation de flexbox */
+  flex-direction: column; /* Disposition en colonne */
+  align-items: center; /* Alignement au centre */
+  margin-bottom: 50px; /* Marge inférieure */
 }
+
+/* Style pour les paragraphes dans les sections 'showplus' et 'showplus1' */
 .showplus p,
 .showplus1 p {
-  font-size: 1.1rem;
-  text-align: justify;
-  max-width: 800px;
-  margin-top: 50px;
-  line-height: 24px;
-  margin-bottom: 40px;
-  background: rgb(237, 235, 235);
-  border-radius: 10px;
-  padding: 20px;
+  font-size: 1.1rem; /* Taille de la police */
+  text-align: justify; /* Alignement du texte */
+  max-width: 800px; /* Largeur maximale */
+  margin-top: 50px; /* Marge supérieure */
+  line-height: 24px; /* Hauteur de ligne */
+  margin-bottom: 40px; /* Marge inférieure */
+  background: rgb(237, 235, 235); /* Couleur de fond */
+  border-radius: 10px; /* Bordure arrondie */
+  padding: 20px; /* Espacement intérieur */
 }
+
+/* Style pour les éléments 'span' dans les sections 'showplus' et 'showplus1' */
 .showplus span,
 .showplus1 span {
-  color: rgb(250, 164, 59);
-  font-weight: bold;
+  color: rgb(250, 164, 59); /* Couleur du texte */
+  font-weight: bold; /* Poids de la police */
 }
+
+/* Style pour les titres 'h3' dans les sections 'showplus' et 'showplus1' */
 .showplus h3,
 .showplus1 h3 {
-  font-size: 1.5rem;
-  color: white;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  border: 1px solid white;
-  padding: 10px;
-  border-radius: 5px;
+  font-size: 1.5rem; /* Taille de la police */
+  color: white; /* Couleur du texte */
+  margin-top: 40px; /* Marge supérieure */
+  margin-bottom: 20px; /* Marge inférieure */
+  border: 1px solid white; /* Bordure blanche */
+  padding: 10px; /* Espacement intérieur */
+  border-radius: 5px; /* Bordure arrondie */
 }
+
+/* Style pour les titres 'h4' dans les sections 'showplus' et 'showplus1' */
 .showplus h4,
 .showplus1 h4 {
-  color: bisque;
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin-top: 20px;
-  transition: all 0.3s ease-in-out;
+  color: bisque; /* Couleur du texte */
+  font-size: 1.4rem; /* Taille de la police */
+  font-weight: bold; /* Poids de la police */
+  margin-top: 20px; /* Marge supérieure */
+  transition: all 0.3s ease-in-out; /* Effet de transition */
 }
+
+/* Style pour les liens dans les sections 'showplus' et 'showplus1' */
 .showplus a,
 .showplus1 a {
-  color: bisque;
+  color: bisque; /* Couleur du texte */
 }
+
+/* Effet au survol pour les titres 'h4' dans les sections 'showplus' et 'showplus1' */
 .showplus h4:hover,
 .showplus1 h4:hover {
-  transform: scale(1.03);
+  transform: scale(1.03); /* Zoom au survol */
 }
+
+/* Style pour la section 'gall' */
 .gall {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
+  display: flex; /* Utilisation de flexbox */
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  margin-bottom: 20px; /* Marge inférieure */
 }
+
+/* Style pour les titres dans la section 'gall' */
 .gall h2 {
-  text-align: center;
-  font-size: 3rem;
-  text-align: center;
-  color: white;
-  margin-top: 30px;
-  border: 1px solid bisque;
-  padding: 10px;
-  border-radius: 5px;
+  text-align: center; /* Alignement du texte au centre */
+  font-size: 3rem; /* Taille de la police */
+  color: white; /* Couleur du texte */
+  margin-top: 30px; /* Marge supérieure */
+  border: 1px solid bisque; /* Bordure de couleur bisque */
+  padding: 10px; /* Espacement intérieur */
+  border-radius: 5px; /* Bordure arrondie */
 }
-#bastien {
-  scroll-margin-top: 100px;
+
+/* Styles pour les ancres de défilement */
+#bastien,
+#opera,
+#roxane,
+#herve,
+#thomas,
+#melusine,
+#galtier,
+#fumi,
+#nathan {
+  scroll-margin-top: 100px; /* Espacement au-dessus des éléments lors du défilement */
 }
-#opera {
-  scroll-margin-top: 100px;
-}
+
+/* Ajustements spécifiques pour certains éléments */
 #roxane {
   scroll-margin-top: 180px;
 }
@@ -119,108 +152,100 @@ body {
 #nathan {
   scroll-margin-top: 190px;
 }
+
+/* Style pour les images dans la section 'pic20' */
 .pic20 {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  height: 400px;
+  width: 100%; /* Largeur totale */
+  overflow: hidden; /* Masquage du débordement */
+  position: relative; /* Position relative */
+  height: 400px; /* Hauteur de l'image */
 }
+
+/* Style pour les images responsives dans la section 'pic20' */
 .responsive-img20 {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  cursor: pointer;
+  width: 100%; /* Largeur totale */
+  height: 100%; /* Hauteur totale */
+  object-fit: cover; /* Ajustement de l'image */
+  object-position: center; /* Position de l'image */
+  cursor: pointer; /* Curseur au survol */
 }
+
+/* Style pour la section 'dates' */
 .dates {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
+  display: flex; /* Utilisation de flexbox */
+  flex-direction: column; /* Disposition en colonne */
+  align-items: center; /* Alignement au centre */
+  margin-bottom: 20px; /* Marge inférieure */
 }
+
+/* Style pour les titres 'h3' dans la section 'dates' */
 .dates h3 {
-  color: white;
-  font-size: 1.4rem;
-  border: 1px solid white;
-  padding: 15px;
-  border-radius: 5px;
-  margin: 30px 0;
+  color: white; /* Couleur du texte */
+  font-size: 1.4rem; /* Taille de la police */
+  border: 1px solid white; /* Bordure blanche */
+  padding: 15px; /* Espacement intérieur */
+  border-radius: 5px; /* Bordure arrondie */
+  margin: 30px 0; /* Marges supérieure et inférieure */
 }
+
+/* Style pour les images dans la section 'dates' */
 .dates img {
-  width: 40%;
-  border-radius: 10px;
-  border: 1px solid yellow;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
+  width: 40%; /* Largeur de l'image */
+  border-radius: 10px; /* Bordure arrondie */
+  border: 1px solid yellow; /* Bordure jaune */
+  transition: all 0.3s ease-in-out; /* Effet de transition */
+  cursor: pointer; /* Curseur au survol */
 }
+
+/* Effet au survol pour les images dans la section 'dates' */
 .dates img:hover {
-  transform: scale(1.03);
+  transform: scale(1.03); /* Zoom au survol */
 }
-/*RESPONSIVE*/
+
+/* Styles responsive pour les écrans jusqu'à 1200px */
 @media (max-width: 1200px) {
   .dates h3 {
-    font-size: 1.2rem; /* Slightly smaller text on medium screens */
-    padding: 10px;
-    margin: 20px 0;
+    font-size: 1.2rem; /* Réduction de la taille de la police */
+    padding: 10px; /* Réduction de l'espacement intérieur */
+    margin: 20px 0; /* Marges ajustées */
   }
 }
+
+/* Styles responsive pour les écrans jusqu'à 768px */
 @media (max-width: 768px) {
   .show-titre h1 {
-    font-size: 3.5rem;
-    margin-bottom: 30px;
-    padding-top: 200px;
+    font-size: 3.4rem; /* Réduction de la taille de la police */
+    margin-bottom: 30px; /* Marge inférieure */
+    padding-top: 200px; /* Réduction de l'espacement supérieur */
   }
   .showplus h2,
   .showplus1 h2 {
-    font-size: 2rem;
-    margin-top: 30px;
+    font-size: 2rem; /* Réduction de la taille de la police */
+    margin-top: 30px; /* Marge supérieure */
   }
   .showplus h3,
   .showplus1 h3 {
-    margin-top: 20px;
+    margin-top: 20px; /* Marge supérieure */
   }
   .showplus p,
   .showplus1 p {
-    font-size: 0.9rem;
-    margin-top: 30px;
+    font-size: 0.9rem; /* Réduction de la taille de la police */
+    margin-top: 30px; /* Marge supérieure */
   }
   .gall h2 {
-    margin-top: 20px;
-    font-size: 2.3rem;
-    margin-top: 0;
+    margin-top: 20px; /* Marge supérieure */
+    font-size: 2.3rem; /* Réduction de la taille de la police */
   }
   .pic-opera {
-    margin-top: 0;
-    margin-bottom: 0Ò;
-  }
-
-  #roxane {
-    scroll-margin-top: 160px;
-  }
-  #bastien {
-    scroll-margin-top: 120px;
-  }
-  #opera {
-    scroll-margin-top: 120px;
-  }
-  #herve {
-    scroll-margin-top: 160px;
-  }
-  #galtier {
-    scroll-margin-top: 160px;
-  }
-  #thomas {
-    scroll-margin-top: 160px;
-  }
-  #nathan {
-    scroll-margin-top: 160px;
+    margin-top: 0; /* Suppression de la marge supérieure */
+    margin-bottom: 0; /* Suppression de la marge inférieure */
   }
   .dates h3 {
-    font-size: 1rem; /* Smaller text on smaller screens */
-    padding: 10px;
-    margin: 15px 0;
+    font-size: 1rem; /* Réduction de la taille de la police */
+    padding: 10px; /* Réduction de l'espacement intérieur */
+    margin: 15px 0; /* Marges ajustées */
   }
   .dates img {
-    width: 90%; /* Adjust image size on small screens */
+    width: 90%; /* Réduction de la largeur de l'image */
   }
 }
