@@ -12,7 +12,7 @@
   font-weight: bold; /* Poids de la police */
   padding-top: 210px; /* Espacement au-dessus du titre */
   text-align: center; /* Alignement du texte au centre */
-  color: rgb(255, 255, 255); /* Couleur du texte */
+  color: rgba(255, 255, 255, 1); /* Couleur du texte */
 }
 
 /* Style pour le conteneur de la section de contact */
@@ -25,9 +25,9 @@
 
 /* Style pour les sections de contact individuelles */
 .contact-section {
-  background: rgb(255, 255, 255); /* Couleur de fond */
-  color: rgb(148, 12, 194); /* Couleur du texte */
-  border: 1px solid rgb(255, 255, 255); /* Bordure blanche */
+  background: rgba(255, 255, 255, 1); /* Couleur de fond */
+  color: rgba(148, 12, 194, 1); /* Couleur du texte */
+  border: 1px solid rgba(255, 255, 255, 1); /* Bordure blanche */
   border-radius: 5px; /* Bordure arrondie */
   width: 100%; /* Largeur de la section */
   padding: 25px; /* Espacement intérieur */
@@ -76,7 +76,7 @@
 .mail a {
   font-size: 1.6rem; /* Taille de la police */
   text-decoration: none; /* Pas de soulignement */
-  color: rgb(148, 12, 194); /* Couleur du texte */
+  color: rgba(148, 12, 194, 1); /* Couleur du texte */
   font-weight: bold; /* Poids de la police */
 }
 
@@ -116,7 +116,7 @@
 
 /* Style pour les icônes */
 .icons i {
-  color: #ffffff; /* Couleur de l'icône */
+  color: #fff; /* Couleur de l'icône */
   font-weight: bold; /* Poids de la police */
   font-size: 2.7rem; /* Taille de la police */
   transition: transform 0.3s ease-in-out; /* Effet de transition pour le zoom */
@@ -152,30 +152,38 @@
   .container {
     margin-top: 50px; /* Marge supérieure réduite */
   }
+
   .contact {
     height: 130vh; /* Hauteur réduite */
   }
+
   .contact-section {
     padding-bottom: 0; /* Suppression du padding inférieur */
     width: 100%; /* Largeur à 100% */
     max-width: none; /* Pas de largeur maximale */
   }
+
   .show-titre2 h1 {
     font-size: 3.4rem; /* Taille de la police réduite */
   }
+
   .resa-h2 h2 {
     font-size: 2.2rem; /* Taille de la police réduite */
   }
+
   .mail span a {
     font-size: 1rem; /* Taille du texte réduite */
   }
+
   .resa .phone span {
     font-size: 1rem; /* Taille du texte réduite */
   }
+
   .reseaux h2 {
     font-size: 2.5rem; /* Taille de la police réduite */
     margin-top: 50px; /* Marge supérieure réduite */
   }
+
   .pic2 {
     height: 200px; /* Hauteur réduite */
     margin-top: -20px; /* Marge supérieure réduite */

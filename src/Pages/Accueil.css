@@ -16,13 +16,14 @@
   gap: 40px;
   text-align: center;
 }
+
 .tittle-poly h1,
 .tittle-poly h2 {
   font-family: "Matemasie", sans-serif; /* Police des titres */
   font-size: 5rem; /* Taille des polices des titres */
   padding-top: 230px; /* Espacement au-dessus des titres */
   font-weight: bold; /* Poids de la police des titres */
-  color: rgb(255, 255, 255); /* Couleur des titres */
+  color: rgba(255, 255, 255, 1); /* Couleur des titres */
 }
 
 /* Style pour la section d'introduction "poly-intro" */
@@ -32,6 +33,7 @@
   text-align: center;
   margin-top: 40px; /* Marge supérieure */
 }
+
 .poly-intro p {
   font-size: 1.4rem; /* Taille du texte */
   line-height: 30px; /* Hauteur de ligne */
@@ -40,8 +42,9 @@
   text-align: justify; /* Alignement du texte */
   color: bisque; /* Couleur du texte */
 }
+
 .poly-intro span {
-  color: rgb(255, 255, 255); /* Couleur du texte dans les spans */
+  color: rgba(255, 255, 255, 1); /* Couleur du texte dans les spans */
   font-weight: bold; /* Poids de la police des spans */
   font-size: 1.5rem; /* Taille de la police des spans */
 }
@@ -53,19 +56,21 @@
   align-items: center;
   gap: 10px;
 }
+
 .suite-intro p {
   font-size: 1.4rem; /* Taille du texte */
   text-align: center; /* Alignement du texte */
-  color: rgb(255, 18, 227); /* Couleur du texte */
+  color: rgba(255, 18, 227, 1); /* Couleur du texte */
   font-weight: bold; /* Poids de la police */
   margin-left: 50px; /* Marge à gauche */
   margin-right: 50px; /* Marge à droite */
   line-height: 20px; /* Hauteur de ligne */
 }
+
 .suite-intro span {
   font-size: 1.4rem; /* Taille du texte */
   text-align: center; /* Alignement du texte */
-  color: rgb(255, 18, 227); /* Couleur du texte */
+  color: rgba(255, 18, 227, 1); /* Couleur du texte */
   font-weight: bold; /* Poids de la police */
 }
 
@@ -75,12 +80,14 @@
   justify-content: center;
   align-items: center;
 }
+
 .split p {
   margin: 30px 10px; /* Marges autour du texte */
   font-size: 1.4rem; /* Taille du texte */
   color: white; /* Couleur du texte */
   font-weight: bold; /* Poids de la police */
 }
+
 .split span {
   font-size: 1.4rem; /* Taille du texte */
   color: white; /* Couleur du texte */
@@ -96,6 +103,7 @@
   gap: 20px; /* Espace entre les images */
   margin: 40px 0; /* Marges autour */
 }
+
 .poly-pic img {
   max-width: 100%; /* Largeur maximale des images */
   height: 300px; /* Hauteur des images */
@@ -106,6 +114,7 @@
   border-radius: 5px; /* Bordure arrondie */
   transition: all 0.3s ease-in-out; /* Transition au survol */
 }
+
 .poly-pic img:hover {
   transform: scale(1.02); /* Effet de zoom au survol */
 }
@@ -116,6 +125,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .actu h3 {
   font-size: 3.5rem; /* Taille du titre */
   text-align: center; /* Alignement du texte */
@@ -133,6 +143,7 @@
   gap: 20px; /* Espace entre les images */
   margin: 20px 0; /* Marges autour */
 }
+
 .pic-opera img {
   width: 330px; /* Largeur des images */
   height: 300px; /* Hauteur des images */
@@ -142,6 +153,7 @@
   cursor: pointer; /* Curseur au survol */
   transition: all 0.3s ease-in-out; /* Transition au survol */
 }
+
 .pic-opera img:hover {
   transform: scale(1.02); /* Effet de zoom au survol */
 }
@@ -152,39 +164,45 @@
   flex-direction: column;
   align-items: center;
 }
+
 .presse h3 {
   margin-top: 100px; /* Marge supérieure */
   font-size: 3rem; /* Taille du titre */
   color: bisque; /* Couleur du texte */
   font-weight: bold; /* Poids de la police */
 }
+
 .presse p {
   font-size: 1.4rem; /* Taille du texte */
   margin-top: 30px; /* Marge supérieure */
   margin-bottom: 20px; /* Marge inférieure */
   color: white; /* Couleur du texte */
 }
+
 .article {
   display: flex;
   align-items: center;
   gap: 15px; /* Espace entre les articles */
   margin: 20px 0; /* Marges autour */
 }
+
 .presse {
   margin-bottom: 20px; /* Marge inférieure */
 }
+
 .presse button {
   margin-top: 20px; /* Marge supérieure */
   padding: 10px 20px; /* Espacement intérieur */
   font-size: 1.4rem; /* Taille du texte */
   cursor: pointer; /* Curseur au survol */
   border: none; /* Pas de bordure */
-  background-color: #ffffff; /* Couleur de fond */
-  color: rgb(148, 12, 194); /* Couleur du texte */
+  background-color: #fff; /* Couleur de fond */
+  color: rgba(148, 12, 194, 1); /* Couleur du texte */
   border-radius: 5px; /* Bordure arrondie */
   border: 1px solid white; /* Bordure du bouton */
   transition: background-color 0.3s ease, all 0.3s ease-in-out; /* Transitions */
 }
+
 .presse button:hover {
   color: white; /* Couleur du texte au survol */
   background-color: bisque; /* Couleur de fond au survol */
@@ -202,6 +220,7 @@
   transition: all 0.3s ease-in-out; /* Transition au survol */
   border: 1px solid white; /* Bordure des images */
 }
+
 .article img:hover {
   transform: scale(1.02); /* Effet de zoom au survol */
 }
@@ -216,6 +235,7 @@
   font-family: "Quicksand", sans-serif; /* Police de la section */
   color: var(--secondary-color); /* Couleur du texte */
 }
+
 .reseau h3 {
   font-size: 3rem; /* Taille du titre */
   padding: 30px 0 20px; /* Espacement autour */
@@ -233,11 +253,13 @@
   height: 1em;
   font-size: 1em;
 }
+
 .dots::after {
   content: "..."; /* Contenu des points de suspension */
   position: absolute;
   animation: ellipsis 2.5s infinite; /* Animation des points de suspension */
 }
+
 @keyframes ellipsis {
   0% {
     content: ""; /* Contenu initial */
@@ -260,6 +282,7 @@
   position: relative; /* Position relative pour l'image */
   height: 400px; /* Hauteur de l'image */
 }
+
 .responsive-img {
   width: 100%; /* Largeur de l'image */
   height: 100%; /* Hauteur de l'image */
@@ -273,26 +296,32 @@
   .tittle-poly h1 {
     margin-top: 20px; /* Marge supérieure pour les petits écrans */
   }
+
   .tittle-poly h2 {
     margin-top: 20px; /* Marge supérieure pour les petits écrans */
   }
 }
+
 @media (max-width: 930px) {
   .tittle-poly h1 {
     margin-top: 20px; /* Marge supérieure pour les petits écrans */
   }
+
   .tittle-poly h2 {
     margin-top: 20px; /* Marge supérieure pour les petits écrans */
   }
 }
+
 @media (max-width: 768px) {
   .tittle-poly h1 {
     margin-top: 0; /* Suppression de la marge supérieure */
   }
+
   .tittle-poly h2 {
     margin-top: 0; /* Suppression de la marge supérieure */
   }
 }
+
 @media screen and (max-width: 760px) {
   .tittle-poly {
     display: flex;
@@ -302,81 +331,101 @@
     gap: 20px; /* Espace entre les éléments */
     margin-bottom: 20px; /* Marge inférieure */
   }
+
   .tittle-poly h1 {
     font-size: 3.4rem; /* Taille de la police pour les petits écrans */
     padding-top: 200px; /* Espacement au-dessus */
   }
+
   .tittle-poly h2 {
     font-size: 3.5rem; /* Taille de la police pour les petits écrans */
     padding-top: 0px; /* Espacement au-dessus */
     margin-top: 0; /* Marge supérieure */
   }
+
   .poly-intro p {
     font-size: 1rem; /* Taille du texte pour les petits écrans */
     line-height: 22px; /* Hauteur de ligne pour les petits écrans */
     text-align: justify; /* Alignement du texte */
     margin: 0 30px; /* Marges autour du texte */
   }
+
   .suite-intro {
     gap: 5px; /* Espace entre les éléments */
   }
+
   .suite-intro p {
     font-size: 1rem; /* Taille du texte pour les petits écrans */
     margin-top: 20px; /* Marge supérieure */
   }
+
   .suite-intro span {
     font-size: 1rem; /* Taille du texte pour les petits écrans */
   }
+
   .poly-pic {
     flex-direction: column; /* Orientation des images */
     gap: 20px; /* Espace entre les images */
     margin-top: -10px; /* Marge supérieure */
   }
+
   .poly-pic img {
     height: 250px; /* Hauteur des images pour les petits écrans */
   }
+
   .pic-opera {
     display: flex;
     flex-direction: column; /* Orientation des images */
     align-items: center; /* Alignement des éléments */
     gap: 20px; /* Espace entre les images */
   }
+
   .article img {
     width: 300px; /* Largeur des images pour les petits écrans */
   }
+
   .pic {
     height: 200px; /* Hauteur de l'image pour les petits écrans */
   }
+
   .split {
     display: block; /* Affichage en bloc pour les petits écrans */
   }
+
   .actu h3 {
     margin-top: 0; /* Suppression de la marge supérieure */
     font-size: 3rem; /* Taille du titre pour les petits écrans */
   }
+
   .split {
     margin-bottom: 20px; /* Marge inférieure pour les petits écrans */
   }
+
   .split p {
     font-size: 1.1rem; /* Taille du texte pour les petits écrans */
     text-align: center; /* Alignement du texte */
     margin: 10px; /* Marges autour du texte */
   }
+
   .split span {
     font-size: 1.1rem; /* Taille du texte pour les petits écrans */
     text-align: center; /* Alignement du texte */
   }
+
   .presse h3 {
     margin-top: 40px; /* Marge supérieure pour les petits écrans */
     font-size: 2.3rem; /* Taille du titre pour les petits écrans */
   }
+
   .presse p {
     font-size: 1.2rem; /* Taille du texte pour les petits écrans */
   }
+
   .reseau h3 {
     font-size: 2.3rem; /* Taille du titre pour les petits écrans */
     margin-top: 0; /* Suppression de la marge supérieure */
   }
+
   .icon {
     margin-bottom: 0px; /* Suppression de la marge inférieure */
   }

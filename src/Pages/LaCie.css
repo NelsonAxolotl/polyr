@@ -21,7 +21,7 @@ body {
   font-weight: bold; /* Poids de la police */
   padding-top: 210px; /* Espacement supérieur */
   text-align: center; /* Alignement du texte au centre */
-  color: rgb(255, 255, 255); /* Couleur du texte */
+  color: rgba(255, 255, 255, 1); /* Couleur du texte */
   margin-bottom: 20px; /* Marge inférieure */
 }
 
@@ -176,7 +176,7 @@ body {
   align-items: center; /* Alignement au centre */
   justify-content: center; /* Alignement au centre */
   border: 2px solid white; /* Bordure blanche */
-  background: rgb(237, 235, 235); /* Couleur de fond */
+  background: rgba(237, 235, 235, 1); /* Couleur de fond */
   border-radius: 10px; /* Bordure arrondie */
   padding: 20px; /* Espacement intérieur */
   width: 100%; /* Largeur totale */
@@ -195,7 +195,7 @@ body {
 
 /* Style pour les éléments 'span' dans la section 'text1' */
 .text1 span {
-  color: rgb(148, 12, 194); /* Couleur du texte */
+  color: rgba(148, 12, 194, 1); /* Couleur du texte */
   font-weight: bold; /* Poids de la police */
 }
 
@@ -239,6 +239,7 @@ body {
     gap: 20px; /* Espace entre les éléments */
     align-items: center; /* Alignement au centre */
   }
+
   .personne-reverse {
     display: flex; /* Utilisation de flexbox */
     flex-direction: column-reverse; /* Disposition inverse en colonne */
@@ -247,6 +248,7 @@ body {
     gap: 20px; /* Espace entre les éléments */
     margin-top: 80px; /* Marge supérieure */
   }
+
   .bio5 h3 {
     margin-bottom: -30px; /* Marge inférieure négative */
   }
@@ -257,50 +259,62 @@ body {
   .main {
     padding-bottom: 80px; /* Réduction de l'espacement intérieur en bas */
   }
+
   .cie h1 {
     font-size: 3.4rem; /* Réduction de la taille de la police */
     margin-top: -30px; /* Marge supérieure négative */
   }
+
   .historique h2 {
     margin-top: 50px; /* Réduction de la marge supérieure */
     font-size: 2.2rem; /* Réduction de la taille de la police */
   }
+
   .cie-text p {
     font-size: 1rem; /* Réduction de la taille de la police */
     padding: 10px; /* Réduction de l'espacement intérieur */
     margin-top: 0; /* Suppression de la marge supérieure */
   }
+
   .bio h2 {
     margin-top: 0; /* Suppression de la marge supérieure */
     margin-bottom: 80px; /* Réduction de la marge inférieure */
   }
+
   .bio h3 {
     font-size: 1.5rem; /* Réduction de la taille de la police */
     margin-top: -40px; /* Marge supérieure négative */
     margin-bottom: 20px; /* Marge inférieure */
   }
+
   .bio3 h3 {
     font-size: 1.5rem; /* Réduction de la taille de la police */
     margin-top: 20px; /* Marge supérieure */
     margin-bottom: 40px; /* Marge inférieure */
   }
+
   .bio4 {
     margin-top: 60px; /* Réduction de la marge supérieure */
   }
+
   .bio5 {
     margin-top: 60px; /* Réduction de la marge supérieure */
   }
+
   .bio4 h3 {
     font-size: 1.5rem; /* Réduction de la taille de la police */
   }
+
   .diviser {
     margin-top: -20px; /* Marge supérieure négative */
     margin-bottom: 50px; /* Réduction de la marge inférieure */
   }
+
   .artistes {
     margin-top: 20px; /* Réduction de la marge supérieure */
     gap: 40px; /* Espace entre les éléments */
   }
+
   .personne {
     flex-direction: column; /* Disposition en colonne */
     gap: 30px; /* Espace entre les éléments */
@@ -308,6 +322,7 @@ body {
     margin-top: 0; /* Suppression de la marge supérieure */
     margin-bottom: -60px; /* Marge inférieure négative */
   }
+
   .pic1 {
     display: flex; /* Utilisation de flexbox */
     flex-direction: column; /* Disposition en colonne */
@@ -315,13 +330,16 @@ body {
     height: 500px; /* Hauteur de la section */
     width: 100%; /* Largeur totale */
   }
+
   .pic1 img {
     height: 360px; /* Hauteur de l'image */
     width: 50%; /* Largeur de l'image */
   }
+
   .text1 {
     max-width: 100%; /* Largeur maximale */
   }
+
   .personne-reverse {
     display: flex; /* Utilisation de flexbox */
     flex-direction: column-reverse; /* Disposition inverse en colonne */
@@ -331,10 +349,12 @@ body {
     margin-top: 0; /* Suppression de la marge supérieure */
     margin-bottom: -60px; /* Marge inférieure négative */
   }
+
   .text1 p {
     font-size: 0.9rem; /* Réduction de la taille de la police */
     padding: 0px 0; /* Espacement intérieur réduit */
   }
+
   .pic10 {
     height: 200px; /* Réduction de la hauteur de l'image */
     margin-top: -50px; /* Marge supérieure négative */
@@ -348,6 +368,7 @@ body {
     width: 70%; /* Réduction de la largeur de l'image */
     margin-top: -70px; /* Marge supérieure négative */
   }
+
   .text1 {
     max-width: 100%; /* Largeur maximale */
     margin-bottom: 60px; /* Marge inférieure */
@@ -369,6 +390,7 @@ body {
     width: 100%; /* Largeur totale */
     margin-top: 0; /* Suppression de la marge supérieure */
   }
+
   .text1 {
     max-width: 100%; /* Largeur maximale */
     margin-bottom: 0; /* Suppression de la marge inférieure */

@@ -18,7 +18,7 @@ body {
   font-weight: bold; /* Poids de la police */
   padding-top: 230px; /* Espacement supérieur */
   text-align: center; /* Alignement du texte au centre */
-  color: rgb(255, 255, 255); /* Couleur du texte */
+  color: rgba(255, 255, 255, 1); /* Couleur du texte */
 }
 
 /* Style pour les sous-titres dans les sections 'showplus' et 'showplus1' */
@@ -52,7 +52,7 @@ body {
   margin-top: 50px; /* Marge supérieure */
   line-height: 24px; /* Hauteur de ligne */
   margin-bottom: 40px; /* Marge inférieure */
-  background: rgb(237, 235, 235); /* Couleur de fond */
+  background: rgba(237, 235, 235, 1); /* Couleur de fond */
   border-radius: 10px; /* Bordure arrondie */
   padding: 20px; /* Espacement intérieur */
 }
@@ -134,21 +134,27 @@ body {
 #roxane {
   scroll-margin-top: 180px;
 }
+
 #herve {
   scroll-margin-top: 210px;
 }
+
 #thomas {
   scroll-margin-top: 200px;
 }
+
 #melusine {
   scroll-margin-top: 180px;
 }
+
 #galtier {
   scroll-margin-top: 200px;
 }
+
 #fumi {
   scroll-margin-top: 150px;
 }
+
 #nathan {
   scroll-margin-top: 190px;
 }
@@ -218,33 +224,40 @@ body {
     margin-bottom: 30px; /* Marge inférieure */
     padding-top: 200px; /* Réduction de l'espacement supérieur */
   }
+
   .showplus h2,
   .showplus1 h2 {
     font-size: 2rem; /* Réduction de la taille de la police */
     margin-top: 30px; /* Marge supérieure */
   }
+
   .showplus h3,
   .showplus1 h3 {
     margin-top: 20px; /* Marge supérieure */
   }
+
   .showplus p,
   .showplus1 p {
     font-size: 0.9rem; /* Réduction de la taille de la police */
     margin-top: 30px; /* Marge supérieure */
   }
+
   .gall h2 {
     margin-top: 20px; /* Marge supérieure */
     font-size: 2.3rem; /* Réduction de la taille de la police */
   }
+
   .pic-opera {
     margin-top: 0; /* Suppression de la marge supérieure */
     margin-bottom: 0; /* Suppression de la marge inférieure */
   }
+
   .dates h3 {
     font-size: 1rem; /* Réduction de la taille de la police */
     padding: 10px; /* Réduction de l'espacement intérieur */
     margin: 15px 0; /* Marges ajustées */
   }
+
   .dates img {
     width: 90%; /* Réduction de la largeur de l'image */
   }
