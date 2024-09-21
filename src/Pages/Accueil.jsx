@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import End from "../Component/End";
 import "./Accueil.css";
-import opera1 from "../Pic/opera1.jpg";
-import opera from "../Pic/opera.jpg";
-import operagroupe from "../Pic/operagroupe.jpg";
-import presse from "../Pic/presse.jpg";
-import allgroupe from "../Pic/allgroupe.jpg";
-import bastien50 from "../Pic/bastien50.jpg";
+import opera1 from "../Pic/opera1.webp";
+import opera from "../Pic/opera.webp";
+import operagroupe from "../Pic/operagroupe.webp";
+import presse from "../Pic/presse.webp";
+import allgroupe from "../Pic/allgroupe.webp";
+import bastien50 from "../Pic/bastien50.webp";
 
 const ImageOverlay = ({ image, onClose }) => (
   <div className="overlay" onClick={onClose}>
@@ -62,6 +62,8 @@ const Accueil = () => {
             <img
               key={src}
               src={src}
+              width="auto"
+              height="300px"
               alt={`photo cie Poly R ${index + 1}`}
               onClick={() => handleImageClick(src)}
               loading="lazy"
@@ -79,6 +81,8 @@ const Accueil = () => {
               <img
                 key={src}
                 src={src}
+                width="300px"
+                height="300px"
                 alt={`Opéra Mobile ${index + 1}`}
                 onClick={() => handleImageClick(src)}
                 loading="lazy"
@@ -104,6 +108,8 @@ const Accueil = () => {
           <img
             src={presse}
             alt="photo article de presse"
+            width="500px"
+            height="auto"
             onClick={() => handleImageClick(presse)}
             loading="lazy"
           />
@@ -127,6 +133,8 @@ const Accueil = () => {
           <img
             src={allgroupe}
             alt="cie poly r"
+            width="auto"
+            height="auto"
             className="responsive-img"
             onClick={() => handleImageClick(allgroupe)}
             loading="lazy"

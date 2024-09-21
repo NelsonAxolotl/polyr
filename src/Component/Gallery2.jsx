@@ -3,23 +3,23 @@ import "./Gallery2.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import opera5 from "../Pic/opera5.jpg";
-import opera2 from "../Pic/opera2.jpg";
-import opera3 from "../Pic/opera3.jpg";
-import opera6 from "../Pic/opera6.jpg";
-import opera7 from "../Pic/opera7.jpg";
-import opera20 from "../Pic/opera20.jpg";
-import poly10 from "../Pic/poly10.jpg";
-import poly11 from "../Pic/poly11.jpg";
-import poly13 from "../Pic/poly13.jpg";
-import poly14 from "../Pic/poly14.jpg";
-import poly15 from "../Pic/poly15.jpg";
-import poly22 from "../Pic/poly22.jpg";
-import poly23 from "../Pic/poly23.jpg";
-import poly55 from "../Pic/poly55.jpg";
-import poly53 from "../Pic/poly53.jpg";
-import poly from "../Pic/polyrgroupe.jpg";
-import poly51 from "../Pic/poly51.jpg";
+import opera5 from "../Pic/opera5.webp";
+import opera2 from "../Pic/opera2.webp";
+import opera3 from "../Pic/opera3.webp";
+import opera6 from "../Pic/opera6.webp";
+import opera7 from "../Pic/opera7.webp";
+import opera20 from "../Pic/opera20.webp";
+import poly10 from "../Pic/poly10.webp";
+import poly11 from "../Pic/poly11.webp";
+import poly13 from "../Pic/poly13.webp";
+import poly14 from "../Pic/poly14.webp";
+import poly15 from "../Pic/poly15.webp";
+import poly22 from "../Pic/poly22.webp";
+import poly23 from "../Pic/poly23.webp";
+import poly55 from "../Pic/poly55.webp";
+import poly53 from "../Pic/poly53.webp";
+import poly from "../Pic/polyrgroupe.webp";
+import poly51 from "../Pic/poly51.webp";
 
 const images = [
   { src: opera5, alt: "Image 5", className: "center-image2" },
@@ -84,6 +84,8 @@ const Gallery2 = () => {
             <img
               src={image.src}
               alt={image.alt}
+              width="auto"
+              height="400px"
               className={`gallery-image1 ${image.className || ""}`}
               loading="lazy"
               onClick={() => handleImageClick(image.src)}

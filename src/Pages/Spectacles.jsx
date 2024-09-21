@@ -5,12 +5,12 @@ import End from "../Component/End"; // Vérifiez le chemin et l'existence du com
 import Gallery from "../Component/Gallery";
 import Gallery2 from "../Component/Gallery2";
 import "./Spectacles.css";
-import polyrgroupe from "../Pic/polyrgroupe.jpg";
-import opera from "../Pic/opera.jpg";
-import bastien from "../Pic/bastien.jpg";
-import bastienne from "../Pic/bastienne.jpg";
-import dolls2 from "../Pic/dolls2.jpg";
-import dates from "../Pic/dates3.jpg";
+import polyrgroupe from "../Pic/polyrgroupe.webp";
+import opera from "../Pic/opera.webp";
+import bastien from "../Pic/bastien.webp";
+import bastienne from "../Pic/bastienne.webp";
+import dolls2 from "../Pic/dolls2.webp";
+import dates from "../Pic/dates3.webp";
 
 const Spectacles = () => {
   const [imageAgrandie, setImageAgrandie] = useState(null);
@@ -81,12 +81,16 @@ const Spectacles = () => {
             <img
               src={polyrgroupe}
               alt="Opéra Mobile groupe"
+              width="330px"
+              height="300px"
               onClick={() => handleImageClick(polyrgroupe)}
               loading="lazy"
             />
             <img
               src={opera}
               alt="logo Opéra Mobile"
+              width="330px"
+              height="300px"
               onClick={() => handleImageClick(opera)}
               loading="lazy"
             />
@@ -120,6 +124,8 @@ const Spectacles = () => {
           <img
             src={dates}
             alt="dates passées"
+            width="530px"
+            height="530px"
             onClick={() => handleImageClick(dates)}
             loading="lazy"
           />
@@ -148,12 +154,16 @@ const Spectacles = () => {
             <img
               src={bastien}
               alt="Bastien"
+              width="330px"
+              height="300px"
               onClick={() => handleImageClick(bastien)}
               loading="lazy"
             />
             <img
               src={bastienne}
               alt="Bastienne"
+              width="330px"
+              height="300px"
               onClick={() => handleImageClick(bastienne)}
               loading="lazy"
             />
@@ -181,6 +191,8 @@ const Spectacles = () => {
         <img
           src={dolls2}
           alt="dessin poly r"
+          width="auto"
+          height="auto"
           className="responsive-img10"
           onClick={() => handleImageClick(dolls2)}
           loading="lazy"

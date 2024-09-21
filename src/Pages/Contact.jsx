@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./Contact.css";
-import poly25 from "../Pic/poly25.jpg";
+import poly25 from "../Pic/poly25.webp";
 import End from "../Component/End";
 
 const Contact = () => {
@@ -79,6 +79,8 @@ const Contact = () => {
         <img
           src={poly25}
           alt="cie poly r"
+          width="auto"
+          height="auto"
           className="responsive-img2"
           onClick={() => handleImageClick(poly25)}
         />

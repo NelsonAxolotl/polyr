@@ -7,7 +7,7 @@
 
 /* Style pour le titre dans la section de contact */
 .show-titre2 h1 {
-  font-family: "Matemasie", sans-serif; /* Police du titre */
+  font-family: Matemasie, sans-serif; /* Police du titre */
   font-size: 5rem; /* Taille de la police */
   font-weight: bold; /* Poids de la police */
   padding-top: 210px; /* Espacement au-dessus du titre */
@@ -57,10 +57,12 @@
   display: flex; /* Flexbox pour aligner les éléments */
   justify-content: center; /* Centre les éléments horizontalement */
   align-items: center; /* Centre les éléments verticalement */
-  gap: 15px; /* Espace entre les éléments */
+  /* Espace entre les éléments */
   margin-bottom: 15px; /* Marge inférieure */
 }
-
+.phone {
+  gap: 15px;
+}
 .mail {
   margin-bottom: 30px; /* Marge inférieure spécifique pour les emails */
 }
@@ -72,8 +74,11 @@
   font-weight: bold; /* Poids de la police */
 }
 
-/* Style pour les liens d'email */
-.mail a {
+/* Style pour les liens d'email et phone */
+.mail a,
+.phone a {
+  display: inline-block; /* Assure que les liens soient des blocs */
+  padding: 10px 20px; /* Ajoute du padding pour augmenter la zone cliquable */
   font-size: 1.6rem; /* Taille de la police */
   text-decoration: none; /* Pas de soulignement */
   color: rgba(148, 12, 194, 1); /* Couleur du texte */
@@ -90,22 +95,24 @@
   text-align: center; /* Alignement du texte au centre */
 }
 
-/* Style pour les icônes de réseaux sociaux */
+/* Ajout d'espacement autour des icônes de réseaux sociaux */
 .icons {
-  display: flex; /* Flexbox pour aligner les icônes */
-  justify-content: center; /* Centre les icônes horizontalement */
-  align-items: center; /* Centre les icônes verticalement */
-  gap: 40px; /* Espace entre les icônes */
-  margin-top: 50px; /* Marge supérieure */
-  padding-bottom: 30px; /* Espacement inférieur */
-  cursor: pointer; /* Curseur au survol */
-  transition: 0.4s ease-in-out; /* Effet de transition pour les changements */
+  gap: 20px; /* Espace entre les icônes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Style pour les liens dans les icônes */
+/* Modification des icônes pour augmenter la zone cliquable */
 .icons a {
-  color: inherit; /* Hérite de la couleur du parent */
-  text-decoration: none; /* Pas de soulignement */
+  padding-top: 50px;
+  display: inline-flex; /* Utilise flex pour centrer le contenu */
+  justify-content: center; /* Centre le contenu */
+  align-items: center; /* Centre verticalement */
+  width: 60px; /* Largeur minimale */
+  height: 60px; /* Hauteur minimale */
+  border-radius: 30px; /* Arrondi des coins pour un look plus agréable */
+  transition: background 0.3s; /* Transition pour le survol */
 }
 
 /* Style pour les icônes au survol */
@@ -128,7 +135,7 @@
   overflow: hidden; /* Masquage du débordement */
   position: relative; /* Position relative pour l'image */
   height: 400px; /* Hauteur de l'image */
-  margin-top: 80px; /* Marge supérieure */
+  margin-top: 100px; /* Marge supérieure */
 }
 
 /* Style pour les images responsives */

@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /private/
-Allow: /
-
-
-Sitemap: https://polyr.fr/sitemap.xml

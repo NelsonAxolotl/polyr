@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import End from "../Component/End";
 import "./LaCie.css";
-import roxane from "../Pic/roxane.jpg";
-import herve from "../Pic/herve.jpg";
-import thomas from "../Pic/thomas.jpg";
-import melusine from "../Pic/melysine.jpg";
-import galtier from "../Pic/galtier.jpg";
-import fumi from "../Pic/fumi.jpg";
-import nathan from "../Pic/nathan.jpg";
-import antoine from "../Pic/antoine.jpg";
-import laetitia from "../Pic/laetitia.jpg";
-import draw from "../Pic/draw.jpg";
+import roxane from "../Pic/roxane.webp";
+import herve from "../Pic/herve.webp";
+import thomas from "../Pic/thomas.webp";
+import melusine from "../Pic/melysine.webp";
+import galtier from "../Pic/galtier.webp";
+import fumi from "../Pic/fumi.webp";
+import nathan from "../Pic/nathan.webp";
+import antoine from "../Pic/antoine.webp";
+import laetitia from "../Pic/laetitia.webp";
+import draw from "../Pic/draw.webp";
 
 const ImageOverlay = ({ image, onClose }) => (
   <div className="overlay" onClick={onClose}>
@@ -63,6 +63,8 @@ const Lacie = () => {
                 <img
                   src={roxane}
                   alt="photo Roxane"
+                  width="400px"
+                  height="400px"
                   onClick={() => handleImageClick(roxane)}
                   loading="lazy"
                 />
@@ -138,6 +140,8 @@ const Lacie = () => {
                 <img
                   src={herve}
                   alt="photo Hervé"
+                  width="400px"
+                  height="400px"
                   onClick={() => handleImageClick(herve)}
                   loading="lazy"
                 />
@@ -152,6 +156,8 @@ const Lacie = () => {
                 <img
                   src={fumi}
                   alt="photo Fumi"
+                  width="400px"
+                  height="400px"
                   onClick={() => handleImageClick(fumi)}
                   loading="lazy"
                 />
@@ -213,6 +219,8 @@ const Lacie = () => {
                 <img
                   src={thomas}
                   alt="photo Thomas"
+                  width="400px"
+                  height="400px"
                   onClick={() => handleImageClick(thomas)}
                   loading="lazy"
                 />
@@ -224,6 +232,8 @@ const Lacie = () => {
                 <img
                   src={melusine}
                   alt="photo Mélusine"
+                  width="400px"
+                  height="400px"
                   onClick={() => handleImageClick(melusine)}
                   loading="lazy"
                 />
@@ -283,6 +293,8 @@ const Lacie = () => {
                 <img
                   src={galtier}
                   alt="photo Galtier"
+                  width="400px"
+                  height="400px"
                   onClick={() => handleImageClick(galtier)}
                   loading="lazy"
                 />
@@ -293,6 +305,8 @@ const Lacie = () => {
                 <img
                   src={nathan}
                   alt="photo Nathan"
+                  width="400px"
+                  height="400px"
                   onClick={() => handleImageClick(nathan)}
                   loading="lazy"
                 />
@@ -344,6 +358,8 @@ const Lacie = () => {
                 <img
                   src={antoine}
                   alt="photo Galtier"
+                  width="400px"
+                  height="400px"
                   onClick={() => handleImageClick(antoine)}
                   loading="lazy"
                 />
@@ -357,6 +373,8 @@ const Lacie = () => {
                 <img
                   src={laetitia}
                   alt="photo Laetitia"
+                  width="400px"
+                  height="400px"
                   onClick={() => handleImageClick(laetitia)}
                   loading="lazy"
                 />
@@ -389,6 +407,8 @@ const Lacie = () => {
         <img
           src={draw}
           alt="dessin Poly R"
+          width="auto"
+          height="auto"
           className="responsive-img10"
           onClick={() => handleImageClick(draw)}
         />

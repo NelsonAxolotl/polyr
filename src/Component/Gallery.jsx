@@ -3,22 +3,22 @@ import "./Gallery.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import bastien1 from "../Pic/bastien1.jpg";
-import bastien2 from "../Pic/bastien2.jpg";
-import bastien4 from "../Pic/bastien4.jpg";
-import bastien5 from "../Pic/bastien5.jpg";
-import bastien20 from "../Pic/bastien20.jpg";
-import bastien21 from "../Pic/bastien21.jpg";
-import bastien22 from "../Pic/bastien22.jpg";
-import bastien23 from "../Pic/bastien23.jpg";
-import poly24 from "../Pic/poly24.jpg";
-import poly1 from "../Pic/poly1.jpg";
-import poly16 from "../Pic/poly16.jpg";
-import poly17 from "../Pic/poly17.jpg";
-import poly18 from "../Pic/poly18.jpg";
-import bastien54 from "../Pic/bastien54.jpg";
-import bastien52 from "../Pic/bastien52.jpg";
-import bastien51 from "../Pic/bastien51.jpg";
+import bastien1 from "../Pic/bastien1.webp";
+import bastien2 from "../Pic/bastien2.webp";
+import bastien4 from "../Pic/bastien4.webp";
+import bastien5 from "../Pic/bastien5.webp";
+import bastien20 from "../Pic/bastien20.webp";
+import bastien21 from "../Pic/bastien21.webp";
+import bastien22 from "../Pic/bastien22.webp";
+import bastien23 from "../Pic/bastien23.webp";
+import poly24 from "../Pic/poly24.webp";
+import poly1 from "../Pic/poly1.webp";
+import poly16 from "../Pic/poly16.webp";
+import poly17 from "../Pic/poly17.webp";
+import poly18 from "../Pic/poly18.webp";
+import bastien54 from "../Pic/bastien54.webp";
+import bastien52 from "../Pic/bastien52.webp";
+import bastien51 from "../Pic/bastien51.webp";
 import doll from "../Pic/dolls.jpg";
 const images = [
   { src: bastien1, alt: "Image 1" },
@@ -84,6 +84,8 @@ const Gallery = () => {
             <img
               src={image.src}
               alt={image.alt}
+              width="auto"
+              height="400px"
               className={`gallery-image ${
                 index < 5
                   ? "object-top"

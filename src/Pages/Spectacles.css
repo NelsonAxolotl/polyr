@@ -1,7 +1,7 @@
 /* Style global pour le corps de la page */
 body {
   margin: 0; /* Suppression des marges par défaut */
-  font-family: "Quicksand", sans-serif; /* Police principale */
+  font-family: Quicksand, sans-serif; /* Police principale */
 }
 
 /* Style principal pour la section 'show' */
@@ -13,7 +13,7 @@ body {
 
 /* Style pour le titre de la section 'show-titre' */
 .show-titre h1 {
-  font-family: "Matemasie", sans-serif; /* Police du titre */
+  font-family: Matemasie, sans-serif; /* Police du titre */
   font-size: 5rem; /* Taille de la police */
   font-weight: bold; /* Poids de la police */
   padding-top: 230px; /* Espacement supérieur */
