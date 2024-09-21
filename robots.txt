@@ -1,7 +1,3 @@
 User-agent: *
-Disallow: /admin/
-Disallow: /login/
 Disallow: /private/
 Allow: /
-Host: https://ployr.fr
-Sitemap: https://ployr.fr/sitemap.xml
