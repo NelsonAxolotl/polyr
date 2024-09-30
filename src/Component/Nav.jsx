@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import logo from "../Pic/logo.webp";
 import "./Nav.css";
@@ -26,59 +26,64 @@ const Nav = () => {
   return (
     <nav
       className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}
-      aria-label="Navigation principale"
+      role="navigation"
     >
-      <div className="navbar-logo" onClick={() => handleNavClick("/")}>
-        <Link to="/" aria-label="Retour à l'accueil">
-          <img src={logo} alt="Logo de PolyR" width="auto" height="120px" />
+      <div
+        className="navbar-logo"
+        onClick={() => handleNavClick("/")}
+        aria-label="Retour à l'accueil"
+      >
+        <Link to="/">
+          <img
+            src={logo}
+            alt="Logo PolyR"
+            width="150px"
+            height="150px"
+            loading="eager"
+          />
         </Link>
       </div>
+
+      {/* Liens de navigation */}
       <ul className="navbar-links">
-        <li className="navbar-item">
-          <Link
-            to="/"
-            className={`navbar-link ${activeLink === "/" ? "active" : ""}`}
-            aria-label="Page d'accueil"
-          >
-            Accueil
-          </Link>
-        </li>
-        <li className="navbar-item">
-          <Link
-            to="/lacie"
-            className={`navbar-link ${activeLink === "/lacie" ? "active" : ""}`}
-            aria-label="Informations sur la compagnie"
-          >
-            La Compagnie
-          </Link>
-        </li>
-        <li className="navbar-item">
-          <Link
-            to="/spectacles"
-            className={`navbar-link ${
-              activeLink === "/spectacles" ? "active" : ""
+        {[
+          { path: "/", label: "Accueil", className: "slide-in-down-1" },
+          {
+            path: "/lacie",
+            label: "La Compagnie",
+            className: "slide-in-down-2",
+          },
+          {
+            path: "/spectacles",
+            label: "Spectacles",
+            className: "slide-in-down-3",
+          },
+
+          { path: "/contact", label: "Contact", className: "slide-in-down-4" },
+        ].map(({ path, label, className }, index) => (
+          <li
+            key={index}
+            className={`navbar-item ${className} ${
+              activeLink === path ? "active" : ""
             }`}
-            aria-label="Liste des spectacles"
           >
-            Spectacles
-          </Link>
-        </li>
-        <li className="navbar-item">
-          <Link
-            to="/contact"
-            className={`navbar-link ${
-              activeLink === "/contact" ? "active" : ""
-            }`}
-            aria-label="Contactez-nous"
-          >
-            Contact
-          </Link>
-        </li>
+            <Link
+              className="navbar-link"
+              to={path}
+              onClick={() => handleNavClick(path)}
+              aria-label={`Navigate to ${label}`}
+            >
+              {label}
+            </Link>
+          </li>
+        ))}
       </ul>
+
+      {/* Bouton burger pour le menu mobile */}
       <button
         className="navbar-burger"
         onClick={handleShowLinks}
-        aria-label="Menu"
+        aria-label="Toggle navigation"
       >
         <span className="burger-bar"></span>
       </button>

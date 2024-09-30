@@ -5,8 +5,8 @@
   position: fixed; /* Position fixe */
   width: 100%; /* Largeur totale */
   min-height: 75px; /* Hauteur minimale */
-  color: rgba(148, 12, 194, 1); /* Couleur du texte */
-  background: rgba(255, 255, 255, 1); /* Couleur de fond */
+  color: rgba(148 12 194 / 100%); /* Couleur du texte */
+  background: rgba(255 255 255 / 100%); /* Couleur de fond */
   z-index: 2; /* Niveau de superposition */
 }
 
@@ -41,13 +41,13 @@
   font-size: 24px; /* Taille de la police */
   font-weight: 700; /* Poids de la police */
   text-decoration: none; /* Suppression de la décoration du texte */
-  color: rgba(128, 20, 217, 1); /* Couleur du texte */
+  color: rgba(128 20 217 / 100%); /* Couleur du texte */
   transition: all 0.3s ease-in-out; /* Transition douce */
 }
 
 /* Effet de survol pour les liens de navigation */
 .navbar-link:hover {
-  color: rgba(220, 205, 0, 1); /* Couleur au survol */
+  color: rgba(220 205 0 / 100%); /* Couleur au survol */
   transform: scale(1.05); /* Zoom au survol */
   border-bottom: 1px solid rgb(220, 205, 0); /* Bordure inférieure au survol */
 }
@@ -79,7 +79,7 @@
 
 /* Style pour les éléments actifs dans la barre de navigation */
 .navbar-item.active .navbar-link {
-  color: rgba(220, 205, 0, 1); /* Couleur pour les éléments actifs */
+  color: rgba(220 205 0 / 100%); /* Couleur pour les éléments actifs */
 }
 
 /* Styles pour les écrans de largeur intermédiaire (760px - 1300px) */
@@ -119,7 +119,7 @@
     width: 0; /* Largeur initiale */
     height: 100vh; /* Hauteur totale de la vue */
     padding: 2rem; /* Espacement intérieur */
-    background: rgba(141, 32, 218, 1); /* Couleur de fond */
+    background: rgba(141 32 218 / 100%); /* Couleur de fond */
     visibility: hidden; /* Caché par défaut */
     transition: all 0.8s ease-out; /* Transition douce */
   }
@@ -162,7 +162,7 @@
     height: 3px; /* Hauteur des barres du burger */
     position: relative; /* Position relative */
     border-radius: 3px; /* Bordures arrondies */
-    background: rgba(6, 6, 6, 1); /* Couleur de fond */
+    background: rgba(6 6 6 / 100%); /* Couleur de fond */
     transition: all 0.8s ease-in-out; /* Transition douce */
   }
 
@@ -203,6 +203,17 @@
     transform: translateX(0); /* Alignement dans la vue */
   }
 
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
   /* Styles pour les animations des éléments de navigation */
   .show-nav .slideInDown-1 {
     transition: all 1s ease-out; /* Transition pour le premier élément */
@@ -220,12 +231,8 @@
     transition: all 1.6s ease-out; /* Transition pour le quatrième élément */
   }
 
-  .show-nav .slideInDown-5 {
-    transition: all 1.8s ease-out; /* Transition pour le cinquième élément */
-  }
-
   .navbar-link:hover {
-    color: rgba(220, 205, 0, 1); /* Couleur au survol */
+    color: rgba(220 205 0 / 100%); /* Couleur au survol */
     border-bottom: none; /* Suppression de la bordure inférieure au survol */
   }
 }

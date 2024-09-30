@@ -12,7 +12,7 @@
   font-weight: bold; /* Poids de la police */
   padding-top: 210px; /* Espacement au-dessus du titre */
   text-align: center; /* Alignement du texte au centre */
-  color: rgba(255, 255, 255, 1); /* Couleur du texte */
+  color: rgba(255 255 255 / 100%); /* Couleur du texte */
 }
 
 /* Style pour le conteneur de la section de contact */
@@ -25,9 +25,9 @@
 
 /* Style pour les sections de contact individuelles */
 .contact-section {
-  background: rgba(255, 255, 255, 1); /* Couleur de fond */
-  color: rgba(148, 12, 194, 1); /* Couleur du texte */
-  border: 1px solid rgba(255, 255, 255, 1); /* Bordure blanche */
+  background: rgba(255 255 255 / 100%); /* Couleur de fond */
+  color: rgba(148 12 194 / 100%); /* Couleur du texte */
+  border: 1px solid rgba(255 255 255 / 100%); /* Bordure blanche */
   border-radius: 5px; /* Bordure arrondie */
   width: 100%; /* Largeur de la section */
   padding: 25px; /* Espacement intérieur */
@@ -81,7 +81,7 @@
   padding: 10px 20px; /* Ajoute du padding pour augmenter la zone cliquable */
   font-size: 1.6rem; /* Taille de la police */
   text-decoration: none; /* Pas de soulignement */
-  color: rgba(148, 12, 194, 1); /* Couleur du texte */
+  color: rgba(148 12 194 / 100%); /* Couleur du texte */
   font-weight: bold; /* Poids de la police */
 }
 

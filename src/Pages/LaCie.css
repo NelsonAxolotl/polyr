@@ -21,7 +21,7 @@ body {
   font-weight: bold; /* Poids de la police */
   padding-top: 210px; /* Espacement supérieur */
   text-align: center; /* Alignement du texte au centre */
-  color: rgba(255, 255, 255, 1); /* Couleur du texte */
+  color: rgba(255 255 255 / 100%); /* Couleur du texte */
   margin-bottom: 20px; /* Marge inférieure */
 }
 
@@ -176,7 +176,7 @@ body {
   align-items: center; /* Alignement au centre */
   justify-content: center; /* Alignement au centre */
   border: 2px solid white; /* Bordure blanche */
-  background: rgba(237, 235, 235, 1); /* Couleur de fond */
+  background: rgba(237 235 235 / 100%); /* Couleur de fond */
   border-radius: 10px; /* Bordure arrondie */
   padding: 20px; /* Espacement intérieur */
   width: 100%; /* Largeur totale */
@@ -195,7 +195,7 @@ body {
 
 /* Style pour les éléments 'span' dans la section 'text1' */
 .text1 span {
-  color: rgba(148, 12, 194, 1); /* Couleur du texte */
+  color: rgba(148 12 194 / 100%); /* Couleur du texte */
   font-weight: bold; /* Poids de la police */
 }
 

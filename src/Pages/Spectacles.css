@@ -18,7 +18,7 @@ body {
   font-weight: bold; /* Poids de la police */
   padding-top: 230px; /* Espacement supérieur */
   text-align: center; /* Alignement du texte au centre */
-  color: rgba(255, 255, 255, 1); /* Couleur du texte */
+  color: rgba(255 255 255 / 100%); /* Couleur du texte */
 }
 
 /* Style pour les sous-titres dans les sections 'showplus' et 'showplus1' */
@@ -52,7 +52,7 @@ body {
   margin-top: 50px; /* Marge supérieure */
   line-height: 24px; /* Hauteur de ligne */
   margin-bottom: 40px; /* Marge inférieure */
-  background: rgba(237, 235, 235, 1); /* Couleur de fond */
+  background: rgba(237 235 235 / 100%); /* Couleur de fond */
   border-radius: 10px; /* Bordure arrondie */
   padding: 20px; /* Espacement intérieur */
 }

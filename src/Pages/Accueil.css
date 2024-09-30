@@ -20,7 +20,7 @@
   font-size: 5rem; /* Taille des polices des titres */
   padding-top: 230px; /* Espacement au-dessus des titres */
   font-weight: bold; /* Poids de la police des titres */
-  color: rgba(255, 255, 255, 1); /* Couleur des titres */
+  color: rgba(255 255 255 / 100%); /* Couleur des titres */
 }
 
 /* Style pour la section d'introduction "poly-intro" */
@@ -41,7 +41,7 @@
 }
 
 .poly-intro span {
-  color: rgba(255, 255, 255, 1); /* Couleur du texte dans les spans */
+  color: rgba(255 255 255 / 100%); /* Couleur du texte dans les spans */
   font-weight: bold; /* Poids de la police des spans */
   font-size: 1.5rem; /* Taille de la police des spans */
 }
@@ -57,7 +57,7 @@
 .suite-intro p {
   font-size: 1.4rem; /* Taille du texte */
   text-align: center; /* Alignement du texte */
-  color: rgba(255, 18, 227, 1); /* Couleur du texte */
+  color: rgba(255 18 227 / 100%); /* Couleur du texte */
   font-weight: bold; /* Poids de la police */
   margin-left: 50px; /* Marge à gauche */
   margin-right: 50px; /* Marge à droite */
@@ -67,7 +67,7 @@
 .suite-intro span {
   font-size: 1.4rem; /* Taille du texte */
   text-align: center; /* Alignement du texte */
-  color: rgba(255, 18, 227, 1); /* Couleur du texte */
+  color: rgba(255 18 227 / 100%); /* Couleur du texte */
   font-weight: bold; /* Poids de la police */
 }
 
@@ -194,7 +194,7 @@
   cursor: pointer; /* Curseur au survol */
   border: none; /* Pas de bordure */
   background-color: #fff; /* Couleur de fond */
-  color: rgba(148, 12, 194, 1); /* Couleur du texte */
+  color: rgba(148 12 194 / 100%); /* Couleur du texte */
   border-radius: 5px; /* Bordure arrondie */
   border: 1px solid white; /* Bordure du bouton */
   transition: background-color 0.3s ease, all 0.3s ease-in-out; /* Transitions */
@@ -424,6 +424,6 @@
   }
 
   .icon {
-    margin-bottom: 0px; /* Suppression de la marge inférieure */
+    margin-bottom: 0; /* Suppression de la marge inférieure */
   }
 }
