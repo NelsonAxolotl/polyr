@@ -1,5 +1,5 @@
 import { HashLink as Link } from "react-router-hash-link";
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import End from "../Component/End"; // Vérifiez le chemin et l'existence du composant
 import Gallery from "../Component/Gallery";
