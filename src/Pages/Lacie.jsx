@@ -139,7 +139,7 @@ const Lacie = () => {
                   </Link>{" "}
                   et intègre également
                   <Link to="/spectacles#opera">
-                    <span> la troupe Opéramobil'</span>.
+                    <span>la troupe Opéramobil&apos;</span>.
                   </Link>
                 </p>
               </div>
@@ -218,7 +218,7 @@ const Lacie = () => {
                   <br />
                   En juillet 2024, Thomas intègre{" "}
                   <Link to="/spectacles#opera">
-                    <span>la troupe Opéramobil'</span>
+                    <span>la troupe Opéramobil&apos;</span>
                   </Link>{" "}
                   en tant que chanteur et violoniste.
                 </p>
