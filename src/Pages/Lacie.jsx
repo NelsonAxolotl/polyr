@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import End from "../Component/End";
 import "./LaCie.css";
 import roxane from "../Pic/roxane.webp";
@@ -23,7 +24,11 @@ const ImageOverlay = ({ image, onClose }) => (
     </div>
   </div>
 );
-
+// Ajout de la validation des props avec PropTypes
+ImageOverlay.propTypes = {
+  image: PropTypes.string.isRequired, // La prop image doit être une chaîne de caractères et est requise
+  onClose: PropTypes.func.isRequired, // La prop onClose doit être une fonction et est requise
+};
 const Lacie = () => {
   const [enlargedImage, setEnlargedImage] = useState(null);
 
@@ -55,7 +60,7 @@ const Lacie = () => {
           </p>
         </div>
         <div className="bio">
-          <h2>L'Équipe</h2>
+          <h2>L&rsquo;Équipe</h2>
           <h3>Direction artistique</h3>
           <div className="artistes">
             <div id="roxane" className="personne-reverse">
@@ -71,28 +76,29 @@ const Lacie = () => {
               </div>
               <div className="text1">
                 <p className="main-text">
-                  <span>Roxane Macaudière</span> s'épanouit en musique dès son
-                  plus jeune âge au sein du chœur de jeunes chanteurs de la
+                  <span>Roxane Macaudière</span> s&apos;épanouit en musique dès
+                  son plus jeune âge au sein du chœur de jeunes chanteurs de la
                   Maîtrise de la Loire. <br />
-                  Parallèlement, elle est reçue à l'âge de 14 ans en cycle
+                  Parallèlement, elle est reçue à l&apos;âge de 14 ans en cycle
                   supérieur de piano classique au Conservatoire de Saint-Etienne
-                  où elle obtient son diplôme de fin d'études 4 ans plus tard.{" "}
+                  où elle obtient son diplôme de fin d&apos;études 4 ans plus
+                  tard. <br />
+                  Après ce début de chemin artistique, c&apos;est à Lyon
+                  qu&apos;elle s&apos;envole pour étudier
+                  <span>le chant lyrique</span> aux côtés de Cécile de Boever.{" "}
                   <br />
-                  Après ce début de chemin artistique, c'est à Lyon qu'elle
-                  s'envole pour étudier <span>le chant lyrique</span> aux côtés
-                  de Cécile de Boever. <br />
-                  Elle intègre parallèlement l'ENM de Villeurbanne, dans la
+                  Elle intègre parallèlement l&apos;ENM de Villeurbanne, dans la
                   classe de Virginie Pochon. <br />
                   Sa passion pour la pluralité des arts la pousse à intégrer
                   dans la même école la classe de Vincent Martin en piano jazz,
                   et à se présenter au Cycle Centre Chorégraphique de Lyon en
                   danse contemporaine. <br />
-                  Elle obtient après deux ans d'études de danse son Examen
-                  d'Aptitudes Techniques. <br />
-                  Aujourd'hui enrichie de ces diverses expériences et âgée de 23
-                  ans, Roxane vient d’être admise en bachelor de chant lyrique à
-                  la Haute École de Musique de Genève dans la classe de Heidi
-                  Brünner pour la rentrée 2024-2025. <br />
+                  Elle obtient après deux ans d&rsquo;études de danse son Examen
+                  d&apos;Aptitudes Techniques. <br />
+                  Aujourd&apos;hui enrichie de ces diverses expériences et âgée
+                  de 23 ans, Roxane vient d’être admise en bachelor de chant
+                  lyrique à la Haute École de Musique de Genève dans la classe
+                  de Heidi Brünner pour la rentrée 2024-2025. <br />
                   Depuis 2023, elle co-dirige{" "}
                   <Link to="/">
                     <span>la compagnie Poly R</span>
@@ -103,7 +109,7 @@ const Lacie = () => {
                   </Link>{" "}
                   ainsi que de{" "}
                   <Link to="/spectacles#opera">
-                    <span>la troupe Opéramobil'</span>.
+                    <span>la troupe Opéramobil&rsquo;</span>.
                   </Link>
                 </p>
               </div>
@@ -114,19 +120,20 @@ const Lacie = () => {
                   <span>Hervé Le Bert</span> est{" "}
                   <span>ténor lyrique et comédien</span>, il se passionne dès sa
                   petite enfance pour la musique. Son parcours à la maîtrise de
-                  la Loire lui permettra de trouver sa "voix". <br />
-                  Il y découvre l'Opéra, une expérience qui est une révélation.{" "}
-                  <br />
+                  la Loire lui permettra de trouver sa &quot;voix&quot;. <br />
+                  Il y découvre l&apos;Opéra, une expérience qui est une
+                  révélation. <br />
                   Depuis 2019, il étudie <span>le chant lyrique</span> avec le
-                  ténor Yannick Berne en parallèle de ses études à l'ENM dans la
-                  classe de chant de Virginie Pochon et au théâtre de l'Iris.{" "}
+                  ténor Yannick Berne en parallèle de ses études à l&apos;ENM
+                  dans la classe de chant de Virginie Pochon et au théâtre de
+                  l&apos;Iris.
                   <br />
                   En 2023, il co-crée{" "}
                   <Link to="/">
                     <span>la compagnie Poly R</span>{" "}
                   </Link>{" "}
-                  qu'il dirige avec Roxane Macaudière. Il est Bastien dans le
-                  spectacle{" "}
+                  qu&apos;il dirige avec Roxane Macaudière. Il est Bastien dans
+                  le spectacle{" "}
                   <Link to="/spectacles#bastien">
                     <span>Bastien & Bastienne</span>
                   </Link>{" "}
@@ -170,19 +177,20 @@ const Lacie = () => {
                   France en 2019, où elle est admise à l’ENM de Villeurbanne
                   dans la classe de Virginie Pochon. <br />
                   Elle y obtient son DEM en 2023. <br />
-                  Depuis l'obtention de sa licence, elle a participé à plusieurs
-                  productions d’opéra en tant que choriste ainsi qu'en tant que
-                  soliste, s'illustrant avec brio dans divers rôles : Dorabella
-                  dans Cosi Fan Tutte de Mozart, Hänsel et Knusperhexe dans
-                  Hänsel und Gretel d’Humperdinck, Ms Todd dans The Old Maid and
-                  The Thief de Menotti et Carmen dans Carmen de Bizet. <br />
+                  Depuis l&rsquo;obtention de sa licence, elle a participé à
+                  plusieurs productions d&rsquo;opéra en tant que choriste ainsi
+                  qu&rsquo;en tant que soliste, s&apos;illustrant avec brio dans
+                  divers rôles : Dorabella dans Cosi Fan Tutte de Mozart, Hänsel
+                  et Knusperhexe dans Hänsel und Gretel d’Humperdinck, Ms Todd
+                  dans The Old Maid and The Thief de Menotti et Carmen dans
+                  Carmen de Bizet. <br />
                   Lors de la saison 2023/2024, elle est soliste dans{" "}
                   <Link to="/spectacles#bastien">
                     <span>Bastien & Bastienne</span>
                   </Link>{" "}
                   et intègre{" "}
                   <Link to="/spectacles#opera">
-                    <span>la troupe Opéramobil'</span>
+                    <span>la troupe Opéramobil&apos;</span>
                   </Link>{" "}
                   de la compagnie.
                 </p>
@@ -271,19 +279,19 @@ const Lacie = () => {
                 <p className="main-text">
                   <span>Galtier Le Bihan</span> est <span>guitariste</span>,{" "}
                   <span>compositeur</span> et <span>arrangeur</span>. <br />
-                  Parallèlement à son cursus de guitare jazz à l'Ecole Nationale
-                  de Musique de Villeurbanne, Galtier s'illustre en tant que
-                  compositeur, interprète et improvisateur, et ce dans divers
-                  styles, aussi bien la funk que le rock. <br />
+                  Parallèlement à son cursus de guitare jazz à l&apos;Ecole
+                  Nationale de Musique de Villeurbanne, Galtier s&apos;illustre
+                  en tant que compositeur, interprète et improvisateur, et ce
+                  dans divers styles, aussi bien la funk que le rock. <br />
                   Depuis deux ans, il est notamment membre du groupe lyonnais
                   Bourricot Live Band. <br />
                   Il enseigne également la guitare depuis plusieurs années.{" "}
                   <br />
-                  Passionné d'art depuis son plus jeune âge, Galtier est
-                  toujours à l'affût de nouvelles expériences et est l'un des
-                  accompagnateurs de{" "}
+                  Passionné d&apos;art depuis son plus jeune âge, Galtier est
+                  toujours à l&apos;affût de nouvelles expériences et est
+                  l&apos;un des accompagnateurs de{" "}
                   <Link to="/spectacles#opera">
-                    <span>l'Opéramobil'</span>
+                    <span>l&apos;Opéramobil&apos;</span>
                   </Link>{" "}
                   en juillet 2024, apportant ainsi une touche instrumentale
                   moderne à la troupe.
@@ -316,13 +324,13 @@ const Lacie = () => {
                   <span>Nathan Brunet</span> est <span>guitariste</span>,{" "}
                   <span>sound designer</span>, <span>compositeur</span> et{" "}
                   <span>claviériste</span>. <br />
-                  Après des études au conservatoire de Nancy, il s'installe à
-                  Lyon où il obtient un DUMI de musicien intervenant et où il
-                  perfectionne sa pratique de la guitare jazz à l'Ecole
+                  Après des études au conservatoire de Nancy, il s&apos;installe
+                  à Lyon où il obtient un DUMI de musicien intervenant et où il
+                  perfectionne sa pratique de la guitare jazz à l&rsquo;Ecole
                   Nationale de Musique de Villeurbanne auprès de Pierre
                   Hachache. <br />
-                  Nathan vient d'être reçu pour intégrer en septembre 2024 la
-                  nouvelle promotion du prestigieux Centre Didier Lockwood à
+                  Nathan vient d&apos;être reçu pour intégrer en septembre 2024
+                  la nouvelle promotion du prestigieux Centre Didier Lockwood à
                   Paris. <br />
                   Lors de la saison 2023/2024, Nathan est guitariste pour le
                   spectacle{" "}
@@ -381,20 +389,21 @@ const Lacie = () => {
               </div>
               <div className="text1">
                 <p className="main-text">
-                  <span>Laëtitia Chanoz</span> s'investit dans{" "}
+                  <span>Laëtitia Chanoz</span> s&apos;investit dans{" "}
                   <Link to="/">
                     <span>la compagnie Poly R</span>
                   </Link>{" "}
                   dès sa création en 2023 en tant que trésorière. <br />
                   Passionnée de littérature, ancienne élève du Lycée du Parc et
-                  aujourd'hui élève de l'Ecole Normale Supérieure de Lyon et
-                  agrégée de Lettres modernes, Laëtitia a aussi joué de la harpe
-                  pendant de nombreuses années et est désormais une fidèle des
-                  salles de spectacles et de concerts lyonnaises ! <br />
-                  Son travail de recherche porte notamment sur l'œuvre
+                  aujourd&apos;hui élève de l&apos;Ecole Normale Supérieure de
+                  Lyon et agrégée de Lettres modernes, Laëtitia a aussi joué de
+                  la harpe pendant de nombreuses années et est désormais une
+                  fidèle des salles de spectacles et de concerts lyonnaises !{" "}
+                  <br />
+                  Son travail de recherche porte notamment sur l&rsquo;œuvre
                   autobiographique de Violette Leduc, une autrice du XXe siècle
-                  qu'elle espère faire découvrir à ses futurs élèves et au grand
-                  public. <br />
+                  qu&apos;elle espère faire découvrir à ses futurs élèves et au
+                  grand public. <br />
                   Enfin, à ses heures perdues, elle écrit, une artiste à suivre
                   donc !
                 </p>

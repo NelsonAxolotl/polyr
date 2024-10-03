@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import PropTypes from "prop-types";
 import End from "../Component/End";
 import "./Accueil.css";
 import opera1 from "../Pic/opera1.webp";
@@ -20,11 +21,21 @@ const ImageOverlay = ({ image, onClose }) => (
   </div>
 );
 
+// Ajout de PropTypes pour la validation des props
+ImageOverlay.propTypes = {
+  image: PropTypes.string.isRequired, // La prop image doit être une chaîne de caractères
+  onClose: PropTypes.func.isRequired, // La prop onClose doit être une fonction
+};
 const SocialLink = ({ href, iconClass }) => (
   <a href={href} target="_blank" rel="noopener noreferrer">
     <i className={iconClass}></i>
   </a>
 );
+// Ajout de PropTypes pour la validation des props
+SocialLink.propTypes = {
+  href: PropTypes.string.isRequired, // La prop href doit être une chaîne de caractères
+  iconClass: PropTypes.string.isRequired, // La prop iconClass doit être une chaîne de caractères
+};
 
 const Accueil = () => {
   const [enlargedImage, setEnlargedImage] = useState(null);
@@ -74,7 +85,7 @@ const Accueil = () => {
           <h3>Actu</h3>
           <div className="split">
             <p>À venir Juillet 2025</p>
-            <span>Opéramobil ' saison 2</span>
+            <span>Opéramobil &rsquo;saison 2</span>
           </div>
           <div className="pic-opera">
             {[operagroupe, opera].map((src, index) => (
@@ -92,7 +103,7 @@ const Accueil = () => {
         </section>
         <section className="presse">
           <h3>Un peu de presse</h3>
-          <p>Spectacle "Bastien & Bastienne"</p>
+          <p>Spectacle &quot;Bastien & Bastienne&quot;</p>
           <button
             onClick={() =>
               window.open(

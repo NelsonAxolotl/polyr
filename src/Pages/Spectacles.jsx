@@ -48,7 +48,7 @@ const Spectacles = () => {
           <h1>Spectacles</h1>
         </div>
         <div id="opera" className="showplus" ref={operaRef}>
-          <h2>L'Opéramobil'</h2>
+          <h2>L&apos;Opéramobil&apos;</h2>
           <p>
             <span>L’Opéramobil’</span> est une troupe itinérante portée par{" "}
             <Link to="/lacie">

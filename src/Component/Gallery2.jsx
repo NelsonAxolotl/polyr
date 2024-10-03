@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import "./Gallery2.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -51,11 +51,11 @@ const Gallery2 = () => {
   const handleCloseImage = () => {
     setEnlargedImage(null);
   };
-  const handleKeyDown = (event) => {
+  const handleKeyDown = useCallback((event) => {
     if (event.key === "Escape") {
       handleCloseImage();
     }
-  };
+  }, []);
 
   useEffect(() => {
     if (enlargedImage) {
@@ -64,7 +64,7 @@ const Gallery2 = () => {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [enlargedImage]);
+  }, [enlargedImage, handleKeyDown]);
 
   const settings = {
     dots: true,
