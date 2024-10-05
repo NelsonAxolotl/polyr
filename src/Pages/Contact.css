@@ -117,7 +117,7 @@
 
 /* Style pour les icônes au survol */
 .icons i:hover {
-  transform: scale(1.4); /* Zoom au survol */
+  transform: scale(1.3); /* Zoom au survol */
   color: bisque; /* Couleur au survol */
 }
 

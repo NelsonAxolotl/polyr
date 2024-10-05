@@ -272,6 +272,35 @@
   }
 }
 
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-size: 2.7rem;
+  margin: 20px 0;
+  padding-bottom: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 50px;
+}
+
+.icon a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.icon i {
+  color: white;
+  font-weight: normal;
+  font-size: 2.7rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon i:hover {
+  color: bisque;
+  transform: scale(1.3);
+}
 /* Style pour les images dans la section "pic" */
 .pic {
   width: 100%; /* Largeur de l'image */
