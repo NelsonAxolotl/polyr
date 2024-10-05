@@ -2,7 +2,6 @@
 .contact {
   background: #7531a5; /* Couleur de fond de la section de contact */
   padding: 0 20px; /* Espacement intérieur horizontal */
-  height: 150vh; /* Hauteur de la section (150% de la hauteur de la fenêtre) */
 }
 
 /* Style pour le titre dans la section de contact */
@@ -135,7 +134,7 @@
   overflow: hidden; /* Masquage du débordement */
   position: relative; /* Position relative pour l'image */
   height: 400px; /* Hauteur de l'image */
-  margin-top: 0; /* Marge supérieure */
+  margin-top: 80px; /* Marge supérieure */
 }
 
 /* Style pour les images responsives */
