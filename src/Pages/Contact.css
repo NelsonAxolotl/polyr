@@ -135,7 +135,7 @@
   overflow: hidden; /* Masquage du débordement */
   position: relative; /* Position relative pour l'image */
   height: 400px; /* Hauteur de l'image */
-  margin-top: 30px; /* Marge supérieure */
+  margin-top: 0; /* Marge supérieure */
 }
 
 /* Style pour les images responsives */
