@@ -58,6 +58,8 @@ const Contact = () => {
           <div className="facebook">
             <a
               href="https://www.facebook.com/p/Compagnie-Poly-R-61551483792933/"
+              aria-label="Facebook Compagnie Poly R"
+              title="Suivez-nous sur Facebook"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -67,6 +69,8 @@ const Contact = () => {
           <div className="insta">
             <a
               href="https://www.instagram.com/stories/polyrcompagnie/3197516424053526261/"
+              aria-label="Instagram Compagnie Poly R"
+              title="Suivez-nous sur Instagram"
               target="_blank"
               rel="noopener noreferrer"
             >

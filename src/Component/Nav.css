@@ -18,8 +18,10 @@
 
 /* Style pour le logo de la barre de navigation */
 .navbar-logo img {
-  height: 120px; /* Hauteur du logo */
+  width: 150px; /* Hauteur du logo */
   margin-top: 10px; /* Marge supérieure */
+  height: auto; /* hauteur ajustée automatiquement */
+  object-fit: contain; /* ou "cover" si vous voulez remplir l'espace, mais sans distorsion */
 }
 
 /* Style pour les liens de navigation */

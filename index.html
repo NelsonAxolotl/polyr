@@ -17,19 +17,41 @@
       content="Compagnie poly R située dans la Loire (42), troupe itinérante qui prose deux sepctacles 'l'Opéra mobil' et 'Bastien & Bastienne' pour l'été 2025  ayant pour objectif de remettre au goût du jour l’art de l’Opéra."
     />
     <meta name="author" content="Poly R" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Politique de Sécurité de Contenu (CSP) -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+       default-src 'self'; 
+       script-src 'self' 'unsafe-inline' https://kit.fontawesome.com https://unpkg.com; 
+       style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://ka-f.fontawesome.com https://unpkg.com; 
+       img-src 'self' data: https://wanubida.com https://unpkg.com ; 
+       font-src 'self' data: https://fonts.gstatic.com https://ka-f.fontawesome.com; 
+       connect-src 'self' https://ka-f.fontawesome.com;"
+    />
+
+    <meta name="robots" content="index, follow" />
+
+    <!-- SEO Meta Tags Open Graph -->
     <meta
       property="og:title"
       content="Poly R- Spectacles Éblouissants 'Opéra mobil' anisi que 'bastien & Bastienne' en France"
     />
+
     <meta
       property="og:description"
       content="Découvrez les spectacles envoûtants de la Compganie poly R. Vivez une expérience culturelle inoubliable et des moments uniques d'Opéra, théâtre et
       également les marionnettes."
     />
     <meta property="og:image" content="https://polyR.com/public/logo.webp" />
+    <meta property="og:image:alt" content="logo compagnie polyr" />
     <meta property="og:url" content="https://polyR.fr" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Poly R" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Poly R - Spectacles et Événements" />
     <meta
@@ -37,33 +59,52 @@
       content="Découvrez les spectacles et événements de la compagnie Poly R. Rejoignez-nous pour une expérience culturelle inoubliable."
     />
     <meta name="twitter:image" content="https://polyr.fr/public/logo.webp" />
-    <link rel="alternate" href="https://cabaretwanubida.fr" hreflang="fr" />
+    <meta name="twitter:image:alt" content="logo poly r" />
+
+    <!-- Canonical & hreflang for SEO -->
+    <link rel="canonical" href="https://polyr.fr" />
+    <link rel="alternate" href="https://polyr.fr" hreflang="x-default" />
+    <link rel="alternate" href="https://polyr.fr" hreflang="fr" />
+    <link rel="alternate" href="https://wanubida.fr" hreflang="fr-FR" />
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.ico" />
+
+    <!-- Preloading Critical Resources -->
     <link
-      rel="alternate"
-      href="https://cabaretwanubida.com"
-      hreflang="x-default"
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Rye&display=swap"
+      rel="style"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="style"
     />
 
-    <link rel="canonical" href="https://polyr.fr" />
-    <link rel="icon" type="image/svg+xml" href="/public/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Load Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Bangers&family=Rye&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Rye&display=swap"
       rel="stylesheet"
     />
+
+    <!-- FontAwesome Icons -->
     <script
       src="https://kit.fontawesome.com/b78f7f545e.js"
       crossorigin="anonymous"
+      defer
     ></script>
+
     <title>Poly R</title>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Deferred loading of the main script -->
+    <script type="module" src="/src/main.jsx" defer></script>
   </body>
 </html>
