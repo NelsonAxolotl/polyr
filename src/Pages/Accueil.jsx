@@ -131,18 +131,28 @@ const Accueil = () => {
           </h3>
         </section>
         <div className="icon">
-          <SocialLink
-            href="https://www.facebook.com/p/Compagnie-Poly-R-61551483792933/"
-            aria-label="Facebook Compagnie Poly R"
-            title="Suivez-nous sur Facebook"
-            iconClass="fa-brands fa-facebook"
-          />
-          <SocialLink
-            href="https://www.instagram.com/stories/polyrcompagnie/3197516424053526261/"
-            aria-label="Instagram Compagnie Poly R"
-            title="Suivez-nous sur Instagram"
-            iconClass="fa-brands fa-instagram"
-          />
+          <div className="facebook">
+            <a
+              href="https://www.facebook.com/p/Compagnie-Poly-R-61551483792933/"
+              aria-label="Facebook Compagnie Poly R"
+              title="Suivez-nous sur Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+          <div className="insta">
+            <a
+              href="https://www.instagram.com/stories/polyrcompagnie/3197516424053526261/"
+              aria-label="Instagram Compagnie Poly R"
+              title="Suivez-nous sur Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-instagram"></i>
+            </a>
+          </div>
         </div>
         <div className="pic">
           <img
