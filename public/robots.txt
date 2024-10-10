@@ -2,10 +2,14 @@
 User-agent: *
 Allow: /
 
-# Sitemap pour aider les moteurs de recherche à indexer le contenu
+# Fournir le lien du sitemap pour une indexation complète
 Sitemap: https://compagniepolyr.fr/sitemap.xml
 
-# Directive pour Googlebot (exemple pour ajuster certains comportements spécifiques)
+# Googlebot directives
 User-agent: Googlebot
 Allow: /public/
 Disallow: /search/
+
+# Bloquer certains crawlers si nécessaire
+User-agent: BadBot
+Disallow: /
