@@ -8,8 +8,5 @@ Sitemap: https://compagniepolyr.fr/sitemap.xml
 # Googlebot directives
 User-agent: Googlebot
 Allow: /public/
-Disallow: /search/
 
-# Bloquer certains crawlers si nécessaire
-User-agent: BadBot
-Disallow: /
+
