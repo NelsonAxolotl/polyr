@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap pour aider les moteurs de recherche à indexer le contenu
-Sitemap: https://ployr.fr/sitemap.xml
+Sitemap: https://compagniepolyr.fr/sitemap.xml
 
 # Directive pour Googlebot (exemple pour ajuster certains comportements spécifiques)
 User-agent: Googlebot
