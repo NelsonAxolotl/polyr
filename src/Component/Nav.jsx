@@ -47,19 +47,19 @@ const Nav = () => {
       {/* Liens de navigation */}
       <ul className="navbar-links">
         {[
-          { path: "/", label: "Accueil", className: "slide-in-down-1" },
+          { path: "/", label: "Accueil", className: "slideInDown-1" },
           {
             path: "/lacie",
             label: "La Compagnie",
-            className: "slide-in-down-2",
+            className: "slideInDown-2",
           },
           {
             path: "/spectacles",
             label: "Spectacles",
-            className: "slide-in-down-3",
+            className: "slideInDown-3",
           },
 
-          { path: "/contact", label: "Contact", className: "slide-in-down-4" },
+          { path: "/contact", label: "Contact", className: "slideInDown-4" },
         ].map(({ path, label, className }, index) => (
           <li
             key={index}
