@@ -1,3 +1,15 @@
+/* Elements appear on scroll */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 1.2s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Style global pour le corps de la page */
 body {
   margin: 0; /* Suppression des marges par défaut */
@@ -19,6 +31,7 @@ body {
   padding-top: 230px; /* Espacement supérieur */
   text-align: center; /* Alignement du texte au centre */
   color: rgba(255 255 255 / 100%); /* Couleur du texte */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Style pour les sous-titres dans les sections 'showplus' et 'showplus1' */
@@ -32,6 +45,7 @@ body {
   padding: 10px; /* Espacement intérieur */
   border-radius: 5px; /* Bordure arrondie */
   font-weight: bold; /* Poids de la police */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Style pour les sections 'showplus' et 'showplus1' */
@@ -47,7 +61,7 @@ body {
 .showplus p,
 .showplus1 p {
   font-size: 1.1rem; /* Taille de la police */
-  text-align: justify; /* Alignement du texte */
+  text-align: left; /* Alignement du texte */
   max-width: 800px; /* Largeur maximale */
   margin-top: 50px; /* Marge supérieure */
   line-height: 24px; /* Hauteur de ligne */
@@ -55,6 +69,8 @@ body {
   background: rgba(237 235 235 / 100%); /* Couleur de fond */
   border-radius: 10px; /* Bordure arrondie */
   padding: 20px; /* Espacement intérieur */
+  border: 2px solid bisque;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Style pour les éléments 'span' dans les sections 'showplus' et 'showplus1' */
@@ -74,6 +90,7 @@ body {
   border: 1px solid white; /* Bordure blanche */
   padding: 10px; /* Espacement intérieur */
   border-radius: 5px; /* Bordure arrondie */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Style pour les titres 'h4' dans les sections 'showplus' et 'showplus1' */
@@ -84,6 +101,7 @@ body {
   font-weight: bold; /* Poids de la police */
   margin-top: 20px; /* Marge supérieure */
   transition: all 0.3s ease-in-out; /* Effet de transition */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Style pour les liens dans les sections 'showplus' et 'showplus1' */
@@ -115,6 +133,7 @@ body {
   border: 1px solid bisque; /* Bordure de couleur bisque */
   padding: 10px; /* Espacement intérieur */
   border-radius: 5px; /* Bordure arrondie */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Styles pour les ancres de défilement */
@@ -127,36 +146,36 @@ body {
 #galtier,
 #fumi,
 #nathan {
-  scroll-margin-top: 100px; /* Espacement au-dessus des éléments lors du défilement */
+  scroll-margin-top: 150px; /* Espacement au-dessus des éléments lors du défilement */
 }
 
 /* Ajustements spécifiques pour certains éléments */
 #roxane {
-  scroll-margin-top: 180px;
+  scroll-margin-top: 335px;
 }
 
 #herve {
-  scroll-margin-top: 210px;
+  scroll-margin-top: 360px;
 }
 
 #thomas {
-  scroll-margin-top: 200px;
+  scroll-margin-top: 360px;
 }
 
 #melusine {
-  scroll-margin-top: 180px;
+  scroll-margin-top: 360px;
 }
 
 #galtier {
-  scroll-margin-top: 200px;
+  scroll-margin-top: 360px;
 }
 
 #fumi {
-  scroll-margin-top: 150px;
+  scroll-margin-top: 360px;
 }
 
 #nathan {
-  scroll-margin-top: 190px;
+  scroll-margin-top: 360px;
 }
 
 /* Style pour les images dans la section 'pic20' */
@@ -165,6 +184,7 @@ body {
   overflow: hidden; /* Masquage du débordement */
   position: relative; /* Position relative */
   height: 400px; /* Hauteur de l'image */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Style pour les images responsives dans la section 'pic20' */
@@ -174,6 +194,7 @@ body {
   object-fit: cover; /* Ajustement de l'image */
   object-position: center; /* Position de l'image */
   cursor: pointer; /* Curseur au survol */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Style pour la section 'dates' */
@@ -192,15 +213,17 @@ body {
   padding: 15px; /* Espacement intérieur */
   border-radius: 5px; /* Bordure arrondie */
   margin: 30px 0; /* Marges supérieure et inférieure */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Style pour les images dans la section 'dates' */
 .dates img {
   width: 40%; /* Largeur de l'image */
   border-radius: 10px; /* Bordure arrondie */
-  border: 1px solid yellow; /* Bordure jaune */
+  border: 2px solid bisque; /* Bordure jaune */
   transition: all 0.3s ease-in-out; /* Effet de transition */
   cursor: pointer; /* Curseur au survol */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Effet au survol pour les images dans la section 'dates' */

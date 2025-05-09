@@ -13,6 +13,21 @@ import dolls2 from "../Pic/dolls2.webp";
 import dates from "../Pic/dates3.webp";
 
 const Spectacles = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    const elements = document.querySelectorAll(".animate-on-scroll");
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
   const [imageAgrandie, setImageAgrandie] = useState(null);
 
   const operaRef = useRef(null);
@@ -44,10 +59,10 @@ const Spectacles = () => {
   return (
     <>
       <div className="show">
-        <div className="show-titre">
+        <div className="show-titre animate-on-scroll">
           <h1>Spectacles</h1>
         </div>
-        <div id="opera" className="showplus" ref={operaRef}>
+        <div id="opera" className="showplus animate-on-scroll" ref={operaRef}>
           <h2>L&apos;Opéramobil&apos;</h2>
           <p>
             <span>L’Opéramobil’</span> est une troupe itinérante portée par{" "}
@@ -77,7 +92,7 @@ const Spectacles = () => {
             pourquoi <span>L’Opéramobil’</span> sera de retour en juillet 2025
             pour une saison 2 qui s’annonce opératiquement explosive !
           </p>
-          <div className="pic-opera">
+          <div className="pic-opera animate-on-scroll">
             <img
               src={polyrgroupe}
               alt="Opéra Mobile groupe"
@@ -95,31 +110,45 @@ const Spectacles = () => {
               loading="lazy"
             />
           </div>
-          <h3>Les artistes de la troupe</h3>
-          <h4>
-            <Link to="/lacie#roxane">Roxane Macaudière</Link>
-          </h4>
-          <h4>
-            <Link to="/lacie#herve">Hervé Le Bert</Link>
-          </h4>
-          <h4>
-            <Link to="/lacie#thomas">Thomas Avrillon</Link>
-          </h4>
-          <h4>
-            <Link to="/lacie#melusine">Mélusine Escande</Link>
-          </h4>
-          <h4>
-            <Link to="/lacie#galtier">Galtier Le Bilhan</Link>
-          </h4>
-          <h4>
-            <Link to="/lacie#fumi">Fumi Oka</Link>
-          </h4>
+          <div className="animate-on-scroll">
+            <h3>Les artistes de la troupe</h3>
+          </div>
+          <div className="animate-on-scroll">
+            <h4>
+              <Link to="/lacie#roxane">Roxane Macaudière</Link>
+            </h4>
+          </div>
+          <div className="animate-on-scroll">
+            <h4>
+              <Link to="/lacie#herve">Hervé Le Bert</Link>
+            </h4>
+          </div>
+          <div className="animate-on-scroll">
+            <h4>
+              <Link to="/lacie#thomas">Thomas Avrillon</Link>
+            </h4>
+          </div>
+          <div className="animate-on-scroll">
+            <h4>
+              <Link to="/lacie#melusine">Mélusine Escande</Link>
+            </h4>
+          </div>
+          <div className="animate-on-scroll">
+            <h4>
+              <Link to="/lacie#galtier">Galtier Le Bilhan</Link>
+            </h4>
+          </div>
+          <div className="animate-on-scroll">
+            <h4>
+              <Link to="/lacie#fumi">Fumi Oka</Link>
+            </h4>
+          </div>
         </div>
-        <div className="gall">
+        <div className="gall animate-on-scroll">
           <h2>Galerie</h2>
         </div>
         <Gallery2 />
-        <div className="dates">
+        <div className="dates animate-on-scroll">
           <h3>Dates passées été 2024</h3>
           <img
             src={dates}
@@ -130,7 +159,11 @@ const Spectacles = () => {
             loading="lazy"
           />
         </div>
-        <div id="bastien" className="showplus1" ref={bastienRef}>
+        <div
+          id="bastien"
+          className="showplus1 animate-on-scroll"
+          ref={bastienRef}
+        >
           <h2>Bastien & Bastienne</h2>
           <p>
             <span>Bastien & Bastienne</span> est un spectacle pour enfants créé
@@ -150,7 +183,7 @@ const Spectacles = () => {
             laquelle les enfants participaient et interagissaient avec les
             artistes.
           </p>
-          <div className="pic-opera">
+          <div className="pic-opera animate-on-scroll">
             <img
               src={bastien}
               alt="Bastien"
@@ -168,21 +201,31 @@ const Spectacles = () => {
               loading="lazy"
             />
           </div>
-          <h3>Les artistes de la troupe</h3>
-          <h4>
-            <Link to="/lacie#fumi">Fumi Oka</Link>
-          </h4>
-          <h4>
-            <Link to="/lacie#nathan">Nathan Brunet</Link>
-          </h4>
-          <h4>
-            <Link to="/lacie#roxane">Roxane Macaudière</Link>
-          </h4>
-          <h4>
-            <Link to="/lacie#herve">Hervé Le Bert</Link>
-          </h4>
+          <div className="animate-on-scroll">
+            <h3>Les artistes de la troupe</h3>
+          </div>
+          <div className="animate-on-scroll">
+            <h4>
+              <Link to="/lacie#fumi">Fumi Oka</Link>
+            </h4>
+          </div>
+          <div className="animate-on-scroll">
+            <h4>
+              <Link to="/lacie#nathan">Nathan Brunet</Link>
+            </h4>
+          </div>
+          <div className="animate-on-scroll">
+            <h4>
+              <Link to="/lacie#roxane">Roxane Macaudière</Link>
+            </h4>
+          </div>
+          <div className="animate-on-scroll">
+            <h4>
+              <Link to="/lacie#herve">Hervé Le Bert</Link>
+            </h4>
+          </div>
         </div>
-        <div className="gall">
+        <div className="gall animate-on-scroll">
           <h2>Galerie</h2>
         </div>
         <Gallery />

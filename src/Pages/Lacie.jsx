@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import End from "../Component/End";
@@ -30,6 +30,21 @@ ImageOverlay.propTypes = {
   onClose: PropTypes.func.isRequired, // La prop onClose doit être une fonction et est requise
 };
 const Lacie = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    const elements = document.querySelectorAll(".animate-on-scroll");
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
   const [enlargedImage, setEnlargedImage] = useState(null);
 
   const handleImageClick = (image) => setEnlargedImage(image);
@@ -38,16 +53,26 @@ const Lacie = () => {
   return (
     <>
       <div className="main">
-        <div className="cie">
+        <div className="cie animate-on-scroll">
           <h1>La Compagnie</h1>
         </div>
-        <div className="historique">
+        <div className="historique animate-on-scroll">
           <h2>Historique</h2>
         </div>
-        <div className="cie-text">
+        <div className="cie-text animate-on-scroll">
           <p>
             La Compagnie <span>Poly R</span> est lyonnaise et a été créée en
-            septembre 2023 par Roxane Macaudière et Hervé Le Bert. <br />
+            septembre 2023 par{" "}
+            <span>
+              {" "}
+              <Link to="/lacie#roxane">Roxane Macaudière</Link>
+            </span>{" "}
+            et{" "}
+            <span>
+              {" "}
+              <Link to="/lacie#herve">Hervé Le Bert</Link>
+            </span>
+            . <br />
             Tous deux artistes en voie de professionnalisation et passionnés par
             leurs différentes pratiques (chant lyrique, théâtre, piano, guitare,
             danse), ils ont eu à cœur de créer une structure leur permettant de
@@ -59,12 +84,12 @@ const Lacie = () => {
             représentée, notamment dans les campagnes et villages.
           </p>
         </div>
-        <div className="bio">
+        <div className="bio animate-on-scroll">
           <h2>L&rsquo;Équipe</h2>
           <h3>Direction artistique</h3>
-          <div className="artistes">
-            <div id="roxane" className="personne-reverse">
-              <div className="pic1">
+          <div className="artistes animate-on-scroll">
+            <div id="roxane" className="personne-reverse animate-on-scroll">
+              <div className="pic1 animate-on-scroll">
                 <img
                   src={roxane}
                   alt="photo Roxane"
@@ -74,8 +99,8 @@ const Lacie = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="text1">
-                <p className="main-text">
+              <div className="text1 animate-on-scroll">
+                <p className="main-text animate-on-scroll">
                   <span>Roxane Macaudière</span> s&apos;épanouit en musique dès
                   son plus jeune âge au sein du chœur de jeunes chanteurs de la
                   Maîtrise de la Loire. <br />
@@ -85,7 +110,7 @@ const Lacie = () => {
                   tard. <br />
                   Après ce début de chemin artistique, c&apos;est à Lyon
                   qu&apos;elle s&apos;envole pour étudier
-                  <span>le chant lyrique</span> aux côtés de Cécile de Boever.{" "}
+                  <span> le chant lyrique</span> aux côtés de Cécile de Boever.{" "}
                   <br />
                   Elle intègre parallèlement l&apos;ENM de Villeurbanne, dans la
                   classe de Virginie Pochon. <br />
@@ -114,9 +139,9 @@ const Lacie = () => {
                 </p>
               </div>
             </div>
-            <div id="herve" className="personne">
-              <div className="text1">
-                <p className="main-text">
+            <div id="herve" className="personne animate-on-scroll">
+              <div className="text1 animate-on-scroll">
+                <p className="main-text animate-on-scroll">
                   <span>Hervé Le Bert</span> est{" "}
                   <span>ténor lyrique et comédien</span>, il se passionne dès sa
                   petite enfance pour la musique. Son parcours à la maîtrise de
@@ -139,11 +164,11 @@ const Lacie = () => {
                   </Link>{" "}
                   et intègre également
                   <Link to="/spectacles#opera">
-                    <span>la troupe Opéramobil&apos;</span>.
+                    <span> la troupe Opéramobil&apos;</span>.
                   </Link>
                 </p>
               </div>
-              <div className="pic1">
+              <div className="pic1 animate-on-scroll">
                 <img
                   src={herve}
                   alt="photo Hervé"
@@ -155,11 +180,11 @@ const Lacie = () => {
               </div>
             </div>
 
-            <div className="bio3">
+            <div className="bio3 animate-on-scroll">
               <h3>Les artistes</h3>
             </div>
-            <div id="fumi" className="personne-reverse">
-              <div className="pic1">
+            <div id="fumi" className="personne-reverse animate-on-scroll">
+              <div className="pic1 animate-on-scroll">
                 <img
                   src={fumi}
                   alt="photo Fumi"
@@ -169,8 +194,8 @@ const Lacie = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="text1">
-                <p className="main-text">
+              <div className="text1 animate-on-scroll">
+                <p className="main-text animate-on-scroll">
                   <span>Fumi Oka</span> est une <span>chanteuse lyrique</span>{" "}
                   mezzo-soprano d’origine japonaise. <br />
                   Après avoir passé une licence de chant à Kyoto, elle arrive en
@@ -196,9 +221,9 @@ const Lacie = () => {
                 </p>
               </div>
             </div>
-            <div id="thomas" className="personne">
-              <div className="text1">
-                <p className="main-text">
+            <div id="thomas" className="personne animate-on-scroll">
+              <div className="text1 animate-on-scroll">
+                <p className="main-text animate-on-scroll">
                   Découvrant à 8 ans la musique par l’apprentissage du violon,
                   <span> Thomas Avrillon </span> ne tardera pas à rentrer à la
                   Maîtrise de la Loire, où il y restera sept ans. <br />
@@ -223,7 +248,7 @@ const Lacie = () => {
                   en tant que chanteur et violoniste.
                 </p>
               </div>
-              <div className="pic1">
+              <div className="pic1 animate-on-scroll">
                 <img
                   src={thomas}
                   alt="photo Thomas"
@@ -235,8 +260,8 @@ const Lacie = () => {
               </div>
             </div>
 
-            <div id="melusine" className="personne-reverse">
-              <div className="pic1">
+            <div id="melusine" className="personne-reverse animate-on-scroll">
+              <div className="pic1 animate-on-scroll">
                 <img
                   src={melusine}
                   alt="photo Mélusine"
@@ -246,8 +271,8 @@ const Lacie = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="text1">
-                <p className="main-text">
+              <div className="text1 animate-on-scroll">
+                <p className="main-text animate-on-scroll">
                   <span>Mélusine Escande</span> est <span>pianiste</span> et{" "}
                   <span>cheffe de chœur</span>. Après une licence de musicologie
                   à l’Université de Grenoble, elle se forme au sein des
@@ -268,15 +293,15 @@ const Lacie = () => {
                   Bruxelles. <br />
                   En juillet 2024, Mélusine intègre{" "}
                   <Link to="/spectacles#opera">
-                    <span>la troupe Opéramobil&rsquo;</span>.
+                    <span>la troupe Opéramobil&rsquo;</span>
                   </Link>{" "}
                   en tant que pianiste accompagnatrice.
                 </p>
               </div>
             </div>
-            <div id="galtier" className="personne">
-              <div className="text1">
-                <p className="main-text">
+            <div id="galtier" className="personne animate-on-scroll">
+              <div className="text1 animate-on-scroll">
+                <p className="main-text animate-on-scroll">
                   <span>Galtier Le Bihan</span> est <span>guitariste</span>,{" "}
                   <span>compositeur</span> et <span>arrangeur</span>. <br />
                   Parallèlement à son cursus de guitare jazz à l&apos;Ecole
@@ -297,7 +322,7 @@ const Lacie = () => {
                   moderne à la troupe.
                 </p>
               </div>
-              <div className="pic1">
+              <div className="pic1 animate-on-scroll">
                 <img
                   src={galtier}
                   alt="photo Galtier"
@@ -308,8 +333,8 @@ const Lacie = () => {
                 />
               </div>
             </div>
-            <div id="nathan" className="personne-reverse">
-              <div className="pic1">
+            <div id="nathan" className="personne-reverse animate-on-scroll">
+              <div className="pic1 animate-on-scroll">
                 <img
                   src={nathan}
                   alt="photo Nathan"
@@ -319,8 +344,8 @@ const Lacie = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="text1">
-                <p className="main-text">
+              <div className="text1 animate-on-scroll">
+                <p className="main-text animate-on-scroll">
                   <span>Nathan Brunet</span> est <span>guitariste</span>,{" "}
                   <span>sound designer</span>, <span>compositeur</span> et{" "}
                   <span>claviériste</span>. <br />
@@ -341,12 +366,12 @@ const Lacie = () => {
                 </p>
               </div>
             </div>
-            <div className="bio4">
+            <div className="bio4 animate-on-scroll">
               <h3>Président</h3>
             </div>
-            <div id="antoine " className="personne">
-              <div className="text1">
-                <p className="main-text">
+            <div id="antoine " className="personne animate-on-scroll">
+              <div className="text1 animate-on-scroll">
+                <p className="main-text animate-on-scroll">
                   Si il y en a bien un qui fait feu de tout bois, c’est{" "}
                   <span>Antoine Catinaud</span>. Si un coup se prépare, il en
                   est. Tout l’intéresse, du chant lyrique au rugby, en passant
@@ -362,7 +387,7 @@ const Lacie = () => {
                 </p>
               </div>
 
-              <div className="pic1">
+              <div className="pic1 animate-on-scroll">
                 <img
                   src={antoine}
                   alt="photo Galtier"
@@ -373,10 +398,10 @@ const Lacie = () => {
                 />
               </div>
             </div>
-            <div className="bio5">
+            <div className="bio5 animate-on-scroll">
               <h3>Trésorière</h3>
             </div>
-            <div id="laetitia" className="personne-reverse">
+            <div id="laetitia" className="personne-reverse animate-on-scroll">
               <div className="pic1">
                 <img
                   src={laetitia}
@@ -387,8 +412,8 @@ const Lacie = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="text1">
-                <p className="main-text">
+              <div className="text1 animate-on-scroll">
+                <p className="main-text animate-on-scroll">
                   <span>Laëtitia Chanoz</span> s&apos;investit dans{" "}
                   <Link to="/">
                     <span>la compagnie Poly R</span>

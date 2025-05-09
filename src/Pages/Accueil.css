@@ -1,4 +1,16 @@
 /* Style principal pour l'accueil */
+/* Elements appear on scroll */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 1.2s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .main-accueil {
   display: flex;
   flex-direction: column;
@@ -16,6 +28,7 @@
 
 .tittle-poly h1,
 .tittle-poly h2 {
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   font-family: Matemasie, sans-serif; /* Police des titres */
   font-size: 5rem; /* Taille des polices des titres */
   padding-top: 230px; /* Espacement au-dessus des titres */
@@ -38,6 +51,7 @@
   max-width: 800px; /* Largeur maximale du texte */
   text-align: justify; /* Alignement du texte */
   color: bisque; /* Couleur du texte */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .poly-intro span {
@@ -62,6 +76,7 @@
   margin-left: 50px; /* Marge à gauche */
   margin-right: 50px; /* Marge à droite */
   line-height: 20px; /* Hauteur de ligne */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .suite-intro span {
@@ -69,6 +84,11 @@
   text-align: center; /* Alignement du texte */
   color: rgba(255 18 227 / 100%); /* Couleur du texte */
   font-weight: bold; /* Poids de la police */
+  transition: all 0.3s ease-in-out;
+}
+
+.suite-intro span:hover {
+  color: #fff;
 }
 
 /* Style pour la section de séparation "split" */
@@ -83,6 +103,7 @@
   font-size: 1.4rem; /* Taille du texte */
   color: white; /* Couleur du texte */
   font-weight: bold; /* Poids de la police */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .split span {
@@ -110,6 +131,7 @@
   border: 1px solid white; /* Bordure des images */
   border-radius: 5px; /* Bordure arrondie */
   transition: all 0.3s ease-in-out; /* Transition au survol */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .poly-pic img:hover {
@@ -131,6 +153,7 @@
   border-radius: 5px; /* Bordure arrondie */
   margin-top: 60px; /* Marge supérieure */
   font-weight: bold; /* Poids de la police */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Style pour la section "pic-opera" */
@@ -149,6 +172,7 @@
   object-fit: cover; /* Mode d'ajustement des images */
   cursor: pointer; /* Curseur au survol */
   transition: all 0.3s ease-in-out; /* Transition au survol */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .pic-opera img:hover {
@@ -167,6 +191,7 @@
   font-size: 3rem; /* Taille du titre */
   color: bisque; /* Couleur du texte */
   font-weight: bold; /* Poids de la police */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .presse p {
@@ -174,6 +199,7 @@
   margin-top: 30px; /* Marge supérieure */
   margin-bottom: 20px; /* Marge inférieure */
   color: white; /* Couleur du texte */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .article {
@@ -198,6 +224,7 @@
   border-radius: 5px; /* Bordure arrondie */
   border: 1px solid white; /* Bordure du bouton */
   transition: background-color 0.3s ease, all 0.3s ease-in-out; /* Transitions */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .presse button:hover {
@@ -216,6 +243,7 @@
   cursor: pointer; /* Curseur au survol */
   transition: all 0.3s ease-in-out; /* Transition au survol */
   border: 1px solid white; /* Bordure des images */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .article img:hover {
@@ -240,6 +268,7 @@
   color: bisque; /* Couleur du texte */
   font-weight: bold; /* Poids de la police */
   text-align: center; /* Alignement du texte */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Style pour les points de suspension animés */
@@ -294,12 +323,12 @@
   color: white;
   font-weight: normal;
   font-size: 2.7rem;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 
 .icon i:hover {
   color: bisque;
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 /* Style pour les images dans la section "pic" */
 .pic {
@@ -307,6 +336,7 @@
   overflow: hidden; /* Masquage du débordement */
   position: relative; /* Position relative pour l'image */
   height: 400px; /* Hauteur de l'image */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .responsive-img {

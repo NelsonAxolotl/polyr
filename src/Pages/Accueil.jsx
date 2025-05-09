@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import PropTypes from "prop-types";
 import End from "../Component/End";
@@ -38,6 +38,22 @@ SocialLink.propTypes = {
 };
 
 const Accueil = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    const elements = document.querySelectorAll(".animate-on-scroll");
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   const [enlargedImage, setEnlargedImage] = useState(null);
 
   const handleImageClick = (image) => setEnlargedImage(image);
@@ -46,11 +62,11 @@ const Accueil = () => {
   return (
     <>
       <div className="main-accueil">
-        <header className="tittle-poly">
+        <header className="tittle-poly animate-on-scroll">
           <h1>Compagnie</h1>
           <h2>Poly R</h2>
         </header>
-        <section className="poly-intro">
+        <section className="poly-intro animate-on-scroll">
           <p>
             La compagnie <span>Poly R</span> est une compagnie
             pluridisciplinaire qui mêle les arts de la scène avec comme
@@ -58,15 +74,16 @@ const Accueil = () => {
             également les marionnettes.
           </p>
         </section>
-        <section className="suite-intro">
+        <section className="suite-intro animate-on-scroll">
           <p>Cocréée et dirigée par</p>
           <span>
-            <Link to="/lacie#herve">Hervé Le Bert</Link> et
+            <Link to="/lacie#herve">Hervé Le Bert</Link>
           </span>
+          <p>et</p>
           <span>
             <Link to="/lacie#roxane">Roxane Macaudière</Link>
           </span>
-          <span>située dans la Loire (42)</span>
+          <p>située dans la Loire (42)</p>
         </section>
         <section className="poly-pic">
           {[opera1, bastien50].map((src, index) => (
@@ -81,13 +98,13 @@ const Accueil = () => {
             />
           ))}
         </section>
-        <section className="actu">
+        <section className="actu animate-on-scroll">
           <h3>Actu</h3>
-          <div className="split">
+          <div className="split animate-on-scroll">
             <p>À venir Juillet 2025</p>
             <span>Opéramobil &rsquo;saison 2</span>
           </div>
-          <div className="pic-opera">
+          <div className="pic-opera animate-on-scroll">
             {[operagroupe, opera].map((src, index) => (
               <img
                 key={src}
@@ -101,7 +118,7 @@ const Accueil = () => {
             ))}
           </div>
         </section>
-        <section className="presse">
+        <section className="presse animate-on-scroll">
           <h3>Un peu de presse</h3>
           <p>Spectacle &quot;Bastien & Bastienne&quot;</p>
           <button
@@ -115,7 +132,7 @@ const Accueil = () => {
             Article
           </button>
         </section>
-        <section className="article">
+        <section className="article animate-on-scroll">
           <img
             src={presse}
             alt="photo article de presse"
@@ -125,12 +142,12 @@ const Accueil = () => {
             loading="lazy"
           />
         </section>
-        <section className="reseau">
+        <section className="reseau animate-on-scroll">
           <h3>
             Nous Suivre<span className="dots">.</span>
           </h3>
         </section>
-        <div className="icon">
+        <div className="icon animate-on-scroll">
           <div className="facebook">
             <a
               href="https://www.facebook.com/p/Compagnie-Poly-R-61551483792933/"

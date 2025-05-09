@@ -1,3 +1,15 @@
+/* Elements appear on scroll */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 1.2s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Style global pour le corps de la page */
 body {
   margin: 0; /* Suppression des marges par défaut */
@@ -23,6 +35,7 @@ body {
   text-align: center; /* Alignement du texte au centre */
   color: rgba(255 255 255 / 100%); /* Couleur du texte */
   margin-bottom: 20px; /* Marge inférieure */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Style pour les sous-titres dans les sections 'historique' et 'bio' */
@@ -37,6 +50,7 @@ body {
   border: 1px solid bisque; /* Bordure de couleur bisque */
   border-radius: 5px; /* Bordure arrondie */
   padding: 10px; /* Espacement intérieur */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Style pour le texte dans la section 'cie' */
@@ -44,16 +58,20 @@ body {
   display: flex; /* Utilisation de flexbox */
   flex-direction: column; /* Disposition en colonne */
   align-items: center; /* Alignement au centre */
+  border: 2px dashed bisque;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 40px;
 }
 
 /* Style pour les paragraphes dans la section 'cie-text' */
 .cie-text p {
   font-size: 1.4rem; /* Taille de la police */
-  margin-top: 40px; /* Marge supérieure */
   max-width: 800px; /* Largeur maximale */
   line-height: 26px; /* Hauteur de ligne */
   font-weight: bold; /* Poids de la police */
   color: azure; /* Couleur du texte */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Style pour les éléments 'span' dans la section 'cie-text' */
@@ -84,6 +102,7 @@ body {
   border: 1px solid white; /* Bordure blanche */
   padding: 10px; /* Espacement intérieur */
   border-radius: 5px; /* Bordure arrondie */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Style pour les titres dans la section 'bio3' */
@@ -93,6 +112,7 @@ body {
   margin-top: 100px; /* Marge supérieure */
   margin-bottom: 10px; /* Marge inférieure */
   text-align: center; /* Alignement du texte au centre */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Style pour les titres dans la section 'bio4' */
@@ -102,6 +122,7 @@ body {
   text-align: center; /* Alignement du texte au centre */
   margin-bottom: -30px; /* Marge inférieure négative */
   margin-top: 0px; /* Marge supérieure */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Style pour la section 'bio4' */
@@ -117,6 +138,7 @@ body {
   font-size: 1.8rem; /* Taille de la police */
   color: white; /* Couleur du texte */
   text-align: center; /* Alignement du texte au centre */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Style pour la section 'bio5' */
@@ -162,6 +184,7 @@ body {
   border: 1px solid white; /* Bordure blanche */
   transition: all 0.3s ease-in-out; /* Effet de transition */
   cursor: pointer; /* Curseur au survol */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Style pour les images au survol dans la section 'pic1' */
@@ -175,22 +198,24 @@ body {
   flex-direction: column; /* Disposition en colonne */
   align-items: center; /* Alignement au centre */
   justify-content: center; /* Alignement au centre */
-  border: 2px solid white; /* Bordure blanche */
+  border: 2px solid bisque; /* Bordure blanche */
   background: rgba(237 235 235 / 100%); /* Couleur de fond */
   border-radius: 10px; /* Bordure arrondie */
-  padding: 20px; /* Espacement intérieur */
+  padding: 10px 20px; /* Espacement intérieur */
   width: 100%; /* Largeur totale */
   max-width: 800px; /* Largeur maximale */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Style pour les paragraphes dans la section 'text1' */
 .text1 p {
   font-size: 1.1rem; /* Taille de la police */
   padding: 20px 0; /* Espacement intérieur vertical */
-  line-height: 1.3; /* Hauteur de ligne */
+  line-height: 1.4; /* Hauteur de ligne */
   word-spacing: normal; /* Espacement des mots */
   max-width: 100%; /* Largeur maximale */
-  text-align: justify; /* Alignement du texte */
+  text-align: left; /* Alignement du texte */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Style pour les éléments 'span' dans la section 'text1' */
@@ -221,6 +246,7 @@ body {
   overflow: hidden; /* Masquage du débordement */
   position: relative; /* Position relative */
   height: 400px; /* Hauteur de l'image */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Style pour les images responsives dans la section 'pic10' */

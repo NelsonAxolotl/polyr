@@ -1,0 +1,46 @@
+/* Style global pour le corps de la page */
+body {
+  margin: 0; /* Suppression des marges par défaut */
+  font-family: Quicksand, sans-serif; /* Police principale pour le texte */
+}
+
+/* Style principal pour la section principale */
+.main {
+  background: #7531a5; /* Couleur de fond */
+  display: flex; /* Utilisation de flexbox pour l'alignement */
+  flex-direction: column; /* Disposition des éléments en colonne */
+  align-items: center; /* Alignement des éléments au centre */
+  padding: 20px; /* Espacement intérieur */
+  padding-bottom: 100px; /* Espacement intérieur spécifique en bas */
+}
+
+/* Style pour le titre de la section 'cie' */
+.bill h1 {
+  font-family: Matemasie, sans-serif; /* Police du titre */
+  font-size: 5rem; /* Taille de la police */
+  font-weight: bold; /* Poids de la police */
+  padding-top: 210px; /* Espacement supérieur */
+  text-align: center; /* Alignement du texte au centre */
+  color: rgba(255 255 255 / 100%); /* Couleur du texte */
+  margin-bottom: 20px; /* Marge inférieure */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour les images de la section de contact */
+.pic2 {
+  width: 100%; /* Largeur de l'image */
+  overflow: hidden; /* Masquage du débordement */
+  position: relative; /* Position relative pour l'image */
+  height: 400px; /* Hauteur de l'image */
+  margin-top: 80px; /* Marge supérieure */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Style pour les images responsives */
+.responsive-img2 {
+  width: 100%; /* Largeur de l'image */
+  height: 100%; /* Hauteur de l'image */
+  object-fit: cover; /* Ajustement de l'image */
+  object-position: center; /* Position de l'image */
+  cursor: pointer; /* Curseur au survol */
+}

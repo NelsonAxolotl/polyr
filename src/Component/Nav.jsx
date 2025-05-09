@@ -58,8 +58,12 @@ const Nav = () => {
             label: "Spectacles",
             className: "slideInDown-3",
           },
-
-          { path: "/contact", label: "Contact", className: "slideInDown-4" },
+          {
+            path: "/billeterie",
+            label: "Billeterie",
+            className: "slideInDown-4",
+          },
+          { path: "/contact", label: "Contact", className: "slideInDown-5" },
         ].map(({ path, label, className }, index) => (
           <li
             key={index}

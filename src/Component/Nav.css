@@ -233,6 +233,10 @@
     transition: all 1.6s ease-out; /* Transition pour le quatrième élément */
   }
 
+  .show-nav .slideInDown-5 {
+    transition: all 1.8s ease-out; /* Transition pour le quatrième élément */
+  }
+
   .navbar-link:hover {
     color: rgba(220 205 0 / 100%); /* Couleur au survol */
     border-bottom: none; /* Suppression de la bordure inférieure au survol */

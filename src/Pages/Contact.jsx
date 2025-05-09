@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./Contact.css";
@@ -6,6 +6,21 @@ import poly25 from "../Pic/poly25.webp";
 import End from "../Component/End";
 
 const Contact = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    const elements = document.querySelectorAll(".animate-on-scroll");
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
   const [enlargedImage, setEnlargedImage] = useState(null);
 
   const handleImageClick = (image) => {
@@ -19,16 +34,16 @@ const Contact = () => {
   return (
     <>
       <div className="contact">
-        <div className="show-titre2">
+        <div className="show-titre2 animate-on-scroll">
           <h1>Contact</h1>
         </div>
         <div className="container">
           <div className="contact-section">
-            <div className="resa-h2">
+            <div className="resa-h2 animate-on-scroll">
               <h2>Administration</h2>
             </div>
             <div className="resa">
-              <div className="mail">
+              <div className="mail animate-on-scroll">
                 <span>
                   <FontAwesomeIcon icon={faEnvelope} />
                 </span>
@@ -42,7 +57,7 @@ const Contact = () => {
                   </a>
                 </span>
               </div>
-              <div className="phone">
+              <div className="phone animate-on-scroll">
                 <span>
                   <FontAwesomeIcon icon={faPhone} />
                 </span>
@@ -51,10 +66,10 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="reseaux">
+        <div className="reseaux animate-on-scroll">
           <h2>Réseaux</h2>
         </div>
-        <div className="icons">
+        <div className="icons animate-on-scroll">
           <div className="facebook">
             <a
               href="https://www.facebook.com/p/Compagnie-Poly-R-61551483792933/"
