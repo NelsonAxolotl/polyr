@@ -223,7 +223,7 @@ const Lacie = () => {
                       </Link>{" "}
                       et intègre{" "}
                       <Link to="/spectacles#opera">
-                        <span>la troupe Opéramobil'</span>
+                        <span>la troupe Opéramobil&apos;&apos;</span>
                       </Link>{" "}
                       de la compagnie. <br />
                       En 2025, Fumi devient assistante communication et
