@@ -3,12 +3,8 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import End from "../Component/End";
 import "./LaCie.css";
-import roxane from "../Pic/roxane.webp";
-import herve from "../Pic/herve.webp";
-import thomas from "../Pic/thomas.webp";
+
 import melusine from "../Pic/melysine.webp";
-import galtier from "../Pic/galtier.webp";
-import fumi from "../Pic/fumi.webp";
 import nathan from "../Pic/nathan.webp";
 import antoine from "../Pic/antoine.webp";
 import laetitia from "../Pic/laetitia.webp";
@@ -136,13 +132,13 @@ const Lacie = () => {
                       École de Musique de Genève dans la classe de Heidi
                       Brünner. <br />
                       En avril 2025, elle incarne Gretel dans une production de
-                      l'opéra Hänsel und Gretel de Humperdinck à Chêne-Bourg en
-                      Suisse. <br />
+                      l&apos;opéra Hänsel und Gretel de Humperdinck à
+                      Chêne-Bourg en Suisse. <br />
                       Elle est aussi la directrice artistique de la{" "}
                       <Link to="/">
                         <span>la compagnie Poly R</span>
                       </Link>{" "}
-                      qu'elle a co-créée avec Hervé Le Bert en 2023.
+                      qu&apos;elle a co-créée avec Hervé Le Bert en 2023.
                     </p>
                   </div>
                 </div>
@@ -172,7 +168,7 @@ const Lacie = () => {
                       <Link to="/">
                         <span>la compagnie Poly R</span>{" "}
                       </Link>{" "}
-                      dont il est aujourd'hui le directeur technique et
+                      dont il est aujourd&apos;hui le directeur technique et
                       comptable.
                     </p>
                   </div>
@@ -263,7 +259,7 @@ const Lacie = () => {
                     Mikado de Sullivan. <br />
                     En juillet 2024, Thomas intègre{" "}
                     <Link to="/spectacles#opera">
-                      <span>la troupe Opéramobil'&apos;</span>
+                      <span>la troupe Opéramobil&apos;&apos;</span>
                     </Link>{" "}
                     en tant que chanteur et violoniste.
                   </p>

@@ -3,11 +3,8 @@ import { HashLink as Link } from "react-router-hash-link";
 import PropTypes from "prop-types";
 import End from "../Component/End";
 import "./Accueil.css";
-import opera1 from "../Pic/opera1.webp";
-import opera from "../Pic/opera.webp";
-import operagroupe from "../Pic/operagroupe.webp";
+
 import presse from "../Pic/presse.webp";
-import allgroupe from "../Pic/allgroupe.webp";
 import bastien50 from "../Pic/bastien50.webp";
 import newop from "../Pic/newop.webp";
 import newdates from "../Pic/newdates.webp";
@@ -155,7 +152,7 @@ const Accueil = () => {
           </div>
           <div className="pressopera animate-on-scroll">
             <section className="presse animate-on-scroll">
-              <p>Opéra Mobil'</p>
+              <p>Opéra Mobil&apos;</p>
               <button
                 onClick={() =>
                   window.open(

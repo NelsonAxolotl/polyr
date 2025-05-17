@@ -5,12 +5,11 @@ import End from "../Component/End"; // Vérifiez le chemin et l'existence du com
 import Gallery from "../Component/Gallery";
 import Gallery2 from "../Component/Gallery2";
 import "./Spectacles.css";
-import polyrgroupe from "../Pic/polyrgroupe.webp";
+
 import opera from "../Pic/opera.webp";
 import bastien from "../Pic/bastien.webp";
 import bastienne from "../Pic/bastienne.webp";
 import dolls2 from "../Pic/dolls2.webp";
-import dates from "../Pic/dates3.webp";
 import openew from "../Pic/openew.webp";
 import newdates from "../Pic/newdates.webp";
 

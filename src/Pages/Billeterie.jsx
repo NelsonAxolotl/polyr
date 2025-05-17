@@ -158,8 +158,8 @@ const Billeterie = () => {
             </a>{" "}
             <br />
             ou directement en cliquant sur les images des spectacles. <br />
-            (Chaque vignette vous redirige vers la billetterie de l'événement
-            correspondant)
+            (Chaque vignette vous redirige vers la billetterie de
+            l&apos;événement correspondant)
           </p>
 
           <div className="tarif animate-on-scroll">
