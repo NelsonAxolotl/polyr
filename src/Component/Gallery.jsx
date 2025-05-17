@@ -20,6 +20,8 @@ import bastien54 from "../Pic/bastien54.webp";
 import bastien52 from "../Pic/bastien52.webp";
 import bastien51 from "../Pic/bastien51.webp";
 import doll from "../Pic/dolls.jpg";
+import poly25 from "../Pic/poly25.webp";
+
 const images = [
   { src: bastien1, alt: "Image 1" },
   { src: bastien21, alt: "Image 21" },
@@ -38,9 +40,25 @@ const images = [
   { src: poly18, alt: "Image ploy18" },
   { src: bastien20, alt: "Image 20" },
   { src: poly1, alt: "Image ploy1" },
+  { src: poly25, alt: "Image ploy25" },
 ];
 
 const Gallery = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    const elements = document.querySelectorAll(".animate-on-scroll");
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
   const [enlargedImage, setEnlargedImage] = useState(null);
 
   const handleImageClick = (imageSrc) => {
@@ -77,7 +95,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className="gallery-container">
+    <div className="gallery-container animate-on-scroll">
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className="slider-item">
@@ -104,7 +122,7 @@ const Gallery = () => {
 
       {enlargedImage && (
         <div className="overlay" onClick={handleCloseImage}>
-          <div className="enlarged-image-container">
+          <div className="enlarged-image-container ">
             <img src={enlargedImage} alt="Enlarged" />
             <button
               className="close-button"

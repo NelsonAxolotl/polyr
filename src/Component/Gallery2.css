@@ -13,6 +13,7 @@ body {
   padding: 20px; /* Padding inside the container */
   background: #7531a5; /* Background color matching body */
   margin-bottom: 40px; /* Space below the container */
+  border-radius: 5px;
 }
 
 /* Style for gallery images */

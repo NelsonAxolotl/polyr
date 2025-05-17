@@ -9,6 +9,11 @@ import operagroupe from "../Pic/operagroupe.webp";
 import presse from "../Pic/presse.webp";
 import allgroupe from "../Pic/allgroupe.webp";
 import bastien50 from "../Pic/bastien50.webp";
+import newop from "../Pic/newop.webp";
+import newdates from "../Pic/newdates.webp";
+import operapiano from "../Pic/operapiano.webp";
+import groupeaccueil from "../Pic/groupeaccueil.webp";
+import polypress from "../Pic/polypress.webp";
 
 const ImageOverlay = ({ image, onClose }) => (
   <div className="overlay" onClick={onClose}>
@@ -85,8 +90,8 @@ const Accueil = () => {
           </span>
           <p>située dans la Loire (42)</p>
         </section>
-        <section className="poly-pic">
-          {[opera1, bastien50].map((src, index) => (
+        <section className="poly-pic animate-on-scroll">
+          {[groupeaccueil, bastien50].map((src, index) => (
             <img
               key={src}
               src={src}
@@ -104,8 +109,8 @@ const Accueil = () => {
             <p>À venir Juillet 2025</p>
             <span>Opéramobil &rsquo;saison 2</span>
           </div>
-          <div className="pic-opera animate-on-scroll">
-            {[operagroupe, opera].map((src, index) => (
+          <div className="pic-opera-acc animate-on-scroll">
+            {[newop, newdates].map((src, index) => (
               <img
                 key={src}
                 src={src}
@@ -120,35 +125,67 @@ const Accueil = () => {
         </section>
         <section className="presse animate-on-scroll">
           <h3>Un peu de presse</h3>
-          <p>Spectacle &quot;Bastien & Bastienne&quot;</p>
-          <button
-            onClick={() =>
-              window.open(
-                "https://www.le-pays.fr/montbrison-42600/actualites/des-collegiens-sensibilises-a-lopera_14512862/",
-                "_blank"
-              )
-            }
-          >
-            Article
-          </button>
+          <h4>Spectales</h4>
         </section>
-        <section className="article animate-on-scroll">
-          <img
-            src={presse}
-            alt="photo article de presse"
-            width="500px"
-            height="auto"
-            onClick={() => handleImageClick(presse)}
-            loading="lazy"
-          />
-        </section>
+        <div className="allpresspoly animate-on-scroll">
+          <div className="pressbastien animate-on-scroll">
+            <section className="presse animate-on-scroll">
+              <p>Bastien & Bastienne</p>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://www.le-pays.fr/montbrison-42600/actualites/des-collegiens-sensibilises-a-lopera_14512862/",
+                    "_blank"
+                  )
+                }
+              >
+                Article
+              </button>
+            </section>
+            <section className="article animate-on-scroll">
+              <img
+                src={presse}
+                alt="photo article de presse"
+                width="500px"
+                height="auto"
+                onClick={() => handleImageClick(presse)}
+                loading="lazy"
+              />
+            </section>
+          </div>
+          <div className="pressopera animate-on-scroll">
+            <section className="presse animate-on-scroll">
+              <p>Opéra Mobil'</p>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://www.leprogres.fr/culture-loisirs/2025/04/28/la-compagnie-poly-r-souhaite-partager-le-spectacle-vivant-en-milieu-rural-grace-a-l-operamobil",
+                    "_blank"
+                  )
+                }
+              >
+                Article
+              </button>
+            </section>
+            <section className="article animate-on-scroll">
+              <img
+                src={polypress}
+                alt="photo article de presse"
+                width="500px"
+                height="auto"
+                onClick={() => handleImageClick(polypress)}
+                loading="lazy"
+              />
+            </section>
+          </div>
+        </div>
         <section className="reseau animate-on-scroll">
           <h3>
             Nous Suivre<span className="dots">.</span>
           </h3>
         </section>
         <div className="icon animate-on-scroll">
-          <div className="facebook">
+          <div className="facebook animate-on-scroll">
             <a
               href="https://www.facebook.com/p/Compagnie-Poly-R-61551483792933/"
               aria-label="Facebook Compagnie Poly R"
@@ -159,7 +196,7 @@ const Accueil = () => {
               <i className="fa-brands fa-facebook"></i>
             </a>
           </div>
-          <div className="insta">
+          <div className="insta animate-on-scroll">
             <a
               href="https://www.instagram.com/stories/polyrcompagnie/3197516424053526261/"
               aria-label="Instagram Compagnie Poly R"
@@ -171,14 +208,14 @@ const Accueil = () => {
             </a>
           </div>
         </div>
-        <div className="pic">
+        <div className="pic50 animate-on-scroll">
           <img
-            src={allgroupe}
+            src={operapiano}
             alt="cie poly r"
             width="auto"
             height="auto"
-            className="responsive-img"
-            onClick={() => handleImageClick(allgroupe)}
+            className="responsive-img50"
+            onClick={() => handleImageClick(operapiano)}
             loading="lazy"
           />
         </div>

@@ -11,6 +11,8 @@ import bastien from "../Pic/bastien.webp";
 import bastienne from "../Pic/bastienne.webp";
 import dolls2 from "../Pic/dolls2.webp";
 import dates from "../Pic/dates3.webp";
+import openew from "../Pic/openew.webp";
+import newdates from "../Pic/newdates.webp";
 
 const Spectacles = () => {
   useEffect(() => {
@@ -64,7 +66,7 @@ const Spectacles = () => {
         </div>
         <div id="opera" className="showplus animate-on-scroll" ref={operaRef}>
           <h2>L&apos;Opéramobil&apos;</h2>
-          <p>
+          <p className="animate-on-scroll">
             <span>L’Opéramobil’</span> est une troupe itinérante portée par{" "}
             <Link to="/lacie">
               <span>la Compagnie Poly R</span>
@@ -94,11 +96,11 @@ const Spectacles = () => {
           </p>
           <div className="pic-opera animate-on-scroll">
             <img
-              src={polyrgroupe}
+              src={openew}
               alt="Opéra Mobile groupe"
               width="330px"
               height="300px"
-              onClick={() => handleImageClick(polyrgroupe)}
+              onClick={() => handleImageClick(openew)}
               loading="lazy"
             />
             <img
@@ -125,14 +127,15 @@ const Spectacles = () => {
           </div>
           <div className="animate-on-scroll">
             <h4>
-              <Link to="/lacie#thomas">Thomas Avrillon</Link>
+              <Link to="/lacie#fumi">Fumi Oka</Link>
             </h4>
           </div>
           <div className="animate-on-scroll">
             <h4>
-              <Link to="/lacie#melusine">Mélusine Escande</Link>
+              <Link to="/lacie#thomas">Thomas Avrillon</Link>
             </h4>
           </div>
+
           <div className="animate-on-scroll">
             <h4>
               <Link to="/lacie#galtier">Galtier Le Bilhan</Link>
@@ -140,7 +143,12 @@ const Spectacles = () => {
           </div>
           <div className="animate-on-scroll">
             <h4>
-              <Link to="/lacie#fumi">Fumi Oka</Link>
+              <Link to="/lacie#yuku">Yuku Yonemitsu</Link>
+            </h4>
+          </div>
+          <div className="animate-on-scroll">
+            <h4>
+              <Link to="/lacie#melusine">Mélusine Escande</Link>
             </h4>
           </div>
         </div>
@@ -148,14 +156,17 @@ const Spectacles = () => {
           <h2>Galerie</h2>
         </div>
         <Gallery2 />
+        <div className="photos">
+          <p>© photographe Camille Montagna</p>
+        </div>
         <div className="dates animate-on-scroll">
-          <h3>Dates passées été 2024</h3>
+          <h3>Dates été 2025</h3>
           <img
-            src={dates}
+            src={newdates}
             alt="dates passées"
             width="530px"
             height="530px"
-            onClick={() => handleImageClick(dates)}
+            onClick={() => handleImageClick(newdates)}
             loading="lazy"
           />
         </div>
@@ -165,7 +176,7 @@ const Spectacles = () => {
           ref={bastienRef}
         >
           <h2>Bastien & Bastienne</h2>
-          <p>
+          <p className="animate-on-scroll">
             <span>Bastien & Bastienne</span> est un spectacle pour enfants créé
             à partir de l’opéra Bastien et Bastienne de Mozart. <br />
             Roxane Macaudière et Hervé Le Bert ont arrangé cette œuvre pour
@@ -230,13 +241,13 @@ const Spectacles = () => {
         </div>
         <Gallery />
       </div>
-      <div className="pic10">
+      <div className="pic20 animate-on-scroll">
         <img
           src={dolls2}
           alt="dessin poly r"
           width="auto"
           height="auto"
-          className="responsive-img10"
+          className="responsive-img20"
           onClick={() => handleImageClick(dolls2)}
           loading="lazy"
         />

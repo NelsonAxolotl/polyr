@@ -5,13 +5,15 @@ body {
 }
 
 /* Style principal pour la section principale */
-.main {
-  background: #7531a5; /* Couleur de fond */
+.main-bill {
+  background: linear-gradient(rgba(117, 49, 165, 0.6), rgba(72, 3, 87, 0.6)),
+    url("../Pic/backbill.webp") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex; /* Utilisation de flexbox pour l'alignement */
   flex-direction: column; /* Disposition des éléments en colonne */
   align-items: center; /* Alignement des éléments au centre */
-  padding: 20px; /* Espacement intérieur */
-  padding-bottom: 100px; /* Espacement intérieur spécifique en bas */
 }
 
 /* Style pour le titre de la section 'cie' */
@@ -19,28 +21,155 @@ body {
   font-family: Matemasie, sans-serif; /* Police du titre */
   font-size: 5rem; /* Taille de la police */
   font-weight: bold; /* Poids de la police */
-  padding-top: 210px; /* Espacement supérieur */
+  padding-top: 230px; /* Espacement supérieur */
   text-align: center; /* Alignement du texte au centre */
   color: rgba(255 255 255 / 100%); /* Couleur du texte */
-  margin-bottom: 20px; /* Marge inférieure */
+  margin-bottom: 100px; /* Marge inférieure */
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
+.event-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.event-card {
+  width: 340px;
+  border: 1px solid bisque;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  background: #fff;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.responsive-img10 {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 30px; /* Plus de padding */
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+  gap: 15px;
+  width: 90%; /* S'étend à 80% de l'image */
+  max-width: 400px;
+}
+
+.overlay-text p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.bill-desc {
+  font-size: 1.3rem;
+  color: #fff;
+  text-align: center;
+  max-width: 850px;
+  margin: 40px auto 40px auto;
+  padding: 0 20px;
+  line-height: 1.6;
+}
+
+.bill-desc strong {
+  color: rgb(220, 205, 0);
+  font-weight: bold;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.bill-desc strong::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0%;
+  background-color: rgb(220, 205, 0);
+  transition: width 0.3s ease;
+}
+
+.bill-desc strong:hover::after {
+  width: 100%;
+}
+
+.tarif {
+  font-size: 1.4rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
 /* Style pour les images de la section de contact */
-.pic2 {
+.pic500 {
   width: 100%; /* Largeur de l'image */
   overflow: hidden; /* Masquage du débordement */
   position: relative; /* Position relative pour l'image */
   height: 400px; /* Hauteur de l'image */
-  margin-top: 80px; /* Marge supérieure */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 60px;
 }
 
 /* Style pour les images responsives */
-.responsive-img2 {
+.responsive-img500 {
   width: 100%; /* Largeur de l'image */
   height: 100%; /* Hauteur de l'image */
   object-fit: cover; /* Ajustement de l'image */
   object-position: center; /* Position de l'image */
   cursor: pointer; /* Curseur au survol */
+}
+
+@media screen and (max-width: 760px) {
+  .bill h1 {
+    font-size: 3.4rem;
+    margin-bottom: 50px;
+  }
+  .tarif {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+
+  .pic500 {
+    margin-top: -30px;
+  }
+  .event-container {
+    margin-top: -10px;
+    margin-bottom: 40px;
+  }
+  .bill-desc {
+    font-size: 1.1rem;
+  }
 }

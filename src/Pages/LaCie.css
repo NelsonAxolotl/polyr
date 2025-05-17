@@ -18,7 +18,11 @@ body {
 
 /* Style principal pour la section principale */
 .main {
-  background: #7531a5; /* Couleur de fond */
+  background: linear-gradient(rgba(117, 49, 165, 0.6), rgba(72, 3, 87, 0.6)),
+    url("../Pic/back.webp") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex; /* Utilisation de flexbox pour l'alignement */
   flex-direction: column; /* Disposition des éléments en colonne */
   align-items: center; /* Alignement des éléments au centre */
@@ -43,8 +47,8 @@ body {
 .bio h2 {
   font-size: 3rem; /* Taille de la police */
   text-align: center; /* Alignement du texte au centre */
-  margin-top: 70px; /* Marge supérieure */
-  margin-bottom: 30px; /* Marge inférieure */
+  margin-top: 60px; /* Marge supérieure */
+  margin-bottom: 40px; /* Marge inférieure */
   font-weight: bold; /* Poids de la police */
   color: bisque; /* Couleur du texte */
   border: 1px solid bisque; /* Bordure de couleur bisque */
@@ -92,13 +96,15 @@ body {
   display: flex; /* Utilisation de flexbox */
   justify-content: center; /* Centre les éléments horizontalement */
   align-items: center; /* Centre les éléments verticalement */
+  margin-bottom: -40px;
 }
 
 /* Style pour les titres dans la section 'bio' */
 .bio h3 {
   font-size: 1.8rem; /* Taille de la police */
   color: white; /* Couleur du texte */
-  margin-top: 40px; /* Marge supérieure */
+  margin-top: 20px; /* Marge supérieure */
+  margin-bottom: 0px;
   border: 1px solid white; /* Bordure blanche */
   padding: 10px; /* Espacement intérieur */
   border-radius: 5px; /* Bordure arrondie */
@@ -110,7 +116,7 @@ body {
   font-size: 1.8rem; /* Taille de la police */
   color: white; /* Couleur du texte */
   margin-top: 100px; /* Marge supérieure */
-  margin-bottom: 10px; /* Marge inférieure */
+  margin-bottom: 50px; /* Marge inférieure */
   text-align: center; /* Alignement du texte au centre */
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
@@ -130,7 +136,7 @@ body {
   display: flex; /* Utilisation de flexbox */
   justify-content: center; /* Centre les éléments horizontalement */
   align-items: center; /* Centre les éléments verticalement */
-  margin-top: 100px; /* Marge supérieure */
+  margin-top: 120px; /* Marge supérieure */
 }
 
 /* Style pour les titres dans la section 'bio5' */
@@ -147,6 +153,48 @@ body {
   justify-content: center; /* Centre les éléments horizontalement */
   align-items: center; /* Centre les éléments verticalement */
   margin-top: 60px; /* Marge supérieure */
+}
+
+.titre-personne {
+  color: bisque;
+  font-size: 1.6rem;
+  border: 1px dashed bisque;
+  padding: 10px;
+  border-radius: 5px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  margin: 0px 0 30px 0; /* marge plus naturelle */
+  text-align: center;
+  width: 730px;
+}
+
+.titre-personne2 {
+  color: bisque;
+  font-size: 1.6rem;
+  border: 1px dashed bisque;
+  padding: 10px;
+  border-radius: 5px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  margin: 0px 0 30px 0; /* marge plus naturelle */
+  text-align: center;
+  width: 500px;
+}
+
+.titre-personne3 {
+  color: bisque;
+  font-size: 1.6rem;
+  border: 1px dashed bisque;
+  padding: 10px;
+  border-radius: 5px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  margin: 0px 0 30px 0; /* marge plus naturelle */
+  text-align: center;
+  width: 720px;
+}
+
+.all-titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Style pour la section 'artistes' */
@@ -171,17 +219,79 @@ body {
   align-items: center; /* Centre les éléments verticalement */
   justify-content: center; /* Centre les éléments horizontalement */
   gap: 40px; /* Espace entre les éléments */
-  margin-top: 60px; /* Marge supérieure */
+  margin-top: 80px; /* Marge supérieure */
+}
+
+.allpers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
 }
 
 /* Style pour les images dans la section 'pic1' */
 .pic1 img {
   width: 400px; /* Largeur de l'image */
+  height: 350px; /* Hauteur de l'image */
+  object-fit: cover; /* Ajustement de l'image */
+  object-position: top; /* Position de l'image */
+  border-radius: 10px; /* Bordure arrondie */
+  border: 2px solid bisque; /* Bordure blanche */
+  transition: all 0.3s ease-in-out; /* Effet de transition */
+  cursor: pointer; /* Curseur au survol */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 80px;
+}
+
+.pic200 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pic200 img {
+  width: 400px; /* Largeur de l'image */
+  height: 350px; /* Hauteur de l'image */
+  object-fit: cover; /* Ajustement de l'image */
+  object-position: top; /* Position de l'image */
+  border-radius: 10px; /* Bordure arrondie */
+  border: 2px solid bisque; /* Bordure blanche */
+  transition: all 0.3s ease-in-out; /* Effet de transition */
+  cursor: pointer; /* Curseur au survol */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 80px;
+}
+
+.pic100 img {
+  width: 400px; /* Largeur de l'image */
   height: 100%; /* Hauteur de l'image */
   object-fit: cover; /* Ajustement de l'image */
   object-position: center; /* Position de l'image */
   border-radius: 10px; /* Bordure arrondie */
-  border: 1px solid white; /* Bordure blanche */
+  border: 2px solid bisque; /* Bordure blanche */
+  transition: all 0.3s ease-in-out; /* Effet de transition */
+  cursor: pointer; /* Curseur au survol */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.pic150 img {
+  width: 400px; /* Largeur de l'image */
+  height: 350px; /* Hauteur de l'image */
+  object-fit: cover; /* Ajustement de l'image */
+  object-position: center; /* Position de l'image */
+  border-radius: 10px; /* Bordure arrondie */
+  border: 2px solid bisque; /* Bordure blanche */
+  transition: all 0.3s ease-in-out; /* Effet de transition */
+  cursor: pointer; /* Curseur au survol */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.pic300 img {
+  width: 400px; /* Largeur de l'image */
+  height: 350px; /* Hauteur de l'image */
+  object-fit: cover; /* Ajustement de l'image */
+  object-position: top; /* Position de l'image */
+  border-radius: 10px; /* Bordure arrondie */
+  border: 2px solid bisque; /* Bordure blanche */
   transition: all 0.3s ease-in-out; /* Effet de transition */
   cursor: pointer; /* Curseur au survol */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -189,6 +299,21 @@ body {
 
 /* Style pour les images au survol dans la section 'pic1' */
 .pic1 img:hover {
+  transform: scale(1.03); /* Zoom au survol */
+}
+
+.pic100 img:hover {
+  transform: scale(1.03); /* Zoom au survol */
+}
+
+.pic150 img:hover {
+  transform: scale(1.03); /* Zoom au survol */
+}
+
+.pic200 img:hover {
+  transform: scale(1.03); /* Zoom au survol */
+}
+.pic300 img:hover {
   transform: scale(1.03); /* Zoom au survol */
 }
 
@@ -258,12 +383,29 @@ body {
   cursor: pointer; /* Curseur au survol */
 }
 
+.image-standard img {
+  width: 400px; /* largeur identique */
+  height: 300px; /* hauteur fixe uniforme */
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  border: 2px solid bisque;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 80px;
+}
+
+.image-standard img:hover {
+  transform: scale(1.03);
+}
 /* Styles responsive pour les écrans jusqu'à 900px */
 @media (max-width: 900px) {
   .personne {
     flex-direction: column; /* Disposition en colonne pour les petits écrans */
     gap: 20px; /* Espace entre les éléments */
     align-items: center; /* Alignement au centre */
+    margin-top: 0px; /* Marge supérieure */
   }
 
   .personne-reverse {
@@ -272,7 +414,7 @@ body {
     align-items: center; /* Alignement au centre */
     justify-content: center; /* Alignement au centre */
     gap: 20px; /* Espace entre les éléments */
-    margin-top: 80px; /* Marge supérieure */
+    margin-top: 0px; /* Marge supérieure */
   }
 
   .bio5 h3 {
@@ -296,6 +438,10 @@ body {
     font-size: 2.2rem; /* Réduction de la taille de la police */
   }
 
+  .cie-text {
+    margin-top: -10px;
+  }
+
   .cie-text p {
     font-size: 1rem; /* Réduction de la taille de la police */
     padding: 10px; /* Réduction de l'espacement intérieur */
@@ -303,77 +449,79 @@ body {
   }
 
   .bio h2 {
-    margin-top: 0; /* Suppression de la marge supérieure */
-    margin-bottom: 80px; /* Réduction de la marge inférieure */
+    margin-top: 10px; /* Suppression de la marge supérieure */
+    /* Réduction de la marge inférieure */
   }
 
   .bio h3 {
-    font-size: 1.5rem; /* Réduction de la taille de la police */
-    margin-top: -40px; /* Marge supérieure négative */
-    margin-bottom: 20px; /* Marge inférieure */
+    margin-bottom: 0px;
   }
 
   .bio3 h3 {
-    font-size: 1.5rem; /* Réduction de la taille de la police */
-    margin-top: 20px; /* Marge supérieure */
-    margin-bottom: 40px; /* Marge inférieure */
-  }
-
-  .bio4 {
-    margin-top: 60px; /* Réduction de la marge supérieure */
-  }
-
-  .bio5 {
-    margin-top: 60px; /* Réduction de la marge supérieure */
+    margin-top: 70px;
+    margin-bottom: 60px;
   }
 
   .bio4 h3 {
     font-size: 1.5rem; /* Réduction de la taille de la police */
+    margin-bottom: 40px;
   }
 
-  .diviser {
-    margin-top: -20px; /* Marge supérieure négative */
-    margin-bottom: 50px; /* Réduction de la marge inférieure */
+  .bio5 h3 {
+    margin-bottom: 40px;
   }
 
-  .artistes {
-    margin-top: 20px; /* Réduction de la marge supérieure */
-    gap: 40px; /* Espace entre les éléments */
+  .all-titre h4 {
+    margin-top: -20px;
   }
 
-  .personne {
-    flex-direction: column; /* Disposition en colonne */
-    gap: 30px; /* Espace entre les éléments */
-    align-items: center; /* Alignement au centre */
-    margin-top: 0; /* Suppression de la marge supérieure */
-    margin-bottom: -60px; /* Marge inférieure négative */
-  }
-
-  .pic1 {
+  .pic1,
+  .pic100,
+  .pic2OO,
+  .pic150,
+  .pic300 {
     display: flex; /* Utilisation de flexbox */
     flex-direction: column; /* Disposition en colonne */
     align-items: center; /* Alignement au centre */
-    height: 500px; /* Hauteur de la section */
-    width: 100%; /* Largeur totale */
+    margin-top: 10px;
   }
 
-  .pic1 img {
-    height: 360px; /* Hauteur de l'image */
-    width: 50%; /* Largeur de l'image */
+  .pic200 {
+    margin-top: 10px;
+  }
+
+  .pic1 img,
+  .pic100 img,
+  .pic150 img,
+  .pic200 img,
+  .pic300 img {
+    width: 90%;
+    height: auto;
+    margin-top: -20px;
   }
 
   .text1 {
     max-width: 100%; /* Largeur maximale */
   }
 
-  .personne-reverse {
-    display: flex; /* Utilisation de flexbox */
-    flex-direction: column-reverse; /* Disposition inverse en colonne */
-    align-items: center; /* Alignement au centre */
-    justify-content: center; /* Alignement au centre */
-    gap: 30px; /* Espace entre les éléments */
-    margin-top: 0; /* Suppression de la marge supérieure */
-    margin-bottom: -60px; /* Marge inférieure négative */
+  .all-titre {
+    margin-top: 40px;
+  }
+
+  .titre-personne,
+  .titre-personne2,
+  .titre-personne3 {
+    width: 90%;
+    font-size: 1.2rem;
+    margin: 20px;
+  }
+
+  .hervy {
+    margin-top: 60px;
+  }
+
+  .fumy {
+    margin-top: 60px;
   }
 
   .text1 p {
@@ -381,44 +529,7 @@ body {
     padding: 0px 0; /* Espacement intérieur réduit */
   }
 
-  .pic10 {
-    height: 200px; /* Réduction de la hauteur de l'image */
-    margin-top: -50px; /* Marge supérieure négative */
-  }
-}
-
-/* Styles responsive pour les écrans jusqu'à 700px */
-@media (max-width: 700px) {
-  .pic1 img {
-    height: 450px; /* Réduction de la hauteur de l'image */
-    width: 70%; /* Réduction de la largeur de l'image */
-    margin-top: -70px; /* Marge supérieure négative */
-  }
-
-  .text1 {
-    max-width: 100%; /* Largeur maximale */
-    margin-bottom: 60px; /* Marge inférieure */
-  }
-}
-
-/* Styles responsive pour les écrans jusqu'à 650px */
-@media (max-width: 650px) {
-  .pic1 img {
-    height: 460px; /* Réduction de la hauteur de l'image */
-    width: 80%; /* Réduction de la largeur de l'image */
-  }
-}
-
-/* Styles responsive pour les écrans jusqu'à 500px */
-@media (max-width: 500px) {
-  .pic1 img {
-    height: 360px; /* Réduction de la hauteur de l'image */
-    width: 100%; /* Largeur totale */
-    margin-top: 0; /* Suppression de la marge supérieure */
-  }
-
-  .text1 {
-    max-width: 100%; /* Largeur maximale */
-    margin-bottom: 0; /* Suppression de la marge inférieure */
+  .diviser {
+    width: 50%;
   }
 }

@@ -15,7 +15,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #7531a5; /* Couleur de fond */
+  background: linear-gradient(rgba(117, 49, 165, 0.6), rgba(72, 3, 87, 0.6)),
+    url("../Pic/backacc.webp") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Styles pour les titres de la section "poly" */
@@ -41,13 +45,18 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 40px; /* Marge supérieure */
+  margin: 100px 0 60px; /* Marge supérieure */
+  border: 1px dashed bisque;
+  border-radius: 5px;
+  padding: 0 30px; /* Espace intérieur à gauche et à droite */
+  max-width: 90%; /* Évite que le cadre fasse 100% de large */
+  box-sizing: border-box;
 }
 
 .poly-intro p {
   font-size: 1.4rem; /* Taille du texte */
   line-height: 30px; /* Hauteur de ligne */
-  margin: 40px 70px; /* Marges autour du texte */
+  margin: 15px; /* Marges autour du texte */
   max-width: 800px; /* Largeur maximale du texte */
   text-align: justify; /* Alignement du texte */
   color: bisque; /* Couleur du texte */
@@ -157,25 +166,25 @@
 }
 
 /* Style pour la section "pic-opera" */
-.pic-opera {
+.pic-opera-acc {
   display: flex;
   align-items: center;
   gap: 20px; /* Espace entre les images */
   margin: 20px 0; /* Marges autour */
 }
 
-.pic-opera img {
-  width: 330px; /* Largeur des images */
-  height: 300px; /* Hauteur des images */
+.pic-opera-acc img {
+  width: 400px; /* Largeur des images */
+  height: 400px; /* Hauteur des images */
   border-radius: 5px; /* Bordure arrondie */
-  border: 1px solid white; /* Bordure des images */
+  border: 1px solid bisque; /* Bordure des images */
   object-fit: cover; /* Mode d'ajustement des images */
   cursor: pointer; /* Curseur au survol */
   transition: all 0.3s ease-in-out; /* Transition au survol */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.pic-opera img:hover {
+.pic-opera-acc img:hover {
   transform: scale(1.02); /* Effet de zoom au survol */
 }
 
@@ -194,19 +203,24 @@
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
+.presse h4 {
+  font-size: 2.5rem; /* Taille du titre */
+  color: rgb(255, 255, 255); /* Couleur du texte */
+  font-weight: bold; /* Poids de la police */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 60px;
+  border: 1px dashed white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
 .presse p {
   font-size: 1.4rem; /* Taille du texte */
   margin-top: 30px; /* Marge supérieure */
   margin-bottom: 20px; /* Marge inférieure */
   color: white; /* Couleur du texte */
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.article {
-  display: flex;
-  align-items: center;
-  gap: 15px; /* Espace entre les articles */
-  margin: 20px 0; /* Marges autour */
+  font-weight: bold;
 }
 
 .presse {
@@ -236,13 +250,13 @@
 
 /* Style pour les images dans les articles */
 .article img {
-  width: 500px; /* Largeur des images */
-  height: auto; /* Hauteur automatique */
+  width: 400px; /* Largeur des images */
+  height: 300px; /* fixe une hauteur cohérente */
   object-fit: cover; /* Mode d'ajustement des images */
   border-radius: 5px; /* Bordure arrondie */
   cursor: pointer; /* Curseur au survol */
   transition: all 0.3s ease-in-out; /* Transition au survol */
-  border: 1px solid white; /* Bordure des images */
+  border: 1px solid bisque; /* Bordure des images */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -250,9 +264,19 @@
   transform: scale(1.02); /* Effet de zoom au survol */
 }
 
+.allpresspoly {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* ou center selon l’effet désiré */
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap; /* si tu veux du responsive */
+  margin-top: 40px;
+}
+
 /* Style pour la section des réseaux sociaux */
 .reseau {
-  margin-top: 30px; /* Marge supérieure */
+  margin-top: 60px; /* Marge supérieure */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -331,7 +355,7 @@
   transform: scale(1.2);
 }
 /* Style pour les images dans la section "pic" */
-.pic {
+.pic50 {
   width: 100%; /* Largeur de l'image */
   overflow: hidden; /* Masquage du débordement */
   position: relative; /* Position relative pour l'image */
@@ -339,7 +363,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.responsive-img {
+.responsive-img50 {
   width: 100%; /* Largeur de l'image */
   height: 100%; /* Hauteur de l'image */
   object-fit: cover; /* Mode d'ajustement de l'image */
@@ -385,7 +409,7 @@
     text-align: center; /* Alignement du texte */
     align-items: center; /* Alignement des éléments */
     gap: 20px; /* Espace entre les éléments */
-    margin-bottom: 20px; /* Marge inférieure */
+    /* Marge inférieure */
   }
 
   .tittle-poly h1 {
@@ -399,20 +423,28 @@
     margin-top: 0; /* Marge supérieure */
   }
 
+  .poly-intro {
+    padding: 0 15px; /* Moins de padding sur petit écran */
+    max-width: 95%;
+    margin-top: 80px;
+  }
+
   .poly-intro p {
     font-size: 1rem; /* Taille du texte pour les petits écrans */
     line-height: 22px; /* Hauteur de ligne pour les petits écrans */
     text-align: justify; /* Alignement du texte */
-    margin: 0 30px; /* Marges autour du texte */
+    /* Marges autour du texte */
   }
 
   .suite-intro {
     gap: 5px; /* Espace entre les éléments */
+    margin-top: -20px;
+    margin-bottom: 10px;
   }
 
   .suite-intro p {
     font-size: 1rem; /* Taille du texte pour les petits écrans */
-    margin-top: 20px; /* Marge supérieure */
+    /* Marge supérieure */
   }
 
   .suite-intro span {
@@ -429,15 +461,20 @@
     height: 250px; /* Hauteur des images pour les petits écrans */
   }
 
-  .pic-opera {
+  .pic-opera-acc {
     display: flex;
     flex-direction: column; /* Orientation des images */
     align-items: center; /* Alignement des éléments */
     gap: 20px; /* Espace entre les images */
   }
 
+  .pic-opera-acc img {
+    width: 350px;
+    height: 100%;
+  }
+
   .article img {
-    width: 300px; /* Largeur des images pour les petits écrans */
+    width: 350px; /* Largeur des images pour les petits écrans */
   }
 
   .pic {
@@ -469,12 +506,17 @@
   }
 
   .presse h3 {
-    margin-top: 40px; /* Marge supérieure pour les petits écrans */
+    margin-top: 60px; /* Marge supérieure pour les petits écrans */
     font-size: 2.3rem; /* Taille du titre pour les petits écrans */
   }
 
+  .presse h4 {
+    margin-top: 30px;
+  }
+
   .presse p {
-    font-size: 1.2rem; /* Taille du texte pour les petits écrans */
+    font-size: 1.6rem; /* Taille du texte pour les petits écrans */
+    margin-top: -10px;
   }
 
   .reseau h3 {
@@ -483,6 +525,23 @@
   }
 
   .icon {
-    margin-bottom: 0; /* Suppression de la marge inférieure */
+    margin-bottom: 50px; /* Suppression de la marge inférieure */
+  }
+
+  .article img {
+    width: 90%;
+    height: auto;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrage horizontal des images */
+  }
+
+  .article img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto; /* Optionnel si align-items suffit */
   }
 }

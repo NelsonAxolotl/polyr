@@ -20,28 +20,61 @@ import poly55 from "../Pic/poly55.webp";
 import poly53 from "../Pic/poly53.webp";
 import poly from "../Pic/polyrgroupe.webp";
 import poly51 from "../Pic/poly51.webp";
+import poly52 from "../Pic/poly52.webp";
+import opera100 from "../Pic/opera100.webp";
+import opera200 from "../Pic/opera200.webp";
+import opera300 from "../Pic/opera300.webp";
+import opera400 from "../Pic/opera400.webp";
+import opera500 from "../Pic/opera500.webp";
+import opera600 from "../Pic/opera600.webp";
+import opera700 from "../Pic/opera700.webp";
+import opera800 from "../Pic/opera800.webp";
+import opera900 from "../Pic/opera900.webp";
+import opera1000 from "../Pic/opera1000.webp";
+import opera2000 from "../Pic/opera2000.webp";
+import opera3000 from "../Pic/opera3000.webp";
+import opera4000 from "../Pic/opera4000.webp";
+import opera5000 from "../Pic/opera5000.webp";
 
 const images = [
-  { src: opera5, alt: "Image 5", className: "center-image2" },
   { src: opera2, alt: "Image 2", className: "center-image2" },
-  { src: opera3, alt: "Image 3", className: "center-image2" },
+  { src: opera4000, alt: "opera4000" },
   { src: poly22, alt: "Image poly22" },
-  { src: poly23, alt: "Image poly23" },
+  { src: opera100, alt: "Image opera100" },
+  { src: opera200, alt: "Image opera200" },
+  { src: opera400, alt: "Image opera400" },
   { src: opera6, alt: "Image 6" },
   { src: opera7, alt: "Image 7" },
+  { src: opera300, alt: "Image opera300" },
   { src: opera20, alt: "Image 20" },
-  { src: poly55, alt: "Image 55" },
+  { src: opera500, alt: "Image opera500" },
   { src: poly53, alt: "Image 53" },
   { src: poly, alt: "Image poly groupe" },
-  { src: poly51, alt: "Image 51" },
+  { src: opera2000, alt: "opera2000" },
+  { src: poly52, alt: "Image poly52" },
+  { src: opera5000, alt: "opera5000" },
   { src: poly11, alt: "Image 11", className: "center-image1" },
   { src: poly13, alt: "Image 13", className: "center-image1" },
   { src: poly14, alt: "Image 14", className: "center-image1" },
   { src: poly15, alt: "Image 15", className: "center-image1" },
-  { src: poly10, alt: "Image 10" },
 ];
 
 const Gallery2 = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    const elements = document.querySelectorAll(".animate-on-scroll");
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
   const [enlargedImage, setEnlargedImage] = useState(null);
 
   const handleImageClick = (image) => {
@@ -77,7 +110,7 @@ const Gallery2 = () => {
   };
 
   return (
-    <div className="gallery-container1">
+    <div className="gallery-container1 animate-on-scroll">
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index}>

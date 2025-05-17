@@ -37,24 +37,16 @@
 
 /* Style pour les sections de contact individuelles */
 .contact-section {
-  background: rgba(255 255 255 / 100%); /* Couleur de fond */
-  color: rgba(148 12 194 / 100%); /* Couleur du texte */
-  border: 1px solid rgba(255 255 255 / 100%); /* Bordure blanche */
+  color: rgb(255, 255, 255); /* Couleur du texte */
+  border: 1px dashed rgba(255 255 255 / 100%); /* Bordure blanche */
   border-radius: 5px; /* Bordure arrondie */
   width: 100%; /* Largeur de la section */
   padding: 25px; /* Espacement intérieur */
-  max-width: 500px; /* Largeur maximale */
+  max-width: 550px; /* Largeur maximale */
   text-align: center; /* Alignement du texte */
   box-sizing: border-box; /* Inclut la bordure et le padding dans la largeur totale */
   transition: all 0.8s ease-in-out; /* Effet de transition pour les changements */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Style pour la section de contact au survol */
-.contact-section:hover {
-  border: 1px solid bisque; /* Bordure au survol */
-  background: rgb(34, 28, 36); /* Couleur de fond au survol */
-  color: bisque; /* Couleur du texte au survol */
 }
 
 /* Style pour les sous-titres dans les sections de contact */
@@ -89,15 +81,48 @@
 }
 
 /* Style pour les liens d'email et phone */
-.mail a,
 .phone a {
   display: inline-block; /* Assure que les liens soient des blocs */
   padding: 10px 20px; /* Ajoute du padding pour augmenter la zone cliquable */
   font-size: 1.6rem; /* Taille de la police */
   text-decoration: none; /* Pas de soulignement */
-  color: rgba(148 12 194 / 100%); /* Couleur du texte */
+  color: rgb(220, 205, 0); /* Couleur du texte */
   font-weight: bold; /* Poids de la police */
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.mail a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: rgb(220, 205, 0);
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+/* Soulignement animé */
+.mail a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(220, 205, 0);
+  transition: width 0.4s ease;
+}
+
+.mail a:hover::after {
+  width: 100%;
+}
+
+/* Changement de couleur au survol */
+.mail a:hover {
+  color: rgb(220, 205, 0);
 }
 
 /* Style pour les titres de réseaux sociaux */
