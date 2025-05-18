@@ -405,7 +405,7 @@ body {
     flex-direction: column; /* Disposition en colonne pour les petits écrans */
     gap: 20px; /* Espace entre les éléments */
     align-items: center; /* Alignement au centre */
-    margin-top: 0px; /* Marge supérieure */
+    margin-top: 10px; /* Marge supérieure */
   }
 
   .personne-reverse {
@@ -414,7 +414,7 @@ body {
     align-items: center; /* Alignement au centre */
     justify-content: center; /* Alignement au centre */
     gap: 20px; /* Espace entre les éléments */
-    margin-top: 0px; /* Marge supérieure */
+    margin-top: 10px; /* Marge supérieure */
   }
 
   .bio5 h3 {
@@ -490,13 +490,19 @@ body {
     margin-top: 10px;
   }
 
-  .pic1 img,
   .pic100 img,
   .pic150 img,
   .pic200 img,
   .pic300 img {
-    width: 90%;
-    height: auto;
+    width: 100%;
+    height: 400px;
+    margin-top: -20px;
+  }
+
+  .pic1 img,
+  .pic300 img {
+    width: 350px;
+    height: 400px;
     margin-top: -20px;
   }
 

@@ -7,7 +7,7 @@ import "./Accueil.css";
 import presse from "../Pic/presse.webp";
 import bastien50 from "../Pic/bastien50.webp";
 import newop from "../Pic/newop.webp";
-import newdates from "../Pic/newdates.webp";
+import newcalendar from "../Pic/newcalendar.webp";
 import operapiano from "../Pic/operapiano.webp";
 import groupeaccueil from "../Pic/groupeaccueil.webp";
 import polypress from "../Pic/polypress.webp";
@@ -107,7 +107,7 @@ const Accueil = () => {
             <span>Opéramobil &rsquo;saison 2</span>
           </div>
           <div className="pic-opera-acc animate-on-scroll">
-            {[newop, newdates].map((src, index) => (
+            {[newop, newcalendar].map((src, index) => (
               <img
                 key={src}
                 src={src}
@@ -122,7 +122,7 @@ const Accueil = () => {
         </section>
         <section className="presse animate-on-scroll">
           <h3>Un peu de presse</h3>
-          <h4>Spectales</h4>
+          <h4>Spectacles</h4>
         </section>
         <div className="allpresspoly animate-on-scroll">
           <div className="pressbastien animate-on-scroll">
@@ -152,7 +152,7 @@ const Accueil = () => {
           </div>
           <div className="pressopera animate-on-scroll">
             <section className="presse animate-on-scroll">
-              <p>Opéra Mobil&apos;</p>
+              <p>Opéramobil&apos;</p>
               <button
                 onClick={() =>
                   window.open(

@@ -45,7 +45,7 @@ const Billeterie = () => {
       image: violon,
       hour: "19h",
       description: "Firmiry",
-      price: "Gratuit",
+      price: "Gratuit pour tous",
       link: "",
     },
     {
@@ -73,7 +73,7 @@ const Billeterie = () => {
       image: violon,
       hour: "19h",
       description: "Montbrison",
-      price: "Gratuit",
+      price: "Gratuit pour tous",
       link: "https://www.facebook.com/profile.php?id=100057586864292&locale=fr_FR",
     },
     {
@@ -83,18 +83,18 @@ const Billeterie = () => {
       image: violon,
       hour: "19h",
       description: "Saint-Galmier",
-      price: "Gratuit",
+      price: "Gratuit pour tous",
       link: "https://www.saint-galmier.fr/cinema-sous-les-etoiles/",
     },
     {
       id: 7,
-      title: "Château de Gouzan",
+      title: "Château de Couzan",
       date: "12 juillet 2025",
       image: violon,
       hour: "19h",
-      description: "Sail-sous-Gouzan",
-      price: "Gratuit",
-      link: "",
+      description: "Sais-sous-Couzan",
+      price: "Gratuit pour tous",
+      link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-12-juillet-chateau-de-sail",
     },
     {
       id: 8,
@@ -157,7 +157,8 @@ const Billeterie = () => {
               <strong>HelloAsso</strong>
             </a>{" "}
             <br />
-            ou directement en cliquant sur les images des spectacles. <br />
+            ou directement en cliquant{" "}
+            <span>sur les images des spectacles.</span> <br />
             (Chaque vignette vous redirige vers la billetterie de
             l&apos;événement correspondant)
           </p>

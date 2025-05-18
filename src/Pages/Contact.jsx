@@ -61,7 +61,7 @@ const Contact = () => {
                 <span>
                   <FontAwesomeIcon icon={faPhone} />
                 </span>
-                <span>Hervé Le Bert : 06 24 84 54 71</span>
+                <span>Roxane Macaudière : 06 48 98 57 81</span>
               </div>
             </div>
           </div>

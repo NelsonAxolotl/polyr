@@ -288,7 +288,7 @@ body {
   .show-titre h1 {
     font-size: 3.4rem; /* Réduction de la taille de la police */
     margin-bottom: 30px; /* Marge inférieure */
-    padding-top: 200px; /* Réduction de l'espacement supérieur */
+    padding-top: 210px; /* Réduction de l'espacement supérieur */
   }
 
   .showplus h2,

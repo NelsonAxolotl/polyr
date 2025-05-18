@@ -11,7 +11,7 @@ import bastien from "../Pic/bastien.webp";
 import bastienne from "../Pic/bastienne.webp";
 import dolls2 from "../Pic/dolls2.webp";
 import openew from "../Pic/openew.webp";
-import newdates from "../Pic/newdates.webp";
+import newcalendar from "../Pic/newcalendar.webp";
 
 const Spectacles = () => {
   useEffect(() => {
@@ -156,16 +156,16 @@ const Spectacles = () => {
         </div>
         <Gallery2 />
         <div className="photos">
-          <p>© photographe Camille Montagna</p>
+          <p>© photographe Camille Montana</p>
         </div>
         <div className="dates animate-on-scroll">
           <h3>Dates été 2025</h3>
           <img
-            src={newdates}
+            src={newcalendar}
             alt="dates passées"
             width="530px"
             height="530px"
-            onClick={() => handleImageClick(newdates)}
+            onClick={() => handleImageClick(newcalendar)}
             loading="lazy"
           />
         </div>

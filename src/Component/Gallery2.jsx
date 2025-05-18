@@ -15,7 +15,6 @@ import poly15 from "../Pic/poly15.webp";
 import poly22 from "../Pic/poly22.webp";
 import poly53 from "../Pic/poly53.webp";
 import poly from "../Pic/polyrgroupe.webp";
-import poly52 from "../Pic/poly52.webp";
 import opera100 from "../Pic/opera100.webp";
 import opera200 from "../Pic/opera200.webp";
 import opera300 from "../Pic/opera300.webp";
@@ -40,7 +39,6 @@ const images = [
   { src: poly53, alt: "Image 53" },
   { src: poly, alt: "Image poly groupe" },
   { src: opera2000, alt: "opera2000" },
-  { src: poly52, alt: "Image poly52" },
   { src: opera5000, alt: "opera5000" },
   { src: poly11, alt: "Image 11", className: "center-image1" },
   { src: poly13, alt: "Image 13", className: "center-image1" },

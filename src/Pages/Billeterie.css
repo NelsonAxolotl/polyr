@@ -156,6 +156,7 @@ body {
     font-size: 3.4rem;
     margin-bottom: 50px;
   }
+
   .tarif {
     margin-bottom: 20px;
     margin-top: 20px;
@@ -165,11 +166,24 @@ body {
   .pic500 {
     margin-top: -30px;
   }
+
   .event-container {
     margin-top: -10px;
     margin-bottom: 40px;
   }
   .bill-desc {
     font-size: 1.1rem;
+  }
+
+  .bill-desc a {
+    display: block;
+    margin-bottom: -25px;
+    margin-top: 5px;
+    font-size: 1.5rem;
+  }
+
+  .bill-desc span {
+    display: block;
+    margin-bottom: -25px;
   }
 }
