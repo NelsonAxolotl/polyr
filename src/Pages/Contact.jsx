@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./Contact.css";
 import poly25 from "../Pic/poly25.webp";
 import End from "../Component/End";
@@ -45,9 +45,6 @@ const Contact = () => {
             <div className="resa">
               <div className="mail animate-on-scroll">
                 <span>
-                  <FontAwesomeIcon icon={faEnvelope} />
-                </span>
-                <span>
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
@@ -58,9 +55,6 @@ const Contact = () => {
                 </span>
               </div>
               <div className="phone animate-on-scroll">
-                <span>
-                  <FontAwesomeIcon icon={faPhone} />
-                </span>
                 <span>Roxane Macaudière : 06 48 98 57 81</span>
               </div>
             </div>

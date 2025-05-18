@@ -227,21 +227,20 @@
   }
 
   .mail span a {
-    font-size: 1.05rem; /* Taille du texte réduite */
+    font-size: 1.2rem; /* Taille du texte réduite */
   }
 
   .resa .phone span {
-    font-size: 1.02rem; /* Taille du texte réduite */
+    font-size: 1.12rem; /* Taille du texte réduite */
   }
 
   .reseaux h2 {
     font-size: 2.5rem; /* Taille de la police réduite */
-    margin-top: 50px; /* Marge supérieure réduite */
+    margin-top: 80px; /* Marge supérieure réduite */
   }
 
   .pic2 {
     height: 200px; /* Hauteur réduite */
-    margin-top: -20px; /* Marge supérieure réduite */
   }
 }
 
