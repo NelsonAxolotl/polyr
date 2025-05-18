@@ -121,7 +121,11 @@
     width: 0; /* Largeur initiale */
     height: 100vh; /* Hauteur totale de la vue */
     padding: 2rem; /* Espacement intérieur */
-    background: rgba(141 32 218 / 100%); /* Couleur de fond */
+    background: linear-gradient(rgba(117, 49, 165, 0.6), rgba(72, 3, 87, 0.6)),
+      url("../Pic/burger.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     visibility: hidden; /* Caché par défaut */
     transition: all 0.8s ease-out; /* Transition douce */
   }
