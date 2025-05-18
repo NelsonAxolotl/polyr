@@ -50,7 +50,7 @@ const Nav = () => {
           { path: "/", label: "Accueil", className: "slideInDown-1" },
           {
             path: "/lacie",
-            label: "La Compagnie",
+            label: "Compagnie",
             className: "slideInDown-2",
           },
           {

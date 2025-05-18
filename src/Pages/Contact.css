@@ -203,13 +203,15 @@
   }
 }
 
+@media screen and (max-width: 980px) {
+  .show-titre2 h1 {
+    padding-top: 240px;
+  }
+}
+
 @media screen and (max-width: 760px) {
   .container {
     margin-top: 50px; /* Marge supérieure réduite */
-  }
-
-  .contact {
-    height: 130vh; /* Hauteur réduite */
   }
 
   .contact-section {
@@ -219,7 +221,7 @@
   }
 
   .show-titre2 h1 {
-    font-size: 3.4rem; /* Taille de la police réduite */
+    padding-top: 210px;
   }
 
   .resa-h2 h2 {
@@ -227,7 +229,7 @@
   }
 
   .mail span a {
-    font-size: 1.2rem; /* Taille du texte réduite */
+    font-size: 1.3rem; /* Taille du texte réduite */
   }
 
   .resa .phone span {
@@ -241,11 +243,5 @@
 
   .pic2 {
     height: 200px; /* Hauteur réduite */
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .contact {
-    height: 110vh; /* Hauteur encore réduite */
   }
 }

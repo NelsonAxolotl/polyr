@@ -1,5 +1,6 @@
 /* Style global pour le corps de la page */
 body {
+  overflow-x: hidden;
   margin: 0; /* Suppression des marges par défaut */
   font-family: Quicksand, sans-serif; /* Police principale pour le texte */
 }
@@ -151,10 +152,17 @@ body {
   cursor: pointer; /* Curseur au survol */
 }
 
+@media screen and (max-width: 980px) {
+  .bill h1 {
+    padding-top: 250px;
+  }
+}
+
 @media screen and (max-width: 760px) {
   .bill h1 {
     font-size: 3.4rem;
     margin-bottom: 50px;
+    padding-top: 230px;
   }
 
   .tarif {
@@ -171,6 +179,12 @@ body {
     margin-top: -10px;
     margin-bottom: 40px;
   }
+
+  .event-card {
+    width: 100%;
+    max-width: 340px;
+  }
+
   .bill-desc {
     font-size: 1.1rem;
   }

@@ -399,11 +399,18 @@ body {
 .image-standard img:hover {
   transform: scale(1.03);
 }
+
+@media (max-width: 980px) {
+  .cie h1 {
+    padding-top: 230px;
+  }
+}
+
 /* Styles responsive pour les écrans jusqu'à 900px */
 @media (max-width: 900px) {
   .personne {
     flex-direction: column; /* Disposition en colonne pour les petits écrans */
-    gap: 20px; /* Espace entre les éléments */
+    /* Espace entre les éléments */
     align-items: center; /* Alignement au centre */
     margin-top: 10px; /* Marge supérieure */
   }
@@ -413,7 +420,7 @@ body {
     flex-direction: column-reverse; /* Disposition inverse en colonne */
     align-items: center; /* Alignement au centre */
     justify-content: center; /* Alignement au centre */
-    gap: 20px; /* Espace entre les éléments */
+    /* Espace entre les éléments */
     margin-top: 10px; /* Marge supérieure */
   }
 

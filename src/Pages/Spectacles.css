@@ -214,6 +214,7 @@ body {
 
 .photos p {
   color: white;
+  margin-top: -10px;
 }
 
 /* Style pour la section "pic-opera" */
@@ -283,6 +284,12 @@ body {
   }
 }
 
+@media screen and (max-width: 980px) {
+  .show-titre h1 {
+    padding-top: 250px;
+  }
+}
+
 /* Styles responsive pour les écrans jusqu'à 768px */
 @media (max-width: 768px) {
   .show-titre h1 {
@@ -306,6 +313,10 @@ body {
   .showplus1 p {
     font-size: 0.9rem; /* Réduction de la taille de la police */
     margin-top: 30px; /* Marge supérieure */
+  }
+
+  .showplus1 {
+    margin-top: -20px;
   }
 
   .gall h2 {
