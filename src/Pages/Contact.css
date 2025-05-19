@@ -146,7 +146,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 /* Modification des icônes pour augmenter la zone cliquable */
@@ -182,7 +182,6 @@
   overflow: hidden; /* Masquage du débordement */
   position: relative; /* Position relative pour l'image */
   height: 400px; /* Hauteur de l'image */
-
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 

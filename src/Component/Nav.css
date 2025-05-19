@@ -34,6 +34,7 @@
 
 /* Style pour chaque lien de navigation */
 .navbar-link {
+  box-sizing: border-box;
   color: inherit; /* Couleur héritée */
   transition: all 0.67s ease-in-out; /* Transition douce */
   display: block; /* Affichage en bloc */

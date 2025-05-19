@@ -24,7 +24,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   padding: 0 20px; /* Espacement horizontal */
-  padding-bottom: 40px; /* Espacement inférieur spécifique */
+  padding-bottom: 20px; /* Espacement inférieur spécifique */
 }
 
 /* Style pour le titre de la section 'show-titre' */
@@ -344,5 +344,9 @@ body {
   .dates img {
     width: 100%; /* Réduction de la largeur de l'image */
     height: 100%;
+  }
+
+  .photos p {
+    margin-top: -20px;
   }
 }
