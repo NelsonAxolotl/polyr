@@ -146,7 +146,7 @@ const Billeterie = () => {
     <>
       <div className="main-bill">
         <div className="bill animate-on-scroll">
-          <h1>Billeterie</h1>
+          <h1>Billetterie</h1>
           <p className="bill-desc animate-on-scroll">
             Réservez vos places en ligne via{" "}
             <a

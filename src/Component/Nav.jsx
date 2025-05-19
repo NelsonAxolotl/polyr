@@ -59,8 +59,8 @@ const Nav = () => {
             className: "slideInDown-3",
           },
           {
-            path: "/billeterie",
-            label: "Billeterie",
+            path: "/billetterie",
+            label: "Billetterie",
             className: "slideInDown-4",
           },
           { path: "/contact", label: "Contact", className: "slideInDown-5" },

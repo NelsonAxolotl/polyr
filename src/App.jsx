@@ -19,7 +19,7 @@ function App() {
         <Route path="/lacie" element={<Lacie />} />
         <Route path="/spectacles" element={<Spectacles />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/billeterie" element={<Billeterie />} />
+        <Route path="/billetterie" element={<Billeterie />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
