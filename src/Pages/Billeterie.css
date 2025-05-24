@@ -40,14 +40,15 @@ body {
 
 .event-card {
   max-width: 340px;
-  border: 1px solid bisque;
+  border: 2px solid bisque;
   padding: 1rem;
   border-radius: 8px;
   text-align: center;
-  background: #fff;
+  background: #ebe9e9;
   transition: transform 0.3s ease;
   cursor: pointer;
   transition: all 0.8s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .event-card:hover {
@@ -65,6 +66,7 @@ body {
   height: auto;
   display: block;
   border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .overlay-text {
@@ -150,6 +152,7 @@ body {
   object-fit: cover; /* Ajustement de l'image */
   object-position: center; /* Position de l'image */
   cursor: pointer; /* Curseur au survol */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 980px) {

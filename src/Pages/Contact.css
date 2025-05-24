@@ -59,6 +59,7 @@
   font-size: 2.7rem; /* Taille de la police */
   font-weight: bold; /* Poids de la police */
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
 }
 
 /* Style pour les éléments de contact (email et téléphone) */

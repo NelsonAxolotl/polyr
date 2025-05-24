@@ -46,7 +46,7 @@ const Billeterie = () => {
       hour: "19h",
       description: "Firmiry",
       price: "Gratuit pour tous",
-      link: "",
+      link: "http://www.chateaudesbruneaux.fr/",
     },
     {
       id: 3,
