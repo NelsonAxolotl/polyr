@@ -46,7 +46,7 @@ const Billeterie = () => {
       hour: "19h",
       description: "Firmiry",
       price: "Gratuit pour tous",
-      link: "http://www.chateaudesbruneaux.fr/",
+      link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-5-juillet-chateau-des-bruneaux",
     },
     {
       id: 3,
