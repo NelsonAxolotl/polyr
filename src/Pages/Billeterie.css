@@ -135,6 +135,10 @@ body {
   line-height: 1.8;
 }
 
+.tarif-note {
+  margin-top: 15px;
+}
+
 /* Style pour les images de la section de contact */
 .pic500 {
   width: 100%; /* Largeur de l'image */
@@ -172,6 +176,10 @@ body {
     margin-bottom: 20px;
     margin-top: 20px;
     font-size: 1.2rem;
+  }
+
+  .tarif span {
+    display: block;
   }
 
   .pic500 {

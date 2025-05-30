@@ -92,9 +92,8 @@ const Billeterie = () => {
       date: "12 juillet 2025",
       image: violon,
       hour: "19h",
-      description: "Sais-sous-Couzan",
-      price: "Gratuit pour tous",
-      link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-12-juillet-chateau-de-sail",
+      description: "Sail-sous-Couzan",
+      price: "Tarif plein 12€/Enfant 8€",
     },
     {
       id: 8,
@@ -167,6 +166,11 @@ const Billeterie = () => {
             <p>Tarif plein : 18 €</p>
             <p>Tarif solidaire : 10 €</p>
             <p>Enfant (-12 ans) : Gratuit</p>
+            <p className="tarif-note">
+              <span>* Pour la date du 12 juillet</span>{" "}
+              <span>réserver directement par téléphone</span>
+              <span> 06 76 73 06 64 </span>
+            </p>
           </div>
         </div>
         <div className="event-container animate-on-scroll">
