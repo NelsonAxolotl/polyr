@@ -129,14 +129,14 @@ body {
   font-size: 1.4rem;
   color: #fff;
   text-align: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   font-weight: 500;
   line-height: 1.8;
 }
 
 .tarif-note {
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 /* Style pour les images de la section de contact */

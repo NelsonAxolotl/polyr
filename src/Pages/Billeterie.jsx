@@ -93,7 +93,7 @@ const Billeterie = () => {
       image: violon,
       hour: "19h",
       description: "Sail-sous-Couzan",
-      price: "Tarif plein 12€/Enfant 8€",
+      price: "*",
     },
     {
       id: 8,
@@ -171,6 +171,7 @@ const Billeterie = () => {
               <span>réserver directement par téléphone</span>
               <span> 06 76 73 06 64 </span>
             </p>
+            <span>* Tarif plein 12€ / Enfant 8€ </span>
           </div>
         </div>
         <div className="event-container animate-on-scroll">
