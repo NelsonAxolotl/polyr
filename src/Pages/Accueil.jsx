@@ -123,7 +123,7 @@ const Accueil = () => {
         <div className="teaser animate-on-scroll">
           <h3>Teaser</h3>
           <video controls width="100%">
-            <source src="/Videos/PolyR.mp4" type="video/mp4" />
+            <source src="/Videos/PolyR_compressed.mp4" type="video/mp4" />
             Votre navigateur ne prend pas en charge la vidéo.
           </video>
         </div>
