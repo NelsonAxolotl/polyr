@@ -120,6 +120,13 @@ const Accueil = () => {
             ))}
           </div>
         </section>
+        <div className="teaser animate-on-scroll">
+          <h3>Teaser</h3>
+          <video controls width="100%">
+            <source src="/Videos/PolyR.mp4" type="video/mp4" />
+            Votre navigateur ne prend pas en charge la vidéo.
+          </video>
+        </div>
         <section className="presse animate-on-scroll">
           <h3>Un peu de presse</h3>
           <h4>Spectacles</h4>
