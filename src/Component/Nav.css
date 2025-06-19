@@ -35,7 +35,7 @@
 /* Style pour chaque lien de navigation */
 .navbar-link {
   box-sizing: border-box;
-  color: #5200a8; /* Nouveau violet foncé accessible */
+  color: #2c0066; /* Violet très foncé (contraste élevé sur fond blanc) */
   background: #fff;
   display: block; /* Affichage en bloc */
   padding: 10px 20px; /* Espacement intérieur */
@@ -53,6 +53,15 @@
   color: #b39500; /* Jaune foncé avec contraste suffisant */
   border-bottom: 1px solid #b39500;
   transform: scale(1.05); /* Zoom au survol */
+}
+
+/* Focus clavier accessible */
+.navbar-link:focus {
+  outline: 2px solid #2c0066;
+  outline-offset: 2px;
+  border-radius: 5px;
+  border-bottom: none;
+  background-color: #f8f8ff; /* Légère teinte pour distinguer le focus */
 }
 
 /* Style pour le bouton de menu burger (menu mobile) */
