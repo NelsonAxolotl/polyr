@@ -35,8 +35,8 @@
 /* Style pour chaque lien de navigation */
 .navbar-link {
   box-sizing: border-box;
-  color: inherit; /* Couleur héritée */
-  transition: all 0.67s ease-in-out; /* Transition douce */
+  color: #5200a8; /* Nouveau violet foncé accessible */
+  background: #fff;
   display: block; /* Affichage en bloc */
   padding: 10px 20px; /* Espacement intérieur */
   cursor: pointer; /* Curseur pointeur */
@@ -44,15 +44,15 @@
   font-size: 24px; /* Taille de la police */
   font-weight: 700; /* Poids de la police */
   text-decoration: none; /* Suppression de la décoration du texte */
-  color: rgba(128 20 217 / 100%); /* Couleur du texte */
+  /* Couleur du texte */
   transition: all 0.3s ease-in-out; /* Transition douce */
 }
 
 /* Effet de survol pour les liens de navigation */
 .navbar-link:hover {
-  color: rgba(220 205 0 / 100%); /* Couleur au survol */
+  color: #b39500; /* Jaune foncé avec contraste suffisant */
+  border-bottom: 1px solid #b39500;
   transform: scale(1.05); /* Zoom au survol */
-  border-bottom: 1px solid rgb(220, 205, 0); /* Bordure inférieure au survol */
 }
 
 /* Style pour le bouton de menu burger (menu mobile) */
