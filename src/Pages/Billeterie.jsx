@@ -93,6 +93,7 @@ const Billeterie = () => {
       image: violon,
       hour: "19h",
       description: "Sail-sous-Couzan",
+      link: "https://www.loireforez.fr/fiche-apidae/operamobil-2/",
       price: "*",
     },
     {
