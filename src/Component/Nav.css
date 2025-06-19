@@ -6,7 +6,7 @@
   width: 100%; /* Largeur totale */
   min-height: 75px; /* Hauteur minimale */
   color: rgba(148 12 194 / 100%); /* Couleur du texte */
-  background: rgba(255 255 255 / 100%); /* Couleur de fond */
+  background-color: #fff !important;
   z-index: 2; /* Niveau de superposition */
 }
 
