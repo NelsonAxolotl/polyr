@@ -80,7 +80,7 @@ body {
 /* Style pour les éléments 'span' dans les sections 'showplus' et 'showplus1' */
 .showplus span,
 .showplus1 span {
-  color: rgb(250, 164, 59); /* Couleur du texte */
+  color: #994d00; /* Orange foncé - ratio ≈ 5.21:1 */
   font-weight: bold; /* Poids de la police */
 }
 

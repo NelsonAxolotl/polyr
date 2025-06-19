@@ -36,7 +36,6 @@
 .navbar-link {
   box-sizing: border-box;
   color: #2c0066; /* Violet très foncé (contraste élevé sur fond blanc) */
-  background: #fff;
   display: block; /* Affichage en bloc */
   padding: 10px 20px; /* Espacement intérieur */
   cursor: pointer; /* Curseur pointeur */
@@ -44,7 +43,6 @@
   font-size: 24px; /* Taille de la police */
   font-weight: 700; /* Poids de la police */
   text-decoration: none; /* Suppression de la décoration du texte */
-  /* Couleur du texte */
   transition: all 0.3s ease-in-out; /* Transition douce */
 }
 
