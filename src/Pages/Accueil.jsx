@@ -92,7 +92,7 @@ const Accueil = () => {
             <img
               key={src}
               src={src}
-              width="auto"
+              width="400px"
               height="300px"
               alt={`photo cie Poly R ${index + 1}`}
               onClick={() => handleImageClick(src)}
@@ -151,7 +151,7 @@ const Accueil = () => {
                 src={presse}
                 alt="photo article de presse"
                 width="500px"
-                height="auto"
+                height="300px"
                 onClick={() => handleImageClick(presse)}
                 loading="lazy"
               />
@@ -176,7 +176,7 @@ const Accueil = () => {
                 src={polypress}
                 alt="photo article de presse"
                 width="500px"
-                height="auto"
+                height="300px"
                 onClick={() => handleImageClick(polypress)}
                 loading="lazy"
               />
@@ -216,8 +216,6 @@ const Accueil = () => {
           <img
             src={operapiano}
             alt="cie poly r"
-            width="auto"
-            height="auto"
             className="responsive-img50"
             onClick={() => handleImageClick(operapiano)}
             loading="lazy"
