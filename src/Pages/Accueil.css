@@ -363,8 +363,7 @@
 
 .responsive-img50 {
   width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
+  height: 100%;
   object-fit: cover; /* Mode d'ajustement de l'image */
   object-position: top; /* Position de l'image */
   cursor: pointer; /* Curseur au survol */
@@ -453,6 +452,7 @@
   }
 
   .poly-pic img {
+    width: 100%;
     height: 250px; /* Hauteur des images pour les petits écrans */
   }
 
