@@ -81,7 +81,7 @@ const Billeterie = () => {
       title: "Théâtre de Verdure",
       date: "11 juillet 2025",
       image: violon,
-      hour: "19h",
+      hour: "20h30",
       description: "Saint-Galmier",
       price: "Gratuit pour tous",
       link: "https://www.saint-galmier.fr/cinema-sous-les-etoiles/",
