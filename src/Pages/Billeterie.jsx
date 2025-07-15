@@ -203,8 +203,6 @@ const Billeterie = () => {
           <img
             src={violon}
             alt="cie poly r"
-            width="auto"
-            height="auto"
             className="responsive-img500"
             onClick={() => handleImageClick(violon)}
           />

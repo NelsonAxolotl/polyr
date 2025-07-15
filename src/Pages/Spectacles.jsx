@@ -244,8 +244,6 @@ const Spectacles = () => {
         <img
           src={dolls2}
           alt="dessin poly r"
-          width="auto"
-          height="auto"
           className="responsive-img20"
           onClick={() => handleImageClick(dolls2)}
           loading="lazy"

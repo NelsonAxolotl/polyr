@@ -92,8 +92,6 @@ const Contact = () => {
         <img
           src={poly25}
           alt="cie poly r"
-          width="auto"
-          height="auto"
           className="responsive-img2"
           onClick={() => handleImageClick(poly25)}
         />
