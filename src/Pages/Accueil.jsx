@@ -97,8 +97,6 @@ const Accueil = () => {
               alt={`photo cie Poly R ${index + 1}`}
               onClick={() => handleImageClick(src)}
               loading="eager"
-              decoding="async"
-              fetchPriority="high"
             />
           ))}
         </section>
