@@ -5,7 +5,7 @@
   position: fixed; /* Position fixe */
   width: 100%; /* Largeur totale */
   min-height: 75px; /* Hauteur minimale */
-  color: rgba(148 12 194 / 100%); /* Couleur du texte */
+  color: #2c0066;
   background-color: #fff !important;
   z-index: 2; /* Niveau de superposition */
 }

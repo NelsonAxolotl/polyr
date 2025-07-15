@@ -37,8 +37,8 @@ const Nav = () => {
           <img
             src={logo}
             alt="Logo PolyR"
-            width="150px"
-            height="150px"
+            width="130px"
+            height="130px"
             loading="eager"
           />
         </Link>

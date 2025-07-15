@@ -397,6 +397,11 @@
 }
 
 @media screen and (max-width: 800px) {
+  .poly-intro.animate-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
   .tittle-poly {
     display: flex;
     flex-direction: column;
@@ -409,6 +414,7 @@
   .tittle-poly h1 {
     font-size: 3.4rem; /* Taille de la police pour les petits écrans */
     padding-top: 250px; /* Espacement au-dessus */
+    margin-top: -20px;
   }
 
   .tittle-poly h2 {
@@ -538,11 +544,5 @@
     width: 90%;
     height: auto;
     margin: 0 auto; /* Optionnel si align-items suffit */
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .tittle-poly h1 {
-    margin-top: -20px;
   }
 }

@@ -5,7 +5,7 @@ import End from "../Component/End";
 import "./Accueil.css";
 
 import presse from "../Pic/presse.webp";
-import bastien50 from "../Pic/bastien50.webp";
+import bastien50 from "../Pic/bastien502.webp";
 import newop from "../Pic/newop.webp";
 import newcalendar from "../Pic/newcalendar.webp";
 import operapiano from "../Pic/operapiano.webp";
@@ -96,7 +96,9 @@ const Accueil = () => {
               height="300px"
               alt={`photo cie Poly R ${index + 1}`}
               onClick={() => handleImageClick(src)}
-              loading="lazy"
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
             />
           ))}
         </section>
