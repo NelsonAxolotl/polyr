@@ -7,7 +7,8 @@ body {
 
 /* Style principal pour la section principale */
 .main-bill {
-  background: linear-gradient(rgba(117, 49, 165, 0.6), rgba(72, 3, 87, 0.6)),
+  background:
+    linear-gradient(rgba(117, 49, 165, 0.6), rgba(72, 3, 87, 0.6)),
     url("../Pic/backbill.webp") !important;
   background-size: cover;
   background-position: center;
@@ -131,13 +132,19 @@ body {
   color: #fff;
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 500;
   line-height: 1.8;
 }
 
-.tarif-note {
-  margin-top: 30px;
+.coming-soon {
+  text-align: center;
+  color: white;
+}
+
+.coming-soon h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 /* Style pour les images de la section de contact */

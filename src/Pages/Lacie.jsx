@@ -110,11 +110,10 @@ const Lacie = () => {
                     <p className="main-text animate-on-scroll">
                       <span>Roxane Macaudière</span> s&apos;épanouit en musique
                       dès son plus jeune âge au sein du chœur de jeunes
-                      chanteurs de la Maîtrise de la Loire. <br />
-                      Parallèlement, elle est reçue à l&apos;âge de 14 ans en
-                      cycle supérieur de piano classique au Conservatoire de
-                      Saint-Etienne où elle obtient son diplôme de fin
-                      d&apos;études 4 ans plus tard. <br />
+                      chanteurs de la Maîtrise de la Loire. Parallèlement, elle
+                      est reçue à l&apos;âge de 14 ans en cycle supérieur de
+                      piano classique au Conservatoire de Saint-Etienne où elle
+                      obtient son diplôme de fin d&apos;études 4 ans plus tard.{" "}
                       Après ce début de chemin artistique, c&apos;est à Lyon
                       qu&apos;elle s&apos;envole pour étudier
                       <span> le chant lyrique</span> aux côtés de Cécile de
@@ -156,9 +155,8 @@ const Lacie = () => {
                       <span>ténor lyrique et comédien</span>, il se passionne
                       dès sa petite enfance pour la musique. Son parcours à la
                       maîtrise de la Loire lui permettra de trouver sa
-                      &quot;voix&quot;. <br />
-                      Il y découvre l&apos;Opéra, une expérience qui est une
-                      révélation. <br />
+                      &quot;voix&quot;. Il y découvre l&apos;Opéra, une
+                      expérience qui est une révélation. <br />
                       Depuis 2019, il étudie <span>le chant lyrique</span> avec
                       le ténor Yannick Berne en parallèle de ses études à
                       l&apos;ENM dans la classe de chant de Virginie Pochon et
@@ -242,12 +240,11 @@ const Lacie = () => {
                   <p className="main-text animate-on-scroll">
                     Découvrant à 8 ans la musique par l’apprentissage du violon,
                     <span> Thomas Avrillon </span> ne tardera pas à rentrer à la
-                    Maîtrise de la Loire, où il y restera sept ans. <br />
-                    Grâce à cet important apport musical, il découvrira de
-                    nombreuses disciplines liées au chant, dont la direction de
-                    chœur puis d’orchestre, qu’il développera encore en arrivant
-                    au conservatoire Massenet, puis à l’ENM de Villeurbanne.{" "}
-                    <br />
+                    Maîtrise de la Loire, où il y restera sept ans. Grâce à cet
+                    important apport musical, il découvrira de nombreuses
+                    disciplines liées au chant, dont la direction de chœur puis
+                    d’orchestre, qu’il développera encore en arrivant au
+                    conservatoire Massenet, puis à l’ENM de Villeurbanne. <br />
                     Ayant obtenu, en parallèle d’une licence de musicologie, son
                     Certificat d’Études Musicales de direction, de{" "}
                     <span>violon</span> et de formation musicale, il continue de
@@ -299,7 +296,6 @@ const Lacie = () => {
                     Depuis deux ans, il est notamment membre du groupe lyonnais
                     Bourricot Live Band. <br />
                     Il enseigne également la guitare depuis plusieurs années.{" "}
-                    <br />
                     Passionné d&apos;art depuis son plus jeune âge, Galtier est
                     toujours à l&apos;affût de nouvelles expériences et est
                     l&apos;un des accompagnateurs de{" "}
@@ -319,10 +315,10 @@ const Lacie = () => {
                     En 2017, elle a commencé ses études au Kunitachi College of
                     Music. Lors de son master, elle a participé à un programme
                     d’échange d’un an entre le Kunitachi College of Music et la
-                    Haute école de musique de Genève. <br />
-                    Cette expérience lui a permis de s’imprégner de
-                    l’environnement diversifié de Genève et de collaborer avec
-                    de nombreux jeunes musiciens talentueux. <br />
+                    Haute école de musique de Genève. Cette expérience lui a
+                    permis de s’imprégner de l’environnement diversifié de
+                    Genève et de collaborer avec de nombreux jeunes musiciens
+                    talentueux. <br />
                     Après l’obtention de son master, Yuku a choisi de poursuivre
                     ses études à la Haute école de musique de Genève, où elle
                     est actuellement inscrite en master d’accompagnement au
@@ -369,13 +365,11 @@ const Lacie = () => {
                     musicologie à l’Université de Grenoble, elle se forme au
                     sein des conservatoires de Lyon et Chambéry dont elle est
                     diplômée en piano, accompagnement au piano, écriture et
-                    direction de chœur. <br />
-                    Passionnée de musique vocale, elle intègre l’Institut Royal
-                    Supérieur de Musique et de Pédagogie à Namur (Belgique).{" "}
-                    <br />
-                    Elle y obtient avec grande distinction un master en
-                    direction chorale et un master en accompagnement au piano.{" "}
-                    <br />
+                    direction de chœur. Passionnée de musique vocale, elle
+                    intègre l’Institut Royal Supérieur de Musique et de
+                    Pédagogie à Namur (Belgique). Elle y obtient avec grande
+                    distinction un master en direction chorale et un master en
+                    accompagnement au piano. <br />
                     Mélusine a travaillé pour les Chœurs d’Enfants et de Jeunes
                     de La Monnaie, elle est à la tête de la chorale Royale Saint
                     Rémy d’Ottignies et du chœur d’enfant les Piccolos de
@@ -445,10 +439,10 @@ const Lacie = () => {
                   Si il y en a bien un qui fait feu de tout bois, c’est{" "}
                   <span>Antoine Catinaud</span>. Si un coup se prépare, il en
                   est. Tout l’intéresse, du chant lyrique au rugby, en passant
-                  par Stanislavski. <br />
-                  Charmé par travail, il a à cœur de comprendre. <br />
-                  De comprendre comment la grande machine humaine qu’il est
-                  fonctionne et comment il raconte des histoires avec ça. <br />
+                  par Stanislavski. Charmé par travail, il a à cœur de
+                  comprendre. De comprendre comment la grande machine humaine
+                  qu’il est fonctionne et comment il raconte des histoires avec
+                  ça. <br />
                   En 2023, Antoine Catinaud devient le président de{" "}
                   <Link to="/">
                     <span>la compagnie Poly R</span>
@@ -467,7 +461,7 @@ const Lacie = () => {
                   <Link to="/">
                     <span>la compagnie Poly R</span>
                   </Link>{" "}
-                  dès sa création en 2023 en tant que trésorière. <br />
+                  dès sa création en 2023. <br />
                   Passionnée de littérature, ancienne élève du Lycée du Parc et
                   aujourd&apos;hui élève de l&apos;Ecole Normale Supérieure de
                   Lyon et agrégée de Lettres modernes, Laëtitia a aussi joué de

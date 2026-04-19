@@ -167,15 +167,15 @@ const Billeterie = () => {
             <p>Tarif plein : 18 €</p>
             <p>Tarif solidaire : 10 €</p>
             <p>Enfant (-12 ans) : Gratuit</p>
-            <p className="tarif-note">
-              <span>* Pour la date du 12 juillet</span>{" "}
-              <span>réserver directement par téléphone</span>
-              <span> 06 76 73 06 64 </span>
-            </p>
-            <span>* Tarif plein 12€ / Enfant 8€ </span>
           </div>
         </div>
         <div className="event-container animate-on-scroll">
+          <div className="coming-soon">
+            <h2>Prochainement ☀️</h2>
+            <p>La programmation d’été sera bientôt disponible.</p>
+          </div>
+        </div>
+        {/* <div className="event-container animate-on-scroll">
           {eventsData.map((event) => (
             <div key={event.id} className="event-card animate-on-scroll">
               <div className="image-container">
@@ -197,7 +197,7 @@ const Billeterie = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div className="pic500 animate-on-scroll">
           <img

@@ -2,7 +2,9 @@
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 0.8s ease-out, transform 1.2s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 1.2s ease-out;
 }
 
 .animate-on-scroll.visible {
@@ -18,7 +20,8 @@ body {
 
 /* Style principal pour la section principale */
 .main {
-  background: linear-gradient(rgba(117, 49, 165, 0.6), rgba(72, 3, 87, 0.6)),
+  background:
+    linear-gradient(rgba(117, 49, 165, 0.6), rgba(72, 3, 87, 0.6)),
     url("../Pic/back.webp") !important;
   background-size: cover;
   background-position: center;
@@ -66,12 +69,13 @@ body {
   padding: 20px;
   border-radius: 10px;
   margin-top: 40px;
+  text-align: justify;
 }
 
 /* Style pour les paragraphes dans la section 'cie-text' */
 .cie-text p {
   font-size: 1.4rem; /* Taille de la police */
-  max-width: 800px; /* Largeur maximale */
+  max-width: 850px; /* Largeur maximale */
   line-height: 26px; /* Hauteur de ligne */
   font-weight: bold; /* Poids de la police */
   color: azure; /* Couleur du texte */
@@ -339,7 +343,7 @@ body {
   line-height: 1.4; /* Hauteur de ligne */
   word-spacing: normal; /* Espacement des mots */
   max-width: 100%; /* Largeur maximale */
-  text-align: left; /* Alignement du texte */
+  text-align: justify; /* Alignement du texte */
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 

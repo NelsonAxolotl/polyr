@@ -1,7 +1,9 @@
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 0.8s ease-out, transform 1.2s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 1.2s ease-out;
 }
 
 .animate-on-scroll.visible {
@@ -13,8 +15,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(rgba(117, 49, 165, 0.6), rgba(72, 3, 87, 0.6)),
-    url("../Pic/backacc.webp") !important;
+  background:
+    linear-gradient(rgba(117, 49, 165, 0.6), rgba(72, 3, 87, 0.6)),
+    url("../Pic/backcontact2.webp") !important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -235,7 +238,9 @@
   color: rgba(148 12 194 / 100%); /* Couleur du texte */
   border-radius: 5px; /* Bordure arrondie */
   border: 1px solid white; /* Bordure du bouton */
-  transition: background-color 0.3s ease, all 0.3s ease-in-out; /* Transitions */
+  transition:
+    background-color 0.3s ease,
+    all 0.3s ease-in-out; /* Transitions */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 

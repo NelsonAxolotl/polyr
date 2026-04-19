@@ -2,7 +2,9 @@
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 0.8s ease-out, transform 1.2s ease-out;
+  transition:
+    opacity 0.8s ease-out,
+    transform 1.2s ease-out;
 }
 
 .animate-on-scroll.visible {
@@ -18,7 +20,8 @@ body {
 
 /* Style principal pour la section 'show' */
 .show {
-  background: linear-gradient(rgba(117, 49, 165, 0.6), rgba(72, 3, 87, 0.6)),
+  background:
+    linear-gradient(rgba(117, 49, 165, 0.6), rgba(72, 3, 87, 0.6)),
     url("../Pic/backform.webp") !important;
   background-size: cover;
   background-position: center;
@@ -65,8 +68,8 @@ body {
 .showplus p,
 .showplus1 p {
   font-size: 1.1rem; /* Taille de la police */
-  text-align: left; /* Alignement du texte */
-  max-width: 800px; /* Largeur maximale */
+  text-align: justify; /* Alignement du texte */
+  max-width: 900px; /* Largeur maximale */
   margin-top: 50px; /* Marge supérieure */
   line-height: 24px; /* Hauteur de ligne */
   margin-bottom: 40px; /* Marge inférieure */
@@ -160,31 +163,31 @@ body {
 }
 
 #herve {
-  scroll-margin-top: 230px;
-}
-
-#fumi {
   scroll-margin-top: 260px;
 }
 
+#fumi {
+  scroll-margin-top: 280px;
+}
+
 #thomas {
-  scroll-margin-top: 300px;
+  scroll-margin-top: 320px;
 }
 
 #galtier {
-  scroll-margin-top: 300px;
+  scroll-margin-top: 320px;
 }
 
 #yuku {
-  scroll-margin-top: 280px;
+  scroll-margin-top: 300px;
 }
 
 #melusine {
-  scroll-margin-top: 280px;
+  scroll-margin-top: 300px;
 }
 
 #nathan {
-  scroll-margin-top: 280px;
+  scroll-margin-top: 300px;
 }
 
 /* Style pour les images dans la section 'pic20' */
@@ -247,6 +250,11 @@ body {
   align-items: center; /* Alignement au centre */
   margin-bottom: 80px; /* Marge inférieure */
   margin-top: 50px;
+}
+
+.dates p {
+  color: white;
+  font-size: 1.1rem;
 }
 
 /* Style pour les titres 'h3' dans la section 'dates' */

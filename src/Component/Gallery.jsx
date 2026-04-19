@@ -19,7 +19,7 @@ import poly18 from "../Pic/poly18.webp";
 import bastien54 from "../Pic/bastien54.webp";
 import bastien52 from "../Pic/bastien52.webp";
 import bastien51 from "../Pic/bastien51.webp";
-import doll from "../Pic/dolls.jpg";
+import doll from "../Pic/dolls.webp";
 import poly25 from "../Pic/poly25.webp";
 
 const images = [
@@ -108,8 +108,8 @@ const Gallery = () => {
                 index < 5
                   ? "object-top"
                   : index >= images.length - 1
-                  ? "object-right"
-                  : ""
+                    ? "object-right"
+                    : ""
               }`}
               loading="lazy"
               onClick={() => handleImageClick(image.src)}

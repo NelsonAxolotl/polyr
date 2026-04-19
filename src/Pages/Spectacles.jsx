@@ -71,12 +71,10 @@ const Spectacles = () => {
               <span>la Compagnie Poly R</span>
             </Link>{" "}
             ayant pour objectif de remettre au goût du jour l’art de l’Opéra.
-            <br />
             Elle rassemble six artistes pluridisciplinaires professionnels ou en
-            cours de professionnalisation. <br />
-            En juillet 2024, la troupe s’est produite pour la première fois
-            pendant 5 jours dans le département de la Loire en Région
-            Rhône-Alpes. <br />
+            cours de professionnalisation. En juillet 2024, la troupe s’est
+            produite pour la première fois pendant 5 jours dans le département
+            de la Loire en Région Rhône-Alpes. <br />
             Accompagnés par leur piano droit transporté sur une remorque, les
             talentueux artistes chanteurs lyriques, pianistes, et guitariste ont
             fait découvrir ou redécouvrir des airs d’opéra, de comédie musicale
@@ -159,15 +157,16 @@ const Spectacles = () => {
           <p>© photographe Camille Montana</p>
         </div>
         <div className="dates animate-on-scroll">
-          <h3>Dates été 2025</h3>
-          <img
+          <h3>Dates été 2026</h3>
+          {/* <img
             src={newcalendar}
             alt="dates passées"
             width="530px"
             height="530px"
             onClick={() => handleImageClick(newcalendar)}
             loading="lazy"
-          />
+          /> */}
+          <p>Prochainement...</p>
         </div>
         <div
           id="bastien"
@@ -176,8 +175,8 @@ const Spectacles = () => {
         >
           <h2>Bastien & Bastienne</h2>
           <p className="animate-on-scroll">
-            <span>Bastien & Bastienne</span> est un spectacle pour enfants créé
-            à partir de l’opéra Bastien et Bastienne de Mozart. <br />
+            <span>Bastien & Bastienne</span>, un spectacle pour enfants créé à
+            partir de l’opéra Bastien et Bastienne de Mozart. <br />
             Roxane Macaudière et Hervé Le Bert ont arrangé cette œuvre pour
             guitare électrique et trois chanteurs afin d’initier les plus petits
             aux voix lyriques, tout en apportant une touche de modernité à cette
