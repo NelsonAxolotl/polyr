@@ -183,6 +183,8 @@
   cursor: pointer; /* Curseur au survol */
   transition: all 0.3s ease-in-out; /* Transition au survol */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  object-fit: contain;
+  background: rgb(255, 217, 5);
 }
 
 .pic-opera-acc img:hover {

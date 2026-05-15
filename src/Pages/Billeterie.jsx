@@ -172,7 +172,7 @@ const Billeterie = () => {
         <div className="event-container animate-on-scroll">
           <div className="coming-soon">
             <h2>Prochainement ☀️</h2>
-            <p>La programmation d’été sera bientôt disponible.</p>
+            <p>La réservation d’été sera bientôt disponible.</p>
           </div>
         </div>
         {/* <div className="event-container animate-on-scroll">

@@ -150,7 +150,7 @@ body {
 #herve,
 #thomas,
 #melusine,
-#galtier,
+#alba,
 #fumi,
 #yuku,
 #nathan {
@@ -174,7 +174,7 @@ body {
   scroll-margin-top: 320px;
 }
 
-#galtier {
+#alba {
   scroll-margin-top: 320px;
 }
 
@@ -270,7 +270,9 @@ body {
 
 /* Style pour les images dans la section 'dates' */
 .dates img {
-  width: 40%; /* Largeur de l'image */
+  height: 80%;
+  aspect-ratio: auto;
+  object-fit: cover;
   border-radius: 10px; /* Bordure arrondie */
   border: 2px solid bisque; /* Bordure jaune */
   transition: all 0.3s ease-in-out; /* Effet de transition */

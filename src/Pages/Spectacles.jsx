@@ -10,8 +10,8 @@ import opera from "../Pic/opera.webp";
 import bastien from "../Pic/bastien.webp";
 import bastienne from "../Pic/bastienne.webp";
 import dolls2 from "../Pic/dolls2.webp";
-import openew from "../Pic/openew.webp";
-import newcalendar from "../Pic/newcalendar.webp";
+import openew from "../Pic/newteam.webp";
+import newcalendar from "../Pic/tour.webp";
 
 const Spectacles = () => {
   useEffect(() => {
@@ -135,7 +135,7 @@ const Spectacles = () => {
 
           <div className="animate-on-scroll">
             <h4>
-              <Link to="/lacie#galtier">Galtier Le Bilhan</Link>
+              <Link to="/lacie#alba">Alba Cantuern</Link>
             </h4>
           </div>
           <div className="animate-on-scroll">
@@ -158,15 +158,14 @@ const Spectacles = () => {
         </div>
         <div className="dates animate-on-scroll">
           <h3>Dates été 2026</h3>
-          {/* <img
+          <img
             src={newcalendar}
             alt="dates passées"
             width="530px"
             height="530px"
             onClick={() => handleImageClick(newcalendar)}
             loading="lazy"
-          /> */}
-          <p>Prochainement...</p>
+          />
         </div>
         <div
           id="bastien"

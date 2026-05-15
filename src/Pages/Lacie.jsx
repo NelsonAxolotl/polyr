@@ -14,7 +14,7 @@ import hervbio from "../Pic/hervbio.webp";
 import tombio from "../Pic/tombio.webp";
 import fumbio from "../Pic/fumbio.webp";
 import yukubio from "../Pic/yukubio.webp";
-import galbio from "../Pic/galbio.webp";
+import alba from "../Pic/alba.webp";
 
 const ImageOverlay = ({ image, onClose }) => (
   <div className="overlay" onClick={onClose}>
@@ -273,37 +273,30 @@ const Lacie = () => {
                 </div>
               </div>
 
-              <div id="galtier" className="personne-reverse animate-on-scroll">
-                <div className="pic150 animate-on-scroll">
+              <div id="alba" className="personne-reverse animate-on-scroll">
+                <div className="pic800 animate-on-scroll">
                   <img
-                    src={galbio}
-                    alt="photo Galtier"
+                    src={alba}
+                    alt="photo alba"
                     width="400px"
                     height="400px"
-                    onClick={() => handleImageClick(galbio)}
+                    onClick={() => handleImageClick(alba)}
                     loading="lazy"
                   />
                 </div>
                 <div className="text1 animate-on-scroll">
                   <p className="main-text animate-on-scroll">
-                    <span>Galtier Le Bihan</span> est <span>guitariste</span>,{" "}
-                    <span>compositeur</span> et <span>arrangeur</span>. <br />
-                    Parallèlement à son cursus de guitare jazz à l&apos;Ecole
-                    Nationale de Musique de Villeurbanne, Galtier
-                    s&apos;illustre en tant que compositeur, interprète et
-                    improvisateur, et ce dans divers styles, aussi bien la funk
-                    que le rock. <br />
-                    Depuis deux ans, il est notamment membre du groupe lyonnais
-                    Bourricot Live Band. <br />
-                    Il enseigne également la guitare depuis plusieurs années.{" "}
-                    Passionné d&apos;art depuis son plus jeune âge, Galtier est
-                    toujours à l&apos;affût de nouvelles expériences et est
-                    l&apos;un des accompagnateurs de{" "}
-                    <Link to="/spectacles#opera">
-                      <span>la troupe Opéramobil'</span>
-                    </Link>{" "}
-                    en juillet 2024, apportant ainsi une touche instrumentale
-                    moderne à la troupe.
+                    <span>Alba Cantuern</span> est notre formidable{" "}
+                    <span>guitariste</span>, <span>bassiste</span>,{" "}
+                    <span>percussionniste </span> etc. <br />
+                    Bref : qui dit Poly R dit instrumentiste polytalentueuse et
+                    … vous savez quoi ? Elle est aussi et principalement
+                    contrebassiste. <br />
+                    Alba vient de Saint-Étienne, passe beaucoup de temps à
+                    Genève pour ses études de contrebasse à la Haute Ecole de
+                    Musique et nous sommes ravis de l'accueillir parmi nous !
+                    Classique, jazz, tango, elle joue de tout, et il y en aura
+                    pour tous les goûts c'est promis
                   </p>
                 </div>
               </div>

@@ -6,10 +6,10 @@ import "./Accueil.css";
 
 import presse from "../Pic/presse.webp";
 import bastien50 from "../Pic/bastien502.webp";
-import newop from "../Pic/newop.webp";
-import newcalendar from "../Pic/newcalendar.webp";
+import newop from "../Pic/newteam.webp";
+import newcalendar from "../Pic/tour.webp";
 import operapiano from "../Pic/operapiano.webp";
-import groupeaccueil from "../Pic/groupeaccueil.webp";
+import groupeaccueil from "../Pic/newteam2.webp";
 import polypress from "../Pic/polypress.webp";
 
 const ImageOverlay = ({ image, onClose }) => (
@@ -103,7 +103,7 @@ const Accueil = () => {
         <section className="actu animate-on-scroll">
           <h3>Actu</h3>
           <div className="split animate-on-scroll">
-            <p>À venir Juillet 2025</p>
+            <p>À venir Juillet 2026</p>
             <span>Opéramobil &rsquo;saison 2</span>
           </div>
           <div className="pic-opera-acc animate-on-scroll">
@@ -139,7 +139,7 @@ const Accueil = () => {
                 onClick={() =>
                   window.open(
                     "https://www.le-pays.fr/montbrison-42600/actualites/des-collegiens-sensibilises-a-lopera_14512862/",
-                    "_blank"
+                    "_blank",
                   )
                 }
               >
@@ -164,7 +164,7 @@ const Accueil = () => {
                 onClick={() =>
                   window.open(
                     "https://www.leprogres.fr/culture-loisirs/2025/04/28/la-compagnie-poly-r-souhaite-partager-le-spectacle-vivant-en-milieu-rural-grace-a-l-operamobil",
-                    "_blank"
+                    "_blank",
                   )
                 }
               >

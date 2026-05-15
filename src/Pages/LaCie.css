@@ -289,6 +289,18 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+.pic800 img {
+  width: 400px; /* Largeur de l'image */
+  height: 350px; /* Hauteur de l'image */
+  object-fit: cover; /* Ajustement de l'image */
+  object-position: top; /* Position de l'image */
+  border-radius: 10px; /* Bordure arrondie */
+  border: 2px solid bisque; /* Bordure blanche */
+  transition: all 0.3s ease-in-out; /* Effet de transition */
+  cursor: pointer; /* Curseur au survol */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
 .pic300 img {
   width: 400px; /* Largeur de l'image */
   height: 350px; /* Hauteur de l'image */
