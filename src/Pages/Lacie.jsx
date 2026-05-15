@@ -294,9 +294,9 @@ const Lacie = () => {
                     contrebassiste. <br />
                     Alba vient de Saint-Étienne, passe beaucoup de temps à
                     Genève pour ses études de contrebasse à la Haute Ecole de
-                    Musique et nous sommes ravis de l'accueillir parmi nous !
-                    Classique, jazz, tango, elle joue de tout, et il y en aura
-                    pour tous les goûts c'est promis
+                    Musique et nous sommes ravis de l&apos;accueillir parmi nous
+                    ! Classique, jazz, tango, elle joue de tout, et il y en aura
+                    pour tous les goûts c&apos;est promis.
                   </p>
                 </div>
               </div>

@@ -462,12 +462,14 @@ body {
   }
 
   .cie-text {
+    padding: 10px;
     margin-top: -10px;
   }
 
   .cie-text p {
+    text-align: justify;
     font-size: 1rem; /* Réduction de la taille de la police */
-    padding: 10px; /* Réduction de l'espacement intérieur */
+    padding: 10px 0; /* Réduction de l'espacement intérieur */
     margin-top: 0; /* Suppression de la marge supérieure */
   }
 
@@ -517,20 +519,17 @@ body {
   .pic150 img,
   .pic200 img,
   .pic300 img {
-    width: 100%;
+    width: 90%;
     height: 400px;
     margin-top: -20px;
   }
 
   .pic1 img,
-  .pic300 img {
+  .pic300 img,
+  .pic800 img {
     width: 350px;
     height: 400px;
     margin-top: -20px;
-  }
-
-  .text1 {
-    max-width: 100%; /* Largeur maximale */
   }
 
   .all-titre {
