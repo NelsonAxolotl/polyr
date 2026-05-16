@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Billeterie.css";
 import End from "../Component/End";
+import team from "../Pic/newteam.webp";
 import violon from "../Pic/violon.webp";
 const Billeterie = () => {
   useEffect(() => {
@@ -29,118 +30,121 @@ const Billeterie = () => {
     setEnlargedImage(null);
   };
   const eventsData = [
-    {
-      id: 1,
-      title: "La p'tite ferme",
-      date: "04 juillet 2025",
-      image: violon,
-      hour: "19h",
-      description: "Rozier-en-Donzy",
-      link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-4-juillet-la-p-tite-ferme-rozier-en-donzy",
-    },
-    {
-      id: 2,
-      title: "Château des bruneaux",
-      date: "05 juillet 2025",
-      image: violon,
-      hour: "19h",
-      description: "Firmiry",
-      price: "Gratuit pour tous",
-      link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-5-juillet-chateau-des-bruneaux",
-    },
-    {
-      id: 3,
-      title: "Place du Village",
-      date: "06 juillet 2025",
-      image: violon,
-      hour: "19h",
-      description: "Chambost-Longessaigne",
-      link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-6-juillet-place-du-village-chambost-longessaigne",
-    },
-    {
-      id: 4,
-      title: "Grange du Jeu de Paume",
-      date: "08 juillet 2025",
-      image: violon,
-      hour: "19h",
-      description: "Feurs",
-      link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-8-juillet-ferme-du-jeu-de-peaume-feurs",
-    },
-    {
-      id: 5,
-      title: "Jeudis de l'été",
-      date: "10 juillet 2025",
-      image: violon,
-      hour: "19h",
-      description: "Montbrison",
-      price: "Gratuit pour tous",
-      link: "https://www.facebook.com/profile.php?id=100057586864292&locale=fr_FR",
-    },
-    {
-      id: 6,
-      title: "Théâtre de Verdure",
-      date: "11 juillet 2025",
-      image: violon,
-      hour: "20h30",
-      description: "Saint-Galmier",
-      price: "Gratuit pour tous",
-      link: "https://www.saint-galmier.fr/cinema-sous-les-etoiles/",
-    },
-    {
-      id: 7,
-      title: "Château de Couzan",
-      date: "12 juillet 2025",
-      image: violon,
-      hour: "19h",
-      description: "Sail-sous-Couzan",
-      link: "https://www.loireforez.fr/fiche-apidae/operamobil-2/",
-      price: "*",
-    },
-    {
-      id: 8,
-      title: "Fermes des délices",
-      date: "14 juillet 2025",
-      image: violon,
-      hour: "16h",
-      description: "Saint-Cyr-les-Vignes",
-      link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-14-juillet-ferme-des-delice-st-cyr-les-vignes",
-    },
-    {
-      id: 9,
-      title: "Prieuré",
-      date: "15 juillet 2025",
-      image: violon,
-      hour: "19h30",
-      description: "Champdieu",
-      link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-15-juillet-prieure-de-champdieu",
-    },
-    {
-      id: 10,
-      title: "Jardin de l'Écomusée",
-      date: "16 juillet 2025",
-      image: violon,
-      hour: "19h30",
-      description: "Usson-en-Forez",
-      link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-16-juillet-jardin-de-l-ecomuse-usson-en-forez",
-    },
-    {
-      id: 11,
-      title: "Théâtre de Verdure",
-      date: "17 juillet 2025",
-      image: violon,
-      hour: "19h",
-      description: "Saint-Victoire sur Loire",
-      link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-17-juillet-theatre-de-verdure-st-victor-sur-loire",
-    },
-    {
-      id: 12,
-      title: "Ruines de Donzy",
-      date: "18 juillet 2025",
-      image: violon,
-      hour: "19h",
-      description: "Salt-en-Donzy",
-      link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-18-juillet-ruine-du-donzy",
-    },
+    // {
+    //   id: 1,
+    //   title: "Théâtre de verdure",
+    //   date: "05 juillet 2025",
+    //   image: team,
+    //   hour: "17h",
+    //   description: "Nyons (26)",
+    //   price: "",
+    //   link: "https://",
+    // },
+    // {
+    //   id: 2,
+    //   title: "",
+    //   date: "07 juillet 2025",
+    //   image: team,
+    //   hour: "19h30",
+    //   description: "Prieuré de salais-sur-Sanne (38)",
+    //   price: "",
+    //   link: "https://",
+    // },
+    // {
+    //   id: 3,
+    //   title: "",
+    //   date: "10 juillet 2025",
+    //   image: team,
+    //   hour: "19h",
+    //   description: "Bâtie d'Urfé (42)",
+    //   price: "",
+    //   link: "https://",
+    // },
+    // {
+    //   id: 4,
+    //   title: "",
+    //   date: "12 juillet 2025",
+    //   image: team,
+    //   hour: "18h",
+    //   description: "Prieuré de Champdieu (42)",
+    //   price: "",
+    //   link: "https://",
+    // },
+    // {
+    //   id: 5,
+    //   title: "",
+    //   date: "13 juillet 2025",
+    //   image: team,
+    //   hour: "18h",
+    //   description: "Pommiers-en-Forez (42)",
+    //   price: "",
+    //   link: "https://www.facebook.com/profile.php?id=100057586864292&locale=fr_FR",
+    // },
+    // {
+    //   id: 6,
+    //   title: "",
+    //   date: "16 juillet 2025",
+    //   image: team,
+    //   hour: "19h30",
+    //   description: "Saint-Victor-sur-Loire (42)",
+    //   price: "",
+    //   link: "https://",
+    // },
+    // {
+    //   id: 7,
+    //   title: "Site Médiéval",
+    //   date: "12 juillet 2025",
+    //   image: team,
+    //   hour: "17h",
+    //   description: "Donzy (42)",
+    //   link: "https://",
+    //   price: "",
+    // },
+    // {
+    //   id: 8,
+    //   title: "Fermes des délices",
+    //   date: "14 juillet 2025",
+    //   image: violon,
+    //   hour: "16h",
+    //   description: "Saint-Cyr-les-Vignes",
+    //   link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-14-juillet-ferme-des-delice-st-cyr-les-vignes",
+    // },
+    // {
+    //   id: 9,
+    //   title: "Prieuré",
+    //   date: "15 juillet 2025",
+    //   image: violon,
+    //   hour: "19h30",
+    //   description: "Champdieu",
+    //   link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-15-juillet-prieure-de-champdieu",
+    // },
+    // {
+    //   id: 10,
+    //   title: "Jardin de l'Écomusée",
+    //   date: "16 juillet 2025",
+    //   image: violon,
+    //   hour: "19h30",
+    //   description: "Usson-en-Forez",
+    //   link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-16-juillet-jardin-de-l-ecomuse-usson-en-forez",
+    // },
+    // {
+    //   id: 11,
+    //   title: "Théâtre de Verdure",
+    //   date: "17 juillet 2025",
+    //   image: violon,
+    //   hour: "19h",
+    //   description: "Saint-Victoire sur Loire",
+    //   link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-17-juillet-theatre-de-verdure-st-victor-sur-loire",
+    // },
+    // {
+    //   id: 12,
+    //   title: "Ruines de Donzy",
+    //   date: "18 juillet 2025",
+    //   image: violon,
+    //   hour: "19h",
+    //   description: "Salt-en-Donzy",
+    //   link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-18-juillet-ruine-du-donzy",
+    // },
   ];
   return (
     <>
@@ -171,11 +175,11 @@ const Billeterie = () => {
         </div>
         <div className="event-container animate-on-scroll">
           <div className="coming-soon">
-            <h2>Prochainement ☀️</h2>
-            <p>La réservation d’été sera bientôt disponible.</p>
+            <h2>Prochainement ☀️ 2026 </h2>
+            <p>La billetterie sera bientôt disponible...</p>
           </div>
         </div>
-        {/* <div className="event-container animate-on-scroll">
+        <div className="event-container animate-on-scroll">
           {eventsData.map((event) => (
             <div key={event.id} className="event-card animate-on-scroll">
               <div className="image-container">
@@ -197,7 +201,7 @@ const Billeterie = () => {
               </div>
             </div>
           ))}
-        </div> */}
+        </div>
 
         <div className="pic500 animate-on-scroll">
           <img

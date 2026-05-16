@@ -78,7 +78,7 @@ body {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 20px 30px; /* Plus de padding */
   border-radius: 12px;
   display: flex;
@@ -217,5 +217,9 @@ body {
   .bill-desc span {
     display: block;
     margin-bottom: -25px;
+  }
+
+  .pic500 {
+    margin-top: -150px;
   }
 }

@@ -88,7 +88,7 @@ const Spectacles = () => {
             une immense grange aménagée. <br />
             Le public, visiblement ravi, a ainsi pu se laisser porter par des
             programmes musicaux éclectiques et forts en émotions , c’est
-            pourquoi <span>L’Opéramobil’</span> sera de retour en juillet 2025
+            pourquoi <span>L’Opéramobil’</span> sera de retour en juillet 2026
             pour une saison 2 qui s’annonce opératiquement explosive !
           </p>
           <div className="pic-opera animate-on-scroll">

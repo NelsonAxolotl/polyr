@@ -321,6 +321,7 @@ body {
 
   .showplus p,
   .showplus1 p {
+    text-align: left;
     font-size: 0.9rem; /* Réduction de la taille de la police */
     margin-top: 30px; /* Marge supérieure */
   }
