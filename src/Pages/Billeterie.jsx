@@ -35,7 +35,7 @@ const Billeterie = () => {
       title: "Théâtre de verdure",
       date: "05 juillet 2026",
       image: team,
-      hour: "18h30h",
+      hour: "17h",
       description: "Nyons (26)",
       price: "",
       link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-5-juillet-theatre-de-verdure-de-nyons",
@@ -53,6 +53,16 @@ const Billeterie = () => {
 
     {
       id: 3,
+      title: "Bâtie d'Urfé ",
+      date: "10 juillet 2026",
+      image: team,
+      hour: "19h",
+      description: "Saint-Étienne-le-Molard (42)",
+      price: "13€",
+      link: "https://www.batiedurfe.fr/jcms/lw_1392169/fr/billetterie",
+    },
+    {
+      id: 4,
       title: "",
       date: "12 juillet 2026",
       image: team,
@@ -62,8 +72,8 @@ const Billeterie = () => {
       link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-12-juillet-prieure-de-champdieu",
     },
     {
-      id: 4,
-      title: "",
+      id: 5,
+      title: "Place du village",
       date: "13 juillet 2026",
       image: team,
       hour: "18h",
@@ -72,8 +82,8 @@ const Billeterie = () => {
       link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-13-juillet-pommiers-en-forez",
     },
     {
-      id: 5,
-      title: "",
+      id: 6,
+      title: "Théâtre de Verdure",
       date: "16 juillet 2026",
       image: team,
       hour: "19h30",
@@ -82,7 +92,7 @@ const Billeterie = () => {
       link: "https://www.helloasso.com/associations/poly-r/evenements/saint-victor-sur-loire",
     },
     {
-      id: 6,
+      id: 7,
       title: "Site Médiéval",
       date: "19 juillet 2026",
       image: team,
@@ -92,6 +102,7 @@ const Billeterie = () => {
       price: "",
     },
   ];
+
   return (
     <>
       <div className="main-bill">

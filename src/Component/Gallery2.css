@@ -8,7 +8,7 @@ body {
 
 /* Container for the gallery */
 .gallery-container1 {
-  width: 50%; /* Container width */
+  width: 60%; /* Container width */
   margin: 0 auto; /* Centering container horizontally */
   padding: 20px; /* Padding inside the container */
   background: #7531a5; /* Background color matching body */
@@ -19,7 +19,7 @@ body {
 /* Style for gallery images */
 .gallery-image1 {
   width: 100%; /* Full width of the container */
-  height: 400px; /* Fixed height for images */
+  height: 500px; /* Fixed height for images */
   object-fit: cover; /* Cover the area while preserving aspect ratio */
   border-radius: 10px; /* Rounded corners for images */
   display: block; /* Block-level display */
@@ -34,53 +34,53 @@ body {
 
 /* Object position for top-aligned images */
 .center-image2 {
-  object-position: top; /* Align object to the top */
+  object-position: center 20%; /* Align object to the top */
 }
 
 /* Overlay for enlarged images */
 .overlay {
-  position: fixed; /* Fixed positioning to cover the entire viewport */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0 0 0 / 80%); /* Semi-transparent black background */
-  display: flex; /* Flexbox for centering content */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  z-index: 1000; /* Ensures overlay is on top of other content */
+  background: rgba(0 0 0 / 80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
 /* Container for the enlarged image */
 .enlarged-image-container {
-  position: relative; /* Positioning context for the close button */
-  display: flex; /* Flexbox for alignment */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  width: 90%; /* Width of the container relative to overlay */
-  height: 90%; /* Height of the container relative to overlay */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900%;
+  height: 100%;
 }
 
 /* Style for images inside the enlarged image container */
 .enlarged-image-container img {
-  max-width: 100%; /* Ensure image does not exceed container width */
-  max-height: 100%; /* Ensure image does not exceed container height */
-  margin: auto; /* Center image */
+  max-width: 100%;
+  max-height: 80%;
+  margin: auto;
   border-radius: 2px;
 }
 
 /* Close button styling */
 .close-button {
-  position: absolute; /* Absolute positioning within the container */
-  background: transparent; /* No background for the button */
-  border: none; /* No border */
-  color: white; /* White text color */
-  font-size: 2rem; /* Font size of the button text */
-  cursor: pointer; /* Pointer cursor on hover */
-  top: 10px; /* Position from the top */
-  right: 10px; /* Position from the right */
-  padding: 5px; /* Padding around the button text */
-  border-radius: 50%; /* Round button */
+  position: absolute;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  border-radius: 50%;
 }
 
 /* Slick slider dot styling */
@@ -107,11 +107,16 @@ body {
   /* Adjustments for gallery container on small screens */
   .gallery-container1 {
     width: 100%; /* Full width */
+    height: auto;
     padding: 10px; /* Reduced padding */
   }
 
   /* Adjustments for gallery image on small screens */
   .gallery-image1 {
-    height: 300px; /* Reduced height */
+    height: 350px; /* Reduced height */
+  }
+
+  .overlay {
+    display: none;
   }
 }

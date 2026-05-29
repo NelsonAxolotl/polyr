@@ -1,5 +1,6 @@
 import { HashLink as Link } from "react-router-hash-link";
 import { useState, useEffect, useRef } from "react";
+import PropTypes from "prop-types";
 import { useLocation } from "react-router-dom";
 import End from "../Component/End"; // Vérifiez le chemin et l'existence du composant
 import Gallery from "../Component/Gallery";
@@ -13,6 +14,21 @@ import dolls2 from "../Pic/dolls2.webp";
 import openew from "../Pic/newteam.webp";
 import newcalendar from "../Pic/tour.webp";
 
+const ImageOverlay = ({ image, onClose }) => (
+  <div className="overlay" onClick={onClose}>
+    <div className="enlarged-image-container">
+      <img src={image} alt="Enlarged" />
+      <button className="close-button" onClick={onClose}>
+        ×
+      </button>
+    </div>
+  </div>
+);
+// Ajout de la validation des props avec PropTypes
+ImageOverlay.propTypes = {
+  image: PropTypes.string.isRequired, // La prop image doit être une chaîne de caractères et est requise
+  onClose: PropTypes.func.isRequired, // La prop onClose doit être une fonction et est requise
+};
 const Spectacles = () => {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -29,19 +45,16 @@ const Spectacles = () => {
 
     return () => observer.disconnect();
   }, []);
-  const [imageAgrandie, setImageAgrandie] = useState(null);
 
   const operaRef = useRef(null);
   const bastienRef = useRef(null);
+  const [enlargedImage, setEnlargedImage] = useState(null);
 
   const handleImageClick = (image) => {
-    setImageAgrandie(image);
+    if (window.innerWidth <= 768) return;
+    setEnlargedImage(image);
   };
-
-  const handleCloseImage = () => {
-    setImageAgrandie(null);
-  };
-
+  const handleCloseImage = () => setEnlargedImage(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -148,6 +161,11 @@ const Spectacles = () => {
               <Link to="/lacie#melusine">Mélusine Escande</Link>
             </h4>
           </div>
+          <div className="animate-on-scroll">
+            <h4>
+              <Link to="/lacie#galtier">Galtier Le bihan</Link>
+            </h4>
+          </div>
         </div>
         <div className="gall animate-on-scroll">
           <h2>Galerie</h2>
@@ -248,15 +266,8 @@ const Spectacles = () => {
         />
       </div>
 
-      {imageAgrandie && (
-        <div className="overlay" onClick={handleCloseImage}>
-          <div className="enlarged-image-container">
-            <img src={imageAgrandie} alt="Agrandie" />
-            <button className="close-button" onClick={handleCloseImage}>
-              ×
-            </button>
-          </div>
-        </div>
+      {enlargedImage && (
+        <ImageOverlay image={enlargedImage} onClose={handleCloseImage} />
       )}
       <End />
     </>

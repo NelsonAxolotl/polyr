@@ -20,7 +20,6 @@ import bastien54 from "../Pic/bastien54.webp";
 import bastien52 from "../Pic/bastien52.webp";
 import bastien51 from "../Pic/bastien51.webp";
 import doll from "../Pic/dolls.webp";
-import poly25 from "../Pic/poly25.webp";
 
 const images = [
   { src: bastien1, alt: "Image 1" },
@@ -40,7 +39,6 @@ const images = [
   { src: poly18, alt: "Image ploy18" },
   { src: bastien20, alt: "Image 20" },
   { src: poly1, alt: "Image ploy1" },
-  { src: poly25, alt: "Image ploy25" },
 ];
 
 const Gallery = () => {
@@ -59,30 +57,12 @@ const Gallery = () => {
 
     return () => observer.disconnect();
   }, []);
-  const [enlargedImage, setEnlargedImage] = useState(null);
-
-  const handleImageClick = (imageSrc) => {
-    setEnlargedImage(imageSrc);
-  };
-
-  const handleCloseImage = () => {
-    setEnlargedImage(null);
-  };
 
   const handleKeyDown = useCallback((event) => {
     if (event.key === "Escape") {
       setEnlargedImage(null);
     }
   }, []);
-
-  useEffect(() => {
-    if (enlargedImage) {
-      window.addEventListener("keydown", handleKeyDown);
-    }
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [enlargedImage, handleKeyDown]);
 
   const settings = {
     dots: true,
@@ -112,28 +92,12 @@ const Gallery = () => {
                     : ""
               }`}
               loading="lazy"
-              onClick={() => handleImageClick(image.src)}
               role="button"
               aria-label={`View ${image.alt}`}
             />
           </div>
         ))}
       </Slider>
-
-      {enlargedImage && (
-        <div className="overlay" onClick={handleCloseImage}>
-          <div className="enlarged-image-container ">
-            <img src={enlargedImage} alt="Enlarged" />
-            <button
-              className="close-button"
-              onClick={handleCloseImage}
-              aria-label="Close image"
-            >
-              ×
-            </button>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

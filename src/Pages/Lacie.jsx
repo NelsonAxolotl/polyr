@@ -4,17 +4,18 @@ import PropTypes from "prop-types";
 import End from "../Component/End";
 import "./LaCie.css";
 
-import melusine from "../Pic/melysine.webp";
-import nathan from "../Pic/nathan.webp";
-import antoine from "../Pic/antoine.webp";
-import laetitia from "../Pic/laetitia.webp";
+import melusine from "../Pic/mel2.webp";
+import nathan from "../Pic/nat.webp";
+import antoine from "../Pic/ant.webp";
+import laetitia from "../Pic/lae.webp";
 import draw from "../Pic/draw.webp";
-import roxbio from "../Pic/roxbio.webp";
-import hervbio from "../Pic/hervbio.webp";
-import tombio from "../Pic/tombio.webp";
-import fumbio from "../Pic/fumbio.webp";
-import yukubio from "../Pic/yukubio.webp";
+import roxbio from "../Pic/poly3.webp";
+import hervbio from "../Pic/poly.webp";
+import tombio from "../Pic/poly2.webp";
+import fumbio from "../Pic/poly6.webp";
+import yukubio from "../Pic/polyyu.webp";
 import alba from "../Pic/alba.webp";
+import galtier from "../Pic/galbio.webp";
 
 const ImageOverlay = ({ image, onClose }) => (
   <div className="overlay" onClick={onClose}>
@@ -49,7 +50,10 @@ const Lacie = () => {
   }, []);
   const [enlargedImage, setEnlargedImage] = useState(null);
 
-  const handleImageClick = (image) => setEnlargedImage(image);
+  const handleImageClick = (image) => {
+    if (window.innerWidth <= 768) return;
+    setEnlargedImage(image);
+  };
   const handleCloseImage = () => setEnlargedImage(null);
 
   return (
@@ -104,7 +108,7 @@ const Lacie = () => {
                 </div>
                 <div className="all-titre animate-on-scroll">
                   <h4 className="titre-personne animate-on-scroll">
-                    Directrice artistique, chargée de communication (soprano)
+                    Soprano, Directrice artistique, communication, co créatrice,
                   </h4>
                   <div className="text1 animate-on-scroll">
                     <p className="main-text animate-on-scroll">
@@ -137,7 +141,13 @@ const Lacie = () => {
                       <Link to="/">
                         <span>la compagnie Poly R</span>
                       </Link>{" "}
-                      qu&apos;elle a co-créée avec Hervé Le Bert en 2023.
+                      qu&apos;elle a co-créée avec Hervé Le Bert en 2023. <br />{" "}
+                      En novembre 2025, elle compose pour le baryton-basse
+                      Vincent Le Texier et chante en duo avec lui dans le cadre
+                      de Festyvocal. En mai 2026, elle remporte aux côtés de
+                      Florestan Bourreau le premier prix ex-aequo du Concours
+                      Mahler. En août 2026, elle intègre la nouvelle promotion
+                      du Pôle Lyrique d'Excellence de Lyon.
                     </p>
                   </div>
                 </div>
@@ -147,7 +157,8 @@ const Lacie = () => {
               <div id="herve" className="personne animate-on-scroll">
                 <div className="all-titre animate-on-scroll">
                   <h4 className="titre-personne2 animate-on-scroll">
-                    Directeur technique, comptable (ténor)
+                    Tenor, directeur technique, <br />
+                    co createur
                   </h4>
                   <div className="text1 animate-on-scroll">
                     <p className="main-text animate-on-scroll">
@@ -197,7 +208,7 @@ const Lacie = () => {
                 </div>
                 <div className="all-titre animate-on-scroll">
                   <h4 className="titre-personne3 animate-on-scroll">
-                    Assistante communication, régisseuse (mezzo-soprano)
+                    Assistante communication, régisseuse, mezzo-soprano
                   </h4>
                   <div className="text1 animate-on-scroll">
                     <p className="main-text animate-on-scroll">
@@ -272,7 +283,6 @@ const Lacie = () => {
                   />
                 </div>
               </div>
-
               <div id="alba" className="personne-reverse animate-on-scroll">
                 <div className="pic800 animate-on-scroll">
                   <img
@@ -378,7 +388,53 @@ const Lacie = () => {
                   </p>
                 </div>
               </div>
+              <div id="galtier" className="personne animate-on-scroll">
+                <div className="text1 animate-on-scroll">
+                  <p className="main-text animate-on-scroll">
+                    <span>Galtier Le Bihan</span> est <span>guitariste</span>,{" "}
+                    <span>compositeur</span> et <span>arrangeur</span>. <br />
+                    Parallèlement à son cursus de guitare jazz à l&apos;Ecole
+                    Nationale de Musique de Villeurbanne, Galtier
+                    s&apos;illustre en tant que compositeur, interprète et
+                    improvisateur, et ce dans divers styles, aussi bien la funk
+                    que le rock. <br />
+                    Depuis deux ans, il est notamment membre du groupe lyonnais
+                    Bourricot Live Band. <br />
+                    Il enseigne également la guitare depuis plusieurs années.{" "}
+                    <br />
+                    Passionné d&apos;art depuis son plus jeune âge, Galtier est
+                    toujours à l&apos;affût de nouvelles expériences et est
+                    l&apos;un des accompagnateurs de{" "}
+                    <Link to="/spectacles#opera">
+                      <span>l&apos;Opéramobil&apos;</span>
+                    </Link>{" "}
+                    en juillet 2024, apportant ainsi une touche instrumentale
+                    moderne à la troupe.
+                  </p>
+                </div>
+
+                <div className="pic300 animate-on-scroll">
+                  <img
+                    src={galtier}
+                    alt="photo Galtier"
+                    width="400px"
+                    height="400px"
+                    onClick={() => handleImageClick(galtier)}
+                    loading="lazy"
+                  />
+                </div>
+              </div>
               <div id="nathan" className="personne animate-on-scroll">
+                <div className="pic100 animate-on-scroll">
+                  <img
+                    src={nathan}
+                    alt="photo Nathan"
+                    width="400px"
+                    height="400px"
+                    onClick={() => handleImageClick(nathan)}
+                    loading="lazy"
+                  />
+                </div>
                 <div className="text1 animate-on-scroll">
                   <p className="main-text animate-on-scroll">
                     <span>Nathan Brunet</span> est <span>guitariste</span>,{" "}
@@ -400,33 +456,12 @@ const Lacie = () => {
                     .
                   </p>
                 </div>
-                <div className="pic100 animate-on-scroll">
-                  <img
-                    src={nathan}
-                    alt="photo Nathan"
-                    width="400px"
-                    height="400px"
-                    onClick={() => handleImageClick(nathan)}
-                    loading="lazy"
-                  />
-                </div>
               </div>
             </div>
             <div className="bio4 animate-on-scroll">
               <h3>Président</h3>
             </div>
             <div id="antoine " className="personne animate-on-scroll">
-              <div className="pic100 animate-on-scroll">
-                <img
-                  src={antoine}
-                  alt="photo Galtier"
-                  width="400px"
-                  height="400px"
-                  onClick={() => handleImageClick(antoine)}
-                  loading="lazy"
-                />
-              </div>
-
               <div className="text1 animate-on-scroll">
                 <p className="main-text animate-on-scroll">
                   Si il y en a bien un qui fait feu de tout bois, c’est{" "}
@@ -443,11 +478,31 @@ const Lacie = () => {
                   .
                 </p>
               </div>
+              <div className="pic100 animate-on-scroll">
+                <img
+                  src={antoine}
+                  alt="photo Galtier"
+                  width="400px"
+                  height="400px"
+                  onClick={() => handleImageClick(antoine)}
+                  loading="lazy"
+                />
+              </div>
             </div>
             <div className="bio5 animate-on-scroll">
               <h3>Trésorière</h3>
             </div>
             <div id="laetitia" className="personne-reverse animate-on-scroll">
+              <div className="pic100 animate-on-scroll">
+                <img
+                  src={laetitia}
+                  alt="photo Laetitia"
+                  width="400px"
+                  height="400px"
+                  onClick={() => handleImageClick(laetitia)}
+                  loading="lazy"
+                />
+              </div>
               <div className="text1 animate-on-scroll">
                 <p className="main-text animate-on-scroll">
                   <span>Laëtitia Chanoz</span> s&apos;investit dans{" "}
@@ -468,16 +523,6 @@ const Lacie = () => {
                   Enfin, à ses heures perdues, elle écrit, une artiste à suivre
                   donc !
                 </p>
-              </div>
-              <div className="pic100 animate-on-scroll">
-                <img
-                  src={laetitia}
-                  alt="photo Laetitia"
-                  width="400px"
-                  height="400px"
-                  onClick={() => handleImageClick(laetitia)}
-                  loading="lazy"
-                />
               </div>
             </div>
           </div>

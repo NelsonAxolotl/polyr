@@ -416,6 +416,16 @@ body {
   transform: scale(1.03);
 }
 
+.enlarged-image-container img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+#herve br {
+  display: none;
+}
+
 @media (max-width: 980px) {
   .cie h1 {
     padding-top: 230px;
@@ -424,6 +434,12 @@ body {
 
 /* Styles responsive pour les écrans jusqu'à 900px */
 @media (max-width: 900px) {
+  #nathan {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
   .personne {
     flex-direction: column; /* Disposition en colonne pour les petits écrans */
     /* Espace entre les éléments */
@@ -519,16 +535,16 @@ body {
   .pic150 img,
   .pic200 img,
   .pic300 img {
-    width: 90%;
-    height: 400px;
+    width: 100%;
+    height: auto;
     margin-top: -20px;
   }
 
   .pic1 img,
   .pic300 img,
   .pic800 img {
-    width: 350px;
-    height: 400px;
+    width: 100%;
+    height: auto;
     margin-top: -20px;
   }
 
@@ -564,5 +580,13 @@ body {
 
   .diviser {
     width: 50%;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  #herve br {
+    display: block;
   }
 }

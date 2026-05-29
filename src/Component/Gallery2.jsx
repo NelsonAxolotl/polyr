@@ -4,44 +4,46 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import mobil from "../Pic/mobil.webp";
+import allgroupe from "../Pic/allgroupe.webp";
 import opera2 from "../Pic/opera2.webp";
 import opera6 from "../Pic/opera6.webp";
-import opera7 from "../Pic/opera7.webp";
-import opera20 from "../Pic/opera20.webp";
-import poly11 from "../Pic/poly11.webp";
-import poly13 from "../Pic/poly13.webp";
 import poly14 from "../Pic/poly14.webp";
 import poly15 from "../Pic/poly15.webp";
-import poly22 from "../Pic/poly22.webp";
-import poly53 from "../Pic/poly53.webp";
-import poly from "../Pic/polyrgroupe.webp";
-import opera100 from "../Pic/opera100.webp";
-import opera200 from "../Pic/opera200.webp";
-import opera300 from "../Pic/opera300.webp";
+import poly4 from "../Pic/poly4.webp";
+import poly7 from "../Pic/poly7.webp";
+import poly8 from "../Pic/poly8.webp";
 import opera400 from "../Pic/opera400.webp";
-import opera500 from "../Pic/opera500.webp";
 import opera2000 from "../Pic/opera2000.webp";
 import opera4000 from "../Pic/opera4000.webp";
 import opera5000 from "../Pic/opera5000.webp";
+import polygroupe from "../Pic/polyrgroupe.webp";
+import polymel from "../Pic/poly53.webp";
+import polygroupe3 from "../Pic/groupeaccueil.webp";
+import polygroupe4 from "../Pic/groupe4.webp";
+import polygroupe5 from "../Pic/groupe5.webp";
+import openew from "../Pic/openew.webp";
+import operapiano from "../Pic/operapiano.webp";
 
 const images = [
   { src: opera2, alt: "Image 2", className: "center-image2" },
   { src: opera4000, alt: "opera4000" },
-  { src: poly22, alt: "Image poly22" },
-  { src: opera100, alt: "Image opera100" },
-  { src: opera200, alt: "Image opera200" },
   { src: opera400, alt: "Image opera400" },
+  { src: allgroupe, alt: "Image opera mobil" },
   { src: opera6, alt: "Image 6" },
-  { src: opera7, alt: "Image 7" },
-  { src: opera300, alt: "Image opera300" },
-  { src: opera20, alt: "Image 20" },
-  { src: opera500, alt: "Image opera500" },
-  { src: poly53, alt: "Image 53" },
-  { src: poly, alt: "Image poly groupe" },
+  { src: openew, alt: "opera2000" },
+  { src: poly4, alt: "Image poly groupe" },
+  { src: polygroupe4, alt: "Image poly groupe" },
+  { src: polygroupe, alt: "Image poly groupe" },
+  { src: poly7, alt: "Image poly groupe" },
+  { src: mobil, alt: "Image polyr" },
+  { src: operapiano, alt: "Image poly groupe" },
+  { src: polygroupe5, alt: "Image poly groupe" },
+  { src: poly8, alt: "Image poly groupe", className: "center-image2" },
   { src: opera2000, alt: "opera2000" },
+  { src: polygroupe3, alt: "Image poly groupe" },
   { src: opera5000, alt: "opera5000" },
-  { src: poly11, alt: "Image 11", className: "center-image1" },
-  { src: poly13, alt: "Image 13", className: "center-image1" },
+  { src: polymel, alt: "Image poly groupe" },
   { src: poly14, alt: "Image 14", className: "center-image1" },
   { src: poly15, alt: "Image 15", className: "center-image1" },
 ];
@@ -62,29 +64,12 @@ const Gallery2 = () => {
 
     return () => observer.disconnect();
   }, []);
-  const [enlargedImage, setEnlargedImage] = useState(null);
 
-  const handleImageClick = (image) => {
-    setEnlargedImage(image);
-  };
-
-  const handleCloseImage = () => {
-    setEnlargedImage(null);
-  };
   const handleKeyDown = useCallback((event) => {
     if (event.key === "Escape") {
       handleCloseImage();
     }
   }, []);
-
-  useEffect(() => {
-    if (enlargedImage) {
-      window.addEventListener("keydown", handleKeyDown);
-    }
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [enlargedImage, handleKeyDown]);
 
   const settings = {
     dots: true,
@@ -108,28 +93,12 @@ const Gallery2 = () => {
               height="400px"
               className={`gallery-image1 ${image.className || ""}`}
               loading="lazy"
-              onClick={() => handleImageClick(image.src)}
               role="button"
               aria-label={`View ${image.alt}`}
             />
           </div>
         ))}
       </Slider>
-
-      {enlargedImage && (
-        <div className="overlay" onClick={handleCloseImage}>
-          <div className="enlarged-image-container">
-            <img src={enlargedImage} alt="Enlarged" />
-            <button
-              className="close-button"
-              onClick={handleCloseImage}
-              aria-label="Close image"
-            >
-              ×
-            </button>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

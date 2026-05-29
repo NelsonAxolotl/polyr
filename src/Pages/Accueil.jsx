@@ -8,9 +8,9 @@ import presse from "../Pic/presse.webp";
 import bastien50 from "../Pic/bastien502.webp";
 import newop from "../Pic/newteam.webp";
 import newcalendar from "../Pic/tour.webp";
-import operapiano from "../Pic/operapiano.webp";
+import poly5 from "../Pic/poly5.webp";
 import groupeaccueil from "../Pic/newteam2.webp";
-import polypress from "../Pic/polypress.webp";
+import polypress from "../Pic/polysup.webp";
 
 const ImageOverlay = ({ image, onClose }) => (
   <div className="overlay" onClick={onClose}>
@@ -58,7 +58,10 @@ const Accueil = () => {
 
   const [enlargedImage, setEnlargedImage] = useState(null);
 
-  const handleImageClick = (image) => setEnlargedImage(image);
+  const handleImageClick = (image) => {
+    if (window.innerWidth <= 768) return;
+    setEnlargedImage(image);
+  };
   const handleCloseImage = () => setEnlargedImage(null);
 
   return (
@@ -104,7 +107,7 @@ const Accueil = () => {
           <h3>Actu</h3>
           <div className="split animate-on-scroll">
             <p>À venir Juillet 2026</p>
-            <span>Opéramobil &rsquo;saison 2</span>
+            <span>Opéramobil &rsquo;saison 3</span>
           </div>
           <div className="pic-opera-acc animate-on-scroll">
             {[newop, newcalendar].map((src, index) => (
@@ -214,10 +217,10 @@ const Accueil = () => {
         </div>
         <div className="pic50 animate-on-scroll">
           <img
-            src={operapiano}
+            src={poly5}
             alt="cie poly r"
             className="responsive-img50"
-            onClick={() => handleImageClick(operapiano)}
+            onClick={() => handleImageClick(poly5)}
             loading="lazy"
           />
         </div>
