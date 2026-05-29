@@ -82,11 +82,15 @@ const Accueil = () => {
         <section className="suite-intro animate-on-scroll">
           <p>Cocréée et dirigée par</p>
           <span>
-            <Link to="/lacie#herve">Hervé Le Bert</Link>
+            <Link to="/lacie#herve" className="disable-mobile-link">
+              Hervé Le Bert
+            </Link>
           </span>
           <p>et</p>
           <span>
-            <Link to="/lacie#roxane">Roxane Macaudière</Link>
+            <Link to="/lacie#roxane" className="disable-mobile-link">
+              Roxane Macaudière
+            </Link>
           </span>
           <p>située dans la Loire (42)</p>
         </section>

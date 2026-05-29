@@ -68,16 +68,8 @@ const Lacie = () => {
         <div className="cie-text animate-on-scroll">
           <p>
             La Compagnie <span>Poly R</span> est lyonnaise et a été créée en
-            septembre 2023 par{" "}
-            <span>
-              {" "}
-              <Link to="/lacie#roxane">Roxane Macaudière</Link>
-            </span>{" "}
-            et{" "}
-            <span>
-              {" "}
-              <Link to="/lacie#herve">Hervé Le Bert</Link>
-            </span>
+            septembre 2023 par <span> Roxane Macaudière</span> et{" "}
+            <span> Hervé Le Bert</span>
             . <br />
             Tous deux artistes en voie de professionnalisation et passionnés par
             leurs différentes pratiques (chant lyrique, théâtre, piano, guitare,
@@ -108,7 +100,7 @@ const Lacie = () => {
                 </div>
                 <div className="all-titre animate-on-scroll">
                   <h4 className="titre-personne animate-on-scroll">
-                    Soprano, Directrice artistique, communication, co créatrice,
+                    Soprano, Directrice artistique, Communication, Co créatrice,
                   </h4>
                   <div className="text1 animate-on-scroll">
                     <p className="main-text animate-on-scroll">
@@ -138,16 +130,14 @@ const Lacie = () => {
                       l&apos;opéra Hänsel und Gretel de Humperdinck à
                       Chêne-Bourg en Suisse. <br />
                       Elle est aussi la directrice artistique de la{" "}
-                      <Link to="/">
-                        <span>la compagnie Poly R</span>
-                      </Link>{" "}
-                      qu&apos;elle a co-créée avec Hervé Le Bert en 2023. <br />{" "}
-                      En novembre 2025, elle compose pour le baryton-basse
-                      Vincent Le Texier et chante en duo avec lui dans le cadre
-                      de Festyvocal. En mai 2026, elle remporte aux côtés de
-                      Florestan Bourreau le premier prix ex-aequo du Concours
-                      Mahler. En août 2026, elle intègre la nouvelle promotion
-                      du Pôle Lyrique d&apos;Excellence de Lyon.
+                      <span>la compagnie Poly R</span> qu&apos;elle a co-créée
+                      avec Hervé Le Bert en 2023. <br /> En novembre 2025, elle
+                      compose pour le baryton-basse Vincent Le Texier et chante
+                      en duo avec lui dans le cadre de Festyvocal. En mai 2026,
+                      elle remporte aux côtés de Florestan Bourreau le premier
+                      prix ex-aequo du Concours Mahler. En août 2026, elle
+                      intègre la nouvelle promotion du Pôle Lyrique
+                      d&apos;Excellence de Lyon.
                     </p>
                   </div>
                 </div>
@@ -157,8 +147,8 @@ const Lacie = () => {
               <div id="herve" className="personne animate-on-scroll">
                 <div className="all-titre animate-on-scroll">
                   <h4 className="titre-personne2 animate-on-scroll">
-                    Tenor, directeur technique, <br />
-                    co createur
+                    Tenor, Directeur technique, <br />
+                    Co createur
                   </h4>
                   <div className="text1 animate-on-scroll">
                     <p className="main-text animate-on-scroll">
@@ -173,11 +163,8 @@ const Lacie = () => {
                       l&apos;ENM dans la classe de chant de Virginie Pochon et
                       au théâtre de l&apos;Iris.
                       <br />
-                      En 2023, il co-crée{" "}
-                      <Link to="/">
-                        <span>la compagnie Poly R</span>{" "}
-                      </Link>{" "}
-                      dont il est aujourd&apos;hui le directeur technique et
+                      En 2023, il co-crée <span>la compagnie Poly R</span> dont
+                      il est aujourd&apos;hui le directeur technique et
                       comptable.
                     </p>
                   </div>
@@ -208,7 +195,7 @@ const Lacie = () => {
                 </div>
                 <div className="all-titre animate-on-scroll">
                   <h4 className="titre-personne3 animate-on-scroll">
-                    Assistante communication, régisseuse, mezzo-soprano
+                    Mezzo-soprano, Régisseuse, Assistante communication
                   </h4>
                   <div className="text1 animate-on-scroll">
                     <p className="main-text animate-on-scroll">
@@ -227,14 +214,9 @@ const Lacie = () => {
                       d’Humperdinck, Ms Todd dans The Old Maid and The Thief de
                       Menotti et Carmen dans Carmen de Bizet. <br />
                       Lors de la saison 2023/2024, elle est soliste dans{" "}
-                      <Link to="/spectacles#bastien">
-                        <span>Bastien & Bastienne</span>
-                      </Link>{" "}
-                      et intègre{" "}
-                      <Link to="/spectacles#opera">
-                        <span>la troupe Opéramobil&apos;&apos;</span>
-                      </Link>{" "}
-                      de la compagnie. <br />
+                      <span>Bastien & Bastienne</span> et intègre{" "}
+                      <span>la troupe Opéramobil&apos;&apos;</span> de la
+                      compagnie. <br />
                       En 2025, Fumi devient assistante communication et
                       régisseuse au sein de la compagnie.
                     </p>
@@ -266,10 +248,8 @@ const Lacie = () => {
                     également en tant que soliste, dans le rôle de Pish-Tush du
                     Mikado de Sullivan. <br />
                     En juillet 2024, Thomas intègre{" "}
-                    <Link to="/spectacles#opera">
-                      <span>la troupe Opéramobil&apos;&apos;</span>
-                    </Link>{" "}
-                    en tant que chanteur et violoniste.
+                    <span>la troupe Opéramobil&apos;&apos;</span> en tant que
+                    chanteur et violoniste.
                   </p>
                 </div>
                 <div className="pic150 animate-on-scroll">
@@ -333,9 +313,8 @@ const Lacie = () => {
                     des prestations de musique contemporaine et de clavecin.{" "}
                     <br />
                     En juillet 2025, Yuku intègre{" "}
-                    <Link to="/spectacles#opera">
-                      <span>la troupe Opéramobil'</span>
-                    </Link>{" "}
+                    <span>la troupe Opéramobil'</span>
+                    {""}
                     en tant que pianiste.
                   </p>
                 </div>
@@ -381,10 +360,8 @@ const Lacie = () => {
                     auprès de la classe à horaires aménagés du Lycée Français de
                     Bruxelles. <br />
                     En juillet 2024, Mélusine intègre{" "}
-                    <Link to="/spectacles#opera">
-                      <span>la troupe Opéramobil&rsquo;</span>
-                    </Link>{" "}
-                    en tant que pianiste accompagnatrice.
+                    <span>la troupe Opéramobil&rsquo;</span> en tant que
+                    pianiste accompagnatrice.
                   </p>
                 </div>
               </div>
@@ -405,11 +382,9 @@ const Lacie = () => {
                     Passionné d&apos;art depuis son plus jeune âge, Galtier est
                     toujours à l&apos;affût de nouvelles expériences et est
                     l&apos;un des accompagnateurs de{" "}
-                    <Link to="/spectacles#opera">
-                      <span>l&apos;Opéramobil&apos;</span>
-                    </Link>{" "}
-                    en juillet 2024, apportant ainsi une touche instrumentale
-                    moderne à la troupe.
+                    <span>l&apos;Opéramobil&apos;</span> en juillet 2024,
+                    apportant ainsi une touche instrumentale moderne à la
+                    troupe.
                   </p>
                 </div>
 
@@ -449,11 +424,7 @@ const Lacie = () => {
                     2024 la nouvelle promotion du prestigieux Centre Didier
                     Lockwood à Paris. <br />
                     Lors de la saison 2023/2024, Nathan est guitariste pour le
-                    spectacle{" "}
-                    <Link to="/spectacles#bastien">
-                      <span>Bastien & Bastienne</span>
-                    </Link>
-                    .
+                    spectacle <span>Bastien & Bastienne</span>.
                   </p>
                 </div>
               </div>
@@ -472,10 +443,7 @@ const Lacie = () => {
                   qu’il est fonctionne et comment il raconte des histoires avec
                   ça. <br />
                   En 2023, Antoine Catinaud devient le président de{" "}
-                  <Link to="/">
-                    <span>la compagnie Poly R</span>
-                  </Link>
-                  .
+                  <span>la compagnie Poly R</span>.
                 </p>
               </div>
               <div className="pic100 animate-on-scroll">
@@ -506,10 +474,8 @@ const Lacie = () => {
               <div className="text1 animate-on-scroll">
                 <p className="main-text animate-on-scroll">
                   <span>Laëtitia Chanoz</span> s&apos;investit dans{" "}
-                  <Link to="/">
-                    <span>la compagnie Poly R</span>
-                  </Link>{" "}
-                  dès sa création en 2023. <br />
+                  <span>la compagnie Poly R</span> dès sa création en 2023.{" "}
+                  <br />
                   Passionnée de littérature, ancienne élève du Lycée du Parc et
                   aujourd&apos;hui élève de l&apos;Ecole Normale Supérieure de
                   Lyon et agrégée de Lettres modernes, Laëtitia a aussi joué de

@@ -2,7 +2,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import { useLocation } from "react-router-dom";
-import End from "../Component/End"; // Vérifiez le chemin et l'existence du composant
+import End from "../Component/End";
 import Gallery from "../Component/Gallery";
 import Gallery2 from "../Component/Gallery2";
 import "./Spectacles.css";
@@ -24,12 +24,27 @@ const ImageOverlay = ({ image, onClose }) => (
     </div>
   </div>
 );
-// Ajout de la validation des props avec PropTypes
+
 ImageOverlay.propTypes = {
-  image: PropTypes.string.isRequired, // La prop image doit être une chaîne de caractères et est requise
-  onClose: PropTypes.func.isRequired, // La prop onClose doit être une fonction et est requise
+  image: PropTypes.string.isRequired,
+  onClose: PropTypes.func.isRequired,
 };
+
 const Spectacles = () => {
+  const location = useLocation();
+
+  const [enlargedImage, setEnlargedImage] = useState(null);
+  const operaRef = useRef(null);
+  const bastienRef = useRef(null);
+
+  const handleImageClick = (image) => {
+    if (window.innerWidth <= 768) return;
+    setEnlargedImage(image);
+  };
+
+  const handleCloseImage = () => setEnlargedImage(null);
+
+  // animation scroll (inchangé)
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -46,30 +61,25 @@ const Spectacles = () => {
     return () => observer.disconnect();
   }, []);
 
-  const operaRef = useRef(null);
-  const bastienRef = useRef(null);
-  const [enlargedImage, setEnlargedImage] = useState(null);
-
-  const handleImageClick = (image) => {
-    if (window.innerWidth <= 768) return;
-    setEnlargedImage(image);
-  };
-  const handleCloseImage = () => setEnlargedImage(null);
-  const location = useLocation();
-
+  // ✅ SCROLL FIX ROBUSTE (remplace scrollIntoView)
   useEffect(() => {
-    if (location.hash) {
-      const element = document.querySelector(location.hash);
-      if (element) {
-        element.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-          inline: "nearest",
-        });
-      }
-    }
-  }, [location]);
+    if (window.innerWidth <= 768) return; // 👈 désactive mobile
 
+    if (!location.hash) return;
+
+    const id = location.hash.replace("#", "");
+
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    const offset = 315;
+    const top = el.offsetTop - offset;
+
+    window.scrollTo({
+      top,
+      behavior: "smooth",
+    });
+  }, [location.hash]);
   return (
     <>
       <div className="show">
@@ -81,7 +91,7 @@ const Spectacles = () => {
           <p className="animate-on-scroll">
             <span>L’Opéramobil’</span> est une troupe itinérante portée par{" "}
             <Link to="/lacie">
-              <span>la Compagnie Poly R</span>
+              <span>la compagnie Poly R</span>
             </Link>{" "}
             ayant pour objectif de remettre au goût du jour l’art de l’Opéra.
             Elle rassemble six artistes pluridisciplinaires professionnels ou en
@@ -101,8 +111,12 @@ const Spectacles = () => {
             une immense grange aménagée. <br />
             Le public, visiblement ravi, a ainsi pu se laisser porter par des
             programmes musicaux éclectiques et forts en émotions , c’est
-            pourquoi <span>L’Opéramobil’</span> sera de retour en juillet 2026
-            pour une saison 2 qui s’annonce opératiquement explosive !
+            pourquoi{" "}
+            <Link to="/spectacles#opera">
+              <span>L’Opéramobil’</span>
+            </Link>{" "}
+            sera de retour en juillet 2026 pour une saison 3 qui s’annonce
+            opératiquement explosive !
           </p>
           <div className="pic-opera animate-on-scroll">
             <img
@@ -127,43 +141,59 @@ const Spectacles = () => {
           </div>
           <div className="animate-on-scroll">
             <h4>
-              <Link to="/lacie#roxane">Roxane Macaudière</Link>
+              <Link to="/lacie#roxane" className="disable-mobile-link">
+                Roxane Macaudière
+              </Link>
             </h4>
           </div>
           <div className="animate-on-scroll">
             <h4>
-              <Link to="/lacie#herve">Hervé Le Bert</Link>
+              <Link to="/lacie#herve" className="disable-mobile-link">
+                Hervé Le Bert
+              </Link>
             </h4>
           </div>
           <div className="animate-on-scroll">
             <h4>
-              <Link to="/lacie#fumi">Fumi Oka</Link>
+              <Link to="/lacie#fumi" className="disable-mobile-link">
+                Fumi Oka
+              </Link>
             </h4>
           </div>
           <div className="animate-on-scroll">
             <h4>
-              <Link to="/lacie#thomas">Thomas Avrillon</Link>
+              <Link to="/lacie#thomas" className="disable-mobile-link">
+                Thomas Avrillon
+              </Link>
             </h4>
           </div>
 
           <div className="animate-on-scroll">
             <h4>
-              <Link to="/lacie#alba">Alba Cantuern</Link>
+              <Link to="/lacie#alba" className="disable-mobile-link">
+                Alba Cantuern
+              </Link>
             </h4>
           </div>
           <div className="animate-on-scroll">
             <h4>
-              <Link to="/lacie#yuku">Yuku Yonemitsu</Link>
+              <Link to="/lacie#yuku" className="disable-mobile-link">
+                Yuku Yonemitsu
+              </Link>
             </h4>
           </div>
           <div className="animate-on-scroll">
             <h4>
-              <Link to="/lacie#melusine">Mélusine Escande</Link>
+              <Link to="/lacie#melusine" className="disable-mobile-link">
+                Mélusine Escande
+              </Link>
             </h4>
           </div>
           <div className="animate-on-scroll">
             <h4>
-              <Link to="/lacie#galtier">Galtier Le bihan</Link>
+              <Link to="/lacie#galtier" className="disable-mobile-link">
+                Galtier Le bihan
+              </Link>
             </h4>
           </div>
         </div>
@@ -232,22 +262,30 @@ const Spectacles = () => {
           </div>
           <div className="animate-on-scroll">
             <h4>
-              <Link to="/lacie#fumi">Fumi Oka</Link>
+              <Link to="/lacie#fumi" className="disable-mobile-link">
+                Fumi Oka
+              </Link>
             </h4>
           </div>
           <div className="animate-on-scroll">
             <h4>
-              <Link to="/lacie#nathan">Nathan Brunet</Link>
+              <Link to="/lacie#nathan" className="disable-mobile-link">
+                Nathan Brunet
+              </Link>
             </h4>
           </div>
           <div className="animate-on-scroll">
             <h4>
-              <Link to="/lacie#roxane">Roxane Macaudière</Link>
+              <Link to="/lacie#roxane" className="disable-mobile-link">
+                Roxane Macaudière
+              </Link>
             </h4>
           </div>
           <div className="animate-on-scroll">
             <h4>
-              <Link to="/lacie#herve">Hervé Le Bert</Link>
+              <Link to="/lacie#herve" className="disable-mobile-link">
+                Hervé Le Bert
+              </Link>
             </h4>
           </div>
         </div>

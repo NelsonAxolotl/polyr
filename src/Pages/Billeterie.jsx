@@ -46,7 +46,7 @@ const Billeterie = () => {
       date: "07 juillet 2026",
       image: team,
       hour: "19h30",
-      description: "Prieuré de salais-sur-Sanne (38)",
+      description: "Prieuré de Salais-sur-Sanne (38)",
       price: "",
       link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-7-juillet-prieure-de-salaise-sur-sanne",
     },

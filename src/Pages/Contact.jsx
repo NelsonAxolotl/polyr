@@ -55,7 +55,9 @@ const Contact = () => {
                 </span>
               </div>
               <div className="phone animate-on-scroll">
-                <span>Roxane : 06 48 98 57 81</span>
+                <a href="tel:+33648985781">
+                  <span>Roxane : 06 48 98 57 81</span>
+                </a>
               </div>
             </div>
           </div>

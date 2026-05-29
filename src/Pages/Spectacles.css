@@ -155,44 +155,7 @@ body {
 #yuku,
 #nathan,
 #galtier {
-  scroll-margin-top: 150px; /* Espacement au-dessus des éléments lors du défilement */
-}
-
-/* Ajustements spécifiques pour certains éléments */
-#roxane {
-  scroll-margin-top: 320px;
-}
-
-#herve {
-  scroll-margin-top: 280px;
-}
-
-#fumi {
-  scroll-margin-top: 300px;
-}
-
-#thomas {
-  scroll-margin-top: 340px;
-}
-
-#alba {
-  scroll-margin-top: 320px;
-}
-
-#yuku {
-  scroll-margin-top: 320px;
-}
-
-#melusine {
-  scroll-margin-top: 320px;
-}
-
-#nathan {
-  scroll-margin-top: 320px;
-}
-
-#galtier {
-  scroll-margin-top: 320px;
+  scroll-margin-top: 315px;
 }
 
 /* Style pour les images dans la section 'pic20' */
@@ -396,55 +359,15 @@ body {
     display: none;
   }
 
-  /* Styles pour les ancres de défilement */
-  #bastien,
-  #opera,
-  #roxane,
-  #herve,
-  #thomas,
-  #melusine,
-  #alba,
-  #fumi,
-  #yuku,
-  #nathan,
-  #galtier {
-    scroll-margin-top: 300px; /* Espacement au-dessus des éléments lors du défilement */
+  .disable-mobile-link {
+    pointer-events: none;
+    cursor: default;
+    color: inherit; /* évite l'effet "lien" */
+    text-decoration: none;
   }
 
-  /* Ajustements spécifiques pour certains éléments */
-  #roxane {
-    scroll-margin-top: 320px;
-  }
-
-  #herve {
-    scroll-margin-top: 260px;
-  }
-
-  #fumi {
-    scroll-margin-top: 260px;
-  }
-
-  #thomas {
-    scroll-margin-top: 360px;
-  }
-
-  #alba {
-    scroll-margin-top: 260px;
-  }
-
-  #yuku {
-    scroll-margin-top: 260px;
-  }
-
-  #melusine {
-    scroll-margin-top: 260px;
-  }
-
-  #nathan {
-    scroll-margin-top: 260px;
-  }
-
-  #galtier {
-    scroll-margin-top: 260px;
+  .disable-mobile-link {
+    pointer-events: none;
+    cursor: default;
   }
 }

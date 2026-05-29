@@ -80,14 +80,14 @@ body {
   color: white;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.4);
-  padding: 20px 30px; /* Plus de padding */
+  padding: 20px 0; /* Plus de padding */
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   pointer-events: none;
   gap: 15px;
-  width: 90%; /* S'étend à 80% de l'image */
-  max-width: 400px;
+  width: 100%; /* S'étend à 80% de l'image */
+  max-width: 500px;
 }
 
 .overlay-text p {
