@@ -582,4 +582,8 @@
   .overlay {
     display: none;
   }
+
+  .pic50 {
+    height: auto; /* Hauteur de l'image */
+  }
 }
