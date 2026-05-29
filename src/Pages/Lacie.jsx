@@ -147,7 +147,7 @@ const Lacie = () => {
                       de Festyvocal. En mai 2026, elle remporte aux côtés de
                       Florestan Bourreau le premier prix ex-aequo du Concours
                       Mahler. En août 2026, elle intègre la nouvelle promotion
-                      du Pôle Lyrique d'Excellence de Lyon.
+                      du Pôle Lyrique d&apos;Excellence de Lyon.
                     </p>
                   </div>
                 </div>

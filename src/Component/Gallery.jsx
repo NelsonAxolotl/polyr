@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useEffect } from "react";
 import "./Gallery.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -56,12 +56,6 @@ const Gallery = () => {
     elements.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
-  }, []);
-
-  const handleKeyDown = useCallback((event) => {
-    if (event.key === "Escape") {
-      setEnlargedImage(null);
-    }
   }, []);
 
   const settings = {

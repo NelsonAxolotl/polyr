@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useEffect } from "react";
 import "./Gallery2.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -63,12 +63,6 @@ const Gallery2 = () => {
     elements.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
-  }, []);
-
-  const handleKeyDown = useCallback((event) => {
-    if (event.key === "Escape") {
-      handleCloseImage();
-    }
   }, []);
 
   const settings = {
