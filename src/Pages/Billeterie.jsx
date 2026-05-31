@@ -1,25 +1,91 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./Billeterie.css";
 import End from "../Component/End";
 import team from "../Pic/newteam.webp";
 import violon from "../Pic/violon.webp";
+
+/* =========================
+   EVENTS DATA (hors composant)
+========================= */
+
+const EVENTS = [
+  {
+    id: 1,
+    title: "Théâtre de verdure",
+    date: "05 juillet 2026",
+    image: team,
+    hour: "17h",
+    description: "Nyons (26)",
+    price: "",
+    link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-5-juillet-theatre-de-verdure-de-nyons",
+  },
+  {
+    id: 2,
+    title: "",
+    date: "07 juillet 2026",
+    image: team,
+    hour: "19h30",
+    description: "Prieuré de Salais-sur-Sanne (38)",
+    price: "",
+    link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-7-juillet-prieure-de-salaise-sur-sanne",
+  },
+  {
+    id: 3,
+    title: "Bâtie d'Urfé",
+    date: "10 juillet 2026",
+    image: team,
+    hour: "19h",
+    description: "Saint-Étienne-le-Molard (42)",
+    price: "13€",
+    link: "https://www.batiedurfe.fr/jcms/lw_1392169/fr/billetterie",
+  },
+  {
+    id: 4,
+    title: "",
+    date: "12 juillet 2026",
+    image: team,
+    hour: "18h",
+    description: "Prieuré de Champdieu (42)",
+    price: "",
+    link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-12-juillet-prieure-de-champdieu",
+  },
+  {
+    id: 5,
+    title: "Place du village",
+    date: "13 juillet 2026",
+    image: team,
+    hour: "18h",
+    description: "Pommiers-en-Forez (42)",
+    price: "",
+    link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-13-juillet-pommiers-en-forez",
+  },
+  {
+    id: 6,
+    title: "Théâtre de Verdure",
+    date: "16 juillet 2026",
+    image: team,
+    hour: "19h30",
+    description: "Saint-Victor-sur-Loire (42)",
+    price: "",
+    link: "https://www.helloasso.com/associations/poly-r/evenements/saint-victor-sur-loire",
+  },
+  {
+    id: 7,
+    title: "Site Médiéval",
+    date: "19 juillet 2026",
+    image: team,
+    hour: "17h",
+    description: "Donzy (42)",
+    price: "",
+    link: "https://www.helloasso.com/associations/poly-r/evenements/site-medieval-du-donzy",
+  },
+];
+
+/* =========================
+   COMPONENT
+========================= */
+
 const Billeterie = () => {
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    });
-
-    const elements = document.querySelectorAll(".animate-on-scroll");
-    elements.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
-
   const [enlargedImage, setEnlargedImage] = useState(null);
 
   const handleImageClick = (image) => {
@@ -29,85 +95,41 @@ const Billeterie = () => {
   const handleCloseImage = () => {
     setEnlargedImage(null);
   };
-  const eventsData = [
-    {
-      id: 1,
-      title: "Théâtre de verdure",
-      date: "05 juillet 2026",
-      image: team,
-      hour: "17h",
-      description: "Nyons (26)",
-      price: "",
-      link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-5-juillet-theatre-de-verdure-de-nyons",
-    },
-    {
-      id: 2,
-      title: "",
-      date: "07 juillet 2026",
-      image: team,
-      hour: "19h30",
-      description: "Prieuré de Salais-sur-Sanne (38)",
-      price: "",
-      link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-7-juillet-prieure-de-salaise-sur-sanne",
-    },
 
-    {
-      id: 3,
-      title: "Bâtie d'Urfé ",
-      date: "10 juillet 2026",
-      image: team,
-      hour: "19h",
-      description: "Saint-Étienne-le-Molard (42)",
-      price: "13€",
-      link: "https://www.batiedurfe.fr/jcms/lw_1392169/fr/billetterie",
-    },
-    {
-      id: 4,
-      title: "",
-      date: "12 juillet 2026",
-      image: team,
-      hour: "18h",
-      description: "Prieuré de Champdieu (42)",
-      price: "",
-      link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-12-juillet-prieure-de-champdieu",
-    },
-    {
-      id: 5,
-      title: "Place du village",
-      date: "13 juillet 2026",
-      image: team,
-      hour: "18h",
-      description: "Pommiers-en-Forez (42)",
-      price: "",
-      link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-13-juillet-pommiers-en-forez",
-    },
-    {
-      id: 6,
-      title: "Théâtre de Verdure",
-      date: "16 juillet 2026",
-      image: team,
-      hour: "19h30",
-      description: "Saint-Victor-sur-Loire (42)",
-      price: "",
-      link: "https://www.helloasso.com/associations/poly-r/evenements/saint-victor-sur-loire",
-    },
-    {
-      id: 7,
-      title: "Site Médiéval",
-      date: "19 juillet 2026",
-      image: team,
-      hour: "17h",
-      description: "Donzy (42)",
-      link: "https://www.helloasso.com/associations/poly-r/evenements/site-medieval-du-donzy",
-      price: "",
-    },
-  ];
+  /* =========================
+     SCROLL ANIMATION
+  ========================= */
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.15 },
+    );
+
+    const elements = document.querySelectorAll(".animate-on-scroll");
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
+  /* =========================
+     LIGHTBOX ESC KEY
+  ========================= */
 
   return (
     <>
-      <div className="main-bill">
+      <section className="main-bill">
+        {/* HEADER */}
         <div className="bill animate-on-scroll">
           <h1>Billetterie</h1>
+
           <p className="bill-desc animate-on-scroll">
             Réservez vos places en ligne via{" "}
             <a
@@ -118,10 +140,7 @@ const Billeterie = () => {
               <strong>HelloAsso</strong>
             </a>{" "}
             <br />
-            ou directement en cliquant{" "}
-            <span>sur les images des spectacles.</span> <br />
-            (Chaque vignette vous redirige vers la billetterie de
-            l&apos;événement correspondant)
+            ou en cliquant sur les images des spectacles.
           </p>
 
           <div className="tarif animate-on-scroll">
@@ -130,45 +149,57 @@ const Billeterie = () => {
             <p>Enfant (-12 ans) : Gratuit</p>
           </div>
         </div>
+
+        {/* COMING SOON */}
         <div className="event-container animate-on-scroll">
           <div className="coming-soon">
-            <h2>Prochainement ☀️ 2026 </h2>
-            <p>La billetterie sera bientôt disponible...</p>
+            <h2>Prochainement ☀️ 2026</h2>
+            <p>Ouverture de la billetterie le 1er juin</p>
           </div>
         </div>
+
+        {/* EVENTS */}
         <div className="event-container animate-on-scroll">
-          {eventsData.map((event) => (
-            <div key={event.id} className="event-card animate-on-scroll">
+          {EVENTS.map((event) => (
+            <a
+              key={event.id}
+              href={event.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="event-card animate-on-scroll"
+              aria-label={`Billetterie ${event.description}`}
+            >
               <div className="image-container">
-                <a href={event.link} target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={event.image}
-                    alt={event.title}
-                    className="responsive-img10"
-                  />
-                </a>
+                <img
+                  src={event.image}
+                  alt={`OpéraMobil - ${event.description}`}
+                  className="responsive-img10"
+                />
 
                 <div className="overlay-text">
-                  <p className="title">{event.title}</p>
-                  <p className="date">{event.date}</p>
-                  <p className="hour">{event.hour}</p>
-                  <p className="lieux">{event.description}</p>
-                  <p className="price">{event.price}</p>
+                  <p>{event.title}</p>
+                  <p>{event.date}</p>
+                  <p>{event.hour}</p>
+                  <p>{event.description}</p>
+                  <p>{event.price}</p>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
+        {/* IMAGE BAS DE PAGE */}
         <div className="pic500 animate-on-scroll">
           <img
             src={violon}
-            alt="cie poly r"
+            alt="Violon - Compagnie Poly R"
             className="responsive-img500"
-            onClick={() => handleImageClick(violon)}
+            loading="lazy"
+            onClick={() => setEnlargedImage(violon)}
           />
         </div>
-      </div>
+      </section>
+
       {enlargedImage && (
         <div className="overlay" onClick={handleCloseImage}>
           <div className="enlarged-image-container">

@@ -1,8 +1,7 @@
-import { useEffect } from "react";
-import "./Gallery2.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./Gallery2.css";
 
 import mobil from "../Pic/mobil.webp";
 import allgroupe from "../Pic/allgroupe.webp";
@@ -15,7 +14,6 @@ import poly7 from "../Pic/poly7.webp";
 import poly8 from "../Pic/poly8.webp";
 import opera400 from "../Pic/opera400.webp";
 import opera2000 from "../Pic/opera2000.webp";
-import opera4000 from "../Pic/opera4000.webp";
 import opera5000 from "../Pic/opera5000.webp";
 import polygroupe from "../Pic/polyrgroupe.webp";
 import polymel from "../Pic/poly53.webp";
@@ -26,45 +24,29 @@ import openew from "../Pic/openew.webp";
 import operapiano from "../Pic/operapiano.webp";
 
 const images = [
-  { src: opera2, alt: "Image 2", className: "center-image2" },
-  { src: opera4000, alt: "opera4000" },
-  { src: opera400, alt: "Image opera400" },
-  { src: allgroupe, alt: "Image opera mobil" },
-  { src: opera6, alt: "Image 6" },
-  { src: openew, alt: "opera2000" },
-  { src: poly4, alt: "Image poly groupe" },
-  { src: polygroupe4, alt: "Image poly groupe" },
-  { src: polygroupe, alt: "Image poly groupe" },
-  { src: poly7, alt: "Image poly groupe" },
-  { src: mobil, alt: "Image polyr" },
-  { src: operapiano, alt: "Image poly groupe" },
-  { src: polygroupe5, alt: "Image poly groupe" },
-  { src: poly8, alt: "Image poly groupe", className: "center-image2" },
-  { src: opera2000, alt: "opera2000" },
-  { src: polygroupe3, alt: "Image poly groupe" },
-  { src: opera5000, alt: "opera5000" },
-  { src: polymel, alt: "Image poly groupe" },
-  { src: poly14, alt: "Image 14", className: "center-image1" },
-  { src: poly15, alt: "Image 15", className: "center-image1" },
+  { src: opera2, alt: "Opera 2", className: "center-image2" },
+  { src: opera4000, alt: "Opera 4000" },
+  { src: opera400, alt: "Opera 400" },
+  { src: allgroupe, alt: "Opera Mobile groupe" },
+  { src: opera6, alt: "Opera 6" },
+  { src: openew, alt: "Opera new" },
+  { src: poly4, alt: "Poly 4" },
+  { src: polygroupe4, alt: "Groupe 4" },
+  { src: polygroupe, alt: "Groupe Poly R" },
+  { src: poly7, alt: "Poly 7" },
+  { src: mobil, alt: "Mobil" },
+  { src: operapiano, alt: "Opera piano" },
+  { src: polygroupe5, alt: "Groupe 5" },
+  { src: poly8, alt: "Poly 8", className: "center-image2" },
+  { src: opera2000, alt: "Opera 2000" },
+  { src: polygroupe3, alt: "Groupe accueil" },
+  { src: opera5000, alt: "Opera 5000" },
+  { src: polymel, alt: "Poly mel" },
+  { src: poly14, alt: "Poly 14", className: "center-image1" },
+  { src: poly15, alt: "Poly 15", className: "center-image1" },
 ];
 
 const Gallery2 = () => {
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    });
-
-    const elements = document.querySelectorAll(".animate-on-scroll");
-    elements.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
-
   const settings = {
     dots: true,
     infinite: true,
@@ -73,22 +55,20 @@ const Gallery2 = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    pauseOnHover: true,
+    arrows: false,
   };
 
   return (
-    <div className="gallery-container1 animate-on-scroll">
+    <div className="gallery-container1">
       <Slider {...settings}>
         {images.map((image, index) => (
-          <div key={index}>
+          <div key={index} className="slide">
             <img
               src={image.src}
               alt={image.alt}
-              width="auto"
-              height="400px"
               className={`gallery-image1 ${image.className || ""}`}
               loading="lazy"
-              role="button"
-              aria-label={`View ${image.alt}`}
             />
           </div>
         ))}

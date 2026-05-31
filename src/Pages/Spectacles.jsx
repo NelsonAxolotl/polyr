@@ -14,37 +14,22 @@ import dolls2 from "../Pic/dolls2.webp";
 import openew from "../Pic/newteam.webp";
 import newcalendar from "../Pic/tour.webp";
 
-const ImageOverlay = ({ image, onClose }) => (
-  <div className="overlay" onClick={onClose}>
-    <div className="enlarged-image-container">
-      <img src={image} alt="Enlarged" />
-      <button className="close-button" onClick={onClose}>
-        ×
-      </button>
-    </div>
-  </div>
-);
-
-ImageOverlay.propTypes = {
-  image: PropTypes.string.isRequired,
-  onClose: PropTypes.func.isRequired,
-};
-
 const Spectacles = () => {
   const location = useLocation();
-
   const [enlargedImage, setEnlargedImage] = useState(null);
+
   const operaRef = useRef(null);
   const bastienRef = useRef(null);
 
   const handleImageClick = (image) => {
-    if (window.innerWidth <= 768) return;
     setEnlargedImage(image);
   };
 
-  const handleCloseImage = () => setEnlargedImage(null);
+  const handleCloseImage = () => {
+    setEnlargedImage(null);
+  };
 
-  // animation scroll (inchangé)
+  /* ---------------- SCROLL ANIMATION ---------------- */
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -61,33 +46,33 @@ const Spectacles = () => {
     return () => observer.disconnect();
   }, []);
 
-  // ✅ SCROLL FIX ROBUSTE (remplace scrollIntoView)
+  /* ---------------- HASH SCROLL ---------------- */
   useEffect(() => {
-    if (window.innerWidth <= 768) return; // 👈 désactive mobile
-
+    if (window.innerWidth <= 768) return;
     if (!location.hash) return;
 
-    const id = location.hash.replace("#", "");
-
-    const el = document.getElementById(id);
+    const el = document.getElementById(location.hash.replace("#", ""));
     if (!el) return;
 
     const offset = 315;
-    const top = el.offsetTop - offset;
 
     window.scrollTo({
-      top,
+      top: el.offsetTop - offset,
       behavior: "smooth",
     });
   }, [location.hash]);
+
   return (
     <>
       <div className="show">
         <div className="show-titre animate-on-scroll">
           <h1>Spectacles</h1>
         </div>
+
+        {/* ---------------- OPERA ---------------- */}
         <div id="opera" className="showplus animate-on-scroll" ref={operaRef}>
           <h2>L&apos;Opéramobil&apos;</h2>
+
           <p className="animate-on-scroll">
             <span>L’Opéramobil’</span> est une troupe itinérante portée par{" "}
             <Link to="/lacie">
@@ -99,7 +84,7 @@ const Spectacles = () => {
             produite pour la première fois pendant 5 jours dans le département
             de la Loire en Région Rhône-Alpes. <br />
             Accompagnés par leur piano droit transporté sur une remorque, les
-            talentueux artistes chanteurs lyriques, pianistes, et guitariste ont
+            talentueux artistes chanteurs lyriques, pianistes et guitariste ont
             fait découvrir ou redécouvrir des airs d’opéra, de comédie musicale
             et des standards de jazz à un public curieux et attentif. <br />
             Ils ont chanté à pleine voix chaque matin lors des marchés de
@@ -122,84 +107,44 @@ const Spectacles = () => {
             <img
               src={openew}
               alt="Opéra Mobile groupe"
-              width="330px"
-              height="300px"
+              width="330"
+              height="300"
               onClick={() => handleImageClick(openew)}
               loading="lazy"
             />
             <img
               src={opera}
               alt="logo Opéra Mobile"
-              width="330px"
-              height="300px"
+              width="330"
+              height="300"
               onClick={() => handleImageClick(opera)}
               loading="lazy"
             />
           </div>
-          <div className="animate-on-scroll">
-            <h3>Les artistes de la troupe</h3>
-          </div>
-          <div className="animate-on-scroll">
-            <h4>
-              <Link to="/lacie#roxane" className="disable-mobile-link">
-                Roxane Macaudière
-              </Link>
-            </h4>
-          </div>
-          <div className="animate-on-scroll">
-            <h4>
-              <Link to="/lacie#herve" className="disable-mobile-link">
-                Hervé Le Bert
-              </Link>
-            </h4>
-          </div>
-          <div className="animate-on-scroll">
-            <h4>
-              <Link to="/lacie#fumi" className="disable-mobile-link">
-                Fumi Oka
-              </Link>
-            </h4>
-          </div>
-          <div className="animate-on-scroll">
-            <h4>
-              <Link to="/lacie#thomas" className="disable-mobile-link">
-                Thomas Avrillon
-              </Link>
-            </h4>
-          </div>
 
-          <div className="animate-on-scroll">
-            <h4>
-              <Link to="/lacie#alba" className="disable-mobile-link">
-                Alba Cantuern
+          <h3>Les artistes de la troupe</h3>
+          {[
+            { id: "roxane", name: "Roxane Macaudière" },
+            { id: "herve", name: "Hervé Le Bert" },
+            { id: "fumi", name: "Fumi Oka" },
+            { id: "thomas", name: "Thomas Avrillon" },
+            { id: "alba", name: "Alba Cantuern" },
+            { id: "yuku", name: "Yuku Yonemitsu" },
+            { id: "melusine", name: "Mélusine Escande" },
+            { id: "galtier", name: "Galtier Le Bihan" },
+          ].map((a) => (
+            <h4 key={a.id}>
+              <Link to={`/lacie#${a.id}`} className="disable-mobile-link">
+                {a.name}
               </Link>
             </h4>
-          </div>
-          <div className="animate-on-scroll">
-            <h4>
-              <Link to="/lacie#yuku" className="disable-mobile-link">
-                Yuku Yonemitsu
-              </Link>
-            </h4>
-          </div>
-          <div className="animate-on-scroll">
-            <h4>
-              <Link to="/lacie#melusine" className="disable-mobile-link">
-                Mélusine Escande
-              </Link>
-            </h4>
-          </div>
-          <div className="animate-on-scroll">
-            <h4>
-              <Link to="/lacie#galtier" className="disable-mobile-link">
-                Galtier Le bihan
-              </Link>
-            </h4>
-          </div>
+          ))}
         </div>
+        {/* ---------------- GALLERY ---------------- */}
         <div className="gall animate-on-scroll">
           <h2>Galerie</h2>
         </div>
+
         <Gallery2 />
         <div className="photos">
           <p>© photographe Camille Montana</p>
@@ -215,12 +160,14 @@ const Spectacles = () => {
             loading="lazy"
           />
         </div>
+        {/* ---------------- BASTIEN ---------------- */}
         <div
           id="bastien"
           className="showplus1 animate-on-scroll"
           ref={bastienRef}
         >
-          <h2>Bastien & Bastienne</h2>
+          <h2>Bastien &amp; Bastienne</h2>
+
           <p className="animate-on-scroll">
             <span>Bastien & Bastienne</span>, un spectacle pour enfants créé à
             partir de l’opéra Bastien et Bastienne de Mozart. <br />
@@ -257,43 +204,29 @@ const Spectacles = () => {
               loading="lazy"
             />
           </div>
-          <div className="animate-on-scroll">
-            <h3>Les artistes de la troupe</h3>
-          </div>
-          <div className="animate-on-scroll">
-            <h4>
-              <Link to="/lacie#fumi" className="disable-mobile-link">
-                Fumi Oka
+
+          <h3>Les artistes de la troupe</h3>
+          {[
+            { id: "fumi", name: "Fumi Oka" },
+            { id: "nathan", name: "Nathan Brunet" },
+            { id: "roxane", name: "Roxane Macaudière" },
+            { id: "herve", name: "Hervé Le Bert" },
+          ].map((a) => (
+            <h4 key={a.id}>
+              <Link to={`/lacie#${a.id}`} className="disable-mobile-link">
+                {a.name}
               </Link>
             </h4>
-          </div>
-          <div className="animate-on-scroll">
-            <h4>
-              <Link to="/lacie#nathan" className="disable-mobile-link">
-                Nathan Brunet
-              </Link>
-            </h4>
-          </div>
-          <div className="animate-on-scroll">
-            <h4>
-              <Link to="/lacie#roxane" className="disable-mobile-link">
-                Roxane Macaudière
-              </Link>
-            </h4>
-          </div>
-          <div className="animate-on-scroll">
-            <h4>
-              <Link to="/lacie#herve" className="disable-mobile-link">
-                Hervé Le Bert
-              </Link>
-            </h4>
-          </div>
+          ))}
         </div>
+
         <div className="gall animate-on-scroll">
           <h2>Galerie</h2>
         </div>
         <Gallery />
       </div>
+
+      {/* ---------------- PIC 20 (IMPORTANT INCHANGÉ) ---------------- */}
       <div className="pic20 animate-on-scroll">
         <img
           src={dolls2}
@@ -303,9 +236,15 @@ const Spectacles = () => {
           loading="lazy"
         />
       </div>
-
       {enlargedImage && (
-        <ImageOverlay image={enlargedImage} onClose={handleCloseImage} />
+        <div className="overlay" onClick={handleCloseImage}>
+          <div className="enlarged-image-container">
+            <img src={enlargedImage} alt="Enlarged" />
+            <button className="close-button" onClick={handleCloseImage}>
+              ×
+            </button>
+          </div>
+        </div>
       )}
       <End />
     </>

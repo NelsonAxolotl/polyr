@@ -23,20 +23,9 @@ const ImageOverlay = ({ image, onClose }) => (
   </div>
 );
 
-// Ajout de PropTypes pour la validation des props
 ImageOverlay.propTypes = {
-  image: PropTypes.string.isRequired, // La prop image doit être une chaîne de caractères
-  onClose: PropTypes.func.isRequired, // La prop onClose doit être une fonction
-};
-const SocialLink = ({ href, iconClass }) => (
-  <a href={href} target="_blank" rel="noopener noreferrer">
-    <i className={iconClass}></i>
-  </a>
-);
-// Ajout de PropTypes pour la validation des props
-SocialLink.propTypes = {
-  href: PropTypes.string.isRequired, // La prop href doit être une chaîne de caractères
-  iconClass: PropTypes.string.isRequired, // La prop iconClass doit être une chaîne de caractères
+  image: PropTypes.string.isRequired,
+  onClose: PropTypes.func.isRequired,
 };
 
 const Accueil = () => {
@@ -62,6 +51,7 @@ const Accueil = () => {
     if (window.innerWidth <= 768) return;
     setEnlargedImage(image);
   };
+
   const handleCloseImage = () => setEnlargedImage(null);
 
   return (
@@ -71,6 +61,7 @@ const Accueil = () => {
           <h1>Compagnie</h1>
           <h2>Poly R</h2>
         </header>
+
         <section className="poly-intro animate-on-scroll">
           <p>
             La compagnie <span>Poly R</span> est une compagnie
@@ -79,6 +70,7 @@ const Accueil = () => {
             également les marionnettes.
           </p>
         </section>
+
         <section className="suite-intro animate-on-scroll">
           <p>Cocréée et dirigée par</p>
           <span>
@@ -94,6 +86,7 @@ const Accueil = () => {
           </span>
           <p>située dans la Loire (42)</p>
         </section>
+
         <section className="poly-pic animate-on-scroll">
           {[groupeaccueil, bastien50].map((src, index) => (
             <img
@@ -107,12 +100,15 @@ const Accueil = () => {
             />
           ))}
         </section>
+
         <section className="actu animate-on-scroll">
           <h3>Actu</h3>
+
           <div className="split animate-on-scroll">
             <p>À venir Juillet 2026</p>
             <span>Opéramobil &rsquo;saison 3</span>
           </div>
+
           <div className="pic-opera-acc animate-on-scroll">
             {[newop, newcalendar].map((src, index) => (
               <img
@@ -127,6 +123,7 @@ const Accueil = () => {
             ))}
           </div>
         </section>
+
         <div className="teaser animate-on-scroll">
           <h3>Teaser</h3>
           <video controls width="100%">
@@ -134,10 +131,12 @@ const Accueil = () => {
             Votre navigateur ne prend pas en charge la vidéo.
           </video>
         </div>
+
         <section className="presse animate-on-scroll">
           <h3>Un peu de presse</h3>
           <h4>Spectacles</h4>
         </section>
+
         <div className="allpresspoly animate-on-scroll">
           <div className="pressbastien animate-on-scroll">
             <section className="presse animate-on-scroll">
@@ -153,6 +152,7 @@ const Accueil = () => {
                 Article
               </button>
             </section>
+
             <section className="article animate-on-scroll">
               <img
                 src={presse}
@@ -164,6 +164,7 @@ const Accueil = () => {
               />
             </section>
           </div>
+
           <div className="pressopera animate-on-scroll">
             <section className="presse animate-on-scroll">
               <p>Opéramobil&apos;</p>
@@ -178,6 +179,7 @@ const Accueil = () => {
                 Article
               </button>
             </section>
+
             <section className="article animate-on-scroll">
               <img
                 src={polypress}
@@ -190,11 +192,13 @@ const Accueil = () => {
             </section>
           </div>
         </div>
+
         <section className="reseau animate-on-scroll">
           <h3>
             Nous Suivre<span className="dots">.</span>
           </h3>
         </section>
+
         <div className="icon animate-on-scroll">
           <div className="facebook animate-on-scroll">
             <a
@@ -207,6 +211,7 @@ const Accueil = () => {
               <i className="fa-brands fa-facebook"></i>
             </a>
           </div>
+
           <div className="insta animate-on-scroll">
             <a
               href="https://www.instagram.com/stories/polyrcompagnie/3197516424053526261/"
@@ -219,6 +224,7 @@ const Accueil = () => {
             </a>
           </div>
         </div>
+
         <div className="pic50 animate-on-scroll">
           <img
             src={poly5}
@@ -229,7 +235,9 @@ const Accueil = () => {
           />
         </div>
       </div>
+
       <End />
+
       {enlargedImage && (
         <ImageOverlay image={enlargedImage} onClose={handleCloseImage} />
       )}

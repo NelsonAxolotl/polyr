@@ -1,122 +1,69 @@
-/* General body styles */
+/* Body (si global, idéalement à déplacer ailleurs) */
 body {
   margin: 0;
   padding: 0;
-  background: #7531a5; /* Background color */
-  font-family: Arial, sans-serif; /* Font for the entire page */
+  background: #7531a5;
+  font-family: Arial, sans-serif;
 }
 
-/* Container for the gallery */
+/* Container */
 .gallery-container1 {
-  width: 60%; /* Container width */
-  margin: 0 auto; /* Centering container horizontally */
-  padding: 20px; /* Padding inside the container */
-  background: #7531a5; /* Background color matching body */
-  margin-bottom: 40px; /* Space below the container */
+  width: 60%;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background: #7531a5;
   border-radius: 5px;
 }
 
-/* Style for gallery images */
+/* Slide */
+.slide {
+  outline: none;
+}
+
+/* Image */
 .gallery-image1 {
-  width: 100%; /* Full width of the container */
-  height: 500px; /* Fixed height for images */
-  object-fit: cover; /* Cover the area while preserving aspect ratio */
-  border-radius: 10px; /* Rounded corners for images */
-  display: block; /* Block-level display */
-  margin: 0 auto; /* Center images horizontally */
-  cursor: pointer; /* Pointer cursor on hover */
-}
-
-/* Object position for centered images */
-.center-image1 {
-  object-position: center; /* Center object both horizontally and vertically */
-}
-
-/* Object position for top-aligned images */
-.center-image2 {
-  object-position: center 20%; /* Align object to the top */
-}
-
-/* Overlay for enlarged images */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  background: rgba(0 0 0 / 80%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-/* Container for the enlarged image */
-.enlarged-image-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 900%;
-  height: 100%;
-}
-
-/* Style for images inside the enlarged image container */
-.enlarged-image-container img {
-  max-width: 100%;
-  max-height: 80%;
-  margin: auto;
-  border-radius: 2px;
-}
-
-/* Close button styling */
-.close-button {
-  position: absolute;
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 2rem;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
   cursor: pointer;
-  top: 10px;
-  right: 10px;
-  padding: 5px;
-  border-radius: 50%;
 }
 
-/* Slick slider dot styling */
+/* Position images spécifiques */
+.center-image1 {
+  object-position: center;
+}
+
+.center-image2 {
+  object-position: center 20%;
+}
+
+/* Slick dots */
 .slick-dots li button:before {
-  color: white; /* White color for dots */
-  opacity: 1; /* Fully opaque */
+  color: white;
+  opacity: 1;
 }
 
-/* Active dot styling */
 .slick-dots li.slick-active button:before {
-  color: white; /* White color for active dot */
-  opacity: 1; /* Fully opaque */
+  color: white;
+  opacity: 1;
 }
 
-/* Responsive styles for smaller screens */
+/* Responsive */
 @media (max-width: 1140px) {
-  /* Hide slick slider dots on screens narrower than 1140px */
-  .slick-dots li button {
-    display: none; /* Do not display dots */
+  .slick-dots {
+    display: none;
   }
 }
 
 @media (max-width: 768px) {
-  /* Adjustments for gallery container on small screens */
   .gallery-container1 {
-    width: 100%; /* Full width */
-    height: auto;
-    padding: 10px; /* Reduced padding */
+    width: 100%;
+    padding: 10px;
   }
 
-  /* Adjustments for gallery image on small screens */
   .gallery-image1 {
-    height: 350px; /* Reduced height */
-  }
-
-  .overlay {
-    display: none;
+    height: 350px;
   }
 }

@@ -1,86 +1,63 @@
-/* General body styles */
-body {
-  margin: 0;
-  padding: 0;
-  background: #7531a5; /* Background color */
-  font-family: Arial, sans-serif; /* Font for the entire page */
-}
-
-/* Container for the gallery */
 .gallery-container {
-  width: 60%; /* Container width */
-  margin: 0 auto; /* Centering container horizontally */
-  padding: 20px; /* Padding inside the container */
-  background: #7531a5; /* Background color matching body */
-  margin-bottom: 80px; /* Space below the container */
-  position: relative; /* Positioning context for child elements */
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #7531a5;
+  margin-bottom: 80px;
+  position: relative;
   border-radius: 5px;
 }
 
-/* Style for each slider item */
 .slider-item {
-  display: flex; /* Flexbox for alignment */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Style for gallery images */
 .gallery-image {
-  width: 100%; /* Full width of the container */
-  height: 500px; /* Fixed height for images */
-  object-fit: cover; /* Cover the area while preserving aspect ratio */
-  border-radius: 10px; /* Rounded corners for images */
-  display: block; /* Block-level display */
-  margin: 0 auto; /* Center images horizontally */
-  cursor: pointer; /* Pointer cursor on hover */
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
-/* Object position for images with top alignment */
 .object-top {
-  object-position: center top; /* Aligns object to the top */
+  object-position: center top;
 }
 
-/* Object position for images with right alignment */
 .object-right {
-  object-position: center right; /* Aligns object to the right */
+  object-position: center right;
 }
 
-/* Slick slider dot styling */
 .slick-dots li button:before {
-  color: white; /* White color for dots */
-  opacity: 1; /* Fully opaque */
+  color: white;
+  opacity: 1;
 }
 
-/* Active dot styling */
 .slick-dots li.slick-active button:before {
-  color: white; /* White color for active dot */
-  opacity: 1; /* Fully opaque */
+  color: white;
+  opacity: 1;
 }
 
-/* Responsive styles for smaller screens */
 @media (max-width: 768px) {
-  /* Adjustments for gallery container on small screens */
   .gallery-container {
-    width: 100%; /* Full width */
-    padding: 10px; /* Reduced padding */
-    margin-bottom: 60px; /* Reduced bottom margin */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 60px;
   }
 
-  /* Adjustments for gallery image on small screens */
   .gallery-image {
-    height: 350px; /* Reduced height */
+    height: 350px;
   }
 
-  /* Adjust object position for small screens */
   .object-top {
-    object-position: center; /* Center object vertically */
+    object-position: center;
   }
 
   .object-right {
-    object-position: right; /* Align object to the right */
-  }
-
-  .overlay {
-    display: none;
+    object-position: right;
   }
 }

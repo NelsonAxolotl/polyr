@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import "./Gallery.css";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+
 import bastien1 from "../Pic/bastien1.webp";
 import bastien2 from "../Pic/bastien2.webp";
 import bastien4 from "../Pic/bastien4.webp";
@@ -34,11 +35,11 @@ const images = [
   { src: bastien51, alt: "Image bastien51" },
   { src: bastien4, alt: "Image 4" },
   { src: bastien5, alt: "Image 5" },
-  { src: poly16, alt: "Image ploy16" },
-  { src: poly17, alt: "Image ploy17" },
-  { src: poly18, alt: "Image ploy18" },
+  { src: poly16, alt: "Image poly16" },
+  { src: poly17, alt: "Image poly17" },
+  { src: poly18, alt: "Image poly18" },
   { src: bastien20, alt: "Image 20" },
-  { src: poly1, alt: "Image ploy1" },
+  { src: poly1, alt: "Image poly1" },
 ];
 
 const Gallery = () => {
@@ -71,26 +72,26 @@ const Gallery = () => {
   return (
     <div className="gallery-container animate-on-scroll">
       <Slider {...settings}>
-        {images.map((image, index) => (
-          <div key={index} className="slider-item">
-            <img
-              src={image.src}
-              alt={image.alt}
-              width="auto"
-              height="400px"
-              className={`gallery-image ${
-                index < 5
-                  ? "object-top"
-                  : index >= images.length - 1
-                    ? "object-right"
-                    : ""
-              }`}
-              loading="lazy"
-              role="button"
-              aria-label={`View ${image.alt}`}
-            />
-          </div>
-        ))}
+        {images.map((image, index) => {
+          const positionClass =
+            index < 5
+              ? "object-top"
+              : index === images.length - 1
+                ? "object-right"
+                : "";
+
+          return (
+            <div key={index} className="slider-item">
+              <img
+                src={image.src}
+                alt={image.alt}
+                height="400"
+                className={`gallery-image ${positionClass}`}
+                loading="lazy"
+              />
+            </div>
+          );
+        })}
       </Slider>
     </div>
   );

@@ -1,4 +1,7 @@
-/* Elements appear on scroll */
+/* =========================
+   ANIMATIONS SCROLL
+========================= */
+
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(50px);
@@ -12,138 +15,267 @@
   transform: translateY(0);
 }
 
-/* Style global pour le corps de la page */
+/* =========================
+   GLOBAL
+========================= */
+
 body {
-  margin: 0; /* Suppression des marges par défaut */
-  font-family: Quicksand, sans-serif; /* Police principale */
+  margin: 0;
+  font-family: Quicksand, sans-serif;
 }
 
-/* Style principal pour la section 'show' */
+/* =========================
+   SHOW BACKGROUND
+========================= */
+
 .show {
   background:
     linear-gradient(rgba(117, 49, 165, 0.6), rgba(72, 3, 87, 0.6)),
     url("../Pic/backform.webp") !important;
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 0 20px; /* Espacement horizontal */
-  padding-bottom: 20px; /* Espacement inférieur spécifique */
+
+  padding: 0 20px 20px;
 }
 
-/* Style pour le titre de la section 'show-titre' */
+/* =========================
+   TITRE PRINCIPAL
+========================= */
+
 .show-titre h1 {
-  font-family: Matemasie, sans-serif; /* Police du titre */
-  font-size: 5rem; /* Taille de la police */
-  font-weight: bold; /* Poids de la police */
-  padding-top: 230px; /* Espacement supérieur */
-  text-align: center; /* Alignement du texte au centre */
-  color: rgba(255 255 255 / 100%); /* Couleur du texte */
+  font-family: Matemasie, sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  padding-top: 230px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Style pour les sous-titres dans les sections 'showplus' et 'showplus1' */
-.showplus h2,
-.showplus1 h2 {
-  font-size: 3rem; /* Taille de la police */
-  text-align: center; /* Alignement du texte au centre */
-  color: bisque; /* Couleur du texte */
-  margin-top: 80px; /* Marge supérieure */
-  border: 1px solid bisque; /* Bordure de couleur bisque */
-  padding: 10px; /* Espacement intérieur */
-  border-radius: 5px; /* Bordure arrondie */
-  font-weight: bold; /* Poids de la police */
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-}
+/* =========================
+   BLOCS SHOW
+========================= */
 
-/* Style pour les sections 'showplus' et 'showplus1' */
 .showplus,
 .showplus1 {
-  display: flex; /* Utilisation de flexbox */
-  flex-direction: column; /* Disposition en colonne */
-  align-items: center; /* Alignement au centre */
-  margin-bottom: 50px; /* Marge inférieure */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
-/* Style pour les paragraphes dans les sections 'showplus' et 'showplus1' */
+.showplus h2,
+.showplus1 h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: bisque;
+  margin-top: 80px;
+  border: 1px solid bisque;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
 .showplus p,
 .showplus1 p {
-  font-size: 1.1rem; /* Taille de la police */
-  text-align: justify; /* Alignement du texte */
-  max-width: 900px; /* Largeur maximale */
-  margin-top: 50px; /* Marge supérieure */
-  line-height: 24px; /* Hauteur de ligne */
-  margin-bottom: 40px; /* Marge inférieure */
-  background: rgba(237 235 235 / 100%); /* Couleur de fond */
-  border-radius: 10px; /* Bordure arrondie */
-  padding: 20px; /* Espacement intérieur */
+  font-size: 1.1rem;
+  text-align: justify;
+  max-width: 900px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  line-height: 24px;
+  background: rgba(237, 235, 235, 1);
+  border-radius: 10px;
+  padding: 20px;
   border: 2px solid bisque;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Style pour les éléments 'span' dans les sections 'showplus' et 'showplus1' */
+/* =========================
+   TEXT STYLE
+========================= */
+
 .showplus span,
 .showplus1 span {
-  color: #994d00; /* Orange foncé - ratio ≈ 5.21:1 */
-  font-weight: bold; /* Poids de la police */
+  color: #994d00;
+  font-weight: bold;
 }
 
-/* Style pour les titres 'h3' dans les sections 'showplus' et 'showplus1' */
+/* =========================
+   TITRES SECONDAIRES
+========================= */
+
 .showplus h3,
 .showplus1 h3 {
-  font-size: 1.5rem; /* Taille de la police */
-  color: white; /* Couleur du texte */
-  margin-top: 40px; /* Marge supérieure */
-  margin-bottom: 20px; /* Marge inférieure */
-  border: 1px solid white; /* Bordure blanche */
-  padding: 10px; /* Espacement intérieur */
-  border-radius: 5px; /* Bordure arrondie */
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Style pour les titres 'h4' dans les sections 'showplus' et 'showplus1' */
 .showplus h4,
 .showplus1 h4 {
-  color: bisque; /* Couleur du texte */
-  font-size: 1.4rem; /* Taille de la police */
-  font-weight: bold; /* Poids de la police */
-  margin-top: 20px; /* Marge supérieure */
-  transition: all 0.3s ease-in-out; /* Effet de transition */
+  color: bisque;
+  font-size: 1.4rem;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Style pour les liens dans les sections 'showplus' et 'showplus1' */
-.showplus a,
-.showplus1 a {
-  color: bisque; /* Couleur du texte */
-}
-
-/* Effet au survol pour les titres 'h4' dans les sections 'showplus' et 'showplus1' */
 .showplus h4:hover,
 .showplus1 h4:hover {
-  transform: scale(1.03); /* Zoom au survol */
+  transform: scale(1.03);
 }
 
-/* Style pour la section 'gall' */
+.showplus a,
+.showplus1 a {
+  color: bisque;
+  font-weight: bold;
+}
+
+/* =========================
+   GALERIE
+========================= */
+
 .gall {
-  display: flex; /* Utilisation de flexbox */
-  justify-content: center; /* Centre les éléments horizontalement */
-  align-items: center; /* Centre les éléments verticalement */
-  margin-bottom: 20px; /* Marge inférieure */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-/* Style pour les titres dans la section 'gall' */
 .gall h2 {
-  text-align: center; /* Alignement du texte au centre */
-  font-size: 3rem; /* Taille de la police */
-  color: white; /* Couleur du texte */
-  margin-top: 30px; /* Marge supérieure */
-  border: 1px solid bisque; /* Bordure de couleur bisque */
-  padding: 10px; /* Espacement intérieur */
-  border-radius: 5px; /* Bordure arrondie */
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  margin-top: 30px;
+  border: 1px solid bisque;
+  padding: 10px;
+  border-radius: 5px;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Styles pour les ancres de défilement */
+/* =========================
+   PIC OPERA
+========================= */
+
+.pic-opera {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.pic-opera img {
+  width: 400px;
+  height: 400px;
+  border-radius: 5px;
+  border: 1px solid bisque;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.pic-opera img:hover {
+  transform: scale(1.02);
+}
+
+/* =========================
+   DATES
+========================= */
+
+.dates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+  margin-top: 50px;
+}
+
+.dates h3 {
+  color: white;
+  font-size: 1.4rem;
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 30px 0;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dates img {
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid bisque;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dates img:hover {
+  transform: scale(1.03);
+}
+
+/* =========================
+   PIC20 (IMPORTANT - inchangé visuel)
+========================= */
+
+.pic20 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+}
+
+.responsive-img20 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+/* =========================
+   PHOTOS
+========================= */
+
+.photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photos p {
+  color: white;
+  margin-top: -10px;
+}
+
+/* =========================
+   OVERLAY (corrigé duplication)
+========================= */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* =========================
+   HASH OFFSET
+========================= */
+
 #bastien,
 #opera,
 #roxane,
@@ -158,166 +290,41 @@ body {
   scroll-margin-top: 315px;
 }
 
-/* Style pour les images dans la section 'pic20' */
-.pic20 {
-  width: 100%; /* Largeur totale */
-  overflow: hidden; /* Masquage du débordement */
-  position: relative; /* Position relative */
-  height: 400px; /* Hauteur de l'image */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
+/* =========================
+   RESPONSIVE
+========================= */
 
-/* Style pour les images responsives dans la section 'pic20' */
-.responsive-img20 {
-  width: 100%; /* Largeur totale */
-  height: 100%; /* Hauteur totale */
-  object-fit: cover; /* Ajustement de l'image */
-  object-position: center; /* Position de l'image */
-  cursor: pointer; /* Curseur au survol */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.photos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.photos p {
-  color: white;
-  margin-top: -10px;
-}
-
-/* Style pour la section "pic-opera" */
-.pic-opera {
-  display: flex;
-  align-items: center;
-  gap: 20px; /* Espace entre les images */
-  margin: 20px 0; /* Marges autour */
-}
-
-.pic-opera img {
-  width: 400px; /* Largeur des images */
-  height: 400px; /* Hauteur des images */
-  border-radius: 5px; /* Bordure arrondie */
-  border: 1px solid bisque; /* Bordure des images */
-  object-fit: cover; /* Mode d'ajustement des images */
-  cursor: pointer; /* Curseur au survol */
-  transition: all 0.3s ease-in-out; /* Transition au survol */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.pic-opera img:hover {
-  transform: scale(1.02); /* Effet de zoom au survol */
-}
-
-/* Style pour la section 'dates' */
-.dates {
-  display: flex; /* Utilisation de flexbox */
-  flex-direction: column; /* Disposition en colonne */
-  align-items: center; /* Alignement au centre */
-  margin-bottom: 80px; /* Marge inférieure */
-  margin-top: 50px;
-}
-
-.dates p {
-  color: white;
-  font-size: 1.1rem;
-}
-
-/* Style pour les titres 'h3' dans la section 'dates' */
-.dates h3 {
-  color: white; /* Couleur du texte */
-  font-size: 1.4rem; /* Taille de la police */
-  border: 1px solid white; /* Bordure blanche */
-  padding: 15px; /* Espacement intérieur */
-  border-radius: 5px; /* Bordure arrondie */
-  margin: 30px 0; /* Marges supérieure et inférieure */
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Style pour les images dans la section 'dates' */
-.dates img {
-  height: 80%;
-  aspect-ratio: auto;
-  object-fit: cover;
-  border-radius: 10px; /* Bordure arrondie */
-  border: 2px solid bisque; /* Bordure jaune */
-  transition: all 0.3s ease-in-out; /* Effet de transition */
-  cursor: pointer; /* Curseur au survol */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Effet au survol pour les images dans la section 'dates' */
-.dates img:hover {
-  transform: scale(1.03); /* Zoom au survol */
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0 0 0 / 80%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0 0 0 / 80%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-/* Styles responsive pour les écrans jusqu'à 1200px */
 @media (max-width: 1200px) {
   .dates h3 {
-    font-size: 1.2rem; /* Réduction de la taille de la police */
-    padding: 10px; /* Réduction de l'espacement intérieur */
-    margin: 20px 0; /* Marges ajustées */
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 20px 0;
   }
 }
 
-@media screen and (max-width: 980px) {
+@media (max-width: 980px) {
   .show-titre h1 {
     padding-top: 250px;
   }
 }
 
-/* Styles responsive pour les écrans jusqu'à 768px */
 @media (max-width: 768px) {
   .show-titre h1 {
-    font-size: 3.4rem; /* Réduction de la taille de la police */
-    margin-bottom: 30px; /* Marge inférieure */
-    padding-top: 210px; /* Réduction de l'espacement supérieur */
+    font-size: 3.4rem;
+    padding-top: 210px;
   }
 
   .showplus h2,
   .showplus1 h2 {
-    font-size: 2rem; /* Réduction de la taille de la police */
-    margin-top: 30px; /* Marge supérieure */
-  }
-
-  .showplus h3,
-  .showplus1 h3 {
-    margin-top: 20px; /* Marge supérieure */
+    font-size: 2rem;
+    margin-top: 30px;
   }
 
   .showplus p,
   .showplus1 p {
     text-align: left;
-    font-size: 0.9rem; /* Réduction de la taille de la police */
-    margin-top: 30px; /* Marge supérieure */
+    font-size: 0.9rem;
+    margin-top: 30px;
   }
 
   .showplus1 {
@@ -325,29 +332,27 @@ body {
   }
 
   .gall h2 {
-    margin-top: 20px; /* Marge supérieure */
-    font-size: 2.3rem; /* Réduction de la taille de la police */
+    font-size: 2.3rem;
+    margin-top: 20px;
   }
 
   .pic-opera {
     flex-direction: column;
-    margin-top: 0; /* Suppression de la marge supérieure */
-    margin-bottom: 0; /* Suppression de la marge inférieure */
   }
 
   .pic-opera img {
-    width: 100%; /* Réduction de la largeur de l'image */
+    width: 100%;
     height: 100%;
   }
 
   .dates h3 {
-    font-size: 1rem; /* Réduction de la taille de la police */
-    padding: 10px; /* Réduction de l'espacement intérieur */
-    margin: 15px 0; /* Marges ajustées */
+    font-size: 1rem;
+    padding: 10px;
+    margin: 15px 0;
   }
 
   .dates img {
-    width: 100%; /* Réduction de la largeur de l'image */
+    width: 100%;
     height: 100%;
   }
 
@@ -362,12 +367,6 @@ body {
   .disable-mobile-link {
     pointer-events: none;
     cursor: default;
-    color: inherit; /* évite l'effet "lien" */
     text-decoration: none;
-  }
-
-  .disable-mobile-link {
-    pointer-events: none;
-    cursor: default;
   }
 }

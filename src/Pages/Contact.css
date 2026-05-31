@@ -1,4 +1,22 @@
-/* Elements appear on scroll */
+/* =========================
+   VARIABLES
+========================= */
+
+:root {
+  --color-white: #fff;
+  --color-accent: rgb(220, 205, 0);
+  --color-network: bisque;
+  --shadow-text: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  --shadow-box: 0 4px 10px rgba(0, 0, 0, 0.3);
+  --radius-sm: 5px;
+  --transition-fast: 0.3s ease;
+  --transition-medium: 0.8s ease-in-out;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(50px);
@@ -12,120 +30,124 @@
   transform: translateY(0);
 }
 
-/* Style principal pour la section de contact */
+/* =========================
+   CONTACT
+========================= */
+
 .contact {
   background:
     linear-gradient(rgba(117, 49, 165, 0.6), rgba(72, 3, 87, 0.6)),
-    url("../Pic/backcontact.webp") !important;
-  background-size: cover;
+    url("../Pic/backcontact.webp");
   background-position: center;
   background-repeat: no-repeat;
-  padding: 0 20px; /* Espacement intérieur horizontal */
+  background-size: cover;
+  padding: 0 20px;
 }
 
-/* Style pour le titre dans la section de contact */
+.show-titre2 h1,
+.resa-h2 h2,
+.reseaux h2 {
+  font-weight: bold;
+  text-shadow: var(--shadow-text);
+}
+
 .show-titre2 h1 {
-  font-family: Matemasie, sans-serif; /* Police du titre */
-  font-size: 5rem; /* Taille de la police */
-  font-weight: bold; /* Poids de la police */
-  padding-top: 210px; /* Espacement au-dessus du titre */
-  text-align: center; /* Alignement du texte au centre */
-  color: rgba(255 255 255 / 100%); /* Couleur du texte */
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  padding-top: 210px;
+  text-align: center;
+  color: var(--color-white);
+  font-family: Matemasie, sans-serif;
+  font-size: 5rem;
 }
 
-/* Style pour le conteneur de la section de contact */
+/* =========================
+   CONTAINER
+========================= */
+
 .container {
-  display: flex; /* Flexbox pour aligner les éléments */
-  justify-content: center; /* Centre les éléments horizontalement */
-  align-items: center; /* Centre les éléments verticalement */
-  margin-top: 100px; /* Marge supérieure */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 
-/* Style pour les sections de contact individuelles */
 .contact-section {
-  color: rgb(255, 255, 255); /* Couleur du texte */
-  border: 1px dashed rgba(255 255 255 / 100%); /* Bordure blanche */
-  border-radius: 5px; /* Bordure arrondie */
-  width: 100%; /* Largeur de la section */
-  padding: 25px; /* Espacement intérieur */
-  max-width: 550px; /* Largeur maximale */
-  text-align: center; /* Alignement du texte */
-  box-sizing: border-box; /* Inclut la bordure et le padding dans la largeur totale */
-  transition: all 0.8s ease-in-out; /* Effet de transition pour les changements */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 550px;
+  padding: 25px;
+  color: var(--color-white);
+  text-align: center;
+  border: 1px dashed var(--color-white);
+  border-radius: var(--radius-sm);
+  box-sizing: border-box;
+  box-shadow: var(--shadow-box);
+  transition: all var(--transition-medium);
 }
 
-/* Style pour les sous-titres dans les sections de contact */
+/* =========================
+   ADMINISTRATION
+========================= */
+
 .resa-h2 h2 {
-  padding-bottom: 30px; /* Espacement inférieur */
-  font-size: 2.7rem; /* Taille de la police */
-  font-weight: bold; /* Poids de la police */
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   margin-top: 20px;
+  padding-bottom: 30px;
+  font-size: 2.7rem;
 }
 
-/* Style pour les éléments de contact (email et téléphone) */
 .mail,
 .phone {
-  display: flex; /* Flexbox pour aligner les éléments */
-  justify-content: center; /* Centre les éléments horizontalement */
-  align-items: center; /* Centre les éléments verticalement */
-  /* Espace entre les éléments */
-  margin-bottom: 15px; /* Marge inférieure */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.mail {
+  margin-bottom: 30px;
+}
+
 .phone {
   gap: 15px;
-}
-.mail {
-  margin-bottom: 30px; /* Marge inférieure spécifique pour les emails */
+  margin-bottom: 15px;
 }
 
-/* Style pour le texte du téléphone */
-.resa .phone span {
-  font-size: 1.4rem; /* Taille de la police */
-  padding-bottom: 15px; /* Espacement inférieur */
-  font-weight: bold; /* Poids de la police */
-}
-
-/* Style pour les liens d'email et phone */
+.mail a,
 .phone a {
-  display: inline-block; /* Assure que les liens soient des blocs */
-  padding: 10px 20px; /* Ajoute du padding pour augmenter la zone cliquable */
-  font-size: 1.6rem; /* Taille de la police */
-  text-decoration: none; /* Pas de soulignement */
-  color: rgb(220, 205, 0); /* Couleur du texte */
-  font-weight: bold; /* Poids de la police */
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s;
+  display: inline-block;
+  padding: 10px 20px;
+  color: var(--color-accent);
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: var(--shadow-text);
 }
 
 .phone a {
   color: inherit;
-  text-decoration: none;
 }
+
+.resa .phone span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+/* =========================
+   EMAIL EFFECT
+========================= */
 
 .mail a {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 1.6rem;
-  text-decoration: none;
-  color: rgb(220, 205, 0);
-  font-weight: bold;
   position: relative;
   overflow: hidden;
-  transition: color 0.3s ease;
+  transition: color var(--transition-fast);
 }
 
-/* Soulignement animé */
 .mail a::after {
   content: "";
   position: absolute;
-  width: 0%;
-  height: 2px;
   left: 0;
   bottom: 0;
-  background-color: rgb(220, 205, 0);
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
   transition: width 0.4s ease;
 }
 
@@ -133,81 +155,83 @@
   width: 100%;
 }
 
-/* Changement de couleur au survol */
 .mail a:hover {
-  color: rgb(220, 205, 0);
+  color: var(--color-accent);
 }
 
-/* Style pour les titres de réseaux sociaux */
+/* =========================
+   RESEAUX SOCIAUX
+========================= */
+
 .reseaux h2 {
-  font-size: 2.7rem; /* Taille de la police */
-  font-weight: bold; /* Poids de la police */
-  margin-top: 100px; /* Marge supérieure */
-  color: bisque; /* Couleur du texte */
-  text-decoration: underline; /* Soulignement */
-  text-align: center; /* Alignement du texte au centre */
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 100px;
+  text-align: center;
+  text-decoration: underline;
+  color: var(--color-network);
+  font-size: 2.7rem;
 }
 
-/* Ajout d'espacement autour des icônes de réseaux sociaux */
 .icons {
-  gap: 20px; /* Espace entre les icônes */
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   padding-bottom: 80px;
 }
 
-/* Modification des icônes pour augmenter la zone cliquable */
 .icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
   padding-top: 50px;
-  display: inline-flex; /* Utilise flex pour centrer le contenu */
-  justify-content: center; /* Centre le contenu */
-  align-items: center; /* Centre verticalement */
-  width: 60px; /* Largeur minimale */
-  height: 60px; /* Hauteur minimale */
-  border-radius: 30px; /* Arrondi des coins pour un look plus agréable */
-  transition: background 0.3s; /* Transition pour le survol */
+  border-radius: 50%;
+  transition: background var(--transition-fast);
 }
 
-/* Style pour les icônes au survol */
-.icons i:hover {
-  transform: scale(1.2); /* Zoom au survol */
-  color: bisque; /* Couleur au survol */
-}
-
-/* Style pour les icônes */
 .icons i {
-  color: #fff; /* Couleur de l'icône */
-  font-weight: bold; /* Poids de la police */
-  font-size: 2.7rem; /* Taille de la police */
-  transition: transform 0.3s ease-in-out; /* Effet de transition pour le zoom */
-  transition: all 0.3s ease-in-out;
+  color: var(--color-white);
+  font-size: 2.7rem;
+  font-weight: bold;
+  transition:
+    transform var(--transition-fast),
+    color var(--transition-fast);
 }
 
-/* Style pour les images de la section de contact */
+.icons i:hover {
+  color: var(--color-network);
+  transform: scale(1.2);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
 .pic2 {
-  width: 100%; /* Largeur de l'image */
-  overflow: hidden; /* Masquage du débordement */
-  position: relative; /* Position relative pour l'image */
-  height: 400px; /* Hauteur de l'image */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  box-shadow: var(--shadow-box);
 }
 
-/* Style pour les images responsives */
 .responsive-img2 {
-  width: 100%; /* Largeur de l'image */
-  height: 100%; /* Hauteur de l'image */
-  object-fit: cover; /* Ajustement de l'image */
-  object-position: center; /* Position de l'image */
-  cursor: pointer; /* Curseur au survol */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
 }
 
-/* Styles responsive pour les écrans plus petits */
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media screen and (max-width: 1200px) {
   .contact-section {
-    padding-bottom: 0; /* Suppression du padding inférieur */
-    width: 100%; /* Largeur à 100% */
+    width: 100%;
+    padding-bottom: 0;
   }
 }
 
@@ -219,13 +243,13 @@
 
 @media screen and (max-width: 760px) {
   .container {
-    margin-top: 50px; /* Marge supérieure réduite */
+    margin-top: 50px;
   }
 
   .contact-section {
-    padding-bottom: 0; /* Suppression du padding inférieur */
-    width: 100%; /* Largeur à 100% */
-    max-width: none; /* Pas de largeur maximale */
+    width: 100%;
+    max-width: none;
+    padding-bottom: 0;
   }
 
   .show-titre2 h1 {
@@ -233,19 +257,19 @@
   }
 
   .resa-h2 h2 {
-    font-size: 2.2rem; /* Taille de la police réduite */
+    font-size: 2.2rem;
   }
 
-  .mail span a {
-    font-size: 1.3rem; /* Taille du texte réduite */
+  .mail a {
+    font-size: 1.3rem;
   }
 
   .resa .phone span {
-    font-size: 1.3rem; /* Taille du texte réduite */
+    font-size: 1.3rem;
   }
 
   .reseaux h2 {
-    font-size: 2.5rem; /* Taille de la police réduite */
-    margin-top: 80px; /* Marge supérieure réduite */
+    margin-top: 80px;
+    font-size: 2.5rem;
   }
 }

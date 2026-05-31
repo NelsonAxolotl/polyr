@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./Contact.css";
 import poly25 from "../Pic/poly25.webp";
 import End from "../Component/End";
@@ -21,6 +19,7 @@ const Contact = () => {
 
     return () => observer.disconnect();
   }, []);
+
   const [enlargedImage, setEnlargedImage] = useState(null);
 
   const handleImageClick = (image) => {

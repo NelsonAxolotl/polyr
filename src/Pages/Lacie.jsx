@@ -318,7 +318,7 @@ const Lacie = () => {
                     en tant que pianiste.
                   </p>
                 </div>
-                <div className="pic300 animate-on-scroll">
+                <div className="pic200 animate-on-scroll">
                   <img
                     src={yukubio}
                     alt="photo Yuku"

@@ -1,58 +1,40 @@
-import { useState, useEffect } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../Pic/logo.webp";
 import "./Nav.css";
 
 const Nav = () => {
   const [showLinks, setShowLinks] = useState(false);
-  const navigate = useNavigate();
   const location = useLocation();
-  const [activeLink, setActiveLink] = useState(location.pathname);
 
-  useEffect(() => {
-    setActiveLink(location.pathname);
-  }, [location.pathname]);
+  const activeLink = location.pathname;
 
   const handleShowLinks = () => {
-    setShowLinks(!showLinks);
+    setShowLinks((prev) => !prev);
   };
 
-  const handleNavClick = (path) => {
+  const handleNavClick = () => {
     setShowLinks(false);
-    setActiveLink(path);
-    navigate(path);
   };
 
   return (
-    <nav
-      className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}
-      role="navigation"
-    >
-      <div
-        className="navbar-logo"
-        onClick={() => handleNavClick("/")}
-        aria-label="Retour à l'accueil"
-      >
+    <nav className={`navbar ${showLinks ? "show-nav" : ""}`} role="navigation">
+      <div className="navbar-logo" onClick={() => setShowLinks(false)}>
         <Link to="/">
           <img
             src={logo}
             alt="Logo PolyR"
-            width="130px"
-            height="130px"
+            width="130"
+            height="130"
             loading="eager"
           />
         </Link>
       </div>
 
-      {/* Liens de navigation */}
       <ul className="navbar-links">
         {[
           { path: "/", label: "Accueil", className: "slideInDown-1" },
-          {
-            path: "/lacie",
-            label: "Compagnie",
-            className: "slideInDown-2",
-          },
+          { path: "/lacie", label: "Compagnie", className: "slideInDown-2" },
           {
             path: "/spectacles",
             label: "Spectacles",
@@ -64,30 +46,25 @@ const Nav = () => {
             className: "slideInDown-4",
           },
           { path: "/contact", label: "Contact", className: "slideInDown-5" },
-        ].map(({ path, label, className }, index) => (
+        ].map(({ path, label, className }) => (
           <li
-            key={index}
+            key={path}
             className={`navbar-item ${className} ${
               activeLink === path ? "active" : ""
             }`}
           >
-            <Link
-              className="navbar-link"
-              to={path}
-              onClick={() => handleNavClick(path)}
-              aria-label={`Navigate to ${label}`}
-            >
+            <Link className="navbar-link" to={path} onClick={handleNavClick}>
               {label}
             </Link>
           </li>
         ))}
       </ul>
 
-      {/* Bouton burger pour le menu mobile */}
       <button
         className="navbar-burger"
         onClick={handleShowLinks}
         aria-label="Toggle navigation"
+        aria-expanded={showLinks}
       >
         <span className="burger-bar"></span>
       </button>
