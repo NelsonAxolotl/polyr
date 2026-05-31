@@ -389,28 +389,40 @@
 /* OVERLAY */
 .overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0 0 0 / 80%);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 9999;
+}
+
+.enlarged-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enlarged-image-container img {
+  max-width: 85vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 10px;
 }
 
 .close-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background: transparent;
+  top: -35px;
+  right: -35px;
+  width: 50px;
+  height: 50px;
   border: none;
-  color: white;
+  border-radius: 50%;
+  background: transparent;
+  color: rgb(255, 255, 255);
   font-size: 2rem;
   cursor: pointer;
-  padding: 5px;
-  border-radius: 50%;
 }
 
 /* RESPONSIVE */
