@@ -1,6 +1,5 @@
 import { HashLink as Link } from "react-router-hash-link";
 import { useState, useEffect, useRef } from "react";
-import PropTypes from "prop-types";
 import { useLocation } from "react-router-dom";
 import End from "../Component/End";
 import Gallery from "../Component/Gallery";
@@ -64,7 +63,7 @@ const Spectacles = () => {
 
   return (
     <>
-      <div className="show">
+      <main className="show">
         <div className="show-titre animate-on-scroll">
           <h1>Spectacles</h1>
         </div>
@@ -110,7 +109,8 @@ const Spectacles = () => {
               width="330"
               height="300"
               onClick={() => handleImageClick(openew)}
-              loading="lazy"
+              loading="eager"
+              fetchPriority="high"
             />
             <img
               src={opera}
@@ -224,7 +224,7 @@ const Spectacles = () => {
           <h2>Galerie</h2>
         </div>
         <Gallery />
-      </div>
+      </main>
 
       {/* ---------------- PIC 20 (IMPORTANT INCHANGÉ) ---------------- */}
       <div className="pic20 animate-on-scroll">

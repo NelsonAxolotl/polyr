@@ -125,81 +125,82 @@ const Billeterie = () => {
 
   return (
     <>
-      <section className="main-bill">
-        {/* HEADER */}
-        <div className="bill animate-on-scroll">
-          <h1>Billetterie</h1>
+      <main>
+        <section className="main-bill">
+          {/* HEADER */}
+          <div className="bill animate-on-scroll">
+            <h1>Billetterie</h1>
 
-          <p className="bill-desc animate-on-scroll">
-            Réservez vos places en ligne via{" "}
-            <a
-              href="https://www.helloasso.com/associations/poly-r"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <strong>HelloAsso</strong>
-            </a>{" "}
-            <br />
-            ou en cliquant sur les images des spectacles.
-          </p>
+            <p className="bill-desc animate-on-scroll">
+              Réservez vos places en ligne via{" "}
+              <a
+                href="https://www.helloasso.com/associations/poly-r"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong>HelloAsso</strong>
+              </a>{" "}
+              <br />
+              ou cliquer sur les images des spectacles
+            </p>
 
-          <div className="tarif animate-on-scroll">
-            <p>Tarif plein : 18 €</p>
-            <p>Tarif solidaire : 10 €</p>
-            <p>Enfant (-12 ans) : Gratuit</p>
+            <div className="tarif animate-on-scroll">
+              <p>Tarif plein : 18 €</p>
+              <p>Tarif solidaire : 10 €</p>
+              <p>Enfant (-12 ans) : Gratuit</p>
+            </div>
           </div>
-        </div>
 
-        {/* COMING SOON */}
-        <div className="event-container animate-on-scroll">
-          <div className="coming-soon">
-            <h2>Prochainement ☀️ 2026</h2>
-            <p>Ouverture de la billetterie le 1er juin</p>
+          {/* COMING SOON */}
+          <div className="event-container animate-on-scroll">
+            <div className="coming-soon">
+              <h2>Prochainement ☀️ 2026</h2>
+              <p>Ouverture de la billetterie le 1er juin</p>
+            </div>
           </div>
-        </div>
 
-        {/* EVENTS */}
-        <div className="event-container animate-on-scroll">
-          {EVENTS.map((event) => (
-            <a
-              key={event.id}
-              href={event.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="event-card animate-on-scroll"
-              aria-label={`Billetterie ${event.description}`}
-            >
-              <div className="image-container">
-                <img
-                  src={event.image}
-                  alt={`OpéraMobil - ${event.description}`}
-                  className="responsive-img10"
-                />
+          {/* EVENTS */}
+          <div className="event-container animate-on-scroll">
+            {EVENTS.map((event) => (
+              <a
+                key={event.id}
+                href={event.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="event-card animate-on-scroll"
+                aria-label={`Billetterie ${event.description}`}
+              >
+                <div className="image-container">
+                  <img
+                    src={event.image}
+                    alt={`OpéraMobil - ${event.description}`}
+                    className="responsive-img10"
+                  />
 
-                <div className="overlay-text">
-                  <p>{event.title}</p>
-                  <p>{event.date}</p>
-                  <p>{event.hour}</p>
-                  <p>{event.description}</p>
-                  <p>{event.price}</p>
+                  <div className="overlay-text">
+                    <p>{event.title}</p>
+                    <p>{event.date}</p>
+                    <p>{event.hour}</p>
+                    <p>{event.description}</p>
+                    <p>{event.price}</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          ))}
-        </div>
+              </a>
+            ))}
+          </div>
 
-        {/* IMAGE BAS DE PAGE */}
-        <div className="pic500 animate-on-scroll">
-          <img
-            src={violon}
-            alt="Violon - Compagnie Poly R"
-            className="responsive-img500"
-            loading="lazy"
-            onClick={() => setEnlargedImage(violon)}
-          />
-        </div>
-      </section>
-
+          {/* IMAGE BAS DE PAGE */}
+          <div className="pic500 animate-on-scroll">
+            <img
+              src={violon}
+              alt="Violon - Compagnie Poly R"
+              className="responsive-img500"
+              loading="lazy"
+              onClick={() => handleImageClick(violon)}
+            />
+          </div>
+        </section>
+      </main>
       {enlargedImage && (
         <div className="overlay" onClick={handleCloseImage}>
           <div className="enlarged-image-container">

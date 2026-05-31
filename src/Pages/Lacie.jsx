@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import End from "../Component/End";
 import "./LaCie.css";
@@ -58,7 +57,7 @@ const Lacie = () => {
 
   return (
     <>
-      <div className="main ">
+      <main className="main ">
         <div className="cie animate-on-scroll">
           <h1>La Compagnie</h1>
         </div>
@@ -493,7 +492,7 @@ const Lacie = () => {
             </div>
           </div>
         </div>
-      </div>
+      </main>
       <div className="pic20 animate-on-scroll">
         <img
           src={draw}

@@ -5,14 +5,23 @@ const ScrollToTop = () => {
   const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    if (!hash) {
-      window.scrollTo(0, 0);
-    } else {
-      // Laisser le navigateur gérer l'ancre normalement
-      const element = document.getElementById(hash.replace("#", ""));
+    window.history.scrollRestoration = "manual";
+  }, []);
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.getElementById(hash.slice(1));
+
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        setTimeout(() => {
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }, 100);
       }
+    } else {
+      window.scrollTo(0, 0);
     }
   }, [pathname, hash]);
 

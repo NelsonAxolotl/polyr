@@ -56,7 +56,7 @@ const Accueil = () => {
 
   return (
     <>
-      <div className="main-accueil">
+      <main className="main-accueil">
         <header className="tittle-poly animate-on-scroll">
           <h1>Compagnie</h1>
           <h2>Poly R</h2>
@@ -234,7 +234,7 @@ const Accueil = () => {
             loading="lazy"
           />
         </div>
-      </div>
+      </main>
 
       <End />
 

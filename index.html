@@ -1,61 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta
       name="description"
       content="Compagnie Poly R propose des spectacles mêlant les arts de la scène avec comme principales disciplines le chant opératique, la danse, le théâtre et également les marionnettes."
     />
+
     <meta
       name="keywords"
-      content="Compagnie poly R située dans la Loire (42), troupe itinérante qui propose deux spectacles 'l'Opéra mobil' et 'Bastien & Bastienne' pour l'été 2025 ayant pour objectif de remettre au goût du jour l’art de l’Opéra."
+      content="Compagnie Poly R située dans la Loire (42), troupe itinérante proposant des spectacles d'opéra, théâtre et marionnettes."
     />
-    <meta name="author" content="compagnie Poly R" />
+
+    <meta name="author" content="Compagnie Poly R" />
+    <meta name="robots" content="index, follow" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Politique de Sécurité de Contenu (CSP) -->
+    <!-- CSP -->
     <meta
       http-equiv="Content-Security-Policy"
       content="
-       default-src 'self'; 
-       script-src 'self' 'unsafe-inline' https://kit.fontawesome.com https://unpkg.com https://vercel.live; 
-       style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://ka-f.fontawesome.com https://unpkg.com; 
-       img-src 'self' data: https://compagniepolyr.fr https://unpkg.com ; 
-       font-src 'self' data: https://fonts.gstatic.com https://ka-f.fontawesome.com; 
-       connect-src 'self' https://ka-f.fontawesome.com;"
+      default-src 'self';
+      script-src 'self' 'unsafe-inline' https://kit.fontawesome.com https://vercel.live;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://ka-f.fontawesome.com;
+      img-src 'self' data: https:;
+      font-src 'self' data: https://fonts.gstatic.com https://ka-f.fontawesome.com;
+      connect-src 'self' https://ka-f.fontawesome.com;"
     />
 
-    <meta name="robots" content="index, follow" />
-
-    <!-- SEO Meta Tags Open Graph -->
-    <meta
-      property="og:title"
-      content="Poly R - Spectacles Éblouissants 'Opéra mobil' ainsi que 'Bastien & Bastienne' en France"
-    />
-    <meta
-      property="og:description"
-      content="Découvrez les spectacles envoûtants de la Compagnie Poly R. Vivez une expérience culturelle inoubliable avec des moments uniques d'Opéra, théâtre et marionnettes."
-    />
-    <meta property="og:image" content="https://compagniepolyr.fr/logo.webp" />
-    <meta property="og:image:alt" content="logo compagnie poly r" />
-    <meta property="og:url" content="https://compagniepolyr.fr" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="compagnie Poly R" />
-    <meta property="og:locale" content="fr_FR" />
-
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Poly R - Spectacles et Événements" />
-    <meta
-      name="twitter:description"
-      content="Découvrez les spectacles et événements de la compagnie Poly R. Rejoignez-nous pour une expérience culturelle inoubliable."
-    />
-    <meta name="twitter:image" content="https://compagniepolyr.fr/logo.webp" />
-    <meta name="twitter:image:alt" content="logo poly r" />
-
-    <!-- Canonical & hreflang for SEO -->
+    <!-- Canonical -->
     <link rel="canonical" href="https://compagniepolyr.fr" />
+
+    <!-- hreflang -->
     <link
       rel="alternate"
       href="https://compagniepolyr.fr"
@@ -64,40 +42,44 @@
     <link rel="alternate" href="https://compagniepolyr.fr" hreflang="fr" />
     <link rel="alternate" href="https://compagniepolyr.fr" hreflang="fr-FR" />
 
-    <!-- Favicon & Icons -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="Poly R - Spectacles Éblouissants" />
+    <meta
+      property="og:description"
+      content="Découvrez les spectacles de la Compagnie Poly R."
+    />
+    <meta property="og:image" content="https://compagniepolyr.fr/logo.webp" />
+    <meta property="og:image:alt" content="Logo Compagnie Poly R" />
+    <meta property="og:url" content="https://compagniepolyr.fr" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Compagnie Poly R" />
+    <meta
+      name="twitter:description"
+      content="Découvrez les spectacles et événements de la Compagnie Poly R."
+    />
+    <meta name="twitter:image" content="https://compagniepolyr.fr/logo.webp" />
+
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
 
-    <!-- Préconnexion pour améliorer la vitesse de chargement -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Préchargement des polices -->
     <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
-      as="style"
-    />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
-      as="style"
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
     />
 
-    <!-- Préchargement des DNS pour polices -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
-
-    <!-- Chargement des polices -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Rye&family=Caveat:wght@400..700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- FontAwesome Icons -->
+    <!-- FontAwesome -->
     <script
       src="https://kit.fontawesome.com/b78f7f545e.js"
       crossorigin="anonymous"
@@ -106,10 +88,9 @@
 
     <title>Compagnie Poly R</title>
   </head>
+
   <body>
     <div id="root"></div>
-
-    <!-- Chargement différé du script principal -->
-    <script type="module" src="/src/main.jsx" defer></script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

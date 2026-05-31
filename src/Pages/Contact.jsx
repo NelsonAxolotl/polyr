@@ -32,71 +32,73 @@ const Contact = () => {
 
   return (
     <>
-      <div className="contact">
-        <div className="show-titre2 animate-on-scroll">
-          <h1>Contact</h1>
-        </div>
-        <div className="container">
-          <div className="contact-section">
-            <div className="resa-h2 animate-on-scroll">
-              <h2>Administration</h2>
-            </div>
-            <div className="resa">
-              <div className="mail animate-on-scroll">
-                <span>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="mailto:compagniepolyr@protonmail.com"
-                  >
-                    compagniepolyr@protonmail.com
+      <main>
+        <div className="contact">
+          <div className="show-titre2 animate-on-scroll">
+            <h1>Contact</h1>
+          </div>
+          <div className="container">
+            <div className="contact-section">
+              <div className="resa-h2 animate-on-scroll">
+                <h2>Administration</h2>
+              </div>
+              <div className="resa">
+                <div className="mail animate-on-scroll">
+                  <span>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="mailto:compagniepolyr@protonmail.com"
+                    >
+                      compagniepolyr@protonmail.com
+                    </a>
+                  </span>
+                </div>
+                <div className="phone animate-on-scroll">
+                  <a href="tel:+33648985781">
+                    <span>Roxane : 06 48 98 57 81</span>
                   </a>
-                </span>
-              </div>
-              <div className="phone animate-on-scroll">
-                <a href="tel:+33648985781">
-                  <span>Roxane : 06 48 98 57 81</span>
-                </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="reseaux animate-on-scroll">
-          <h2>Réseaux</h2>
-        </div>
-        <div className="icons animate-on-scroll">
-          <div className="facebook">
-            <a
-              href="https://www.facebook.com/p/Compagnie-Poly-R-61551483792933/"
-              aria-label="Facebook Compagnie Poly R"
-              title="Suivez-nous sur Facebook"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa-brands fa-facebook"></i>
-            </a>
+          <div className="reseaux animate-on-scroll">
+            <h2>Réseaux</h2>
           </div>
-          <div className="insta">
-            <a
-              href="https://www.instagram.com/stories/polyrcompagnie/3197516424053526261/"
-              aria-label="Instagram Compagnie Poly R"
-              title="Suivez-nous sur Instagram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa-brands fa-instagram"></i>
-            </a>
+          <div className="icons animate-on-scroll">
+            <div className="facebook">
+              <a
+                href="https://www.facebook.com/p/Compagnie-Poly-R-61551483792933/"
+                aria-label="Facebook Compagnie Poly R"
+                title="Suivez-nous sur Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-facebook"></i>
+              </a>
+            </div>
+            <div className="insta">
+              <a
+                href="https://www.instagram.com/stories/polyrcompagnie/3197516424053526261/"
+                aria-label="Instagram Compagnie Poly R"
+                title="Suivez-nous sur Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-instagram"></i>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="pic2">
-        <img
-          src={poly25}
-          alt="cie poly r"
-          className="responsive-img2"
-          onClick={() => handleImageClick(poly25)}
-        />
-      </div>
+        <div className="pic2">
+          <img
+            src={poly25}
+            alt="cie poly r"
+            className="responsive-img2"
+            onClick={() => handleImageClick(poly25)}
+          />
+        </div>
+      </main>
       {enlargedImage && (
         <div className="overlay" onClick={handleCloseImage}>
           <div className="enlarged-image-container">

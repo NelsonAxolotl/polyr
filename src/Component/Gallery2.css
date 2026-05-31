@@ -52,7 +52,7 @@ body {
 
 /* Responsive */
 @media (max-width: 1140px) {
-  .slick-dots {
+  .slick-dots li button:before {
     display: none;
   }
 }
