@@ -66,6 +66,7 @@ body {
   position: relative;
   color: var(--color-accent);
   transition: var(--transition-fast);
+  font-weight: bold;
 }
 
 .bill-desc strong::after {
@@ -208,60 +209,163 @@ body {
    RESPONSIVE
 ========================= */
 
-@media screen and (max-width: 980px) {
+/* Grandes tablettes */
+@media screen and (max-width: 1200px) {
   .bill h1 {
-    padding-top: 250px;
+    font-size: 4.5rem;
+  }
+
+  .event-container {
+    gap: 1.5rem;
   }
 }
 
-@media screen and (max-width: 760px) {
+/* Tablettes */
+@media screen and (max-width: 980px) {
   .bill h1 {
-    padding-top: 230px;
-    margin-bottom: 50px;
-    font-size: 3.4rem;
+    padding-top: 250px;
+    margin-bottom: 70px;
+    font-size: 4rem;
+  }
+
+  .bill-desc {
+    max-width: 700px;
+    font-size: 1.2rem;
+  }
+
+  .tarif {
+    font-size: 1.3rem;
+  }
+
+  .overlay-text {
+    padding: 15px;
+  }
+
+  .overlay-text p {
+    font-size: 1rem;
+  }
+
+  .event-card:hover {
+    transform: none !important;
+  }
+
+  .event-card {
+    transition: none;
+  }
+}
+
+/* Mobiles larges */
+@media screen and (max-width: 768px) {
+  .bill h1 {
+    padding-top: 200px;
+    margin-bottom: 40px;
+    font-size: 3.2rem;
+  }
+
+  .bill-desc {
+    padding: 0 15px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .bill-desc a {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.4rem;
+  }
+
+  .bill-desc span {
+    display: block;
   }
 
   .tarif {
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
 
   .tarif span {
     display: block;
   }
 
-  .pic500 {
-    margin-top: -50px;
-  }
-
   .event-container {
-    margin-top: -10px;
-    margin-bottom: 60px;
+    gap: 1.2rem;
+    padding: 1rem;
+    margin-bottom: 40px;
   }
 
   .event-card {
     width: 100%;
-    max-width: 340px;
+    max-width: 420px;
+    margin-bottom: 20px;
   }
 
-  .bill-desc {
-    font-size: 1.1rem;
+  .overlay-text {
+    gap: 10px;
+    padding: 10px;
   }
 
-  .bill-desc a {
-    display: block;
-    margin-top: 5px;
-    margin-bottom: -25px;
-    font-size: 1.5rem;
-  }
-
-  .bill-desc span {
-    display: block;
-    margin-bottom: -25px;
+  .overlay-text p {
+    font-size: 0.95rem;
   }
 
   .coming-soon {
-    margin-bottom: -40px;
+    margin-bottom: 0;
+  }
+
+  .pic500 {
+    height: 300px;
+    margin-top: 0;
+  }
+
+  .responsive-img10,
+  .responsive-img500 {
+    cursor: default;
+    pointer-events: none; /* bloque tout clic */
+  }
+}
+
+/* Petits mobiles */
+@media screen and (max-width: 480px) {
+  .main-bill {
+    padding-top: 80px;
+  }
+
+  .bill h1 {
+    padding-top: 120px;
+    font-size: 2.5rem;
+  }
+
+  .bill-desc {
+    font-size: 1rem;
+  }
+
+  .tarif {
+    font-size: 1rem;
+  }
+
+  .event-card {
+    padding: 0.8rem;
+  }
+
+  .event-card:hover {
+    transform: none;
+  }
+
+  .overlay-text {
+    width: 95%;
+    gap: 8px;
+  }
+
+  .overlay-text p {
+    font-size: 0.85rem;
+  }
+
+  .coming-soon h2 {
+    font-size: 1.5rem;
+  }
+
+  .pic500 {
+    height: 250px;
   }
 }

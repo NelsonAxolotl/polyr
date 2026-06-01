@@ -209,7 +209,7 @@ body {
 /* Style pour la disposition des personnes en sens inverse */
 .personne-reverse {
   display: flex; /* Utilisation de flexbox */
-  flex-direction: reverse; /* Disposition inverse */
+  flex-direction: row; /* Disposition inverse */
   align-items: center; /* Centre les éléments verticalement */
   justify-content: center; /* Centre les éléments horizontalement */
   gap: 40px; /* Espace entre les éléments */
@@ -219,7 +219,7 @@ body {
 /* Style pour la disposition normale des personnes */
 .personne {
   display: flex; /* Utilisation de flexbox */
-  flex-direction: row; /* Disposition en ligne */
+  flex-direction: row-reverse; /* Disposition en ligne */
   align-items: center; /* Centre les éléments verticalement */
   justify-content: center; /* Centre les éléments horizontalement */
   gap: 40px; /* Espace entre les éléments */
@@ -247,11 +247,6 @@ body {
   margin-top: 80px;
 }
 
-.pic200 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .pic200 img {
   width: 400px; /* Largeur de l'image */
   height: 350px; /* Hauteur de l'image */
@@ -267,7 +262,7 @@ body {
 
 .pic100 img {
   width: 400px; /* Largeur de l'image */
-  height: 100%; /* Hauteur de l'image */
+  height: 350px; /* Hauteur de l'image */
   object-fit: cover; /* Ajustement de l'image */
   object-position: center; /* Position de l'image */
   border-radius: 10px; /* Bordure arrondie */
@@ -381,24 +376,6 @@ body {
   align-items: center; /* Centre les éléments verticalement */
 }
 
-/* Style pour les images dans la section 'pic10' */
-.pic10 {
-  width: 100%; /* Largeur totale */
-  overflow: hidden; /* Masquage du débordement */
-  position: relative; /* Position relative */
-  height: 400px; /* Hauteur de l'image */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Style pour les images responsives dans la section 'pic10' */
-.responsive-img10 {
-  width: 100%; /* Largeur totale */
-  height: 100%; /* Hauteur totale */
-  object-fit: cover; /* Ajustement de l'image */
-  object-position: center; /* Position de l'image */
-  cursor: pointer; /* Curseur au survol */
-}
-
 .image-standard img {
   width: 400px; /* largeur identique */
   height: 300px; /* hauteur fixe uniforme */
@@ -426,38 +403,86 @@ body {
   display: none;
 }
 
-@media (max-width: 980px) {
-  .cie h1 {
-    padding-top: 230px;
-  }
+#fumi {
+  margin-top: 150px;
 }
 
-/* Styles responsive pour les écrans jusqu'à 900px */
-@media (max-width: 900px) {
-  #nathan {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
+/* ============================= */
+/* TABLETTE / PETIT DESKTOP */
+/* 768px → 1200px */
+/* ============================= */
 
+@media screen and (max-width: 1200px) {
+  /* Force tous les blocs personnes en colonne */
   .personne {
-    flex-direction: column; /* Disposition en colonne pour les petits écrans */
-    /* Espace entre les éléments */
-    align-items: center; /* Alignement au centre */
-    margin-top: 10px; /* Marge supérieure */
+    flex-direction: column-reverse !important;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
   }
 
+  /* On neutralise les inversions inutiles */
   .personne-reverse {
-    display: flex; /* Utilisation de flexbox */
-    flex-direction: column-reverse; /* Disposition inverse en colonne */
-    align-items: center; /* Alignement au centre */
-    justify-content: center; /* Alignement au centre */
-    /* Espace entre les éléments */
-    margin-top: 10px; /* Marge supérieure */
+    flex-direction: column-reverse !important;
+    gap: 20px;
   }
 
-  .bio5 h3 {
-    margin-bottom: -30px; /* Marge inférieure négative */
+  /* Images full width propre */
+  .pic1 img,
+  .pic100 img,
+  .pic150 img,
+  .pic200 img,
+  .pic300 img,
+  .pic800 img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .pic200 {
+    margin-top: -80px;
+  }
+
+  .pic1 {
+    margin-top: -80px;
+  }
+
+  #herve {
+    margin-top: 100px;
+  }
+
+  #fumi {
+    margin-top: 100px;
+  }
+
+  /* Texte toujours lisible et centré */
+  .text1 {
+    width: 95%;
+    max-width: 700px;
+  }
+
+  .text1 p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  /* Titres adaptés tablette */
+  .titre-personne,
+  .titre-personne2,
+  .titre-personne3 {
+    width: 95%;
+    font-size: 1.3rem;
+  }
+
+  /* Espacements plus doux */
+  .allpers {
+    gap: 40px;
+    margin-top: -60px;
+  }
+
+  .bio3 {
+    margin-top: 40px;
   }
 }
 
@@ -505,11 +530,6 @@ body {
 
   .bio4 h3 {
     font-size: 1.5rem; /* Réduction de la taille de la police */
-    margin-bottom: 40px;
-  }
-
-  .bio5 h3 {
-    margin-bottom: 40px;
   }
 
   .all-titre h4 {
@@ -560,14 +580,6 @@ body {
     margin: 20px;
   }
 
-  .hervy {
-    margin-top: 60px;
-  }
-
-  .fumy {
-    margin-top: 60px;
-  }
-
   .text1 {
     padding: 10px 10px;
   }
@@ -589,4 +601,48 @@ body {
   #herve br {
     display: block;
   }
+
+  .pic1 img:hover,
+  .pic100 img:hover,
+  .pic150 img:hover,
+  .pic200 img:hover,
+  .pic300 img:hover,
+  .image-standard img:hover,
+  .pic-opera img:hover,
+  .dates img:hover {
+    transform: none;
+  }
+
+  .showplus h4:hover,
+  .showplus1 h4:hover {
+    transform: none;
+  }
+
+  /* Désactive transitions inutiles sur mobile */
+  .pic1 img,
+  .pic100 img,
+  .pic150 img,
+  .pic200 img,
+  .pic300 img,
+  .pic800 img,
+  .image-standard img,
+  .pic-opera img,
+  .dates img {
+    transition: none;
+    pointer-events: none;
+  }
+
+  #herve {
+    margin-top: 40px;
+  }
+
+  #fumi {
+    margin-top: 40px;
+  }
+  #roxane {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 500px) {
 }

@@ -132,7 +132,7 @@
 
 .poly-pic img {
   max-width: 100%;
-  height: 300px;
+  height: 350px;
   object-fit: cover;
   flex: 1;
   cursor: pointer;
@@ -223,7 +223,7 @@
   font-weight: bold;
 }
 
-.presse button {
+/* .presse button {
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 1.4rem;
@@ -242,7 +242,7 @@
   color: white;
   background-color: bisque;
   transform: scale(1.03);
-}
+} */
 
 /* ARTICLE */
 .article img {
@@ -265,7 +265,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 40px;
   flex-wrap: wrap;
   margin-top: 40px;
 }
@@ -373,6 +373,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
 }
 
 .teaser video {
@@ -381,9 +382,10 @@
 }
 
 .teaser h3 {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   color: wheat;
-  margin: 20px 0;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 /* OVERLAY */
@@ -424,8 +426,44 @@
   cursor: pointer;
 }
 
+.press-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.article-img {
+  width: 500px;
+  max-width: 90%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.press-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.press-row img {
+  width: 90px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  object-fit: contain;
+}
+
+.press-row img:hover {
+  transform: scale(1.08);
+}
+
 /* RESPONSIVE */
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .tittle-poly h2 {
     display: block;
     padding-top: 0;
@@ -437,9 +475,7 @@
     gap: 20px;
     text-align: center;
   }
-}
 
-@media screen and (max-width: 768px) {
   .poly-intro.animate-on-scroll {
     opacity: 1 !important;
     transform: none !important;
@@ -484,8 +520,8 @@
   }
 
   .poly-pic img {
-    width: 100%;
-    height: 250px;
+    width: 90%;
+    height: auto;
   }
 
   .pic-opera-acc {
@@ -494,8 +530,8 @@
   }
 
   .pic-opera-acc img {
-    width: 350px;
-    height: 100%;
+    width: 90%;
+    height: auto;
   }
 
   .article {
@@ -522,7 +558,7 @@
   }
 
   .actu h3 {
-    margin-top: 0;
+    margin-top: 20px;
     font-size: 3rem;
   }
 
@@ -555,5 +591,31 @@
 
   .pic50 {
     height: auto;
+  }
+
+  .poly-pic img,
+  .pic-opera-acc img,
+  .article img,
+  .responsive-img50 {
+    cursor: default;
+    transition: none;
+  }
+
+  .poly-pic img:hover,
+  .pic-opera-acc img:hover,
+  .article img:hover {
+    transform: none;
+  }
+
+  .press-logo:hover {
+    transform: scale(1.05);
+  }
+
+  .press-logo {
+    transform: none;
+  }
+
+  .teaser h3 {
+    margin-top: -40px;
   }
 }

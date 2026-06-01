@@ -11,6 +11,13 @@ import newcalendar from "../Pic/tour.webp";
 import poly5 from "../Pic/poly5.webp";
 import groupeaccueil from "../Pic/newteam2.webp";
 import polypress from "../Pic/polysup.webp";
+import pays from "../Pic/lepays.png";
+import progres from "../Pic/progres.png";
+import loire from "../Pic/loire.png";
+import dispensable from "../Pic/dispensable.png";
+import nyons from "../Pic/nyons.png";
+import salaise from "../Pic/salaise.jpeg";
+import urfe from "../Pic/urfe.png";
 
 const ImageOverlay = ({ image, onClose }) => (
   <div className="overlay" onClick={onClose}>
@@ -141,16 +148,6 @@ const Accueil = () => {
           <div className="pressbastien animate-on-scroll">
             <section className="presse animate-on-scroll">
               <p>Bastien & Bastienne</p>
-              <button
-                onClick={() =>
-                  window.open(
-                    "https://www.le-pays.fr/montbrison-42600/actualites/des-collegiens-sensibilises-a-lopera_14512862/",
-                    "_blank",
-                  )
-                }
-              >
-                Article
-              </button>
             </section>
 
             <section className="article animate-on-scroll">
@@ -168,16 +165,6 @@ const Accueil = () => {
           <div className="pressopera animate-on-scroll">
             <section className="presse animate-on-scroll">
               <p>Opéramobil&apos;</p>
-              <button
-                onClick={() =>
-                  window.open(
-                    "https://www.leprogres.fr/culture-loisirs/2025/04/28/la-compagnie-poly-r-souhaite-partager-le-spectacle-vivant-en-milieu-rural-grace-a-l-operamobil",
-                    "_blank",
-                  )
-                }
-              >
-                Article
-              </button>
             </section>
 
             <section className="article animate-on-scroll">
@@ -191,6 +178,84 @@ const Accueil = () => {
               />
             </section>
           </div>
+          <section className="press-row animate-on-scroll">
+            <img
+              src={pays}
+              alt="Le Pays"
+              onClick={() =>
+                window.open(
+                  "https://www.le-pays.fr/montbrison-42600/actualites/des-collegiens-sensibilises-a-lopera_14512862/",
+                  "_blank",
+                )
+              }
+            />
+
+            <img
+              src={progres}
+              alt="Le Progrès"
+              onClick={() =>
+                window.open(
+                  "https://www.leprogres.fr/culture-loisirs/2025/04/28/la-compagnie-poly-r-souhaite-partager-le-spectacle-vivant-en-milieu-rural-grace-a-l-operamobil",
+                  "_blank",
+                )
+              }
+            />
+
+            <img
+              src={loire}
+              alt="Loire"
+              onClick={() =>
+                window.open(
+                  "https://www.loiretourisme.com/en/get-out-and-move/agenda/all-the-agenda/operamobil-2026-concert-saint-etienne-le-molard-en-6192895/",
+                  "_blank",
+                )
+              }
+            />
+
+            <img
+              src={salaise}
+              alt="Salaise"
+              onClick={() =>
+                window.open(
+                  "https://mairie-salaise-sur-sanne.com/evenement/concert-operamobil/ ",
+                  "_blank",
+                )
+              }
+            />
+
+            <img
+              src={nyons}
+              alt="Nyons"
+              onClick={() =>
+                window.open(
+                  "https://www.nyons.com/agenda/operamobil/",
+                  "_blank",
+                )
+              }
+            />
+
+            <img
+              src={dispensable}
+              alt="Dispensable"
+              onClick={() =>
+                window.open(
+                  "https://www.magindispensable.fr/operamobil/",
+                  "_blank",
+                )
+              }
+            />
+
+            <img
+              src={urfe}
+              alt="Bâtie d'Urfé"
+              onClick={() =>
+                window.open(
+                  "https://www.batiedurfe.fr/jcms/98149_DBEvenement/en/concert-operamobil-2026?portal=lw_1395701 ",
+                  "_blank",
+                )
+              }
+            />
+          </section>
         </div>
 
         <section className="reseau animate-on-scroll">

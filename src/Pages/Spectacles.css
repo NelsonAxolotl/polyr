@@ -287,7 +287,7 @@ body {
 #yuku,
 #nathan,
 #galtier {
-  scroll-margin-top: 315px;
+  scroll-margin-top: 300px;
 }
 
 /* =========================
@@ -300,11 +300,42 @@ body {
     padding: 10px;
     margin: 20px 0;
   }
+
+  .showplus p,
+  .showplus1 p {
+    width: 95%;
+  }
+
+  .pic-opera img {
+    width: min(400px, 45vw);
+    height: auto;
+    aspect-ratio: 1/1;
+  }
 }
 
 @media (max-width: 980px) {
   .show-titre h1 {
     padding-top: 250px;
+    font-size: 4.2rem;
+  }
+
+  .showplus h2,
+  .showplus1 h2,
+  .gall h2 {
+    font-size: 2.5rem;
+  }
+
+  .pic-opera {
+    gap: 15px;
+  }
+
+  .pic-opera img {
+    width: min(350px, 42vw);
+  }
+
+  .pic-opera img:hover,
+  .dates img:hover {
+    transform: none;
   }
 }
 
@@ -322,9 +353,12 @@ body {
 
   .showplus p,
   .showplus1 p {
+    width: 100%;
     text-align: left;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     margin-top: 30px;
+    padding: 18px;
+    line-height: 1.7;
   }
 
   .showplus1 {
@@ -338,26 +372,36 @@ body {
 
   .pic-opera {
     flex-direction: column;
+    gap: 20px;
   }
 
   .pic-opera img {
     width: 100%;
-    height: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .dates {
+    margin-top: 30px;
+    margin-bottom: 50px;
   }
 
   .dates h3 {
     font-size: 1rem;
     padding: 10px;
     margin: 15px 0;
+    text-align: center;
   }
 
   .dates img {
     width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
   }
 
   .photos p {
     margin-top: -20px;
+    text-align: center;
   }
 
   .overlay {
@@ -368,5 +412,48 @@ body {
     pointer-events: none;
     cursor: default;
     text-decoration: none;
+  }
+
+  .pic-opera img,
+  .dates img,
+  .responsive-img20 {
+    cursor: default;
+    pointer-events: none;
+    transition: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .show-titre h1 {
+    font-size: 2.8rem;
+  }
+
+  .showplus h2,
+  .showplus1 h2,
+  .gall h2 {
+    font-size: 1.7rem;
+    padding: 8px;
+  }
+
+  .showplus h3,
+  .showplus1 h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .showplus h4,
+  .showplus1 h4 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .showplus p,
+  .showplus1 p {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+
+  .dates h3 {
+    font-size: 0.9rem;
   }
 }

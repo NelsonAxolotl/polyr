@@ -47,29 +47,17 @@
   display: block;
   margin-left: 25px;
   padding: 10px 20px;
-
   font-size: 24px;
   font-weight: 700;
-
   color: #2c0066;
   text-decoration: none;
-
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
 .navbar-link:hover {
   color: #b39500;
-  border-bottom: 1px solid #b39500;
   transform: scale(1.05);
-}
-
-.navbar-link:focus {
-  outline: 2px solid #2c0066;
-  outline-offset: 2px;
-  border-radius: 5px;
-  background-color: #f8f8ff;
-  border-bottom: none;
 }
 
 /* Active state */

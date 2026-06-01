@@ -235,26 +235,44 @@
   }
 }
 
+/* =========================
+   TABLETTE
+========================= */
+
 @media screen and (max-width: 980px) {
   .show-titre2 h1 {
-    padding-top: 240px;
+    padding-top: 250px;
+    font-size: 4rem;
+  }
+
+  .container {
+    margin-top: 80px;
+  }
+
+  .reseaux h2 {
+    font-size: 2.4rem;
+    margin-top: 70px;
   }
 }
 
-@media screen and (max-width: 760px) {
+/* =========================
+   MOBILE LARGE
+========================= */
+
+@media screen and (max-width: 768px) {
   .container {
     margin-top: 50px;
+    padding: 0 15px;
   }
 
   .contact-section {
-    width: 100%;
     max-width: none;
-    padding-bottom: 0;
+    padding: 20px 0;
   }
 
   .show-titre2 h1 {
-    padding-top: 210px;
-    font-size: 3.4rem;
+    padding-top: 200px;
+    font-size: 3.2rem;
   }
 
   .resa-h2 h2 {
@@ -266,11 +284,76 @@
   }
 
   .resa .phone span {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+  }
+
+  .icons {
+    gap: 15px;
+  }
+
+  .icons a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icons i {
+    font-size: 2.2rem;
   }
 
   .reseaux h2 {
-    margin-top: 80px;
-    font-size: 2.5rem;
+    margin-top: 60px;
+    font-size: 2.2rem;
+  }
+
+  .responsive-img2 {
+    pointer-events: none; /* bloque tout clic */
+  }
+}
+
+/* =========================
+   PETIT MOBILE
+========================= */
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0;
+  }
+
+  .contact {
+    padding-top: 80px;
+  }
+
+  .show-titre2 h1 {
+    padding-top: 120px;
+    font-size: 2.6rem;
+  }
+
+  .resa-h2 h2 {
+    font-size: 1.9rem;
+  }
+
+  .mail a {
+    font-size: 1.2rem;
+  }
+
+  .resa .phone span {
+    font-size: 1.2rem;
+  }
+
+  .icons {
+    gap: 10px;
+  }
+
+  .icons a {
+    width: 45px;
+    height: 45px;
+  }
+
+  .icons i {
+    font-size: 2rem;
+  }
+
+  .reseaux h2 {
+    font-size: 2rem;
   }
 }

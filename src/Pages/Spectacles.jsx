@@ -53,7 +53,7 @@ const Spectacles = () => {
     const el = document.getElementById(location.hash.replace("#", ""));
     if (!el) return;
 
-    const offset = 315;
+    const offset = 300;
 
     window.scrollTo({
       top: el.offsetTop - offset,
@@ -110,7 +110,6 @@ const Spectacles = () => {
               height="300"
               onClick={() => handleImageClick(openew)}
               loading="eager"
-              fetchPriority="high"
             />
             <img
               src={opera}

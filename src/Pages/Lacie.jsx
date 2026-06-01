@@ -84,68 +84,78 @@ const Lacie = () => {
         <div className="bio animate-on-scroll">
           <h2>L&rsquo;Équipe</h2>
           <h3>Direction administrative</h3>
+
           <div className="roxy">
-            <div className="artistes animate-on-scroll">
-              <div id="roxane" className="personne-reverse animate-on-scroll">
-                <div className="pic200 animate-on-scroll">
+            <div id="roxane" className="personne-reverse animate-on-scroll">
+              <div className="pic200 animate-on-scroll">
+                <img
+                  src={roxbio}
+                  alt="photo Roxane"
+                  width="400px"
+                  height="400px"
+                  onClick={() => handleImageClick(roxbio)}
+                  loading="lazy"
+                />
+              </div>
+              <div className="all-titre animate-on-scroll">
+                <h4 className="titre-personne animate-on-scroll">
+                  Soprano, Directrice artistique, Communication, Co créatrice
+                </h4>
+                <div className="text1 animate-on-scroll">
+                  <p className="main-text animate-on-scroll">
+                    <span>Roxane Macaudière</span> s&apos;épanouit en musique
+                    dès son plus jeune âge au sein du chœur de jeunes chanteurs
+                    de la Maîtrise de la Loire. Parallèlement, elle est reçue à
+                    l&apos;âge de 14 ans en cycle supérieur de piano classique
+                    au Conservatoire de Saint-Etienne où elle obtient son
+                    diplôme de fin d&apos;études 4 ans plus tard. Après ce début
+                    de chemin artistique, c&apos;est à Lyon qu&apos;elle
+                    s&apos;envole pour étudier
+                    <span> le chant lyrique</span> aux côtés de Cécile de
+                    Boever. <br />
+                    Elle intègre parallèlement l&apos;ENM de Villeurbanne, dans
+                    la classe de Virginie Pochon. <br />
+                    Sa passion pour la pluralité des arts la pousse à intégrer
+                    dans la même école la classe de Vincent Martin en piano
+                    jazz, et à se présenter au Cycle Centre Chorégraphique de
+                    Lyon en danse contemporaine. <br />
+                    Elle obtient après deux ans d&rsquo;études de danse son
+                    Examen d&apos;Aptitudes Techniques. <br />
+                    Aujourd&apos;hui enrichie de ces diverses expériences et
+                    âgée de 24 ans, Roxane étudie le chant lyrique à la Haute
+                    École de Musique de Genève dans la classe de Heidi Brünner.{" "}
+                    <br />
+                    En avril 2025, elle incarne Gretel dans une production de
+                    l&apos;opéra Hänsel und Gretel de Humperdinck à Chêne-Bourg
+                    en Suisse. <br />
+                    Elle est aussi la directrice artistique de la{" "}
+                    <span>la compagnie Poly R</span> qu&apos;elle a co-créée
+                    avec Hervé Le Bert en 2023. <br /> En novembre 2025, elle
+                    compose pour le baryton-basse Vincent Le Texier et chante en
+                    duo avec lui dans le cadre de Festyvocal. En mai 2026, elle
+                    remporte aux côtés de Florestan Bourreau le premier prix
+                    ex-aequo du Concours Mahler. En août 2026, elle intègre la
+                    nouvelle promotion du Pôle Lyrique d&apos;Excellence de
+                    Lyon.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="hervy">
+              <div id="herve" className="personne animate-on-scroll">
+                <div className="pic1 animate-on-scroll">
                   <img
-                    src={roxbio}
-                    alt="photo Roxane"
+                    src={hervbio}
+                    alt="photo Hervé"
                     width="400px"
                     height="400px"
-                    onClick={() => handleImageClick(roxbio)}
+                    onClick={() => handleImageClick(hervbio)}
                     loading="lazy"
                   />
                 </div>
                 <div className="all-titre animate-on-scroll">
                   <h4 className="titre-personne animate-on-scroll">
-                    Soprano, Directrice artistique, Communication, Co créatrice,
-                  </h4>
-                  <div className="text1 animate-on-scroll">
-                    <p className="main-text animate-on-scroll">
-                      <span>Roxane Macaudière</span> s&apos;épanouit en musique
-                      dès son plus jeune âge au sein du chœur de jeunes
-                      chanteurs de la Maîtrise de la Loire. Parallèlement, elle
-                      est reçue à l&apos;âge de 14 ans en cycle supérieur de
-                      piano classique au Conservatoire de Saint-Etienne où elle
-                      obtient son diplôme de fin d&apos;études 4 ans plus tard.{" "}
-                      Après ce début de chemin artistique, c&apos;est à Lyon
-                      qu&apos;elle s&apos;envole pour étudier
-                      <span> le chant lyrique</span> aux côtés de Cécile de
-                      Boever. <br />
-                      Elle intègre parallèlement l&apos;ENM de Villeurbanne,
-                      dans la classe de Virginie Pochon. <br />
-                      Sa passion pour la pluralité des arts la pousse à intégrer
-                      dans la même école la classe de Vincent Martin en piano
-                      jazz, et à se présenter au Cycle Centre Chorégraphique de
-                      Lyon en danse contemporaine. <br />
-                      Elle obtient après deux ans d&rsquo;études de danse son
-                      Examen d&apos;Aptitudes Techniques. <br />
-                      Aujourd&apos;hui enrichie de ces diverses expériences et
-                      âgée de 24 ans, Roxane étudie le chant lyrique à la Haute
-                      École de Musique de Genève dans la classe de Heidi
-                      Brünner. <br />
-                      En avril 2025, elle incarne Gretel dans une production de
-                      l&apos;opéra Hänsel und Gretel de Humperdinck à
-                      Chêne-Bourg en Suisse. <br />
-                      Elle est aussi la directrice artistique de la{" "}
-                      <span>la compagnie Poly R</span> qu&apos;elle a co-créée
-                      avec Hervé Le Bert en 2023. <br /> En novembre 2025, elle
-                      compose pour le baryton-basse Vincent Le Texier et chante
-                      en duo avec lui dans le cadre de Festyvocal. En mai 2026,
-                      elle remporte aux côtés de Florestan Bourreau le premier
-                      prix ex-aequo du Concours Mahler. En août 2026, elle
-                      intègre la nouvelle promotion du Pôle Lyrique
-                      d&apos;Excellence de Lyon.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="hervy">
-              <div id="herve" className="personne animate-on-scroll">
-                <div className="all-titre animate-on-scroll">
-                  <h4 className="titre-personne2 animate-on-scroll">
                     Tenor, Directeur technique, <br />
                     Co createur
                   </h4>
@@ -168,21 +178,11 @@ const Lacie = () => {
                     </p>
                   </div>
                 </div>
-                <div className="pic1 animate-on-scroll">
-                  <img
-                    src={hervbio}
-                    alt="photo Hervé"
-                    width="400px"
-                    height="400px"
-                    onClick={() => handleImageClick(hervbio)}
-                    loading="lazy"
-                  />
-                </div>
               </div>
             </div>
             <div className="fumy">
               <div id="fumi" className="personne-reverse animate-on-scroll">
-                <div className="pic1 animate-on-scroll">
+                <div className="pic200 animate-on-scroll">
                   <img
                     src={fumbio}
                     alt="photo Fumi"
@@ -251,7 +251,7 @@ const Lacie = () => {
                     chanteur et violoniste.
                   </p>
                 </div>
-                <div className="pic150 animate-on-scroll">
+                <div className="pic100 animate-on-scroll">
                   <img
                     src={tombio}
                     alt="photo Thomas"
@@ -263,16 +263,6 @@ const Lacie = () => {
                 </div>
               </div>
               <div id="alba" className="personne-reverse animate-on-scroll">
-                <div className="pic800 animate-on-scroll">
-                  <img
-                    src={alba}
-                    alt="photo alba"
-                    width="400px"
-                    height="400px"
-                    onClick={() => handleImageClick(alba)}
-                    loading="lazy"
-                  />
-                </div>
                 <div className="text1 animate-on-scroll">
                   <p className="main-text animate-on-scroll">
                     <span>Alba Cantuern</span> est notre formidable{" "}
@@ -287,6 +277,16 @@ const Lacie = () => {
                     ! Classique, jazz, tango, elle joue de tout, et il y en aura
                     pour tous les goûts c&apos;est promis.
                   </p>
+                </div>
+                <div className="pic800 animate-on-scroll">
+                  <img
+                    src={alba}
+                    alt="photo alba"
+                    width="400px"
+                    height="400px"
+                    onClick={() => handleImageClick(alba)}
+                    loading="lazy"
+                  />
                 </div>
               </div>
               <div id="yuku" className="personne animate-on-scroll">
@@ -317,7 +317,7 @@ const Lacie = () => {
                     en tant que pianiste.
                   </p>
                 </div>
-                <div className="pic200 animate-on-scroll">
+                <div className="pic800 animate-on-scroll">
                   <img
                     src={yukubio}
                     alt="photo Yuku"
@@ -329,16 +329,6 @@ const Lacie = () => {
                 </div>
               </div>
               <div id="melusine" className="personne-reverse animate-on-scroll">
-                <div className="pic100 animate-on-scroll">
-                  <img
-                    src={melusine}
-                    alt="photo Mélusine"
-                    width="400px"
-                    height="400px"
-                    onClick={() => handleImageClick(melusine)}
-                    loading="lazy"
-                  />
-                </div>
                 <div className="text1 animate-on-scroll">
                   <p className="main-text animate-on-scroll">
                     <span>Mélusine Escande</span> est <span>pianiste</span> et{" "}
@@ -362,6 +352,16 @@ const Lacie = () => {
                     <span>la troupe Opéramobil&rsquo;</span> en tant que
                     pianiste accompagnatrice.
                   </p>
+                </div>
+                <div className="pic100 animate-on-scroll">
+                  <img
+                    src={melusine}
+                    alt="photo Mélusine"
+                    width="400px"
+                    height="400px"
+                    onClick={() => handleImageClick(melusine)}
+                    loading="lazy"
+                  />
                 </div>
               </div>
               <div id="galtier" className="personne animate-on-scroll">
@@ -387,7 +387,7 @@ const Lacie = () => {
                   </p>
                 </div>
 
-                <div className="pic300 animate-on-scroll">
+                <div className="pic100 animate-on-scroll">
                   <img
                     src={galtier}
                     alt="photo Galtier"
@@ -398,17 +398,7 @@ const Lacie = () => {
                   />
                 </div>
               </div>
-              <div id="nathan" className="personne animate-on-scroll">
-                <div className="pic100 animate-on-scroll">
-                  <img
-                    src={nathan}
-                    alt="photo Nathan"
-                    width="400px"
-                    height="400px"
-                    onClick={() => handleImageClick(nathan)}
-                    loading="lazy"
-                  />
-                </div>
+              <div id="nathan" className="personne-reverse animate-on-scroll">
                 <div className="text1 animate-on-scroll">
                   <p className="main-text animate-on-scroll">
                     <span>Nathan Brunet</span> est <span>guitariste</span>,{" "}
@@ -425,6 +415,16 @@ const Lacie = () => {
                     Lors de la saison 2023/2024, Nathan est guitariste pour le
                     spectacle <span>Bastien & Bastienne</span>.
                   </p>
+                </div>
+                <div className="pic100 animate-on-scroll">
+                  <img
+                    src={nathan}
+                    alt="photo Nathan"
+                    width="400px"
+                    height="400px"
+                    onClick={() => handleImageClick(nathan)}
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -460,16 +460,6 @@ const Lacie = () => {
               <h3>Trésorière</h3>
             </div>
             <div id="laetitia" className="personne-reverse animate-on-scroll">
-              <div className="pic100 animate-on-scroll">
-                <img
-                  src={laetitia}
-                  alt="photo Laetitia"
-                  width="400px"
-                  height="400px"
-                  onClick={() => handleImageClick(laetitia)}
-                  loading="lazy"
-                />
-              </div>
               <div className="text1 animate-on-scroll">
                 <p className="main-text animate-on-scroll">
                   <span>Laëtitia Chanoz</span> s&apos;investit dans{" "}
@@ -488,6 +478,16 @@ const Lacie = () => {
                   Enfin, à ses heures perdues, elle écrit, une artiste à suivre
                   donc !
                 </p>
+              </div>
+              <div className="pic100 animate-on-scroll">
+                <img
+                  src={laetitia}
+                  alt="photo Laetitia"
+                  width="400px"
+                  height="400px"
+                  onClick={() => handleImageClick(laetitia)}
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
