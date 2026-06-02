@@ -26,7 +26,7 @@ const Nav = () => {
             alt="Logo PolyR"
             width="130"
             height="130"
-            fetchpriority="high"
+            fetchPriority="high"
             loading="eager"
           />
         </Link>
