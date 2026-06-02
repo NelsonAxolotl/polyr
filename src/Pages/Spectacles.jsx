@@ -100,7 +100,7 @@ const Spectacles = () => {
               <span>L’Opéramobil’</span>
             </Link>{" "}
             sera de retour en juillet 2026 pour une saison 3 qui s’annonce
-            opératiquement explosive !
+            opératiquement explosive 🔥 !!!
           </p>
           <div className="pic-opera animate-on-scroll">
             <img
@@ -169,14 +169,13 @@ const Spectacles = () => {
 
           <p className="animate-on-scroll">
             <span>Bastien & Bastienne</span>, un spectacle pour enfants créé à
-            partir de l’opéra Bastien et Bastienne de Mozart. <br />
+            partir de l’opéra de Mozart. <br />
             Roxane Macaudière et Hervé Le Bert ont arrangé cette œuvre pour
             guitare électrique et trois chanteurs afin d’initier les plus petits
             aux voix lyriques, tout en apportant une touche de modernité à cette
             création. <br />
             Pour l’occasion, une troupe d’artistes professionnels ou en voie de
-            professionnalisation a été créée. Elle est composée de Roxane
-            Macaudière, Hervé Le Bert, Fumi Oka et Nathan Brunet. <br />
+            professionnalisation a été créée. <br />
             La troupe a eu le bonheur de donner ce spectacle en représentation
             dans six établissements scolaires de la Loire en Région Rhône-Alpes
             durant l’année 2023/2024, proposant à chaque fois aux enfants âgés

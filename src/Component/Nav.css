@@ -110,24 +110,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     position: fixed;
     right: -100vw;
     bottom: 0;
-
     width: 0;
     height: 100vh;
-
     padding: 2rem;
-
     background:
       linear-gradient(rgba(117, 49, 165, 0.6), rgba(72, 3, 87, 0.6)),
       url("../Pic/burger.webp");
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     visibility: hidden;
     transition: all 0.8s ease-out;
   }
@@ -140,7 +134,7 @@
 
   .navbar-link {
     padding: 1.5rem;
-    font-size: 6vw;
+    font-size: 6.5vw;
     margin: 0;
     color: white;
   }

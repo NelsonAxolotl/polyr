@@ -141,7 +141,7 @@ const Billeterie = () => {
                 <strong>HelloAsso</strong>
               </a>{" "}
               <br />
-              ou cliquer sur les images des spectacles
+              ou cliquez sur les vignettes ci-dessous
             </p>
 
             <div className="tarif animate-on-scroll">
@@ -155,7 +155,7 @@ const Billeterie = () => {
           <div className="event-container animate-on-scroll">
             <div className="coming-soon">
               <h2>Prochainement ☀️ 2026</h2>
-              <p>Ouverture de la billetterie le 1er juin</p>
+              <p>La billetterie est ouverte</p>
             </div>
           </div>
 

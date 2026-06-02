@@ -513,6 +513,10 @@
     font-size: 1rem;
   }
 
+  .suite-intro span:hover {
+    color: rgba(255 18 227 / 100%);
+  }
+
   .poly-pic {
     flex-direction: column;
     gap: 20px;

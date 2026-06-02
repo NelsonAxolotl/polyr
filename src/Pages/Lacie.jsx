@@ -78,7 +78,7 @@ const Lacie = () => {
             de Villeurbanne, Hervé et Roxane sont très sensibles à l’art de
             l’Opéra et se sont donnés pour principale mission d’amener cette
             pratique parfois méconnue dans les lieux où elle n’est pas ou peu
-            représentée, notamment dans les campagnes et villages.
+            représentée, notamment les campagnes et villages.
           </p>
         </div>
         <div className="bio animate-on-scroll">
@@ -110,9 +110,9 @@ const Lacie = () => {
                     au Conservatoire de Saint-Etienne où elle obtient son
                     diplôme de fin d&apos;études 4 ans plus tard. Après ce début
                     de chemin artistique, c&apos;est à Lyon qu&apos;elle
-                    s&apos;envole pour étudier
-                    <span> le chant lyrique</span> aux côtés de Cécile de
-                    Boever. <br />
+                    s&apos;envole pour étudier le
+                    <span> chant lyrique</span> aux côtés de Cécile de Boever.{" "}
+                    <br />
                     Elle intègre parallèlement l&apos;ENM de Villeurbanne, dans
                     la classe de Virginie Pochon. <br />
                     Sa passion pour la pluralité des arts la pousse à intégrer
@@ -129,10 +129,10 @@ const Lacie = () => {
                     l&apos;opéra Hänsel und Gretel de Humperdinck à Chêne-Bourg
                     en Suisse. <br />
                     Elle est aussi la directrice artistique de la{" "}
-                    <span>la compagnie Poly R</span> qu&apos;elle a co-créée
-                    avec Hervé Le Bert en 2023. <br /> En novembre 2025, elle
-                    compose pour le baryton-basse Vincent Le Texier et chante en
-                    duo avec lui dans le cadre de Festyvocal. En mai 2026, elle
+                    <span>Compagnie Poly R</span> qu&apos;elle a co-créée avec
+                    Hervé Le Bert en 2023. <br /> En novembre 2025, elle compose
+                    pour le baryton-basse Vincent Le Texier et chante en duo
+                    avec lui dans le cadre de Festyvocal. En mai 2026, elle
                     remporte aux côtés de Florestan Bourreau le premier prix
                     ex-aequo du Concours Mahler. En août 2026, elle intègre la
                     nouvelle promotion du Pôle Lyrique d&apos;Excellence de
@@ -167,12 +167,12 @@ const Lacie = () => {
                       maîtrise de la Loire lui permettra de trouver sa
                       &quot;voix&quot;. Il y découvre l&apos;Opéra, une
                       expérience qui est une révélation. <br />
-                      Depuis 2019, il étudie <span>le chant lyrique</span> avec
+                      Depuis 2019, il étudie le<span> chant lyrique</span> avec
                       le ténor Yannick Berne en parallèle de ses études à
                       l&apos;ENM dans la classe de chant de Virginie Pochon et
                       au théâtre de l&apos;Iris.
                       <br />
-                      En 2023, il co-crée <span>la compagnie Poly R</span> dont
+                      En 2023, il co-crée la<span> Compagnie Poly R</span> dont
                       il est aujourd&apos;hui le directeur technique et
                       comptable.
                     </p>
@@ -213,9 +213,8 @@ const Lacie = () => {
                       d’Humperdinck, Ms Todd dans The Old Maid and The Thief de
                       Menotti et Carmen dans Carmen de Bizet. <br />
                       Lors de la saison 2023/2024, elle est soliste dans{" "}
-                      <span>Bastien & Bastienne</span> et intègre{" "}
-                      <span>la troupe Opéramobil&apos;&apos;</span> de la
-                      compagnie. <br />
+                      <span>Bastien & Bastienne</span> et intègre la troupe{" "}
+                      <span>Opéramobil&apos;</span> de la compagnie. <br />
                       En 2025, Fumi devient assistante communication et
                       régisseuse au sein de la compagnie.
                     </p>
@@ -246,9 +245,9 @@ const Lacie = () => {
                     semi-professionnels comme Symphonietta ou Anarrès, mais
                     également en tant que soliste, dans le rôle de Pish-Tush du
                     Mikado de Sullivan. <br />
-                    En juillet 2024, Thomas intègre{" "}
-                    <span>la troupe Opéramobil&apos;&apos;</span> en tant que
-                    chanteur et violoniste.
+                    En juillet 2024, Thomas intègre la troupe{" "}
+                    <span>Opéramobil&apos;</span> en tant que chanteur et
+                    violoniste.
                   </p>
                 </div>
                 <div className="pic100 animate-on-scroll">
@@ -311,10 +310,8 @@ const Lacie = () => {
                     accompagnements pour chanteurs et instrumentistes, ainsi que
                     des prestations de musique contemporaine et de clavecin.{" "}
                     <br />
-                    En juillet 2025, Yuku intègre{" "}
-                    <span>la troupe Opéramobil'</span>
-                    {""}
-                    en tant que pianiste.
+                    En juillet 2025, Yuku intègre la troupe{" "}
+                    <span>Opéramobil'</span> {""}en tant que pianiste.
                   </p>
                 </div>
                 <div className="pic800 animate-on-scroll">
@@ -348,9 +345,9 @@ const Lacie = () => {
                     Elle assure depuis la rentrée 2023 les cours de chant choral
                     auprès de la classe à horaires aménagés du Lycée Français de
                     Bruxelles. <br />
-                    En juillet 2024, Mélusine intègre{" "}
-                    <span>la troupe Opéramobil&rsquo;</span> en tant que
-                    pianiste accompagnatrice.
+                    En juillet 2024, Mélusine intègre la troupe{" "}
+                    <span> Opéramobil&rsquo;</span> en tant que pianiste
+                    accompagnatrice.
                   </p>
                 </div>
                 <div className="pic100 animate-on-scroll">
@@ -380,10 +377,9 @@ const Lacie = () => {
                     <br />
                     Passionné d&apos;art depuis son plus jeune âge, Galtier est
                     toujours à l&apos;affût de nouvelles expériences et est
-                    l&apos;un des accompagnateurs de{" "}
-                    <span>l&apos;Opéramobil&apos;</span> en juillet 2024,
-                    apportant ainsi une touche instrumentale moderne à la
-                    troupe.
+                    l&apos;un des accompagnateurs de l&apos;{" "}
+                    <span>Opéramobil&apos;</span> en juillet 2024, apportant
+                    ainsi une touche instrumentale moderne à la troupe.
                   </p>
                 </div>
 
@@ -441,8 +437,8 @@ const Lacie = () => {
                   comprendre. De comprendre comment la grande machine humaine
                   qu’il est fonctionne et comment il raconte des histoires avec
                   ça. <br />
-                  En 2023, Antoine Catinaud devient le président de{" "}
-                  <span>la compagnie Poly R</span>.
+                  En 2023, Antoine Catinaud devient le président de la{" "}
+                  <span>Compagnie Poly R</span>.
                 </p>
               </div>
               <div className="pic100 animate-on-scroll">
@@ -462,9 +458,8 @@ const Lacie = () => {
             <div id="laetitia" className="personne-reverse animate-on-scroll">
               <div className="text1 animate-on-scroll">
                 <p className="main-text animate-on-scroll">
-                  <span>Laëtitia Chanoz</span> s&apos;investit dans{" "}
-                  <span>la compagnie Poly R</span> dès sa création en 2023.{" "}
-                  <br />
+                  <span>Laëtitia Chanoz</span> s&apos;investit dans la{" "}
+                  <span>Compagnie Poly R</span> dès sa création en 2023. <br />
                   Passionnée de littérature, ancienne élève du Lycée du Parc et
                   aujourd&apos;hui élève de l&apos;Ecole Normale Supérieure de
                   Lyon et agrégée de Lettres modernes, Laëtitia a aussi joué de

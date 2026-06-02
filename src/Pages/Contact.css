@@ -297,7 +297,7 @@
   }
 
   .icons i {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 
   .reseaux h2 {
@@ -307,6 +307,14 @@
 
   .responsive-img2 {
     pointer-events: none; /* bloque tout clic */
+  }
+
+  .mail a::after {
+    display: none;
+  }
+
+  .icons i:hover {
+    transform: none;
   }
 }
 
@@ -341,16 +349,12 @@
   }
 
   .icons {
-    gap: 10px;
+    gap: 25px;
   }
 
   .icons a {
     width: 45px;
     height: 45px;
-  }
-
-  .icons i {
-    font-size: 2rem;
   }
 
   .reseaux h2 {

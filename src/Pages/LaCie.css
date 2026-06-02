@@ -582,6 +582,7 @@ body {
 
   .text1 {
     padding: 10px 10px;
+    width: 100%;
   }
 
   .text1 p {
@@ -642,7 +643,4 @@ body {
   #roxane {
     margin-top: 40px;
   }
-}
-
-@media (max-width: 500px) {
 }

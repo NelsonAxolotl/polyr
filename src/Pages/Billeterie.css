@@ -340,6 +340,10 @@ body {
     font-size: 1rem;
   }
 
+  .bill-desc a {
+    margin-top: 20px;
+  }
+
   .tarif {
     font-size: 1rem;
   }
@@ -354,11 +358,11 @@ body {
 
   .overlay-text {
     width: 95%;
-    gap: 8px;
+    gap: 10px;
   }
 
   .overlay-text p {
-    font-size: 0.85rem;
+    font-size: 1.2rem;
   }
 
   .coming-soon h2 {
@@ -367,5 +371,9 @@ body {
 
   .pic500 {
     height: 250px;
+  }
+
+  .bill-desc strong::after {
+    display: none;
   }
 }

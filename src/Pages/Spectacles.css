@@ -32,11 +32,9 @@ body {
   background:
     linear-gradient(rgba(117, 49, 165, 0.6), rgba(72, 3, 87, 0.6)),
     url("../Pic/backform.webp") !important;
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   padding: 0 20px 20px;
 }
 
@@ -454,6 +452,12 @@ body {
   }
 
   .dates h3 {
+    margin-top: 50px;
     font-size: 0.9rem;
+  }
+
+  .showplus h4:hover,
+  .showplus1 h4:hover {
+    transform: none;
   }
 }
