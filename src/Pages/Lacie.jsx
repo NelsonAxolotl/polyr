@@ -99,7 +99,7 @@ const Lacie = () => {
               </div>
               <div className="all-titre animate-on-scroll">
                 <h4 className="titre-personne animate-on-scroll">
-                  Soprano, Directrice artistique, Communication, Co créatrice
+                  Soprano, Directrice artistique, Communication, Co-créatrice
                 </h4>
                 <div className="text1 animate-on-scroll">
                   <p className="main-text animate-on-scroll">
@@ -157,7 +157,7 @@ const Lacie = () => {
                 <div className="all-titre animate-on-scroll">
                   <h4 className="titre-personne animate-on-scroll">
                     Tenor, Directeur technique, <br />
-                    Co createur
+                    Co-createur
                   </h4>
                   <div className="text1 animate-on-scroll">
                     <p className="main-text animate-on-scroll">
@@ -311,7 +311,8 @@ const Lacie = () => {
                     des prestations de musique contemporaine et de clavecin.{" "}
                     <br />
                     En juillet 2025, Yuku intègre la troupe{" "}
-                    <span>Opéramobil'</span> {""}en tant que pianiste.
+                    <span>Opéramobil&apos;</span> {""}en tant que pianiste. {""}
+                    en tant que pianiste.
                   </p>
                 </div>
                 <div className="pic800 animate-on-scroll">

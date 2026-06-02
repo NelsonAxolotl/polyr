@@ -611,15 +611,16 @@
     transform: none;
   }
 
-  .press-logo:hover {
-    transform: scale(1.05);
-  }
-
-  .press-logo {
-    transform: none;
-  }
-
   .teaser h3 {
     margin-top: -40px;
+  }
+
+  .icon i:hover {
+    transform: none;
+    color: white;
+  }
+
+  .press-row img:hover {
+    transform: none;
   }
 }
