@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import PropTypes from "prop-types";
 import End from "../Component/End";
 import "./Accueil.css";
@@ -16,7 +17,7 @@ import progres from "../Pic/progres.png";
 import loire from "../Pic/loire.png";
 import dispensable from "../Pic/dispensable.png";
 import nyons from "../Pic/nyons.png";
-import salaise from "../Pic/salaise.jpeg";
+import salaise from "../Pic/salaise.png";
 import urfe from "../Pic/urfe.png";
 
 const ImageOverlay = ({ image, onClose }) => (
@@ -182,6 +183,8 @@ const Accueil = () => {
             <img
               src={pays}
               alt="Le Pays"
+              width="120"
+              height="60"
               onClick={() =>
                 window.open(
                   "https://www.le-pays.fr/montbrison-42600/actualites/des-collegiens-sensibilises-a-lopera_14512862/",
@@ -193,6 +196,8 @@ const Accueil = () => {
             <img
               src={progres}
               alt="Le Progrès"
+              width="120"
+              height="60"
               onClick={() =>
                 window.open(
                   "https://www.leprogres.fr/culture-loisirs/2025/04/28/la-compagnie-poly-r-souhaite-partager-le-spectacle-vivant-en-milieu-rural-grace-a-l-operamobil",
@@ -204,6 +209,8 @@ const Accueil = () => {
             <img
               src={loire}
               alt="Loire"
+              width="120"
+              height="60"
               onClick={() =>
                 window.open(
                   "https://www.loiretourisme.com/en/get-out-and-move/agenda/all-the-agenda/operamobil-2026-concert-saint-etienne-le-molard-en-6192895/",
@@ -215,6 +222,8 @@ const Accueil = () => {
             <img
               src={salaise}
               alt="Salaise"
+              width="120"
+              height="60"
               onClick={() =>
                 window.open(
                   "https://mairie-salaise-sur-sanne.com/evenement/concert-operamobil/ ",
@@ -226,6 +235,8 @@ const Accueil = () => {
             <img
               src={nyons}
               alt="Nyons"
+              width="120"
+              height="60"
               onClick={() =>
                 window.open(
                   "https://www.nyons.com/agenda/operamobil/",
@@ -237,6 +248,8 @@ const Accueil = () => {
             <img
               src={dispensable}
               alt="Dispensable"
+              width="120"
+              height="60"
               onClick={() =>
                 window.open(
                   "https://www.magindispensable.fr/operamobil/",
@@ -248,6 +261,8 @@ const Accueil = () => {
             <img
               src={urfe}
               alt="Bâtie d'Urfé"
+              width="120"
+              height="60"
               onClick={() =>
                 window.open(
                   "https://www.batiedurfe.fr/jcms/98149_DBEvenement/en/concert-operamobil-2026?portal=lw_1395701 ",

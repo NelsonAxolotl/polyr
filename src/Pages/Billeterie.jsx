@@ -174,6 +174,8 @@ const Billeterie = () => {
                   <img
                     src={event.image}
                     alt={`OpéraMobil - ${event.description}`}
+                    width="300"
+                    height="300"
                     className="responsive-img10"
                   />
 

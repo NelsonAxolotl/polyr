@@ -311,8 +311,7 @@ const Lacie = () => {
                     des prestations de musique contemporaine et de clavecin.{" "}
                     <br />
                     En juillet 2025, Yuku intègre la troupe{" "}
-                    <span>Opéramobil&apos;</span> {""}en tant que pianiste. {""}
-                    en tant que pianiste.
+                    <span>Opéramobil&apos;</span> {""}en tant que pianiste.
                   </p>
                 </div>
                 <div className="pic800 animate-on-scroll">
