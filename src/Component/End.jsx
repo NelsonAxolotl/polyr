@@ -25,9 +25,7 @@ const End = () => {
         href="https://www.thecoolaxolotl.com"
         target="_blank"
         rel="noopener noreferrer"
-      >
-        <span> | </span> Par The Cool Axolotl
-      </a>
+      ></a>
     </div>
   );
 };

@@ -26,7 +26,6 @@ import operapiano from "../Pic/operapiano.webp";
 const images = [
   { src: opera2, alt: "Opera 2", className: "center-image2" },
   { src: opera400, alt: "Opera 4000" },
-  { src: opera400, alt: "Opera 400" },
   { src: allgroupe, alt: "Opera Mobile groupe" },
   { src: opera6, alt: "Opera 6" },
   { src: openew, alt: "Opera new" },
@@ -56,7 +55,15 @@ const Gallery2 = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
-    arrows: false,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   };
 
   return (

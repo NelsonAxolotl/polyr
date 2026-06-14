@@ -99,8 +99,14 @@ const Billeterie = () => {
   /* =========================
      SCROLL ANIMATION
   ========================= */
-
   useEffect(() => {
+    if (window.innerWidth <= 768) {
+      document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+        el.classList.add("visible");
+      });
+      return;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

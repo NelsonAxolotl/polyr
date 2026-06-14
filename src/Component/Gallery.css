@@ -60,4 +60,9 @@
   .object-right {
     object-position: right;
   }
+
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
 }

@@ -87,6 +87,10 @@ body {
   color: bisque; /* Couleur du texte */
 }
 
+.cie-text a {
+  color: rgb(227, 183, 129);
+}
+
 /* Style pour la section 'bio' */
 .bio {
   display: flex; /* Utilisation de flexbox */
@@ -358,6 +362,10 @@ body {
 .text1 span {
   color: rgba(148 12 194 / 100%); /* Couleur du texte */
   font-weight: bold; /* Poids de la police */
+}
+
+.text1 a {
+  color: rgb(203, 93, 227);
 }
 
 /* Style pour la ligne de séparation */

@@ -201,7 +201,7 @@
 
 .icons i:hover {
   color: var(--color-network);
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /* =========================

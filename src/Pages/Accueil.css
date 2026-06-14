@@ -223,27 +223,6 @@
   font-weight: bold;
 }
 
-/* .presse button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 1.4rem;
-  cursor: pointer;
-  border: 1px solid white;
-  background-color: #fff;
-  color: rgba(148 12 194 / 100%);
-  border-radius: 5px;
-  transition:
-    background-color 0.3s ease,
-    all 0.3s ease-in-out;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.presse button:hover {
-  color: white;
-  background-color: bisque;
-  transform: scale(1.03);
-} */
-
 /* ARTICLE */
 .article img {
   width: 400px;
@@ -345,7 +324,7 @@
 
 .icon i:hover {
   color: bisque;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /* IMAGE 50 */
@@ -474,11 +453,6 @@
     align-items: center;
     gap: 20px;
     text-align: center;
-  }
-
-  .poly-intro.animate-on-scroll {
-    opacity: 1 !important;
-    transform: none !important;
   }
 
   .tittle-poly h1 {
@@ -622,5 +596,9 @@
 
   .press-row img:hover {
     transform: none;
+  }
+
+  .pressopera {
+    margin-top: 40px;
   }
 }

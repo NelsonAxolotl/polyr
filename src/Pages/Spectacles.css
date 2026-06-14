@@ -282,10 +282,13 @@ body {
 #melusine,
 #alba,
 #fumi,
-#yuku,
+#yuku {
+  scroll-margin-top: 300px;
+}
+
 #nathan,
 #galtier {
-  scroll-margin-top: 300px;
+  scroll-margin-top: 330px;
 }
 
 /* =========================
