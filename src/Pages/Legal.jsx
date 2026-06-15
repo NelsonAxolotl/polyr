@@ -98,9 +98,9 @@ const Legal = () => {
               <h2>Propriété intellectuelle</h2>
 
               <p>
-                L'ensemble des contenus présents sur ce site (textes,
+                L&apos;ensemble des contenus présents sur ce site (textes,
                 photographies, vidéos, graphismes et identité visuelle) est
-                protégé par le droit d'auteur.
+                protégé par le droit d&apos;auteur.
               </p>
 
               <p>
@@ -129,7 +129,7 @@ const Legal = () => {
               <h2>Vos droits</h2>
 
               <p>
-                Conformément au RGPD, vous disposez d'un droit d'accès, de
+                Conformément au RGPD, vous disposez d&apos;un droit d'accès, de
                 rectification et de suppression de vos données.
               </p>
 
