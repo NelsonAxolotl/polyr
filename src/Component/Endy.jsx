@@ -1,6 +1,5 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
-import "./End.css";
+import "./Endy.css";
 
 const End = () => {
   useEffect(() => {
@@ -22,12 +21,6 @@ const End = () => {
   return (
     <div className="end animate-on-scroll">
       <p>Copyright © 2024 Compagnie Poly R</p>
-
-      <div className="foot-legal">
-        <Link to="/mentions-legales">
-          <p>Mentions légales</p>
-        </Link>
-      </div>
     </div>
   );
 };

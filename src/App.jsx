@@ -7,6 +7,7 @@ import Lacie from "./Pages/Lacie";
 import Spectacles from "./Pages/Spectacles";
 import Contact from "./Pages/Contact";
 import Billeterie from "./Pages/Billeterie";
+import Legal from "./Pages/Legal";
 import NotFound from "./Pages/NotFound";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/spectacles" element={<Spectacles />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/billetterie" element={<Billeterie />} />
+        <Route path="/mentions-legales" element={<Legal />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
