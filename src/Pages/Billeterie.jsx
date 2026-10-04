@@ -11,73 +11,13 @@ import violon from "../Pic/violon.webp";
 const EVENTS = [
   {
     id: 1,
-    title: "Théâtre de verdure",
-    date: "05 juillet 2026",
-    image: team,
-    hour: "17h",
-    description: "Nyons (26)",
-    price: "",
-    link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-5-juillet-theatre-de-verdure-de-nyons",
-  },
-  {
-    id: 2,
-    title: "",
-    date: "07 juillet 2026",
+    title: "Eglise de Boisset Saint-Priest",
+    date: "Vendredi 05 Octobre 2026",
     image: team,
     hour: "19h30",
-    description: "Prieuré de Salais-sur-Sanne (38)",
+    description: "Loire (42)",
     price: "",
-    link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-7-juillet-prieure-de-salaise-sur-sanne",
-  },
-  {
-    id: 3,
-    title: "Bâtie d'Urfé",
-    date: "10 juillet 2026",
-    image: team,
-    hour: "19h",
-    description: "Saint-Étienne-le-Molard (42)",
-    price: "13€",
-    link: "https://www.batiedurfe.fr/jcms/lw_1392169/fr/billetterie",
-  },
-  {
-    id: 4,
-    title: "",
-    date: "12 juillet 2026",
-    image: team,
-    hour: "18h",
-    description: "Prieuré de Champdieu (42)",
-    price: "",
-    link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-12-juillet-prieure-de-champdieu",
-  },
-  {
-    id: 5,
-    title: "Place du village",
-    date: "13 juillet 2026",
-    image: team,
-    hour: "18h",
-    description: "Pommiers-en-Forez (42)",
-    price: "",
-    link: "https://www.helloasso.com/associations/poly-r/evenements/operamobil-13-juillet-pommiers-en-forez",
-  },
-  {
-    id: 6,
-    title: "Théâtre de Verdure",
-    date: "16 juillet 2026",
-    image: team,
-    hour: "19h30",
-    description: "Saint-Victor-sur-Loire (42)",
-    price: "",
-    link: "https://www.helloasso.com/associations/poly-r/evenements/saint-victor-sur-loire",
-  },
-  {
-    id: 7,
-    title: "Site Médiéval",
-    date: "19 juillet 2026",
-    image: team,
-    hour: "17h",
-    description: "Donzy (42)",
-    price: "",
-    link: "https://www.helloasso.com/associations/poly-r/evenements/site-medieval-du-donzy",
+    link: "https://indiv.themisweb.fr/0579/fChoixSeanceWidget.aspx?idstructure=0579&EventId=2057&request=QcE+w0WHSuBKCQvkcu5J249KCEDBaARcWCXMtzIzi+vRM1GcXZfTg7n2Sg4eLmXgp0Logb7spsL6sw5lxmIjWbAdA1nERIbH",
   },
 ];
 
@@ -138,30 +78,30 @@ const Billeterie = () => {
             <h1>Billetterie</h1>
 
             <p className="bill-desc animate-on-scroll">
-              Réservez vos places en ligne via{" "}
+              Réservez votre place{" "}
+              {/* Réservez vos places en ligne via{" "}
               <a
                 href="https://www.helloasso.com/associations/poly-r"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <strong>HelloAsso</strong>
-              </a>{" "}
-              <br />
-              ou cliquez sur les vignettes ci-dessous
+              </a>{" "}*/}
+              en cliquant sur la vignette ci-dessous
             </p>
 
-            <div className="tarif animate-on-scroll">
-              <p>Tarif plein : 18 €</p>
-              <p>Tarif solidaire : 10 €</p>
-              <p>Enfant (-12 ans) : Gratuit</p>
+            {/* COMING SOON */}
+            <div className="event-container animate-on-scroll">
+              <div className="coming-soon">
+                <h2>Opéramobil' 3 replay d'automne 🍁</h2>
+              </div>
             </div>
-          </div>
 
-          {/* COMING SOON */}
-          <div className="event-container animate-on-scroll">
-            <div className="coming-soon">
-              <h2>Prochainement ☀️ 2026</h2>
-              <p>La billetterie est ouverte</p>
+            <div className="tarif animate-on-scroll">
+              <p>WEB - 18 ANS : 0 €</p>
+              <p>PLEIN TARIF : 10 €</p>
+              <p>TARIF ETUDIANT : 8 €</p>
+              <p>TARIF DEMANDEUR D'EMPLOI : 8 €</p>
             </div>
           </div>
 
@@ -196,7 +136,14 @@ const Billeterie = () => {
               </a>
             ))}
           </div>
-
+          {/* COMING SOON */}
+          <div className="event-container2 animate-on-scroll">
+            <div className="coming-soon2">
+              <h3>
+                * Opéramobil' Saison 4, du 9 juillet 2027 au 10 août 2027 !!!
+              </h3>
+            </div>
+          </div>
           {/* IMAGE BAS DE PAGE */}
           <div className="pic500 animate-on-scroll">
             <img

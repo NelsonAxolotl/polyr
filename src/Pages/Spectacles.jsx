@@ -11,7 +11,7 @@ import bastien from "../Pic/bastien.webp";
 import bastienne from "../Pic/bastienne.webp";
 import dolls2 from "../Pic/dolls2.webp";
 import openew from "../Pic/newteam.webp";
-import newcalendar from "../Pic/tour.webp";
+import newcalendar from "../Pic/automne.webp";
 
 const Spectacles = () => {
   const location = useLocation();
@@ -149,7 +149,7 @@ const Spectacles = () => {
           <p>© photographe Camille Montana</p>
         </div>
         <div className="dates animate-on-scroll">
-          <h3>Dates été 2026</h3>
+          <h3>Automne 2026</h3>
           <img
             src={newcalendar}
             alt="dates passées"

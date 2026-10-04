@@ -8,7 +8,7 @@ import "./Accueil.css";
 import presse from "../Pic/presse.webp";
 import bastien50 from "../Pic/bastien502.webp";
 import newop from "../Pic/newteam.webp";
-import newcalendar from "../Pic/tour.webp";
+import newcalendar from "../Pic/automne.webp";
 import poly5 from "../Pic/poly5.webp";
 import groupeaccueil from "../Pic/newteam2.webp";
 import polypress from "../Pic/polysup.webp";
@@ -19,6 +19,7 @@ import dispensable from "../Pic/dispensable.png";
 import nyons from "../Pic/nyons.png";
 import salaise from "../Pic/salaise.png";
 import urfe from "../Pic/urfe.png";
+import dauphine from "../Pic/dauphine.png";
 
 const ImageOverlay = ({ image, onClose }) => (
   <div className="overlay" onClick={onClose}>
@@ -113,8 +114,7 @@ const Accueil = () => {
           <h3>Actu</h3>
 
           <div className="split animate-on-scroll">
-            <p>À venir Juillet 2026</p>
-            <span>Opéramobil &rsquo;saison 3</span>
+            <p>Opéramobil' 3 replay d'automne 🍁</p>
           </div>
 
           <div className="pic-opera-acc animate-on-scroll">
@@ -129,6 +129,10 @@ const Accueil = () => {
                 loading="lazy"
               />
             ))}
+          </div>
+          <div className="split2 animate-on-scroll">
+            <p>À venir du 9 juillet 2027 au 10 août 2027</p>
+            <span>Opéramobil &rsquo;saison 4 🤫☀️</span>
           </div>
         </section>
 
@@ -206,7 +210,7 @@ const Accueil = () => {
               }
             />
 
-            <img
+            {/* <img
               src={loire}
               alt="Loire"
               width="120"
@@ -217,7 +221,7 @@ const Accueil = () => {
                   "_blank",
                 )
               }
-            />
+            /> */}
 
             <img
               src={salaise}
@@ -232,7 +236,7 @@ const Accueil = () => {
               }
             />
 
-            <img
+            {/* <img
               src={nyons}
               alt="Nyons"
               width="120"
@@ -243,9 +247,9 @@ const Accueil = () => {
                   "_blank",
                 )
               }
-            />
+            /> */}
 
-            <img
+            {/* <img
               src={dispensable}
               alt="Dispensable"
               width="120"
@@ -256,9 +260,9 @@ const Accueil = () => {
                   "_blank",
                 )
               }
-            />
+            /> */}
 
-            <img
+            {/* <img
               src={urfe}
               alt="Bâtie d'Urfé"
               width="120"
@@ -266,6 +270,42 @@ const Accueil = () => {
               onClick={() =>
                 window.open(
                   "https://www.batiedurfe.fr/jcms/98149_DBEvenement/en/concert-operamobil-2026?portal=lw_1395701 ",
+                  "_blank",
+                )
+              }
+            /> */}
+            <img
+              src={dauphine}
+              alt="Le dauphiné libéré"
+              width="120"
+              height="60"
+              onClick={() =>
+                window.open(
+                  "https://www.ledauphine.com/culture-loisirs/2026/07/06/l-operamobil-s-invite-au-prieure-pour-democratiser-l-opera ",
+                  "_blank",
+                )
+              }
+            />
+            <img
+              src={pays}
+              alt="Le Progres"
+              width="120"
+              height="60"
+              onClick={() =>
+                window.open(
+                  "https://www.le-pays.fr/feurs-42110/loisirs/la-troupe-operamobil-mele-opera-et-pop-lors-d-une-tournee-estivale-dans-la-loire_15018142/",
+                  "_blank",
+                )
+              }
+            />
+            <img
+              src={progres}
+              alt="Le dauphiné libéré"
+              width="120"
+              height="60"
+              onClick={() =>
+                window.open(
+                  "https://www.leprogres.fr/culture-loisirs/2026/06/15/avec-l-operamobil-ils-veulent-rendre-l-art-accessible-aux-campagnes ",
                   "_blank",
                 )
               }
