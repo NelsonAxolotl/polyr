@@ -114,7 +114,7 @@ const Accueil = () => {
           <h3>Actu</h3>
 
           <div className="split animate-on-scroll">
-            <p>Opéramobil' 3 replay d'automne 🍁</p>
+            <p>Opéramobil&apos; 3 replay d'automne 🍁</p>
           </div>
 
           <div className="pic-opera-acc animate-on-scroll">

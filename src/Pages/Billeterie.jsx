@@ -93,7 +93,7 @@ const Billeterie = () => {
             {/* COMING SOON */}
             <div className="event-container animate-on-scroll">
               <div className="coming-soon">
-                <h2>Opéramobil' 3 replay d'automne 🍁</h2>
+                <h2>Opéramobil&apos; 3 replay d'automne 🍁</h2>
               </div>
             </div>
 
@@ -101,7 +101,7 @@ const Billeterie = () => {
               <p>WEB - 18 ANS : 0 €</p>
               <p>PLEIN TARIF : 10 €</p>
               <p>TARIF ETUDIANT : 8 €</p>
-              <p>TARIF DEMANDEUR D'EMPLOI : 8 €</p>
+              <p>TARIF DEMANDEUR D&apos;EMPLOI : 8 €</p>
             </div>
           </div>
 
@@ -140,7 +140,8 @@ const Billeterie = () => {
           <div className="event-container2 animate-on-scroll">
             <div className="coming-soon2">
               <h3>
-                * Opéramobil' Saison 4, du 9 juillet 2027 au 10 août 2027 !!!
+                * Opéramobil&apos; Saison 4, du 9 juillet 2027 au 10 août 2027
+                !!!
               </h3>
             </div>
           </div>
