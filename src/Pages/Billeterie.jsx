@@ -12,7 +12,7 @@ const EVENTS = [
   {
     id: 1,
     title: "Eglise de Boisset Saint-Priest",
-    date: "Vendredi 05 Octobre 2026",
+    date: "Vendredi 16 Octobre 2026",
     image: team,
     hour: "19h30",
     description: "Loire (42)",
