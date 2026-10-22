@@ -54,7 +54,7 @@ const Spectacles = () => {
     const timer = setTimeout(() => {
       const el = document.getElementById(hash);
       if (!el) return;
-      const offset = hash === "opera" ? 50 : 20;
+      const offset = hash === "opera" ? 70 : 10;
 
       const top = el.getBoundingClientRect().top + window.scrollY - offset;
 
