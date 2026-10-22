@@ -56,7 +56,7 @@ const Spectacles = () => {
       if (!el) return;
 
       // Marge en haut : 20 px sur ordinateur et mobile
-      const offset = 20;
+      const offset = 10;
 
       const top = el.getBoundingClientRect().top + window.scrollY - offset;
 
