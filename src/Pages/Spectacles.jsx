@@ -55,8 +55,7 @@ const Spectacles = () => {
       const el = document.getElementById(hash);
       if (!el) return;
 
-      // Marge en haut : 20 px sur ordinateur et mobile
-      const offset = 120;
+      const offset = 25;
 
       const top = el.getBoundingClientRect().top + window.scrollY - offset;
 
@@ -64,10 +63,10 @@ const Spectacles = () => {
         top,
         behavior: "smooth",
       });
-    }, 300);
+    }, 500);
 
     return () => clearTimeout(timer);
-  }, [location.hash]);
+  }, [location.pathname, location.hash]);
 
   return (
     <>
