@@ -76,7 +76,7 @@ const Spectacles = () => {
         </div>
 
         {/* ---------------- OPERA ---------------- */}
-        <div id="opera" className="showplus animate-on-scroll" ref={operaRef}>
+        <div id="opera" className="showplus" ref={operaRef}>
           <h2>L&apos;Opéramobil&apos;</h2>
 
           <p className="animate-on-scroll">
