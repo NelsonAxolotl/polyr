@@ -47,18 +47,26 @@ const Spectacles = () => {
 
   /* ---------------- HASH SCROLL ---------------- */
   useEffect(() => {
-    if (window.innerWidth <= 768) return;
     if (!location.hash) return;
 
-    const el = document.getElementById(location.hash.replace("#", ""));
-    if (!el) return;
+    const hash = location.hash.substring(1);
 
-    const offset = 300;
+    const timer = setTimeout(() => {
+      const el = document.getElementById(hash);
+      if (!el) return;
 
-    window.scrollTo({
-      top: el.offsetTop - offset,
-      behavior: "smooth",
-    });
+      // Marge en haut : 20 px sur ordinateur et mobile
+      const offset = 20;
+
+      const top = el.getBoundingClientRect().top + window.scrollY - offset;
+
+      window.scrollTo({
+        top,
+        behavior: "smooth",
+      });
+    }, 300);
+
+    return () => clearTimeout(timer);
   }, [location.hash]);
 
   return (
