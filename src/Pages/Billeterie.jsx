@@ -8,18 +8,7 @@ import violon from "../Pic/violon.webp";
    EVENTS DATA (hors composant)
 ========================= */
 
-const EVENTS = [
-  {
-    id: 1,
-    title: "Eglise de Boisset Saint-Priest",
-    date: "Vendredi 16 Octobre 2026",
-    image: team,
-    hour: "19h30",
-    description: "Loire (42)",
-    price: "",
-    link: "https://indiv.themisweb.fr/0579/fChoixSeanceWidget.aspx?idstructure=0579&EventId=2057&request=QcE+w0WHSuBKCQvkcu5J249KCEDBaARcWCXMtzIzi+vRM1GcXZfTg7n2Sg4eLmXgp0Logb7spsL6sw5lxmIjWbAdA1nERIbH",
-  },
-];
+const EVENTS = [];
 
 /* =========================
    COMPONENT
@@ -77,32 +66,25 @@ const Billeterie = () => {
           <div className="bill animate-on-scroll">
             <h1>Billetterie</h1>
 
-            <p className="bill-desc animate-on-scroll">
+            {/* <p className="bill-desc animate-on-scroll">
               Réservez votre place{" "}
-              {/* Réservez vos places en ligne via{" "}
+              Réservez vos places en ligne via{" "}
               <a
                 href="https://www.helloasso.com/associations/poly-r"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <strong>HelloAsso</strong>
-              </a>{" "}*/}
+              </a>{" "}
               en cliquant sur la vignette ci-dessous
-            </p>
+            </p> */}
 
             {/* COMING SOON */}
             <div className="event-container animate-on-scroll">
-              <div className="coming-soon">
-                <h2>Opéramobil&apos; 3 replay d'automne 🍁</h2>
-              </div>
+              <div className="coming-soon"></div>
             </div>
 
-            <div className="tarif animate-on-scroll">
-              <p>WEB - 18 ANS : 0 €</p>
-              <p>PLEIN TARIF : 10 €</p>
-              <p>TARIF ETUDIANT : 8 €</p>
-              <p>TARIF DEMANDEUR D&apos;EMPLOI : 8 €</p>
-            </div>
+            <div className="tarif animate-on-scroll"></div>
           </div>
 
           {/* EVENTS */}
@@ -140,9 +122,9 @@ const Billeterie = () => {
           <div className="event-container2 animate-on-scroll">
             <div className="coming-soon2">
               <h3>
-                * Opéramobil&apos; Saison 4, du 9 juillet 2027 au 10 août 2027
-                !!!
+                Opéramobil’ <span style={{ color: "yellow" }}>Saison 4</span>
               </h3>
+              <p>Du 9 juillet 2027 au 10 août 2027</p>
             </div>
           </div>
           {/* IMAGE BAS DE PAGE */}
